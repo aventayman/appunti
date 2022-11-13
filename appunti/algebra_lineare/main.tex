@@ -42,7 +42,7 @@ Se l'operazione \(\star\) soddisfa anche la proprietà commutativa, il gruppo si
 \dfn{Campo}{Sia \textit{A} un insieme sul quale sono definite due operazioni che indichiamo con i simboli "\(+\)" e "\(\cdot\)" e che chiamiamo somma e prodotto rispettivamente. La struttura \((A, +, \cdot)\) è un \textbf{campo} se sussistono le condizioni seguenti:
 \begin{itemize}
     \item \((A, +)\) è un gruppo abeliano il cui elemento neutro è indicato con 0;
-    \item \((A\backslash\{0\}, \star)\) è un gruppo abeliano con elemento neutro \(e \neq 0\);
+    \item \((A\backslash\{0\}, \cdot)\) è un gruppo abeliano con elemento neutro \(e \neq 0\);
     \item valgono le proprietà distributive (sinistra e destra) del prodotto rispetto alla somma, cioè per ogni \(a,b,c \in A\) \[
         a \cdot (b + c) = a \cdot b + a \cdot c; \ (a + b) \cdot c = a \cdot c + b \cdot c
     \]
@@ -57,7 +57,7 @@ Se l'operazione \(\star\) soddisfa anche la proprietà commutativa, il gruppo si
         \begin{itemize}
             \item \( (h \cdot k) \cdot v = h \cdot (k \cdot v) \quad \forall h, k \in K \quad e \quad \forall v \in V \) 
             \item \( (h + k) \cdot v = h \cdot v + k \cdot v \quad \forall h, k \in K \quad e \quad \forall v \in V\)
-            \item \(h \cdot (v + w) = h \cdot v + h \cdot w \quad e \quad \forall v, w \in V\)
+            \item \(h \cdot (v + w) = h \cdot v + h \cdot w \quad \forall h,k \in K \quad e \quad \forall v, w \in V\)
             \item \(1 \cdot v = v \quad \forall v \in V\)
         \end{itemize}
 \end{itemize}}
@@ -68,7 +68,7 @@ Gli elementi dell'insieme \textit{V} sono detti \textbf{vettori}, gli elementi d
 \]}
 \pf{Dimostrazione}{Se k = 0 \[
     0v = (0+0)v = 0v + 0v
-\] e sommando \(-0v\) ad ambo i membri si ottiene appunto \(\ul{0} = 0v\). Se è \(v = \ul{0}\), si procede nel modo analogo. Viceversa, se \(kv = \ul{0}\)  e \(k \neq 0\) dimostriamo che \(v = \ul{o}\). Dato che \(k \neq 0\), esiste l'inverso \(k ^{-1} \in K\) e, moltiplicando ambo i membri della precedente uguaglianza per \(k ^{-1}\) si ottiene \(k ^{-1}(kv) = k ^{-1} \ul{0}\) che, per quanto dimostrato in precedenza dà il \(\ul{0}\). Dato che \(k^{-1}(kv) = (k^{-1}k)v = 1v = v\), per la proprietà 4, si ha \(v = \ul{0}\).  }
+\] e sommando \(-0v\) ad ambo i membri si ottiene appunto \(\ul{0} = 0v\). Se è \(v = \ul{0}\), si procede nel modo analogo. Viceversa, se \(kv = \ul{0}\)  e \(k \neq 0\) dimostriamo che \(v = \ul{0}\). Dato che \(k \neq 0\), esiste l'inverso \(k ^{-1} \in K\) e, moltiplicando ambo i membri della precedente uguaglianza per \(k ^{-1}\) si ottiene \(k ^{-1}(kv) = k ^{-1} \ul{0}\) che, per quanto dimostrato in precedenza dà il \(\ul{0}\). Dato che \(k^{-1}(kv) = (k^{-1}k)v = 1v = v\), per la proprietà 4, si ha \(v = \ul{0}\).  }
 
 \section{Sottospazi di uno spazio vettoriale}
 \dfn{}{Sia \(\emptyset \neq U \subseteq V\), diremo che \(U\) è \textbf{sottospazio vettoriale} di \(V\) se è esso stesso uno spazio vettoriale rispetto alla restrizione delle stesse operazioni.}
