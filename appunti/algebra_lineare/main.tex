@@ -89,7 +89,78 @@ Gli elementi dell'insieme \textit{V} sono detti \textbf{vettori}, gli elementi d
 \dfn{Combinazione lineare}{Siano \(v _{1}, v_2, ..., v_n \in V(K)\) si dice combinazione lineare di vettori \(v_1, v_2, ..., v_n\) ogni vettore \(v\): \[
     v = k_1 \cdot v_1 + k_2 \cdot v_2 + ... + k_n \cdot v_n \quad \text{con} \ k_1, k_2, ..., k_n \in K
 \] }
+\dfn{Sistema di vettori libero}{Sia \(V(K)\) e sia \(A\) un sistema di vettori di \(V(K)\), \(A=[v_1, v_2, ..., v_n]\), allora \(A\) si dice \textbf{libero} se l'unica combinazione lineare di vettori di \(A\) che dà il vettore nullo è a coefficienti tutti nulli \[
+    \ul{0} = k_1 \cdot v_1 + k_2 \cdot v_2 + ... + k_n \cdot v_n \implies k_1 = k_2 = ... = k_n = \ul{0}
+\]
+Se \(A\) è libero i suoi vettori si dicono \textbf{linearmente indipendenti}.}
 
+
+\dfn{Sistema di vettori legato}{Sia \(V(K)\) e sia \(A\) un sistema di vettori di \(V(K)\), \(A=[v_1, v_2, ..., v_n]\), allora \(A\) si dice \textbf{legato} se \textbf{non} è libero. Quindi:\[
+        \exists k_1, k_2, ..., k_n \ \text{non tutti nulli} : \ \ul{0}=k_1 \cdot v_1 + k_2 \cdot v_2 + ... + k_n \cdot v_n
+\]
+Se \(A\) è legato i suoi vettori si dicono \textbf{linearmente dipendenti}.}
+Qui di seguito daremo delle proposizioni riguardo ai sistemi liberi e legati:
+\mprop{}{Sia \(A=[v_1, v_2, ..., v_n]\) un sistema di generatori di \(V(K)\). Se \(\ul{0}\) appartiene ad \(A\), il sistema \(A\) è legato.}
+\pf{Dimostrazione}{Sia \(\ul{0} \in A\), senza perdita di generalità, possiamo supporre che \(\ul{0} = v_1\) quindi: \[
+    1 \cdot v_1 + 0 \cdot v_2 + ... + 0 \cdot v_n = 1 \cdot \ul{0} + \ul{0} = \ul{0} \implies \ \text{A è legato}
+\]}
+\mprop{}{Sia \(A=[v_1, v_2, ..., v_n]\) un sistema di generatori di \(V(K)\). Se in \(A\) appaiono due vettori proporzionali allora A è legato.}
+\pf{Dimostrazione}{Senza perdita di generalità possiamo supporre che \(v_1 = k v_2\) e quindi: \[
+    1v_1 + k v_2 + 0v_3 + ... + 0 v_n = v_1 - kv_2 + \ul{0} = \ul{0} \implies \ \text{A è legato}
+\]}
+\mprop{}{Sia \(A=[v_1, v_2, ..., v_n]\) un sistema di generatori di \(V(K)\). A è legato se e solo se almeno uno dei vettori si può riscrivere come combinazione lineare degli altri.}
+\pf{Dimostrazione}{\( \implies \): Per ipotesi \(A\) è legato e quindi: \[
+    \ul{0}=k_1v_1 + k_2 v_2 + ... + k_n v_n \ \text{con almeno un } k_i = 0
+\] Senza perdita di generalità supponiamo che \(k_1 \neq 0\)
+    \begin{gather*} 
+    -k_1 v_1 = k_2 v_2 + ... + k_n v_n \qquad v_1 = \frac{1}{k_1} (-k_2 v_2 - ... -k_n v_n) \\
+   v_1 = -\frac{k_2}{k_1}v_2 - \frac{k_3}{k_1}v_3 - ... - \frac{k_n}{k1}v_n
+\end{gather*}
+e quindi \(v_1\) è combinazione lineare di \(v_1, ..., v_n\).\\
+\( \impliedby \): Per ipotesi uno dei vettori di \(A\) è combinazione lineare degli altri e senza perdita di generalità: \[
+    v_1 = k_2 v_2 + k_3 v_3 + ... + k_n v_n \qquad \ul{0}= -1v_1 + k_2 v_2 + ... + k_n v_n
+\] siccome \(-1 \neq 0\) \(A\) è legato. }
+\mprop{}{Sia \(A=[v_1, v_2, ..., v_n]\) un sistema di generatori di \(V(K)\) e sia \(u \in V(K)\). Se \(A \cup \{u\}\) è legato, allora \(u\) è combinazione lineare dei vettori di \(A\).}
+\pf{Dimostrazione}{Per ipotesi \(A \cup \{u\}\) è legato, cioè: \[
+    \exists k_1, k_2, ..., k_n, b \in K \ \text{ non tutti nulli } : \ \ul{0} = k_1v_1 + k_2v_2 +...+k_nv_n + bu
+\] sia per assurdo \(b = 0\) \[
+    \ul{0}=k_1v_1 + k_2v_2 + ... + k_nv_n \text{ con } k_1 \neq 0 \ \implies \ A \text{ è legato, \textbf{assurdo!} } \implies \ b \neq 0
+\] \[
+    -bu = k_1v_1 + k_2v_2 + ... + k_nv_n \quad u = -\frac{k_1}{b}v_1 - \frac{k_2}{b}v_2 - ... - \frac{k_n}{b}v_n
+\] \( \implies \) \(u\) è combinazione lineare dei vettori \(v_1, v_2, ..., v_n\)  }
+\mprop{}{Sia \(A=[v_1, v_2, ..., v_n]\) un sistema di generatori di \(V(K)\) e sia \(B \supseteq A\) sistema di vettori di \(V(K)\). Se \(A\) è legato allora anche \(B\) è legato.}
+\pf{Dimostrazione}{\[
+    \exists k_1, k_2, ..., k_n \in K \ \text{ non tutti nulli } : \ \ul{0} = k_1v_1 + k_2v_2 +...+k_nv_n
+\] Se \(B=[v_1, v_2, ..., v_n, w_1, w_2, ..., w_m]\) allora \[
+    \ul{0} = k_1v_1 + k_2v_2 +...+k_nv_n + 0w_1 + 0w_2 + ... + 0w_m
+\]\( \implies \ B\) è legato.}
+\mprop{}{Sia \(A=[v_1, v_2, ..., v_n]\) un sistema di generatori di \(V(K)\) e sia \(B \subseteq A\) sistema di vettori di \(V(K)\), se \(A\) è libero, allora \(B\) è libero.}
+\pf{Dimostrazione}{Sia, per assurdo, \(B\) legato, allora per la proposizione precedente anche \(A\) è legato. \textbf{Assurdo!} Quindi \(B\)  è libero.} 
+
+\section{Sistemi di generatori di uno spazio vettoriale}
+\dfn{Sistema di generatori}{Sia \(A\) sistema di vettori di \(V(K)\). \(A\) si dice sistema di generatori di \(V(K)\) se ogni \(v \in V(K)\) si può scrivener come combinazione lineare di un numero finito di vettori di A.}
+
+\dfn{Copertura lineare}{Sia \(A\) un sistema di vettori di \(V(K)\) si dice copertura (o chiusura) lineare di \(A\) l'insieme \(\mcL(A)\) di tutte le combinazioni lineari di sottoinsiemi finiti di A.}
+\nt{Dato \(A\) sistema di vettori di \(V(K)\) \begin{enumerate}
+    \item \(\mcL(A)\) è il più piccolo sottospazio di \(V(K)\) che contiene \(A\) 
+    \item \(\mcL(A) \le V(K)\) 
+    \item \(\mcL(\mcL(A)) = \mcL(A)\)
+\end{enumerate}}
+Ogni spazio vettoriale ammette un sistema di generatori e:
+\begin{itemize}
+    \item se \(V(K)\) ammette un sistema di generatori finito \( \implies\) \(V(K)\) si dice finitamente generato.
+    \item se ogni sistema di generatori di \(V(K)\) ha cardinalità infinita \( \implies\) \(V(K)\) non è finitamente generato.
+\end{itemize}
+
+\section{Basi e dimensione}
+\mlenma{}{Sia \(S=[v_1, v_2, ..., v_n]\) un sistema di generatori per uno spazio vettoriale \(V(K)\), e sia \(v \in S\) combinazione lineare degli altri vettori (linearmente dipendente dagli altri) \( \implies\) \(S\backslash \{v\} \) è sistema di generatori per \(V(K)\)}
+\pf{Dimostrazione}{Sia, senza perdere di generalità, \(v_1\) combinazione lineare di \(v_2, v_3, ..., v_n\) \[
+    v_1 = k_2v_2 + k_3v_3 + ... + k_nv_n
+\] sia \(v \in V(K)\) \[
+    v = h_1v_1 + h_2 v_2 + ... + h_nv_n = h_1(k_2v_2 + ... + k_nv_n) + h_2v_2 + ... + h_nv_n
+\] \[
+v = \underbrace{(h_1k_2 + h_2)}_{\in K}v_2 + ... + \underbrace{(h_1k_n + h_n)}_{\in K}v_n \ \in \mcL([v_2, v_3, ..., v_n]) = \mcL(S \backslash \{v_1\} )
+\] \( \implies \ S \backslash \{v_1\} \) è un sistema di generatori.}
 
 
 \end{document}
