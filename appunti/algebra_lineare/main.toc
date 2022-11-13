@@ -1,0 +1,10 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Nozioni preliminari}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Relazioni su un insieme}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Strutture algebriche}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Spazi vettoriali}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Generalità}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sottospazi di uno spazio vettoriale}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Indipendenza e dipendeva lineare}{5}{section.2.3}%
+\contentsfinish 

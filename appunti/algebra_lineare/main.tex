@@ -1,0 +1,95 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Algebra Lineare e Geometria Analitica}\\Ingegneria dell'Automazione Industriale}
+\author{\huge{Ayman Marpicati}}
+\date{A.A. 2022/2023}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+
+\chapter{Nozioni preliminari}
+\section{Relazioni su un insieme}
+\dfn{Relazione su un insieme}{Una \textbf{relazione} su un insieme \textit{A} è un qualunque sottoinsieme di \(\mcR\) del prodotto cartesiano \(A \times A\).
+
+Una relazione \(\mcR\) su un insieme \textit{A} si dice:
+\begin{itemize}
+    \item \textbf{riflessiva} se, per ogni \(a \in A, \ a\mcR a\);
+    \item \textbf{simmetrica} se, per ogni \(a,b \in A, \ a\mcR b \ \text{allora} \ a = b\);
+    \item \textbf{antisimmetrica} se, per ogni \(a,b \in A, \ a\mcR b \text{ e } b\mcR a \text{ allora } a = b\);
+    \item \textbf{transitiva} se, per ogni \(a,b,c \in A, \ a\mcR b \text{ e } b\mcR c \text{ allora } a \mcR c\);
+\end{itemize}}
+
+\dfn{Relazione d'ordine totale}{Una relazione d'ordine \(\mcR\) su un insieme \textit{A} si dice \textbf{relazione d'ordine} se è riflessiva, antisimmetrica e transitiva. Se inoltre, gli elementi di \textit{A} sono a due a due confrontabili, cioè, per ogni \(a, b \in A\), risulta \(a \mcR b\) oppure  \(b \mcR a\), la relazione \(\mcR\) si dice \textbf{relazione d'ordine totale}.}
+
+\section{Strutture algebriche}
+\dfn{Gruppo}{Sia \((G, \star)\) un insieme con un'operazione \(\star\). La struttura \((G, \star)\) si dice \textbf{gruppo} se:
+\begin{itemize}
+    \item l'operazione \(\star\)  è associativa;
+    \item esiste in \textit{G} l'elemento neutro;
+    \item ogni elemento di \(g \in G\) è simmetrizzabile.  
+\end{itemize}
+Se l'operazione \(\star\) soddisfa anche la proprietà commutativa, il gruppo si dice \textbf{abeliano}.}
+
+\dfn{Campo}{Sia \textit{A} un insieme sul quale sono definite due operazioni che indichiamo con i simboli "\(+\)" e "\(\cdot\)" e che chiamiamo somma e prodotto rispettivamente. La struttura \((A, +, \cdot)\) è un \textbf{campo} se sussistono le condizioni seguenti:
+\begin{itemize}
+    \item \((A, +)\) è un gruppo abeliano il cui elemento neutro è indicato con 0;
+    \item \((A\backslash\{0\}, \star)\) è un gruppo abeliano con elemento neutro \(e \neq 0\);
+    \item valgono le proprietà distributive (sinistra e destra) del prodotto rispetto alla somma, cioè per ogni \(a,b,c \in A\) \[
+        a \cdot (b + c) = a \cdot b + a \cdot c; \ (a + b) \cdot c = a \cdot c + b \cdot c
+    \]
+\end{itemize}}
+
+\chapter{Spazi vettoriali}
+\section{Generalità}
+\dfn{Spazio vettoriale}{Siano \(K\)  un campo e \(V\) un insieme. Si dice che \(V\) è uno \textbf{spazio vettoriale} sul campo \(K\), se sono definite due operazioni: un'operazione interna binaria su \(V\), detta somma, \(+: V \times V \rightarrow V\) e un'operazione estrema detta prodotto esterno o prodotto per scalari, \(\cdot:K \times V \rightarrow V\), tali che
+\begin{itemize}
+    \item \((V, +)\) sia un gruppo abeliano;
+    \item il prodotto esterno \(\cdot\) soddisfi le seguenti proprietà:
+        \begin{itemize}
+            \item \( (h \cdot k) \cdot v = h \cdot (k \cdot v) \quad \forall h, k \in K \quad e \quad \forall v \in V \) 
+            \item \( (h + k) \cdot v = h \cdot v + k \cdot v \quad \forall h, k \in K \quad e \quad \forall v \in V\)
+            \item \(h \cdot (v + w) = h \cdot v + h \cdot w \quad e \quad \forall v, w \in V\)
+            \item \(1 \cdot v = v \quad \forall v \in V\)
+        \end{itemize}
+\end{itemize}}
+Gli elementi dell'insieme \textit{V} sono detti \textbf{vettori}, gli elementi del campo \textit{K} sono chiamati \textbf{scalari}. L'elemento neutro di \((V, +)\) è detto \textbf{vettor nullo} e indicato \ul{0} per distinguerlo da 0, zero del campo \textit{K}. L'opposto di ogni vettore \textbf{v} viene indicato con \textbf{-v}.
+
+\thm{}{Sia \textit{V} uno spazio vettoriale sul campo \textit{K}, siano \(k \in K\)  e \(v \in V\). Allora \[
+    kv = \ul{0} \iff k = 0 \text{ oppure } v = \ul{0}
+\]}
+\pf{Dimostrazione}{Se k = 0 \[
+    0v = (0+0)v = 0v + 0v
+\] e sommando \(-0v\) ad ambo i membri si ottiene appunto \(\ul{0} = 0v\). Se è \(v = \ul{0}\), si procede nel modo analogo. Viceversa, se \(kv = \ul{0}\)  e \(k \neq 0\) dimostriamo che \(v = \ul{o}\). Dato che \(k \neq 0\), esiste l'inverso \(k ^{-1} \in K\) e, moltiplicando ambo i membri della precedente uguaglianza per \(k ^{-1}\) si ottiene \(k ^{-1}(kv) = k ^{-1} \ul{0}\) che, per quanto dimostrato in precedenza dà il \(\ul{0}\). Dato che \(k^{-1}(kv) = (k^{-1}k)v = 1v = v\), per la proprietà 4, si ha \(v = \ul{0}\).  }
+
+\section{Sottospazi di uno spazio vettoriale}
+\dfn{}{Sia \(\emptyset \neq U \subseteq V\), diremo che \(U\) è \textbf{sottospazio vettoriale} di \(V\) se è esso stesso uno spazio vettoriale rispetto alla restrizione delle stesse operazioni.}
+
+\mprop{Primo criterio di riconoscimento}{Sia \(V(K)\) uno spazio vettoriale e sia \(\emptyset \neq  U \subseteq V\) un suo sottoinsieme. Il sottoinsieme \(U\) è uno spazio vettoriale di \(V\) se, e soltanto se, sono verificate le seguenti condizioni:
+\begin{enumerate}
+    \item \(\forall u, u' \in U \quad u + u' \in U\) 
+    \item \(\forall k \in K, \ \forall u \in U \quad ku \in U\) 
+\end{enumerate}}
+
+\mprop{Secondo criterio di riconoscimento}{Sia \(V(K)\) uno spazio vettoriale sul campo \(K\) e sia \(\emptyset \neq U \subseteq V\), \(U\) è sottospazio di \(V(K)\) se e soltanto se 
+   \[
+       hv_{1} + kv_{2} \in U \quad \forall v_{1}, v_{2} \in U \quad e \quad h, k \in K
+   \] 
+}
+
+\section{Indipendenza e dipendeva lineare}
+\dfn{Combinazione lineare}{Siano \(v _{1}, v_2, ..., v_n \in V(K)\) si dice combinazione lineare di vettori \(v_1, v_2, ..., v_n\) ogni vettore \(v\): \[
+    v = k_1 \cdot v_1 + k_2 \cdot v_2 + ... + k_n \cdot v_n \quad \text{con} \ k_1, k_2, ..., k_n \in K
+\] }
+
+
+
+\end{document}
