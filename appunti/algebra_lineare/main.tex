@@ -71,7 +71,7 @@ Gli elementi dell'insieme \textit{V} sono detti \textbf{vettori}, gli elementi d
 \] e sommando \(-0v\) ad ambo i membri si ottiene appunto \(\ul{0} = 0v\). Se è \(v = \ul{0}\), si procede nel modo analogo. Viceversa, se \(kv = \ul{0}\)  e \(k \neq 0\) dimostriamo che \(v = \ul{0}\). Dato che \(k \neq 0\), esiste l'inverso \(k ^{-1} \in K\) e, moltiplicando ambo i membri della precedente uguaglianza per \(k ^{-1}\) si ottiene \(k ^{-1}(kv) = k ^{-1} \ul{0}\) che, per quanto dimostrato in precedenza dà il \(\ul{0}\). Dato che \(k^{-1}(kv) = (k^{-1}k)v = 1v = v\), per la proprietà 4, si ha \(v = \ul{0}\).  }
 
 \section{Sottospazi di uno spazio vettoriale}
-\dfn{}{Sia \(\emptyset \neq U \subseteq V\), diremo che \(U\) è \textbf{sottospazio vettoriale} di \(V\) se è esso stesso uno spazio vettoriale rispetto alla restrizione delle stesse operazioni.}
+\dfn{Sottospazio vettoriale}{Sia \(\emptyset \neq U \subseteq V\), diremo che \(U\) è \textbf{sottospazio vettoriale} di \(V\) se è esso stesso uno spazio vettoriale rispetto alla restrizione delle stesse operazioni.}
 
 \mprop{Primo criterio di riconoscimento}{Sia \(V(K)\) uno spazio vettoriale e sia \(\emptyset \neq  U \subseteq V\) un suo sottoinsieme. Il sottoinsieme \(U\) è uno spazio vettoriale di \(V\) se, e soltanto se, sono verificate le seguenti condizioni:
 \begin{enumerate}
@@ -161,6 +161,68 @@ Ogni spazio vettoriale ammette un sistema di generatori e:
 \] \[
 v = \underbrace{(h_1k_2 + h_2)}_{\in K}v_2 + ... + \underbrace{(h_1k_n + h_n)}_{\in K}v_n \ \in \mcL([v_2, v_3, ..., v_n]) = \mcL(S \backslash \{v_1\} )
 \] \( \implies \ S \backslash \{v_1\} \) è un sistema di generatori.}
+
+\thm{}{Sia \(V(K)\) uno spazio vettoriale finitamente generato, non banale (\(V(K) \neq \{\ul{0}\} \)), allora esso ammette un sistema libero di generatori.}
+\pf{Dimostrazione}{sia \(A = [v_1, v_2, ..., v_n]\) un sistema di generatori per \(V(K)\), abbiamo due possibilità: \begin{enumerate}
+    \item A è libero \( \implies \) A è un sistema di generatori libero;
+    \item A è legato \( \implies \ \exists v \in A\) combinazione lineare degli altri, senza perdita di generalità possiamo porre \(v = v_1 \ \implies \ A\backslash \{v_1\} = A_1 \) è sistema di generatori.
+\end{enumerate} 
+Se ci troviamo nel secondo caso possiamo reiterare il procedimento e trovare \(A_2 \rightarrow A_3 \rightarrow ...\) finché non arriviamo ad un sistema libero di generatori.
+
+Osserviamo che \(A\) contiene almeno un \(v \in A: \ v \neq \ul{0}\), questo perché \(A_n = [0]\) e \(v_n \neq \ul{0}\) perché \(A \neq \{\ul{0} \} \ \implies \ A_n\) è necessariamente libero.  }
+
+\dfn{Base}{Sia \(S = (v_1, v_2, ..., v_n)\) sequenza libera di vettori di \(V(K)\). \(S\) è detta base se e solo se \(S\) è una sequenza libera di generatori.}
+
+\mlenma{Lemma di Steinitz}{Sia \(V(K)\) uno spazio vettoriale finitamente generato. Sia \(B = [v_1, v_2, ..., v_n]\) sistema di generatori e \(A = [u_1, u_2, ..., u_m]\) sistema libero. Allora la cardinalità di A sarà sempre minore o uguale a quella del sistema di generatori. \((m \le n)\)  }
+
+\pf{Dimostrazione}{Sia per assurdo \(m >n\), poiché \(B\) genera \(V(K)\) \(u_1\) si scrive come: \[
+    u_1 = k_1v_1 + k_2 v_2 + ... + k_n v_n
+\] Essendo \(A\) libero \(u_1 \neq \ul{0} \implies k_1, k_2, ..., k_n\) non sono tutti nulli \( \implies\) senza perdita di generalità \(k_1 \neq 0\) \[
+    -k_1v_1 = -u_1 + k_2v_2 + ... + k_nv_n \qquad v_1 = \frac{1}{k_1}(u_1 - k_2v_2 - ... - k_nv_n)
+\] \[
+\implies v_1 \in \mcL([u_1, v_2, v_3, ..., v_n])
+\] B è sistema di generatori, \(B \cup \{u_1\} \) è sistema di generatori, di conseguenza \((B \cup \{u_1\} \backslash \{v_1\} ) = B_1 = [u_1, v_2, ..., v_n]\) è ancora sistema di generatori per \(V(K)\).
+
+Allo stesso modo posso riscrivere \[
+    u_2 = \alpha u_1 + h_2v_2 + h_3 v_3 + ... + h_n v_n \quad \text{con} \ \alpha, h_2, h_3, ..., h_n \in K
+\] Se avessimo \(h_2 = h_3 = ... = h_n = 0 \ u_2 = \alpha\) ma ciò non può succedere perché \(A\) è libero \( \implies \exists h_i \neq 0\) e senza perdita di generalità supporremo \(h_2 \neq 0\) quindi: \[
+    -h_2 v_2 = \alpha u_1 - u_2 + h_3 v_3 + ... + h_n v_n \qquad v_2 = \frac{1}{h_2} (-\alpha u_1 + u_2 - h_3 v_3 - ... - h_n v_n)
+\] \(v_2\) è linearmente dipendente da \(B_2 = [u_1, u_2, v_3, ..., v_n]\) e \(B_2\), per lo stesso motivo di \(B_1\) è ancora sistema di generatori.
+
+Ora immaginiamoci di reiterare il procedimento \(n\) volte fino a trovare un sistema \(B_n = [u_1, u_2, ..., u_n]\). Siccome avevamo supposto che \(m > n\) essendo \(B_n\) sistema di generatori dovremo essere in grado di scrivere anche \(u _{n+1}\) come combinazione lineare dei vettori di \(B_n\), cioè: \[
+    u _{n+1} \in \mcL(B_n) \qquad u _{n+1} = \alpha_1 u_1 + \alpha_2 u_2 + ... + \alpha_n u_n
+\] questo comporta che \(A\) sia legato, ma questo è \textbf{assurdo!} \( \implies \ m \le n\).}
+
+\thm{}{Sia \(V(K)\) uno spazio vettoriale finitamente generato, e siano \(B_1\) e \(B_2\) due sue basi le loro cardinalità sono uguali: \[
+    B_1 = (v_1, v_2, ..., v_n) \qquad B_2 = (u_1, u_2, ..., u_n) \qquad m=n
+\]} 
+\pf{Dimostrazione}{Per dimostrarlo è sufficiente applicare il lemma di Steinitz \begin{itemize}
+    \item \(B_1\) sistema di generatori, \(B_2\) sistema libero \( \implies \ n \ge m\); 
+    \item \(B_2\) sistema di generatori, \(B_1\) sistema libero \( \implies \ m \ge n\). 
+\end{itemize} \(m \ge n \text{ e } n \ge m \iff n = m\). }
+
+\dfn{Dimensione}{Dato uno spazio vettoriale finitamente generato, non banale, chiamiamo \textbf{dimensione} di \(V\) la cardinalità di una qualsiasi delle sue basi. Inoltre se \(V = \{0\} \) poniamo la \(\dim(V)=0\) }
+
+Qui di seguito enunciamo una serie di conseguenze del lemma di Steinitz.
+\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) su \(K\) e sia \(S=[v_1, v_2, ..., v_n]\) un sistema di generatori. Allora \(S\) è libero.}
+\pf{Dimostrazione}{Sia \(B=[w_1, w_2, ..., w_n]\) una base di \(V_n(K)\). Sia per assurdo \(S\) legato.
+Senza perdita di generalità \(v_1 = k_2v_2 + k_3v_3 + ... + k_nv_n\). Allora \(S' = S \backslash \{v_1\} \) è ancora sistema di generatori. \(|S'| = n-1 \ge |B|\) perché \(B\) è libero per il lemma di Steinitz. \textbf{Assurdo!}. Quindi \(S\) è libero.}
+
+\mprop{}{Sia \(V(K)\) uno spazio vettoriale di dimensione \(n\) sul campo \(K\). Sia \(S=[v_1, v_2, ..., v_n]\) un sistema libero. Allora \(S\) è anche un sistema di generatori.}
+\pf{Dimostrazione}{Sia \(B=[w_1, w_2, ..., w_n]\) una base di \(V(K)\), supponiamo per assurdo che \(S\) non generi. \[
+    \implies \ \exists v \in V \text{ con } v \neq \ul{0} 
+\] \(S' = S \cup \{u\} \) è ancora libero, supponiamo per assurdo che non lo sia: \[
+    \text{ sia } \ul{0} = k_1v_1 + k_2v_2 + ... + k_nv_n + \alpha v \text{ con } \alpha \neq 0
+\] \[
+    \text{ altrimenti avremmo: } \ul{0} = k_1v_1 + k_2v_2 + ... + k_nv_n
+\] \[
+    v = \frac{1}{\alpha}(-k_1v_1 - k_2 v_2 - ... - k_nv_n) \in \mcL(S)
+\] \( \implies v \in \mcL(S)\) \textbf{assurdo!} Contro l'ipotesi che \(v \notin \mcL(S) \ \implies \ S'\) è libero. \[
+\underbrace{|S'| = n+1}_{\text{sistema libero}} \le \underbrace{|B| = n}_{\text{sequenza di generatori}} \rightarrow \text{ per il lemma di Steinitz }
+\] \textbf{Assurdo!} \( \implies\) \(S\) è un sistema di generatori.}
+
+\mprop{}{\(m\) vettori in \(V_n(K)\) con \(m > n\) sono sempre linearmente dipendenti.}
+\pf{Dimostrazione}{Siano per assurdo [\(v_1, v_2, ..., v_m\)], \(m\) vettori linearmente indipendenti con \(m > n\). Sia \(B\) una base di \(V_n(K)\). \(m = |S=[v_1, v_2, ..., v_m]| \le |B| = n\) per il lemma di Steinitz. Ma per ipotesi \(m > n\), \textbf{assurdo!} }
 
 
 \end{document}
