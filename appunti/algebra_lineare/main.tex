@@ -224,5 +224,25 @@ Senza perdita di generalità \(v_1 = k_2v_2 + k_3v_3 + ... + k_nv_n\). Allora \(
 \mprop{}{\(m\) vettori in \(V_n(K)\) con \(m > n\) sono sempre linearmente dipendenti.}
 \pf{Dimostrazione}{Siano per assurdo [\(v_1, v_2, ..., v_m\)], \(m\) vettori linearmente indipendenti con \(m > n\). Sia \(B\) una base di \(V_n(K)\). \(m = |S=[v_1, v_2, ..., v_m]| \le |B| = n\) per il lemma di Steinitz. Ma per ipotesi \(m > n\), \textbf{assurdo!} }
 
+\mprop{}{\(m\) vettori in \(V_n(K)\) con \(m < n \implies\) non possono generare. }
+\pf{Dimostrazione}{siano \(v_1, v_2, ..., v_m\) per assurdo \(m\) vettori che generano \(V_n(K)\) con \(m < n\) allora: \[m = |S=[v_1, v_2, ..., v_n]| \ge |B|=n \ \text{ con } \ m \ge n \quad \text{per il lemma di Steinitz}\] \textbf{Assurdo!} Va contro all'ipotesi.}
 
+\thm{Teorema di caratterizzazione delle basi}{Sia \(B=(v_1, v_2,...,v_n)\) una sequenza di vettori di \(V(K)\). \(B\) è una base se e solo se ogni vettore di \(V\) si può scrivere in maniera univoca come combinazione lineare dei vettori di \(B\). \[
+    \forall v \in V,\ \exists ! \ v = k_1v_1 + k_2 v_2 + ... + k_n v_n \quad k_i \in K
+\]}
+\pf{Dimostrazione}{
+\( \implies\) sia \(B\) una base di \(V\). Per ogni \(v\) si ha che \(v \in \mcL(B)\) perché \(B\) è una sequenza di generatori. Supponiamo per assurdo che esista \(v \in V\): \[
+    v = v = k_1v_1 + k_2 v_2 + ... + k_n v_n = h_1 v_1 + h_2 v_2 + ... + h_n v_n \quad \text{ con almeno un  } k_i \neq h_i 
+\] \[
+(k_1 - h_1) v_1 + (k_2 - h_2) v_2 + ... + (k_n - h_n) v_n = \ul{0} 
+\] \(B\) è una sequenza libera, quindi \((k_i - h_i) = 0 \implies k_i = h_i\) perché l'unica combinazione lineare che dà il vettore nullo è quella a coefficienti tutti nulli.
+Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies \exists!\) la combinazione lineare dei vettori di \(B\) che dà \(v \ (\forall v \in V)\).
+
+\( \impliedby\) per ipotesi \(\forall v \in V \ \exists !\) combinazione lineare dei vettori di \(B\) che dà \(v\). \(B\) è una sequenza di generatori, cioè \(\forall v \in V \implies v \in \mcL(B)\). Supponiamo per assurdo che \(B\) sia legato \(\implies \exists k_i \in K\) non nullo: \[
+    \ul{0} = k_1v_1 + k_2 v_2 + ... + k_n v_n \quad \ul{0} = 0v_1 + 0v_2 + ... + 0v_n
+\] quindi esistono almeno due combinazioni lineari di \(B\) che danno \(\ul{0} \). Dato che \(\ul{0} \in V\) per ipotesi esiste un unica combinazione lineare dei vettori di \(B\) che dà \(\ul{0} \). \textbf{Assurdo!} Quindi \(B\) è una sequenza libera e \(B\) è una base per \(V\).}
+
+\dfn{Componenti di un vettore rispetto ad una base}{Sia \(B=(v_1, v_2, ..., v_n)\) una base di \(V_n(K)\) e sia \(v \in V\). Chiameremo componenti di \(v\) rispetto alla base \(B\) la sequenza \((k_1, k_2, ..., k_n)\): \[
+    v = k_1v_1 + k_2 v_2 + ... + k_nv_n
+\]}
 \end{document}
