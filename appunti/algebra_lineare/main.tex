@@ -85,7 +85,7 @@ Gli elementi dell'insieme \textit{V} sono detti \textbf{vettori}, gli elementi d
    \] 
 }
 
-\section{Indipendenza e dipendeva lineare}
+\section{Indipendenza e dipendenza lineare}
 \dfn{Combinazione lineare}{Siano \(v _{1}, v_2, ..., v_n \in V(K)\) si dice combinazione lineare di vettori \(v_1, v_2, ..., v_n\) ogni vettore \(v\): \[
     v = k_1 \cdot v_1 + k_2 \cdot v_2 + ... + k_n \cdot v_n \quad \text{con} \ k_1, k_2, ..., k_n \in K
 \] }
@@ -245,4 +245,28 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
 \dfn{Componenti di un vettore rispetto ad una base}{Sia \(B=(v_1, v_2, ..., v_n)\) una base di \(V_n(K)\) e sia \(v \in V\). Chiameremo componenti di \(v\) rispetto alla base \(B\) la sequenza \((k_1, k_2, ..., k_n)\): \[
     v = k_1v_1 + k_2 v_2 + ... + k_nv_n
 \]}
+
+\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) sul campo \(K\), allora \(V_n(K)\) ammette almeno un sottospazio di dimensione \(m\) \(\forall 0 \le m \le n\). }
+\pf{Dimostrazione}{sia  \(B=(v_1, v_2,...,v_n)\) una base di \(V_n(K)\) e sia \(0 \le m \le n\), ci sono due possibilità: \begin{enumerate}
+    \item \(m=0 \implies\) \{\ul{0} \} è il sottospazio voluto;
+    \item \(0 < m \le n\) e quindi \(S=(v_1, v_2,...,v_m)\)
+\end{enumerate} \(\mcL(S)\) ha dimensione \(m\) perché \(S\) è libero \((S \subseteq B)\) e genera, per definizione \(\mcL(S)\).}
+
+\mprop{}{Siano \(U, W \le V_n(K)\) e sia \(U \le W\), allora: \begin{enumerate}
+    \item \(\dim(U) \le \dim(W)\)
+    \item \(U = W \iff \dim(U) = \dim(W)\)
+\end{enumerate}}
+\pf{Dimostrazione}{Dimostriamo i due punti:\begin{enumerate}
+        \item Sia \(B\) base per \(U\) e \(B'\) base per \(W\), se per assurdo \[\underbrace{\dim(U) = |B|}_{\text{sequenza libera di \(W\) }} > \underbrace{\dim(W) = |B'|}_{\text{genera \(W\)} } \] contro il lemma di Steinitz. 
+        \item \( \implies\) è banale; \\
+        \( \impliedby\) sia per assurdo \(U < W\) e sia \(B\) base di \(U\), allora \[
+            |B| = \dim(U) = \dim(W)
+        \] quindi \(B\) è una base anche per \(W\) \( \implies \mcL(B) = W \implies W = U\) \textbf{Assurdo!}
+\end{enumerate}}
+
+\thm{Teorema del completamento ad una base}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) e sia \(A=(v_1, v_2,...,v_p)\), ove \(p \le n\), una sequenza libera di vettori in \(V_n(K)\). Allora, in una qualunque base di \(B\) di \(V_n(K)\), esiste una sequenza \(B'\) di vettori, tale che \(A \cup B'\) è una base di \(V_n(K)\).}
+
+\section{Intersezione e somma di sottospazi}
+\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) sul campo \(K\) e siano \(U, V \le V \implies U\cap W\) è sottospazio di \(V\).}
+\pf{Dimostrazione}{}
 \end{document}
