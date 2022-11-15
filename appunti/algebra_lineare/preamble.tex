@@ -548,6 +548,7 @@
 % NOTE BOX
 %================================
 
+
 \usetikzlibrary{arrows,calc,shadows.blur}
 \tcbuselibrary{skins}
 \newtcolorbox{note}[1][]{%
@@ -556,7 +557,7 @@
 	colframe=gray!80!black,
 	size=small,
 	boxrule=1pt,
-	title=\textbf{Note:-},
+	title=\textbf{N.B.},
 	halign title=flush center,
 	coltitle=black,
 	breakable,
@@ -744,11 +745,11 @@
 {\addvspace{30pt}%
 	\begin{tikzpicture}[remember picture, overlay]%
 		\draw[fill=doc!60,draw=doc!60] (-7,-.1) rectangle (-0.9,.5);%
-		\pgftext[left,x=-3.5cm,y=0.2cm]{\color{white}\Large\sc\bfseries Chapter\ \thecontentslabel};%
+		\pgftext[left,x=-3.5cm,y=0.2cm]{\color{white}\Large\sc\bfseries Capitolo\ \thecontentslabel};%
 	\end{tikzpicture}\color{doc!60}\large\sc\bfseries}%
 {}
 {}
-{\;\titlerule\;\large\sc\bfseries Page \thecontentspage
+{\;\titlerule\;\large\sc\bfseries Pagina \thecontentspage
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw[fill=doc!60,draw=doc!60] (2pt,0) rectangle (4,0.1pt);
 	\end{tikzpicture}}%

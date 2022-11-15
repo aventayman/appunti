@@ -268,5 +268,66 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
 
 \section{Intersezione e somma di sottospazi}
 \mprop{}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) sul campo \(K\) e siano \(U, V \le V \implies U\cap W\) è sottospazio di \(V\).}
-\pf{Dimostrazione}{}
+\pf{Dimostrazione}{Richiamo il secondo criterio di riconoscimento dei sottospazi. \(U \cap W\) è un sottospazio di \(V\) \(\iff\) è sottoinsieme non vuoto di \(V\): \[
+    \forall v_1, v_2 \in U \cap W, \ \forall k_1, k_2 \in K, \ k_1 v_1 + k_2v_2 \in U \cap W
+\] \(U \cap W\) è sottoinsieme non vuoto di \(V\), perché \(U \subseteq V\), \(W \subseteq V\) e \(\ul{0} \in U \cap W\). Siano ora \(v_1, v_2 \in U \cap W\) e \(k_1, k_2 \in K\), osserviamo per il secondo criterio di riconoscimento che \(k_1 v_1 + k_2 v_2 \in U\) e per lo stesso motivo \(k_1 v_1 + k_2 v_2 \in W\) \( \implies k_1 v_1 + k_2 v_2 \in U \cap W \implies U \cap W\) è un sottospazio vettoriale.}
+
+\nt{Sotto le stesse ipotesi della proposizione precedente abbiamo che \(U \cup W\) non è un sottospazio a meno che \(U \subseteq W\) oppure \(W \subseteq U\).}
+
+\dfn{Spazio di somma}{Dati \(U\) e \(W \le V\) spazio vettoriale di dimensione \(n\) su \(K\) definiamo lo \textbf{spazio di somma} come: \[U + W := \{u + w \ | \ u \in U \ e \ w \in W\} \]}
+
+\mprop{}{Dati \(U\) e \(W \le V\) spazio vettoriale di dimensione \(n\) su \(K\) abbiamo che: \(U + W \le V\) }
+\pf{Dimostrazione}{Osserviamo che \(U + W \subseteq V\) perché dato \(u \in U \) e \(w \in W\), \(u \in V\) e \(w \in V \implies u + w \in V\), il quale non è vuoto perché \(\ul{0} \in U + W\). Siano \(v_1, v_2 \in U + W\) e siano \(k_1, k_2 \in K\) \[
+    k_1 \cdot \underbrace{v_1}_{\text{\(=u_1 + w_1\) }}  + k_2 \cdot \underbrace{v_2}_{\text{\(= u_2 + w_2\) }}  = k_1(u_1 + w_1) + k_2(u_2 + w_2) = \underbrace{(k_1 u_1 + k_1 w_1)}_{\text{\(u_3 \in U\) per il 2° criterio}} + \underbrace{ (k_2 u_2 + k_2 w_2)}_{\text{\(w_3 \in W\) per il 2° criterio}}  
+\] \[
+    \implies u_3 + w_3 \in U + W \implies \text{ per il 2° criterio } \ U + W \le V
+\]}
+\newpage
+
+\mprop{}{Siano \(U, W \le V_n(K)\) allora \(U + W\) è il più piccolo sottospazio di \(V\) che cotiene \(U \cup W\); equivalentemente \[\mcL(U \cup W) = U + W\]}
+\dfn{Somma diretta}{Dati \(U, W \le V_n(K)\) diremo che \(U + W\) è somma diretta se \(\forall v \in U + W\) può essere scritto come unico modo come \(u + w\). Equivalentemente \[
+    \forall v \in U + W \quad \exists ! \ u \in U \ e \ w \in W : \quad v = u + w
+\]Se \(U + W\) è una somma diretta allora la indicheremo con \(U \oplus W\). }
+
+\mprop{}{Siano \(U, W \le V_n(K)\) allora \(U \oplus W \iff U \cap W = \{\ul{0} \} \).}
+\pf{Dimostrazione}{\( \implies\) Siano \(U, W\) in somma diretta e sia, per assurdo: \(x \in U \cap W\) con \(x \neq \ul{0} \). Sia \(v = u + w\) con \(u \in U \ e \ w \in W\). Consideriamo \[
+    v + x - x = v \implies v = u + w + x - x = \underbrace{u + x}_{\in U} + \underbrace{w - x}_{\in W} = u_1 + w_1
+\] \[
+    u = u + x \quad e \quad w = w - x \text{ poiché la somma è diretta } \implies x = \ul{0} \implies \text{\textbf{Assurdo!}} \implies U \cap W = \{\ul{0} \} 
+\] \( \impliedby\) Siano \(U, W: \ U \cap W = \{\ul{0} \}\) e supponiamo per assurdo che esista \(v \in U + W:\) \[
+    v = u_1 + w_1 \quad e \quad v = u_2 + w_2 \qquad \text{ con } \ u_1, u_2 \in U \quad e \quad w_1, w_2 \in W \quad e \quad (u_1, w_1) \neq (u_2, w_2)
+\] \[
+    u_1 + w_1 = u_2 + w_2 \quad v_2 = \underbrace{u_1 - u_2}_{\in U} = \underbrace{w_2 - w_1}_{\in W} \in U \cap W
+\] \[
+    \implies u_1 - u_2 = \ul{0} \quad e \quad w_2 - w_1 = \ul{0}
+\] \[
+    \implies u_1 = u_2 \quad e \quad w_1 = w_2
+\] che è \textbf{assurdo!} Questo perché avevamo supposto che \(v\) avesse due scritture distinte come somma i elementi di \(U \ e \ W.\) \[
+    \implies \exists ! \ (u_1, w_1): \quad u, \in U \quad e \quad w_1 \in W: \quad v=u_1 + w_1 \ e \ U \oplus W 
+\]}
+
+\cor{}{Siano \(U, W \le V_n(K)\) allora \(V = U \oplus W \iff U + W = V \ e \ U \cap W = \{\ul{0} \} \).}
+\nt{Siano \(U, W \le V_n(K)\) e sia \(B_1\) una base di \(V\) e \(B_2\) una base di \(W\) \( \implies B_1 \cup B_2\) è sequenza di generatori per lo spazio \(U + W\). In generale l'unione di due basi, non è a sua volta una base per \(U + W.\) }
+
+\mprop{}{Siano \(U, M \le V_n(K): U \oplus W\) e sia \(A\) una sequenza libera di vettori di \(U\) e \(B\) una sequenza libera di vettori di \(U\). Allora \(A \cup B\) è una sequenza libera di vettori della \(U \oplus W\).}
+\pf{Dimostrazione}{Siano \(A = (u_1, u_2, ..., u_k)\) e \(B = (w_1, w_2, ..., w_h)\) e supponiamo per assurdo che \(a_1, a_2, ..., a_k \in K\) e \( b_1, b_2, ..., b_h \in K\), quindi per assurdo sia legata la combinazione lineare: \[
+    \ul{0} = a_1 u_1 + a_2 u_2 + ... + a_k u_k + b_1 w_1 + b_2 w_2 + ... + b_h w_h \ \text{ non tutti nulli }
+\] \[
+    \underbrace{-(a_1 u_1 + a_2 u_2 + ... + a_k u_k)}_{ \in U } = \underbrace{b_1 w_1 + b_2 w_2 + ... + b_h w_h}_{\in W}
+\] \[
+    \implies \ul{0} = b_1 w_1 + b_2 w_2 + ... + b_h w_h \quad e \quad \ul{0} = a_1 u_1 + a_2 u_2 + ... + a_k w_k
+\]ma \(A\) e \(B\) sono sequenze libere quindi \(a_1 = a_2 = ... = a_k = 0 \quad e \quad b_1 = b_2 = ... = b_h = 0\) 
+\[ \implies \nexists a_1, a_2, ..., a_k, b_1, b_2, ..., b_h \text{ non tutti nulli: } \] 
+\[
+    \ul{0} = a_1 u_1 + a_2 u_2 + ... + a_k u_k + b_1 w_1 + b_2 w_2 + ... + b_h w_h \implies \text{\textbf{Assurdo!}}
+\] \( \implies A \cup B\) è una sequenza libera. 
+}
+
+\cor{}{Siano \(U, W \in V_n(K): U \oplus W\) e siano \(B_U\) e \(B_W\) basi di \(U\) e \(W\) \( \implies B_U \cup B_W\) è una base per \(U \oplus W\). }
+
+\mprop{Formula di Grassmann}{Dati \(U, W \le V_n(K)\) abbiamo che: \[
+    \dim(U + W) + \dim(U \cap W) = \dim(U) + \dim(W)
+\]}
+\dfn{Complemento diretto}{Sia \(W \le V_n(K)\) si dice \textbf{complemento diretto} di \(W\) in \(V\) uno spazio \(U \le V: U \oplus W = V.\) }
+\nt{Un complemento diretto di \(W\) in \(V\) esiste sempre e si trova estendendo una base di \(W\) a una base di \(V\). In generale questo non è unico.}
 \end{document}
