@@ -1,0 +1,5 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Geometria analitica in \(\ensuremath {\varmathbb {E}}_n(\RR )\) }{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Direzione \(\perp \) ad un iperpiano}{2}{section.1.1}%
+\contentsfinish 

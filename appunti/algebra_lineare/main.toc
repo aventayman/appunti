@@ -10,4 +10,5 @@
 \contentsline {section}{\numberline {2.4}Sistemi di generatori di uno spazio vettoriale}{7}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Basi e dimensione}{7}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Intersezione e somma di sottospazi}{11}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Sistemi lineari}{14}{chapter.3}%
 \contentsfinish 
