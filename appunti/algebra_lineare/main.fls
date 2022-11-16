@@ -1557,9 +1557,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplexx.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxexx.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newtx/ntxexx.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txexs.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplmi.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/NewPXMI.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplsy.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/pxsys.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
@@ -1567,6 +1568,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplmi.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/NewPXMI.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplexa.vf
