@@ -227,6 +227,8 @@ Osserviamo che \(A\) contiene almeno un \(v \in A: \ v \neq \ul{0}\), questo per
 
 \dfn{Base}{Sia \(S = (v_1, v_2, ..., v_n)\) sequenza libera di vettori di \(V(K)\). \(S\) è detta base se e solo se \(S\) è una sequenza libera di generatori.}
 
+\dfn{Base canonica di \(\RR^{n} \) }{\(((1,0,0,...,0)(0,1,0,...,0),...,(0,0,0,...,1))\) è una base canonica per \(\RR^{n} \).}
+
 \mlenma{Lemma di Steinitz}{Sia \(V(K)\) uno spazio vettoriale finitamente generato. Sia \(B = [v_1, v_2, ..., v_n]\) sistema di generatori e \(A = [u_1, u_2, ..., u_m]\) sistema libero. Allora la cardinalità di A sarà sempre minore o uguale a quella del sistema di generatori. \((m \le n)\)  }
 
 \pf{Dimostrazione}{Sia per assurdo \(m >n\), poiché \(B\) genera \(V(K)\) \(u_1\) si scrive come: \[
@@ -306,6 +308,7 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
     \item \(0 < m \le n\) e quindi \(S=(v_1, v_2,...,v_m)\)
 \end{enumerate} \(\mcL(S)\) ha dimensione \(m\) perché \(S\) è libero \((S \subseteq B)\) e genera, per definizione \(\mcL(S)\).}
 
+\newpage
 \mprop{}{Siano \(U, W \le V_n(K)\) e sia \(U \le W\), allora: \begin{enumerate}
     \item \(\dim(U) \le \dim(W)\)
     \item \(U = W \iff \dim(U) = \dim(W)\)
@@ -336,7 +339,6 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
 \] \[
     \implies u_3 + w_3 \in U + W \implies \text{ per il 2° criterio } \ U + W \le V
 \]}
-\newpage
 
 \mprop{}{Siano \(U, W \le V_n(K)\) allora \(U + W\) è il più piccolo sottospazio di \(V\) che cotiene \(U \cup W\); equivalentemente \[\mcL(U \cup W) = U + W\]}
 \dfn{Somma diretta}{Dati \(U, W \le V_n(K)\) diremo che \(U + W\) è somma diretta se \(\forall v \in U + W\) può essere scritto come unico modo come \(u + w\). Equivalentemente \[
@@ -406,8 +408,42 @@ Allora la il determinante di \(A\) è \[
 \]
 \dfn{Complemento algebrico}{Sia \(A = (a_{ij} )\) una matrice quadrata di ordine \(n\), a elementi in campo \(K\). Si dice \textbf{complemento algebrico} dell'elemento \(a_{hk} \), e si indica \(\Gamma_{hk} \), il determinante della matrice quadrata di ordine \(n -1\), ottenuta da \(A\) sopprimendo la h-esima riga e la k-esima colonna, preso con il segno \((-1)^{h+k} \). }
 \thm{Primo teorema di Laplace}{Data la matrice quadrata di ordine \(n\), la somma dei prodotti degli elementi di una sua riga (o colonna), per i rispettivi complementi algebrici, è il determinante di \(A.\) }
-Pertanto, la formula per il calcolo del determinante id \(A = (a_{ij} )\) rispetto alla a i-esima riga è \[
+Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispetto alla a i-esima riga è \[
     |A| = \sum_{j = 1}^{n} a_{ij} \Gamma _{ij} \qquad \forall i = 1,2,..., n
-\] 
+\] rispetto alla j-esima colonna è \[
+    |A| = \sum_{i = 1}^{n} a_{ij} \Gamma _{ij} \qquad \forall j = 1,2,..., n
+\]
 
+\thm{Secondo teorema di Laplace}{Sia \(A\) una matrice quadrata di ordine \(n\). La somma dei prodotti degli elementi di una sua riga (o colonna) per i complementi algebrici degli elementi di un'altra riga (o colonna) vale zero. Quindi \[
+    A \in M_n(K) \implies
+\begin{cases}
+    a_{i1} \Gamma_{j1} + a_{i2} \Gamma_{j2} + ... + a_{in} \Gamma_{jn} = 0 \quad i \neq j \\
+    a_{1i} \Gamma_{1j} + a_{2i} \Gamma_{2j} + ... + a_{ni} \Gamma_{nj} = 0 \quad i \neq j \\
+\end{cases}
+\]}
+
+\thm{Teorema di Binet}{Date due matrici quadrate di ordine \(n\), \(A\) e \(B\), il determinante della matrice prodotto \(A \cdot B\) è uguale al prodotto dei determinanti di \(A\) e \(B\), cioè \[
+    |A \cdot B| = |A| |B| 
+\] }
+
+\section{Matrici invertibili}
+\dfn{Matrice invertibile}{Una matrice quadrata, di ordine \(n\), si dice \textbf{invertibile} quando esiste una matrice \(B\), quadrata e dello stesso ordine, tale che \(A \cdot B = B \cdot A = I_n\), dove \(I_n\) è la matrice identica di ordine \(n\). La matrice \(B\) si dice \textbf{inversa} di \(A\) e si indica \(A^{-1} \).}
+
+\thm{}{Sia \(A \in M_n(K)\); allora \(A\) è invertibile \( \iff |A| \neq 0\) e in tal caso \[
+    A_{-1} = \frac{1}{|A| }\left.^tA_a\right.
+\] dove \(A_a\) si chiama \textbf{matrice aggiunta} di \(A\) ed è la matrice ottenuta da \(A\) sostituendo ogni elemento con il suo complemento algebrico \(\Gamma\). }
+
+\section{Dipendenza lineare e determinanti}
+\dfn{Minore}{Sia \(A \in K^{m,n} \). Si chiama \textbf{minore di ordine \(p\)} estratto da \(A\), con \(p \in \mathbb{N}\), \(p \neq 0\), \(p \le \min \{m,n\} \), una matrice quadrata di ordine \(p\) ottenuta cancellando \(m-p\) righe e \(n-p\) colonna da \(A\). }
+
+\dfn{Rango}{Si chiama \textbf{rango} di \(A \in K^{m,n} \) (e si indica con \(\rho(A)\) ) l'ordine massimo di un minore estraibile da \(A\) con \(\det \neq 0\).}
+
+\nt{\begin{enumerate}
+    \item \(\rho(A) = 0 \iff A = 0\)
+    \item \(A \neq 0 \quad 1 \le \rho(A) \le \min \{m,n\} \)
+    \item \(\rho(A) = p \) se e solo se: \begin{enumerate}
+        \item esiste un minore di \(A\) di ordine \(p\) con \(\det \neq 0\);
+        \item tutti i minori di ordine maggiori di \(p\) hanno determinante nullo.
+    \end{enumerate}
+\end{enumerate}}
 \end{document}
