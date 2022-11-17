@@ -1,0 +1,174 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Algebra Lineare e Geometria Analitica}\\Ingegneria dell'Automazione Industriale}
+\author{\huge{Ayman Marpicati}}
+\date{A.A. 2022/2023}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+
+\mprop{}{Siano \(\alpha \ r\) rispettivamente un piano e una retta di \(\EE_3(\RR)\) con \(\alpha \) non ortogonale a \(r\). Allora \(\exists ! \) piano \(\beta : \beta\) ortogonale \(\alpha\) e \(r \subseteq \beta.\)  }
+\pf{Dimostrazione}{Dimostriamo l'esistenza: sia \(\beta = [P, V_1 + V_2 orto]\) dove \(r = [P, V_1]\) e \(\alpha = [Q, V_2]\). \begin{enumerate}
+    \item \(\beta\) è un piano perché \(\dim(V_1 = 1), \ \dim(V_2 orto)= 1\) e \(V_1 \neq V_2 orto\) (poiché \(\alpha non orto r\) ) \( \implies \dim(V_1 + V_2 orto) = 2 \implies \beta\) è un piano.
+    Per costruzione abbiamo che \(\beta \perp \alpha\), infatti lo spazio di traslazione di \(\beta\) è: \[
+        V_1 \oplus V_2^{\perp} \supseteq V_2^{\perp} \text{  e \(V_2\) è lo spazio di traslazione di \(\alpha\)  }
+    \] inoltre \(r \) 
+\end{enumerate}}
+
+\chapter{Geometria analitica in \(\EE_n(\RR)\) }
+\dfn{}{In \(\EE_n(\RR)\) si dice \textbf{riferimento cartesiano ortogonale monometrico} la coppia \([0, \mcB]\): \begin{itemize}
+    \item O è un punto di \(\EE_n(\RR)\) 
+    \item \(\mcB=(e_1, e_2, ..., e_n)\) è una base ortonormale 
+\end{itemize}}
+\nt{\begin{enumerate}
+    \item In \(\EE_n(\RR) \ (n= 2) \implies \mcB = (i,j)\) 
+    \item In \(\EE_3(\RR) \ (n = 3) \implies \mcB = (i,j,k)\)
+\end{enumerate}}
+
+\dfn{Ortogonalità fra rette}{Siano \(r_1, r_2\) due rette di \(\EE_2(\RR)\) e sia \(r_1 = [P, f(v)] \quad v = l \cdot i + m \cdot j\), analogamente \(r_2 = [P, f'(v)] \quad v' = l' \cdot i + m' \cdot j\) \[
+    v \perp v' \iff l \cdot l' + m \cdot m' = 0
+    \] se \(r_1\) ha equazione \(ax + by + c = 0\) e \(r_2\) ha equazione \(a'x + b'y + c' = 0\) allora \(P.d.r_1 = [(-b,a)]\), e \(P.d.r_2 = [(-b', a')]\)  \[
+    -b \cdot (-b') + a \cdot a' = bb' + aa' = 0
+\]
+Se abbiamo \(r_1, r_2\) rette in \(\EE_3(\RR)\) con \(P.d.r_1 = [(l,m,n)]\), \(P.d.r_2 = [(l',m',n')]\)  
+\(r_1 \perp r_2 \iff v_1\) generatore della direzione di \(r_1 \perp v_2\) generatore della direzione di \(r_2\). \[
+    v_1 = li + mj + nk \qquad v_2 = l'i + m'j + n'k
+\] \[
+    v_1 \perp v_2 \iff r_1 \perp r_2 \iff ll' + mm' + nn' = 0
+\] Analogamente se \(r_1, r_2\) sono rette in \(\EE_n(\RR)\) con \(P.d.r_1 = [(x_1, x_2, ..., x_n)]\), \(P.d.r_2 = [(x_1', x_2', ..., x_n')]\)
+}
+\section{Direzione \(\perp\) ad un iperpiano}
+\mprop{}{Sia \(r: ax + by + c = 0\) una retta di \(\EE_2(\RR)\). Allora \([(a, b)]\) è la classe dei parametri direttori della direzione ortogonale a \(r\).}
+\pf{Dimostrazione}{\(P.d.r = [(-b,a)]\) e abbiamo che \((a, b) \cdot (-b, a)= 0\) oppure \((a \cdot i + b \cdot j) \cdot ( -b \cdot i + a \cdot j ) = 0 \implies [(a, b)] \perp r\).  }
+\mprop{}{Sia \(\pi: ax + by + cz + d = 0\) un piano in \(\EE_3(\RR)\). Allora \([(a, b, c)]\) è la classe dei parametri direttori della direzione ortogonale a \(\pi\). }
+\pf{Dimostrazione}{Sia \(v \in V_2 \ (\pi\) ha spazio di traslazione o \(V_2\)). Se \(v = (x, y, z) \implies ax + by + cz = 0 \iff (x, y, z) \cdot (a, b, c) = 0 \implies (a,b,c) \perp v \ \forall v \in V_2 \) }
+Più in generale: sia \(S _{n-1}\) un iperpiano in \(\EE_n(\RR)\) di equazione cartesiana \(0 = a_1 x_1 + a_2 x_2 + ... + a_n x_n + a_0 \implies [(a_1, a_2, ..., a_n)]\) è la classe dei parametri direttori della direzione ortogonale a \(S _{n-1}\).
+
+\mprop{Ortogonalità tra piani}{Siano \(\alpha: ax + by + cz + d = 0 \quad \beta: a'x + b'y + c'z + d' = 0\) due piani in \(\EE_3(\RR)\). Allora \(\alpha \perp \beta \iff a \cdot a' + b \cdot b' + c \cdot c' = 0\) }
+\pf{Dimostrazione}{\(\alpha \perp \beta \iff V_2 \supseteq V_2'^{\perp}\) dove \(V_2\) è la giacitura di \(\alpha\) e \(V_2'\) è la giacitura di \(\beta\). \[V_2'^{\perp}= [\mcL((a', b',c')) ] \iff (a', b', c') \in V_2\]\((x, y, z) \in V_2 \iff ax + by + cz = 0\) e quindi \((a', b', c') \in V_2 \iff a \cdot a' + b \cdot b' + c \cdot c' = 0\) }
+\mprop{Ortogonalità tra retta e piano}{Siano \(r:\) con \(P.d.r = [(l,m,n)]\) e sia \(\alpha\) di equazione \(ax + by + cz + d= 0\) una retta e un piano di \(\EE_3(\RR)\). Allora \(r \perp \alpha\) se e soltanto se \([(a,b,c)] = [(l,m,n)]\) }
+\pf{Dimostrazione}{\(r \perp \alpha \iff V_1=V_2^{\perp}\) dove \(V_1\) è la direzione della retta e \(V_2\) è la giacitura di \(\alpha\). \[
+        V_1 = \mcL((l,m,n)) = V_2 ^{\perp} = \mcL((a,b,c)) \iff [(a,b,c)] = [(l,m,n)]  
+\]}
+
+\dfn{Distanza tra 2 punti in \(\EE_{3}(\RR)\) }{Siano \(P = (x_{1} , x_{2}, ..., x_{n} )\) e \(Q = (x_{1} ' x_2 ', ..., x_n ')\). La distanza tra \(P\) e \(Q\) è la norma del vettore \(\vec{PQ}\) \[
+        d(P,Q) = ||\vec{PQ}|| = \sqrt{\vec{PQ} \cdot \vec{PQ}}
+\]     \[
+    \vec{{PQ}} = (x_1'-x_1) e_1 + ... + (x_n' - x_n) e_n
+\] \[
+    ||\vec{{PQ}}|| = \sqrt{(x_1' - x_1)^{2} + ... + (x_n'-x_n)^{2}  }
+\]}
+
+\dfn{Caso \(\EE_{2}(\RR)\) }{\[
+    P = (x, y) \quad Q = (x', y')
+\] \[
+    \vec{{PQ}} = (x'- x) i + (y' - y)j
+\] \[
+    d (P, Q) = \sqrt{(x' - x)^{2} + (y'-y)^{2} }
+\] }
+Caso \(\EE_{3}(\RR)\) da aggiungere
+
+\dfn{Distanza tra punto e retta}{Siano \(P = (x_0, y_0)\) e \(r = [Q, V_1]\) rispettivamente un punto e una retta in \(\EE_{2}(\RR)\). Definiamo la \textbf{distanza tra il punto \(P\) e la retta \(r\)} come la distanza tra \(P\) e il punto \(H\), piede della perpendicolare per \(P\) a \(r\) (cioè l'intersezione tra \(r\) e la retta perpendicolare a \(r\) passante per \(P\)).}
+
+Determiniamo \(||\vec{{PH}}||\). Se \(r\) ha equazione \(ax + by +c = 0\) allora \(V_1^{\perp} = \mcL(a \cdot i + b \cdot j)  \).\[
+    \text{Posta} \quad n = [P, V_1^{\perp}] \implies n = [P, \mcL(a i + bj) ]
+\]  \[
+    H = n \cap r \text{ è la proiezione di \(P\) su \(r\). (è l'intersezione tra \(r\) e la retta per \(P^{\perp} \)).}
+\] Sia \(P' = (x', y')\) un generico punti su \(r\). \[ax' + by' + c = 0\] \(PH\) è la componente di \(PP'\) lungo \(v\). \(PP' = (x'-x_0) i + (y' - y_0)j\). \[
+    \vec{{PH}} = \frac{PP' \cdot v}{ v \cdot v } v
+\] \[
+d (P, H) = d (P, r) = || \vec{{PH}} || = ||(\frac{\vec{{PP'}} \cdot v}{v \cdot v} v)|| = [...] = \frac{|ax_0 + by_0 + c|}{\sqrt{a^{2} + b^{2} }} 
+\] Da completare 
+
+\dfn{Distanza punto piano}{Siano \(P = (x_0, y_0, x_0)\) e \(\alpha : ax + by + cz + d = 0\) un punto e un piano di \(\EE_{3}(\RR)\). Definiamo \textbf{la distanza} \(d(P, \alpha)\) come la distanza tra \(P\) e il punto \(H\) intersezione tra \(\alpha\) e la retta per \(p \perp \alpha \).}
+\pf{Dimostrazione}{\(d(P, \alpha )= d (P, H) = ||\vec{{PH}}||\). Analogamente al caso piano abbiamo che \[
+    d(P, \alpha ) = \frac{|ax_0 + by_0 + cz_0 + d|}{\sqrt{a^{2} + b^{2} + c^{2} }}
+\]  }
+
+\dfn{Distanza tra un punto e una retta in \(\EE_{3}(\RR)\) }{Siano \(P\) e \(r = [Q, V_1]\) un punto e una retta in \(\EE_{3}(\RR)\). Sia \(\alpha \) il piano per \(P\) ortogonale a \(r\) e sia \(H\) l'intersezione tra \(r\) e \(\alpha \). Definiamo \(d(P, r) = d(P, H) = ||\vec{{PH}}||\).}
+\ex{}{In \(\EE_{3}(\RR)\) determiniamo la distanza di \(P = (3, 0, 1)\) da \(r : 
+\begin{cases}
+    x + y = 1 \\
+    z = 2 \\
+\end{cases}
+\)  \[
+\begin{cases}
+    x = 1-t \\
+    y = t \\
+    z = 2 \\
+\end{cases} \quad P.d.r = [(-1, 1, 0)]=[(a,b,c)] \qquad \alpha: -x + y + 0 \cdot z + d = 0
+\] \[
+    \text{ Imponiamo il passaggio per \(P\)}: \quad -3 + 0 + d = 0 \quad d = 3 \quad \alpha : -x + y + 3 = 0
+\] \[
+    \alpha \cap r :
+\begin{cases}
+    x + y = 1 \\
+    -x + y + 3 = 0 \\
+    z = 2 \\
+\end{cases} \quad
+\begin{cases}
+    x+y=1 \\
+    0x + 2y= -2 \\
+    z=2 \\
+\end{cases} \implies x = 2; \ y = -1
+\]\[
+    H: (2, -1, 2) \quad d(P,r) = ||\vec{{PH}}|| = \vec{{PH}} = (-1) i + (-1) j + k = -1 -j + k
+\]}
+
+\dfn{Retta di minima distanza}{Si dice \textbf{retta di minima distanza} tra due rette \(r, s\) sghembe in \(\EE_{3}(\RR)\) una retta ortogonale e incidente sia a \(r\) che a \(s\).}
+
+\mprop{}{La retta di minima distanza tra \(r\) e \(s\) esiste ed è unica.}
+
+\dfn{Distanza tra due rette sghembe in \(\EE_{3}(\RR)\)}{Definiamo \textbf{la distanza tra due rette \(r\) e \(s\) sghembe in \(\EE_{3}(\RR)\)} come la distanza tra i punti \(R\) e \(S\) ottenuti intersecando la retta \(t\) di minima distanza tra \(r\) e \(s\) con \(r\) e \(s\).}
+
+\dfn{Assi}{In \(\EE_{2}(\RR)\) dati due punti \(P,Q\), si dice \textbf{asse} del segmento \(\ol{PQ}\) la retta passante per il punto medio di \(P\) e \(Q\) e ortogonale al segmento \(\ol{PQ}\).  }
+\mprop{}{L'asse di un segmento \(\ol{PQ}\) è il luogo dei punti equidistanti da \(P\) e da \(Q\).}
+\pf{Dimostrazione}{Dobbiamo dimostrare che \(||\vec{PH} || = ||\vec{QH} || \quad \forall H \in a\) (asse di \(\ol{PQ}\)). \[
+    \vec{PH} = \vec{PM} + \vec{MH} \quad e \quad \vec{QH} = \vec{QM} + \vec{MH} 
+\] \[
+    ||\vec{PH} || = \sqrt{||PM || ^{2} + ||MH||^{2}  } \quad ||\vec{QH} || = \sqrt{||QM|| ^{2} + ||MH|| ^{2} } \quad \text{ ma } \quad ||PM||= ||QM|| 
+\] \[
+    ||\vec{PH} || = \sqrt{||PM|| ^{2} + ||MH|| ^{2} } = \sqrt{||QM|| ^{2} + ||MH|| ^{2} } = ||\vec{QH} || 
+\]}
+
+\ex{}{Determiniamo l'asse di \(P=(1,1)\) e \(Q=(2, -4)\). Il punto \(M = (\frac{3}{2}, -\frac{3}{2})\) \[
+    \vec{PQ} = (2-1) i + (-4-1) j = 1 - 5 j = (1, -5)
+\] \(r \perp \vec{PQ} \) per \(M\)  è del tipo \[
+    x -5y + c = 0 \quad \text{e passa per \(M\) }
+\] \[
+    \frac{3}{2} + \frac{15}{2} + c = 0 \quad c = -9 \implies r : \ x - 5y -9 = 0
+\]Alternativamente \[
+    r: \ H \in r \iff d(H,P) = d(H, Q)
+\]se \(H = (x, y)\) \[
+    \sqrt{(x-1)^{2} + (y-1) ^{2} } = \sqrt{(x-2)^{2} + (y + 4)^{2} }
+\] \[
+    x^{2} - 2x + 1 + y^{2}  -2y + 1 = x^{2} - 4x + 4 + y^{2} + 8y + 16 \implies r: \ 2x -10y -18 = 0
+\]}
+
+\dfn{Piano assiale}{In \(\EE_{3}(\RR)\) si dice \textbf{piano assiale} del segmento \(\ol{PQ}\) il piano \(\alpha \) passante per il punto medio di \(P\) e \(Q\) e ortogonale al segmento \(\ol{PQ}\).}
+
+\mprop{}{Il piano assiale del segmento \(\ol{PQ}\) è il luogo dei punti equidistanti tra \(P\) e \(Q\).}
+
+\section{Circonferenze in \(\EE_{2}(\RR)\) }
+\dfn{Circonferenza}{Dato un punto \(C = (x_0, y_0)\) in \(\EE_{2}(\RR)\) e dato \(r\) numero reale positivo. Si dice circonferenza di centro \(C\) e raggio \(r\) il luogo dei punti aventi distanza \(r\) da \(C\). }
+
+\mprop{Equazione cartesiana di una circonferenza}{Sia \(P=(x, y)\) appartenente alla circonferenza di centro \(C\) e raggio \(r\). \[
+        d(P,C) = \sqrt{(x-x_0)^{2} + (y-y_0)^{2}} = r \iff (x-x_0)^{2} + (y-y_0)^{2} = r^{2}  
+\] \[
+    x^{2} + y^{2} + 2ax + 2by + c = 0 \iff x^{2} + y^{2} - 2x_0x - 2y_0y + (x_0^{2} + y_0^{2} - r^{2} ) = 0
+\] }
+
+\mprop{}{Tutte e sole le circonferenze si rappresentano come \(x^{2} + y^{2} + 2ax + 2by + c = 0\) con \(a^{2} + b^{2} - c > 0\) e avremo che \(C = (-a, -b)\) e \(r = \sqrt{a^{2} + b^{2} -c}\)  }
+
+\nt{Se \(r\) fosse 0, \(a^{2} + b^{2} - c = 0 \implies  x^{2} + y^{2} + 2ax + 2by + c = 0\) è rappresentata solo da \(C = (-a, -b)\).}
+\mprop{}{Per tre punti non allineati in \(\EE_{2}(\RR)\) passa un unica circonferenza.}
+\end{document}
