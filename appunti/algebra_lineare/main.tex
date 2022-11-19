@@ -436,14 +436,6 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 \section{Dipendenza lineare e determinanti}
 \dfn{Minore}{Sia \(A \in K^{m,n} \). Si chiama \textbf{minore di ordine \(p\)} estratto da \(A\), con \(p \in \mathbb{N}\), \(p \neq 0\), \(p \le \min \{m,n\} \), una matrice quadrata di ordine \(p\) ottenuta cancellando \(m-p\) righe e \(n-p\) colonna da \(A\). }
 
-\dfn{Rango}{Si chiama \textbf{rango} di \(A \in K^{m,n} \) (e si indica con \(\rho(A)\) ) l'ordine massimo di un minore estraibile da \(A\) con \(\det \neq 0\).}
+\thm{}{Sia \(S = (v_{1}, v_{2}, \ldots, v_n)\) una sequenza di vettori di \(V_n(K)\) con, \(p \le n\), dello spazio vettoriale \(V_n(K)\) è libera se, e soltanto se, dalla matrice \(M\), che ha nelle proprie righe (o colonne) le componenti dei vettori di \(M\) in una base di \(V_n(K)\), si può estrarre un minore di ordine \(p\) non singolare (cioè con determinante non nullo).}
 
-\nt{\begin{enumerate}
-    \item \(\rho(A) = 0 \iff A = 0\)
-    \item \(A \neq 0 \quad 1 \le \rho(A) \le \min \{m,n\} \)
-    \item \(\rho(A) = p \) se e solo se: \begin{enumerate}
-        \item esiste un minore di \(A\) di ordine \(p\) con \(\det \neq 0\);
-        \item tutti i minori di ordine maggiori di \(p\) hanno determinante nullo.
-    \end{enumerate}
-\end{enumerate}}
 \end{document}

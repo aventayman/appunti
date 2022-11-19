@@ -159,16 +159,107 @@ d (P, H) = d (P, r) = || \vec{{PH}} || = ||(\frac{\vec{{PP'}} \cdot v}{v \cdot v
 \mprop{}{Il piano assiale del segmento \(\ol{PQ}\) è il luogo dei punti equidistanti tra \(P\) e \(Q\).}
 
 \section{Circonferenze in \(\EE_{2}(\RR)\) }
-\dfn{Circonferenza}{Dato un punto \(C = (x_0, y_0)\) in \(\EE_{2}(\RR)\) e dato \(r\) numero reale positivo. Si dice circonferenza di centro \(C\) e raggio \(r\) il luogo dei punti aventi distanza \(r\) da \(C\). }
+\dfn{Circonferenza}{Dato un punto \(C = (x_0, y_0)\) in \(\EE_{2}(\RR)\) e dato \(r\) numero reale positivoSi dice circonferenza di centro \(C\) e raggio \(r\) il luogo dei punti aventi distanza \(r\) da \(C\). }
 
-\mprop{Equazione cartesiana di una circonferenza}{Sia \(P=(x, y)\) appartenente alla circonferenza di centro \(C\) e raggio \(r\). \[
-        d(P,C) = \sqrt{(x-x_0)^{2} + (y-y_0)^{2}} = r \iff (x-x_0)^{2} + (y-y_0)^{2} = r^{2}  
+Sia \(P=(x, y)\) appartenente alla circonferenza di centro \(C\) e raggio \(r\). \[
+        d(P,C) = \sqrt{(x-x_0)^{2}x^{2} + y^{2} + 2ax + 2by + c = 0 + (y-y_0)^{2}} = r \iff (x-x_0)^{2} + (y-y_0)^{2} = r^{2}  
 \] \[
     x^{2} + y^{2} + 2ax + 2by + c = 0 \iff x^{2} + y^{2} - 2x_0x - 2y_0y + (x_0^{2} + y_0^{2} - r^{2} ) = 0
-\] }
+\] 
 
-\mprop{}{Tutte e sole le circonferenze si rappresentano come \(x^{2} + y^{2} + 2ax + 2by + c = 0\) con \(a^{2} + b^{2} - c > 0\) e avremo che \(C = (-a, -b)\) e \(r = \sqrt{a^{2} + b^{2} -c}\)  }
+\mprop{Equazione cartesiana di una circonferenza}{Tutte e sole le circonferenze si rappresentano come \(x^{2} + y^{2} + 2ax + 2by + c = 0\) con \(a^{2} + b^{2} - c > 0\) e avremo che \(C = (-a, -b)\) e \(r = \sqrt{a^{2} + b^{2} -c}\)  }
 
 \nt{Se \(r\) fosse 0, \(a^{2} + b^{2} - c = 0 \implies  x^{2} + y^{2} + 2ax + 2by + c = 0\) è rappresentata solo da \(C = (-a, -b)\).}
 \mprop{}{Per tre punti non allineati in \(\EE_{2}(\RR)\) passa un unica circonferenza.}
+
+\section{Sfere in \(\EE_{3}(\RR)\) }
+\dfn{Sfera}{Sia \(C: (x_{0}, y_{0}, z_{0} )\) e sia \(r\) un numero reale positivo. Si dice \textbf{sfera} di raggio \(C\) e di centro \(r\) il luogo dei punti aventi distanza \(r\) da \(C\). }
+
+Sia \(P:(x,y,z)\) appartenente alla sfera, allora \[
+    d(P,C) = \sqrt{(x-x_0)^{2} + (y-y_0)^{2} + (z-z_0)^{2}} = r \iff (x-x_0)^{2} + (y-y_0)^{2} + (z-z_0)^{2} = r^{2}
+\]
+\nt{Una sfera è una superficie algebrica reale (Analogamente una circonferenza è una curva algebrica reale).}
+
+\mprop{Equazione cartesiana di una sfera}{Tutte le sfere si rappresentano come \(x^{2} + y^{2} + z^{2} + 2ax + 2by + 2cz + d = 0\) con \(a^{2} + b^{2} + c^{2} > 0\) e avremo che \(C = (-a, -b, -c)\) e \( r = \sqrt{a^{2} + b^{2} + c^{2} - d}\)  }
+\nt{Se \(a^{2} + b^{2} + c^{2} - d = 0 \implies x^{2} + y^{2} + z^{2} + 2ax + 2by + 2cz + d = 0\) è realizzata dal solo centro \(C = (-a, -b, -c)\). }
+
+\mprop{}{Siano \(A, B, C, D\) quattro punti non complanari di \(\EE_{3}(\RR)\). Per \(A, B, C, D\) passa un'unica sfera}
+
+Il centro della sfera si trova intersecando i piani assiali dei quattro punti. Il raggio è la distanza del centro da uno qualsiasi dei quattro punti.
+
+\section{Circonferenze in \(\EE_{3}(\RR)\) }
+\dfn{Circonferenza in \(\EE_{3}(\RR)\) }{Dati un piano \(\alpha \), un suo punto \(C\) e un numero reale positivo \(r\). Si dice \textbf{circonferenza} di raggio \(C\) e raggio \(r\) il luogo dei punti di \(\alpha \) aventi distanza \(r\) da \(C\).}
+
+\nt{Una circonferenza appartiene a infinite sfere. Quindi per tre punti non allineati passano infinite sfere.}
+
+\mprop{}{Tutte e sole le circonferenze di \(\EE_{3}(\RR)\) ammettono una rappresentazione del tipo \[
+\begin{cases}
+    ax + by + cz + d = 0 \quad \rightarrow \quad \text{piano \(\alpha \) } \\
+    (x- x_0)^{2} + (y - y_0)^{2} + (z-z_0)^{2} = r'^{2} \\ 
+\end{cases}
+\] \[
+    d(C', \alpha ) < r' \quad \text{dove} \quad C' = (x_0, y_0, z_0) \qquad 
+    \frac{|ax_0 + by_0 + cz_0 + d| }{\sqrt{a^{2} + b^{2} + c^{2} }} < r' 
+\] ci sono infinite rappresentazioni ma solo una con il centro \(C\) della circonferenza coincidente con il centro \(C'\) della sfera.}
+Il centro della circonferenza \(C\) si trova intersecando il piano \(\alpha \) con la retta per il centro della sfera \(C'\) perpendicolarmente ad \(\alpha \).
+Utilizziamo il teorema di Pitagora. Conosciamo \(\ol{CC'}\) e conosciamo anche il raggio \(r'\) della sfera. Quindi \[
+    r = \sqrt{r'^{2} - \ol{CC'}^{2}}
+\]
+\nt{Una circonferenza si può ottenere anche intersecando altre superfici superfici con un piano.}
+
+\ex{}{Si consideri \[
+\begin{cases}
+    x^{2} + y^{2} = 7 \\
+    z = 3 \quad \rightarrow \quad \alpha \\
+\end{cases} \quad \text{è una circonferenza?} 
+\] \[
+    x^{2} + y^{2} + z^{2} - z^{2} = 7 \quad  \text{ e siccome \(z = 3\)  } 
+\begin{cases}
+    x^{2} + y^{2} + z^{2} = 16 \\
+    z = 3 \\
+\end{cases} \quad \text{che descrive una circonferenza.}
+\] Ed è una curva algebrica reale di \(\EE_{3}(\RR)\).}
+
+\chapter{Ampliamento di \(\AA_{2}(\RR)\)}
+In \(\AA_{2}(\RR)\) date due rette \(r\) e \(s\) o sono parallele o si intersecano in un punto. Se sono parallele \[
+        r = [P,V_1] \ e \ s = [Q, W_1] \implies V_1 = W_1
+    \]quindi la direzione \(V_1\) è l'elemento comune a tutte le rette parallele a \(r\). Poiché il parallelismo è una relazione di equivalenza tra le rette del piano. 
+
+\section{Ampliamento (proiettivo) di \(\AA_{2}(\RR)\)}
+\dfn{\(\~{\AA}_2(\RR)\) }{
+    \begin{itemize}
+    \item Punti propri che sono tutti e soli i punti di \(\AA_{2}(\RR)\)
+    \item I punti impropri che sono le direzioni delle rette del piano ovvero i sottospazi di \(\RR^{2} \) di dimensione 1.
+\end{itemize} Da cui il nome proprio/improprio per i fasci di rette del piano.}
+\dfn{Rette}{\begin{itemize}
+    \item le rette proprie: le rette di \(\AA_{2}(\RR)\) unite al loro punto improprio;
+    \item una retta impropria: tutti i punti impropri (\(r_{\infty}\))
+\end{itemize}}
+
+Sia \(P_{\infty} \in r_{\infty} \implies \) non definiamo il vettore \(\vec{QP_{\infty} } \) con \(Q\) proprio/improprio.
+
+La funzione \(f : A \times A \rightarrow V_{2}(\\RR) \) 
+\textbf{da completare}
+
+\mprop{}{Due rette distinte di \(\~{\AA}_{2}(\RR)\) sono sempre incidenti.}
+\pf{Dimostrazione}{Siano \(r\) e \(s\) due rette distinte di \(\~{\AA}_{2}(\RR)\) \begin{enumerate}
+    \item \(r\) e \(s\) sono proprie e non parallele tra loro \( \implies \) \(r\) è incidente a \(s\) in \(\AA_{2}(\RR)\) \(\subseteq \) \(\~{\AA}_{2}(\RR)\) e il punto improprio di \(r\) è diverso da quello di \(s\).
+    \item \(r\) e \(s\) sono proprie ma \(r\) è parallelo a \(s\). \\
+        \(r \cap s = \emptyset\) in \(\AA_{2}(\RR)\) ma \(r\) e \(s\) hanno la stessa direzione \( \implies \) lo stesso punto improprio.
+    \item \(r\) è propria e \(s = r_{\infty} \). \\ \(r \cap s = r \cap r_{\infty} \) è il punto improprio di \(r\). 
+\end{enumerate}}
+
+\textbf{Completare con il quinto assioma e la spiegazione di a due tilda di r}
+\nt{Tutte le rette proprie contengono un solo punto improprio e \(r_{\infty} \) contiene solo punti impropri.}
+
+\mprop{}{Per due punti distinti di \(\~{\AA}_{2}(\RR)\) passa un'unica retta. }
+\pf{Dimostrazione}{Siano \(A\) e \(B\) i due punti distinti considerati: \begin{enumerate}
+    \item \(A, B\) sono entrambi propri \[
+        \implies \exists ! r \in \AA_{2}(\RR) \text{  per  } A \ e \ B
+    \] \[
+        \exists ! r \quad \text{propria per} A \ e \ B
+    \] la \(r_{\infty}\) non contiene \(A\) e \(B\) \( \implies \exists ! \ r\) per \(A\) e \(B\).
+    \item \(A\) è proprio e \(B\) è improprio (o viceversa). \( \implies B\) è la direazione \(V_1\) \( \implies \exists !\) retta per \(\) \textbf{completare} 
+    \item \(A\) e \(B\) sono entrambi impropri. Nessuna retta propria li contiene entrambi (ogni retta propria ha solo 1 punto improprio) \( \implies A, B \in r_{\infty} \) che è l'unica che li contiene entrambi.
+\end{enumerate}}
 \end{document}
