@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1668940542 "main.tex" "main.pdf" "main" 1668940545
+["pdflatex"] 1668962023 "main.tex" "main.pdf" "main" 1668962027
   "/etc/texmf/web2c/texmf.cnf" 1667938489 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -227,6 +227,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty" 1602711807 11772 8d0db0794e6aeb45348f60bbe3a3e093 ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1652903436 17280 7856508378dfe40ed74280f5b81e31b6 ""
   "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -332,10 +333,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668085646 3060853 f7e804cdff618f3d911a426601015f4e ""
   "letterfonts.tex" 1668252671 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1668252671 3389 93000260d2aea292d29c76d4ace77a29 ""
-  "main.aux" 1668940545 10514 7f8b4605b562e2850cc6eb5857529d1e "pdflatex"
-  "main.tex" 1668940539 47738 a56bbf740ca63cac4030eccfbf66e523 ""
-  "main.toc" 1668940545 1780 989f6d0972457266f5c2874062ceb3eb "pdflatex"
-  "preamble.tex" 1668887366 20114 675044247238fe51941647bfe4f9d947 ""
+  "main.aux" 1668962026 12904 8bd38a342980cadfe2e5ceb4776575e6 "pdflatex"
+  "main.tex" 1668962023 52357 3218fae0853cde1039632fc98b8046b9 ""
+  "main.toc" 1668962026 2191 151f271ddbdfede7dad19f357dea1b35 "pdflatex"
+  "preamble.tex" 1668941889 20136 13d941be01f919572af6572d5d1472ed ""
   (generated)
   "main.aux"
   "main.log"

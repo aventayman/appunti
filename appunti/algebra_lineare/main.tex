@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[twoside]{report}
 
 \input{preamble}
 \input{macros}
@@ -16,6 +16,15 @@
 % \pdfbookmark[<level>]{<title>}{<dest>}
 \pdfbookmark[section]{\contentsname}{toc}
 \tableofcontents
+
+\pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[LO]{\rightmark}
+\fancyhead[RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LE]{\thepage}
+\fancyfoot{} % clear all footer fields
 
 \chapter{Nozioni preliminari}
 \section{Relazioni su un insieme}
@@ -685,4 +694,82 @@ X = {^tA}X'
 \] \[
 X' = {^tA^{-1}}X
 \] Possiamo dire quindi che le componenti di uno stesso vettore rispetto a due basi \(B\) e \(B'\) sono legate dalla matrice del cambiamento di base da \(B\) a \(B'\).
+
+\chapter{Autovalori, autovettori e diagonalizzabilità}
+\section{Ricerca di autovalori, polinomio caratteristico}
+\dfn{Polinomio ed equazione caratteristica}{Se \(A\) è una matrice quadrata di ordine \(n\), si dice \textbf{polinomio caratteristico} di \(A\), e si indica \(p_A(\lambda )\), il determinante della matrice \(A-\lambda I_n\), cioè \[
+p_A(\lambda ) = |A-\lambda I_n| 
+\] L'equazione \(p_A(\lambda) = |A -\lambda I_n| \) è detta \textbf{equazione caratteristica} di \(A\).}
+
+\dfn{Autovalori}{Le radici del polinomio caratteristico si chiamano \textbf{autovalori} di \(A\).}
+\dfn{Autospazio}{Lo spazio delle soluzioni del sistema \((A-\overline{\lambda }I_n)X=0\), dove \(\overline{\lambda }\) è un autovalore, si chiama \textbf{autospazio} associato a \(\overline{\lambda }\) e si indica con \(V_{\overline{\lambda }}\).}
+\dfn{Autovettori}{I vettori non nulli dell'autospazio \(V_{\overline{\lambda }}\) si chiamano  \textbf{autovettori} relativi a \(\overline{\lambda }\).}
+\paragraph{Osservazione:} Si potrebbe dimostrare che se il polinomio caratteristico di \(A \in M_n(K)\) ha grado \(n\) allora gli autovalori di \(A\) sono al massimo \(n\).
+\dfn{Matrici simili}{Due matrici \(A,B \in M_n(K)\) si dicono \textbf{simili} se esiste \(P \in M_n(K)\) con \(|P| \neq 0\) tale che  \[
+B = P^{-1}AP \quad PB = AP
+\] }
+
+\mprop{}{Due matrici simili \(A,B\) hanno lo stesso determinante e lo stesso polinomio caratteristico (e di conseguenza gli stessi autovalori).}
+\pf{Dimostrazione}{Per ipotesi le due matrici \(A,B\) sono simili quindi:\[
+\exists P \in M_n(K), \ |P| \neq 0 : \ B = P^{-1}AP
+\] \[
+|B| = |P^{-1}AP| = |P^{-1}| |A| |P| = \frac{1}{|P| }|A| |P| =|A| \implies |B| = |A| 
+\] \[
+p_B(\lambda ) = |B - \lambda I_n| = |P^{-1}AP - \lambda P^{-1}I_n P| = |P^{-1}(A - \lambda I_n)P| = \frac{1}{|P| }|A-\lambda I_n| |P| = |A - \lambda I_n| = p_A(\lambda )
+\] e attraverso questa serie di passaggi abbiamo potuto dimostrare che se due matrici sono simili allora avranno sia lo stesso determinante che lo stesso polinomio caratteristico. }
+
+\section{Matrici diagonalizzabili}
+\dfn{Matrice diagonalizzabile}{Una matrice \(A \in M_n(K)\) si dice \textbf{diagonalizzabile} se è simile ad una matrice diagonale, ovvero esistono \(D, P \in M_n(K)\) con \(D\) matrice diagonale, \(|P| \neq 0\) e \(D = P^{-1}AP\).}
+
+\thm{Primo criterio di diagonalizzabilità}{Una matrice \(A \in M_n(K)\) è diagonalizzabile se, e soltanto se, \(K^{n}\) ammette una base costituita da autovettori di \(A\).}
+\pf{Dimostrazione}{\("\implies "\) Per ipotesi \(A\) è diagonalizzabile quindi \(\exists \ D,P \in M_n(K): D\) è diagonale \(|P| \neq 0\) e \(PD = AP\). Per semplicità denotiamo le colonne di \(P= 
+\begin{pmatrix}
+    P_1 & P_2 & \ldots  & P_n \\
+\end{pmatrix}
+\). \[
+AP = A 
+\begin{pmatrix}
+    P_1 & P_2 & \ldots  & P_n \\
+\end{pmatrix} =
+\begin{pmatrix}
+    AP_1 & AP_2 & \ldots  & AP_n \\
+\end{pmatrix}
+\] \[
+PD = 
+\begin{pmatrix}
+    P_1 & P_2 & \ldots  & P_n \\
+\end{pmatrix} 
+\begin{pmatrix}
+    d_1 & 0 & \ldots  & 0 \\
+    0 & d_2 & \ldots  & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \ldots  & d_n \\
+\end{pmatrix} = 
+\begin{pmatrix}
+    d_1P_1 & d_2P_2 & \ldots  & d_nP_n \\
+\end{pmatrix}
+\] Quindi \[
+\begin{pmatrix}
+    AP_1 & AP_2 & \ldots  & AP_n \\
+\end{pmatrix} = 
+\begin{pmatrix}
+    d_1P_1 & d_2P_2 & \ldots  & d_nP_n \\
+\end{pmatrix}
+\iff 
+AP_1=d_1P_1, \ AP_2 = d_2P_2, \ \ldots, \ AP_n = d_n P_n
+\] \[
+\implies AX = \lambda X \quad \lambda =d_i \quad X = P_i
+\] dove \(d_i\) è un autovalore, \(P_i\) è un autovettore di \(A\) e \(
+\begin{pmatrix}
+    P_1 & P_2 & \ldots  & P_n \\
+\end{pmatrix} 
+\) è una sequenza di \(n\) autovettori. Poiché \(\dim K^{n}=n\) e la sequenza è composta da \(n\) vettori, è sufficiente controllare la lineare indipendenza di \(P\). Ma siccome avevamo supposto per ipotesi che \(|P| \neq 0\) le sue \(n\) colonne sono linearmente indipendenti. Quindi \(B = (P_1, P_2, \ldots , P_n)\) è una base di \(K^{n}\) costituita da autovettori di \(A\).
+
+"\(\impliedby \)" è analogo, basta ripercorrere il ragionamento a ritroso.}
+
+\paragraph{Osservazione:} Se \(A \in M_n(K)\) è diagonalizzabile allora:
+\begin{itemize}
+    \item \(D\) ha sulla diagonale principale gli autovalori di \(A\);
+    \item \(P\), cioè la matrice diagonalizzante, ha nelle colonne gli autovettori della base di \(K^{n}\).
+\end{itemize}
 \end{document}
