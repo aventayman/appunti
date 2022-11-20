@@ -7,6 +7,7 @@
 \title{\Huge{Algebra Lineare e Geometria Analitica}\\Ingegneria dell'Automazione Industriale}
 \author{\huge{Ayman Marpicati}}
 \date{A.A. 2022/2023}
+\setlength\parindent{0pt}
 
 \begin{document}
 
@@ -422,7 +423,7 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 \end{cases}
 \]}
 
-\thm{Teorema di Binet}{Date due matrici quadrate di ordine \(n\), \(A\) e \(B\), il determinante della matrice prodotto \(A \cdot B\) è uguale al prodotto dei determinanti di \(A\) e \(B\), cioè \[
+\thm{Teorema di Bidet}{Date due matrici quadrate di ordine \(n\), \(A\) e \(B\), il determinante della matrice prodotto \(A \cdot B\) è uguale al prodotto dei determinanti di \(A\) e \(B\), cioè \[
     |A \cdot B| = |A| |B| 
 \] }
 
@@ -430,12 +431,146 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 \dfn{Matrice invertibile}{Una matrice quadrata, di ordine \(n\), si dice \textbf{invertibile} quando esiste una matrice \(B\), quadrata e dello stesso ordine, tale che \(A \cdot B = B \cdot A = I_n\), dove \(I_n\) è la matrice identica di ordine \(n\). La matrice \(B\) si dice \textbf{inversa} di \(A\) e si indica \(A^{-1} \).}
 
 \thm{}{Sia \(A \in M_n(K)\); allora \(A\) è invertibile \( \iff |A| \neq 0\) e in tal caso \[
-    A_{-1} = \frac{1}{|A| }\left.^tA_a\right.
+    A^{-1} = \frac{1}{|A| }\left.^tA_a\right.
 \] dove \(A_a\) si chiama \textbf{matrice aggiunta} di \(A\) ed è la matrice ottenuta da \(A\) sostituendo ogni elemento con il suo complemento algebrico \(\Gamma\). }
 
 \section{Dipendenza lineare e determinanti}
 \dfn{Minore}{Sia \(A \in K^{m,n} \). Si chiama \textbf{minore di ordine \(p\)} estratto da \(A\), con \(p \in \mathbb{N}\), \(p \neq 0\), \(p \le \min \{m,n\} \), una matrice quadrata di ordine \(p\) ottenuta cancellando \(m-p\) righe e \(n-p\) colonna da \(A\). }
 
-\thm{}{Sia \(S = (v_{1}, v_{2}, \ldots, v_n)\) una sequenza di vettori di \(V_n(K)\) con, \(p \le n\), dello spazio vettoriale \(V_n(K)\) è libera se, e soltanto se, dalla matrice \(M\), che ha nelle proprie righe (o colonne) le componenti dei vettori di \(M\) in una base di \(V_n(K)\), si può estrarre un minore di ordine \(p\) non singolare (cioè con determinante non nullo).}
+\thm{}{ Una sequenza \(S=(v_1,v_2, \ldots,v_n)\) di \(n\) vettori dello spazio vettoriale \(V_n(K)\) è libera se, e soltanto se, la matrice \(A\), che ha nelle proprie righe (o colonne) le componenti dei vettori di \(S\) in una base di \(V_n(K)\), ha determinante non nullo ed è legata se, e soltanto se, tale matrice \(A\) ha determinante nullo.}
 
+\dfn{Rango di una matrice}{Sia \(A\) una matrice di \(K^{m,n}(K)\). Si dice \textbf{rango} della matrice \(A\), e si scrive \(\rho (A)\), l'ordine massimo di un minore estraibile da \(A\) con determinante non nullo.}
+
+\newpage
+\paragraph{Osservazione:} Data la matrice \(A\) di \(K^{m,n}(K)\)
+\begin{enumerate}
+    \item \(\rho (A)=0 \iff A\) è la matrice nulla;
+    \item \(\rho (A) = \rho (^{t}A)\) ;
+    \item \(\rho (A) \le \min(m,n)\).
+\end{enumerate}
+
+\dfn{Spazio delle righe e delle colonne}{Data una matrice \(A\), avente \(m\) righe ed \(n\) colonne, si dice \textbf{spazio delle righe} di \(A\), e si indica \(\mcL(R) \), il sottospazio \(K^{n}(K)\) generato dalle righe di \(A\). Si dice  \textbf{spazio delle colonne} di \(A\), e si indica \(\mcL(C) \), il sottospazio vettoriale di \(K^{m}(K)\) generato dalle colonne di \(A\).}
+
+\thm{Teorema di Kronecker}{Gli spazi vettoriali \(\mcL(R) \) ed \(\mcL(C)\), di una matrice \(A \in K^{m,n}(K)\), hanno la stessa dimensione e tale dimensione coincide con il rango di \(A\). Cioè: \[
+\dim(\mcL(R) ) = \dim(\mcL(C) ) = \rho (A)
+.\] }
+\pf{Dimostrazione}{Dimostriamo che \(\dim(\mcL(R) ) = \rho (A)\). La dimostrazione per quanto riguarda le colonne è completamente analoga. Sia \(s = \dim(\mcL(R) )\implies\) abbiamo \(s\) righe linearmente indipendenti nella matrice \(A\) e quindi per il teorema precedente esiste un minore in \(A\) di ordine \(s\) a determinante non nullo. Pertanto \(\rho (A) \ge s\). Sia per assurdo \(\rho (A) = r > s\), dovrebbe esistere in \(A\) un minore di ordine \(r\) a determinante non nullo. Se chiamiamo ora \(S = (R_1, R_2, \ldots, R_r)\) la sequenza di righe nella matrice \(A\), la matrice \(A\) ha un minore di ordine \(r\) non singolare e di conseguenza è libera. Quindi \[
+\dim \mcL(R) \ge \dim \mcL(S) = r > s = \dim \mcL(R) 
+.\] Ma questo è un \textbf{assurdo!} Quindi \[
+\rho (A) = r \le s = \dim \mcL(R) \implies r = s 
+.\]}
+
+\cor{}{Se \(A\) è una matrice quadrata di ordine \(n\), con elementi in un campo \(K\), le sequent condizioni sono equivalenti:
+\begin{enumerate}
+    \item \(|A| \neq 0\) ;
+    \item \(A\) è invertibile;
+    \item \(\rho (A) = n\) ;
+    \item le righe sono linearmente indipendenti e, quindi, sono base di \(K^{n}\);
+    \item le colonne sono linearmente indipendenti e, quindi, sono base di \(K^{n}\).
+\end{enumerate}}
+
+\thm{Teorema degli orlati}{Una matrice \(A \in K^{m,n}(K)\) ha rango \(p\) se, e solo se, esiste un minore \(M\) di ordine \(p\) a determinante non nullo e tutti i minori di ordine \(p + 1\), che contengono \(M\), hanno determinante nullo.}
+
+\section{Sistemi lineari}
+\dfn{Sistema lineare}{Un \textbf{sistema lineare} è un insieme di \(m\) equazioni lineari in \(n\) incognite a coefficienti in campo \(K\).} Un sistema lineare si può, quindi, indicare nel modo seguente: \[
+\begin{cases}
+    \ a_{11}x_1+a_{12}x_2+\ldots +a_{1n}x_n = b_1 \\
+    \ a_{21}x_1+a_{22}x_2+\ldots +a_{2n}x_n = b_2 \\
+    \ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots  \\
+    \ a_{m_1}x_1+a_{m_2}x_2+\ldots +a_{mn}x_n = b_m \\
+\end{cases}
+\] con \(a_{ij}, b_l \in K\). Gli elementi \(a_{ij}\) si chiamano coefficienti delle incognite, gli elementi \(b_l\) si dicono termini noti.
+
+La matrice \(m \times n\) \[
+A =
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots  & a_{1n} \\
+    a_{21} & a_{22} & \ldots  & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m 2} & \ldots  & a_{mn} \\
+\end{pmatrix}
+\] è detta matrice dei coefficienti o \textbf{matrice incompleta}, la matrice \(n \times 1\) \[
+X =
+\begin{pmatrix}
+    x_1 \\
+    x_2 \\
+    \vdots \\
+    x_n \\
+\end{pmatrix}
+\] è detta delle matrice colonna delle incognite, mentre la matrice \(m\times 1\) \[
+B = 
+\begin{pmatrix}
+    b_1 \\
+    b_2 \\
+    \vdots \\
+    b_m \\
+\end{pmatrix}
+\] è detta matrice colonna dei termini noti. La matrice \(m \times (n+1)\) \[
+A | B = 
+\begin{pmatrix}
+    a_{11} & \ldots  & a_{1n} & b_1 \\
+    a_{21} & \ldots  & a_{2n} & b_2 \\
+    \vdots & \ddots & \vdots & \vdots \\
+    a_{m1} & \ldots  & a_{mn} & b_m \\
+\end{pmatrix}
+\] è detta \textbf{matrice completa}.
+Infine, il sistema iniziale si può riscrivere come: \(A \cdot X = B\), cioè \[
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots  & a_{1n} \\
+    a_{21} & a_{22} & \ldots  & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m 2} & \ldots  & a_{mn} \\
+\end{pmatrix}
+\begin{pmatrix}
+    x_1 \\
+    x_2 \\
+    \vdots \\
+    x_n \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+    b_1 \\
+    b_2 \\
+    \vdots \\
+    b_m \\
+\end{pmatrix}
+\] 
+
+\dfn{Sistema omogeneo}{Un sistema lineare si dice \textbf{omogeneo} quando tutti i termini noti sono nulli. \[
+AX = \ul{0} 
+\] }
+
+\paragraph{Osservazione:} Data \(A \in K^{m,n} \quad A = 
+\begin{pmatrix}
+    C_1 & C_2 & \ldots & C_n \\
+\end{pmatrix}
+\) ove le colonne \(C_j\) sono vettori di \(K^{m,1}\) e quindi utilizziamo utilizzando questa notazione il sistema si può scrivere come \[
+x_1C_1 + x_2C_2+\ldots +x_nC_n = B
+\] 
+
+\dfn{Sistema compatibile}{Un sistema lineare in \(m\) equazioni ed \(n\) incognite ha soluzione, ovvero si dice che il sistema è \textbf{compatibile}, se esiste almeno una n-upla  \(\alpha _1, \alpha _2, \ldots , \alpha _n\) di elementi di \(K\) che risolve tutte le equazioni del sistema. Tale n-upla è detta \textbf{soluzione}.}
+
+\paragraph{Osservazione:} Posto \(A = (C_1, C_2, \ldots , C_n)\) \[
+A 
+\begin{pmatrix}
+    \alpha _1 \\
+    \alpha _2 \\
+    \vdots \\
+    \alpha _n \\
+\end{pmatrix}=B \iff 
+\alpha _1 C_1 + \alpha _2 C_2 + \ldots + \alpha _n C_n = B
+\] che è equivalente a dire che \(B\) è combinazione lineare delle colonne di \(A\). Quindi il sistema è risolubile se, e soltanto se, \(B \in \mcL(C_1, C_2, \ldots ,C_n) \).
+
+\thm{Teorema di Rouché-Capelli}{Un sistema lineare \(A X = B\)
+ è compatibile se, e soltanto se, \(\rho (A) = \rho (A|B)\).}
+
+ \pf{Dimostrazione}{"\(\implies \)" Sia \(AX = B\) risolubile, \(\implies \exists \ (\alpha _1, \alpha _2, \ldots ,\alpha _n) : \ \alpha _1 C_1 + \alpha _2 C_2 + \ldots + \alpha _n C_n = B\) quindi 
+\[ B \in \mcL(C_1, C_2, \ldots , C_n) \implies \underbrace{\dim \mcL(C_1, C_2, \ldots ,C_n, B)}_{= \rho (A|B)} = \underbrace{\dim \mcL(C_1, C_2, \ldots ,C_n)   }_{= \rho (A)} \]
+\[\implies \rho (A|B) = \rho (A)\] 
+ "\(\impliedby \)" Per ipotesi abbiamo che \(\rho (A|B) = \rho (A)\). Quindi 
+\[
+\dim \mcL(C_1, C_2, \ldots ,C_n, B) = \dim \mcL(C_1, C_2, \ldots ,C_n) \implies \mcL(C_1, C_2, \ldots ,C_n, B) = \mcL(C_1, C_2, \ldots ,C_n)\]
+\[\implies B \in \mcL(C_1, C_2, \ldots ,C_n)  
+    \]\[\implies  \exists (k_1,k_2, \ldots ,k_n): \ k_1C_1+k_2C_2+\ldots +k_nC_n = B\]
+Quindi la n-upla \((k_1, k_2, \ldots , k_n)\) è soluzione di \(AX = B\) e di conseguenza il sistema è compatibile.}
 \end{document}
