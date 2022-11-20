@@ -19,4 +19,7 @@
 \contentsline {section}{\numberline {3.4}Sistemi lineari}{17}{section.3.4}%
 \contentsline {paragraph}{Osservazione:}{18}{section*.3}%
 \contentsline {paragraph}{Osservazione:}{19}{section*.4}%
+\contentsline {paragraph}{Osservazione:}{19}{section*.5}%
+\contentsline {paragraph}{Osservazioni:}{20}{section*.6}%
+\contentsline {section}{\numberline {3.5}Cambiamenti di base}{21}{section.3.5}%
 \contentsfinish 

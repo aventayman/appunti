@@ -573,4 +573,116 @@ A
 \[\implies B \in \mcL(C_1, C_2, \ldots ,C_n)  
     \]\[\implies  \exists (k_1,k_2, \ldots ,k_n): \ k_1C_1+k_2C_2+\ldots +k_nC_n = B\]
 Quindi la n-upla \((k_1, k_2, \ldots , k_n)\) è soluzione di \(AX = B\) e di conseguenza il sistema è compatibile.}
+
+\thm{Teorema di Cramer}{Sia \(AX = B\) un sistema lineare in \(n\) equazioni ed \(n\) incognite. Se \(\det(A) \neq 0\) allora \(AX = B\) ammette un'unica soluzione.}
+Indichiamo con \(B_1\), la matrice ottenuta sostituendo a \(C_i\) la colonna dei termini noti (\(B\)).
+\[
+A = (C_1, C_2, \ldots , C_n) \quad B_1 = (C_1, C_2, \ldots , C_{i-1}, B, C_{i+1}, \ldots , C_n)
+\] Se \(\det (A) \neq 0\) allora (\(X_1, X_2, \ldots , X_n\)) è data da: \[
+X_1 = \frac{|B_1| }{|A| }=\frac{\det(B_1)}{\det(A)}
+\]
+
+\dfn{Sistema principale equivalente}{Sia \(AX = B\) un sistema compatibile, si dice sistema principale equivalente un sistema \(A'X = B'\) ottenuto eliminando \(m-p\) equazioni da \(AX=B\) tale che \(\rho (A'|B') = \rho (A') = p\).}
+\thm{}{Un sistema \(AX = B\) compatibile ha le stesse soluzioni di un suo sistema principale equivalente.}
+
+\paragraph{Osservazione:}\(\rho (A)=\rho (A|B)\) se il sistema lineare è omogeneo e quindi è sempre compatibile. In particolare \(X = 
+\begin{pmatrix}
+    0 \\
+    \vdots \\
+    0 \\
+\end{pmatrix}
+\) è sempre soluzione di \(AX = \ul{0} \).
+
+\dfn{Autosoluzioni}{Le soluzioni di un sistema lineare omogeneo diverse dalla soluzione nulla si dicono  \textbf{autosoluzioni}.}
+\newpage
+\nt{Non è detto che un sistema lineare omogeneo ammetta autosoluzioni.}
+
+\mprop{}{Un sistema lineare omogeneo \(AX = B = \ul{0} \) ammette autosoluzioni se, e solo se, \(\rho (A) < n\) (con \(n\) numero di incognite).}
+
+\cor{}{Un sistema lineare omogeneo \(AX = B = \ul{0} \) con \(A \in M_n(K)\) ammette autosoluzioni se, e soltanto se,  \(\det (A) = 0\).}
+
+\thm{}{Sia \(AX = \ul{0} \) un sistema lineare omogeneo con \(A \in K^{m,n}\) e sia \(S\) l'insieme delle sue soluzioni, allora \(S\) è un sottospazio di \(K^{n}\) di dimensione \(n-\rho (A)\).}
+
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(\ul{0} \in S\) 
+    \item se \(n-\rho (A) > 0\) abbiamo autosoluzioni 
+    \item Se \(B \neq \ul{0} \) l'insieme delle soluzioni di \(AX = B\) non è un sottospazio di \(K^{n}\) perché \(A\ul{0} = \ul{0} \neq B \implies \{\ul{0} \} \notin S\).
+\end{enumerate}
+
+\mprop{}{Sia \(AX = B\) un sistema lineare in \(m\) equazioni ed \(n\) incognite, detto \(S\) l'insieme delle soluzioni abbiamo che \[
+S =
+\begin{cases}
+    \ \{x_0+z : \ x_0 \in S, \ z \in S\}\text{ se }AX = B\text{ è compatibile } \\
+    \ \emptyset \text{ se } AX = B \text{ non è compatibile} \\
+\end{cases}
+\] }
+
+\dfn{Sistema lineare omogeneo associato}{Dato \(AX = B\) sistema lineare in \(m\) equazioni ed \(n\) incognite diciamo che \(AX = \ul{0} \) è il \textbf{sistema lineare omogeneo associato} a \(AX = B\).}
+
+\mprop{}{Le soluzioni di un sistema lineare compatibile \(AX=B\) sono tutte e sole del tipo \(\overline{X}= X_0 + Z\), ove \(X_0\) è una soluzione particolare di \(AX = B\) e \(Z\) è la soluzione di \(AX = \ul{0} \), sistema omogeneo associato ad \(AX = B\).}
+
+\pf{Dimostrazione}{Sia \(\overline{X}\) soluzione di \(AX=B\), poniamo \(Z = \overline{X}-X_0 \iff \overline{X}=X_0+Z\) \[
+AZ = A(\overline{X}-X_0) = A\overline{X}- AX_0 = B- B = \ul{0} 
+\] Quindi \(Z\) è soluzione del sistema lineare omogeneo associato ad \(A\). Di conseguenza \(\overline{X}= X_0 + Z\) }
+
+Dato \(AX=B\) sistema lineare in \(m\) equazioni ed \(n\) incognite compatibile, le sue soluzioni sono tante quante quelle del sistema lineare omogeneo associato che costituiscono uno spazio vettoriale di dimensione \(n- \rho (A)\). Se il campo è infinito, posto \(\rho (A) = p\), si dice che le soluzioni sono \(\infty^{n-p}\) (cioè che l'insieme delle soluzioni dipende da \(n-\rho(A)\) parametri).
+
+\newpage
+\thm{}{Sia \(AX = \ul{0} \) un sistema lineare omogeneo in \(n\) incognite e sia \(\rho(A) = n-1\). Se si indica con \(A'X = \ul{0} \) un sistema principale equivalente ad \(AX = \ul{0} \) e si indicano con \(\Gamma_1, \Gamma_2, \ldots , \Gamma_n\) i determinanti dei minori di ordine \(n-1\), ottenuti eliminando in \(A'\) successivamente la prima, la seconda, \ldots , la n-esima colonna, allora le soluzioni del sistema sono, al variare di \(\lambda \in K\), \[
+S = (\lambda \Gamma _1, -\lambda \Gamma _2, \ldots , (-1)^{n-1} \lambda \Gamma _n)
+\] }
+
+\section{Cambiamenti di base}
+in uno spazio vettoriale \(V_n(K)\), di dimensione \(n\), siano \(B = (e_1,e_2, \ldots ,e_n)\) e \(B' = (e'_1,e'_2, \ldots ,e'_n)\) due basi assegnate. Ogni vettore della base \(B'\) si può esprimere come combinazione lineare dei vettori della base \(B\), cioè \[
+\begin{cases}
+    \ e_1' = a_{11}e_1+ a_{12}e_2+\ldots + a_{1n}e_n \\
+    \ e_2' = a_{21}e_1+ a_{22}e_2+\ldots +a_{2n}e_n \\
+    \ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots  \\
+    \ e_n'= a_{n 1}e_1+ a_{n 2}e_2 + \ldots + a_{nn}e_n \\
+\end{cases}
+\]con le seguenti posizioni \[
+A = 
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots  & a_{1n} \\
+    a_{21} & a_{22} & \ldots  & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{n1} & a_{n 2} & \ldots  & a_{nn} \\
+\end{pmatrix}, \ E= 
+\begin{pmatrix}
+    e_1 \\
+    e_2 \\
+    \vdots \\
+    e_n \\
+\end{pmatrix} \text{ ed } E'=
+\begin{pmatrix}
+    e_1' \\
+    e_2' \\
+    \vdots \\
+    e_n' \\
+\end{pmatrix}
+\] 
+il sistema si può scrivere in forma compatta \[
+E' = AE
+\] 
+\dfn{Matrice del cambiamento di base}{La matrice A si dice \textbf{matrice del cambiamento di base} da \(B\) a \(B'\).}
+
+\mprop{}{La matrice \(A\) del cambiamento di base da \(B\) a \(B'\) è invertibile e \(A^{-1}=A'\).}
+\pf{Dimostrazione}{\[
+    E = A'E' = A'(AE) = (A'A)E \implies A'A=I_n \] \[
+E' = AE = A(A'E') = (AA')E' \implies AA'=I_n
+\] }
+
+Stabiliamo il legame tra le componenti di uno stesso vettore \(v\), rispetto a due basi diverse \(B\) e \(B'\). Poniamo \[
+X = \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix} \text{ e } X'=\begin{pmatrix} x'_1\\ \vdots\\ x'_n \end{pmatrix}
+\] Possiamo scrivere il generico vettore \(v \in V_n(K)\) \[
+v = x_1e_1+x_2e_2 + \ldots + x_n e_n = (x_1,x_2, \ldots , x_n)E= {^{t}X}E \] \[
+v = x_1'e_1'+x_2'e_2' + \ldots + x_n' e_n' = (x_1',x_2', \ldots , x_n')E= {^{t}X'}E'
+\] \[
+v = {^{t}X}E = {^{t}X'}E
+\] Sostituendo si ha \({^{t}X}E = {^tX'}AE\), ove \(A\) è la matrice del cambiamento di base da \(B\) a \(B'\), quindi, dato che le componenti dei vettori sono univocamente determinate \[
+X = {^tA}X'
+\] \[
+X' = {^tA^{-1}}X
+\] Possiamo dire quindi che le componenti di uno stesso vettore rispetto a due basi \(B\) e \(B'\) sono legate dalla matrice del cambiamento di base da \(B\) a \(B'\).
 \end{document}
