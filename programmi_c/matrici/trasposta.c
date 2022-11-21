@@ -22,8 +22,8 @@ int main() {
 
     //Cosa succede dovendo fare la rotazione "sul posto"
     //Così non andrebbe bene
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < M; j++) {
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < N; j++) {
             t[j][i] = m[i][j];
         }
     }
