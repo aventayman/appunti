@@ -27,4 +27,10 @@
 \contentsline {paragraph}{Osservazione:}{24}{section*.7}%
 \contentsline {section}{\numberline {4.2}Matrici diagonalizzabili}{25}{section.4.2}%
 \contentsline {paragraph}{Osservazione:}{25}{section*.8}%
+\contentsline {paragraph}{Osservazioni:}{26}{section*.9}%
+\contentsline {chapter}{\numberline {5}Forme bilineari e prodotti scalari}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Forme bilineari}{27}{section.5.1}%
+\contentsline {paragraph}{Osservazione:}{27}{section*.10}%
+\contentsline {section}{\numberline {5.2}Prodotti scalari e ortogonalità}{27}{section.5.2}%
+\contentsline {paragraph}{Osservazioni:}{28}{section*.11}%
 \contentsfinish 

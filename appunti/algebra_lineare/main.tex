@@ -772,4 +772,108 @@ AP_1=d_1P_1, \ AP_2 = d_2P_2, \ \ldots, \ AP_n = d_n P_n
     \item \(D\) ha sulla diagonale principale gli autovalori di \(A\);
     \item \(P\), cioè la matrice diagonalizzante, ha nelle colonne gli autovettori della base di \(K^{n}\).
 \end{itemize}
+
+\dfn{Molteplicità algebrica e geometrica}{Sia \(\overline{\lambda }\) un autovalore di \(A \in M_n(K)\); si chiama:
+\begin{itemize}
+    \item \textbf{molteplicità algebrica} di \(\overline{\lambda }\) il numero di volte che \(\overline{\lambda }\) è radice del polinomio caratteristico, e si indica con \(a_{\overline{\lambda }}\) 
+    \item \textbf{molteplicità geometrica} di \(\overline{\lambda }\) la dimensione dell'autospazio \(V_{\overline{\lambda }}\) associato a \(\overline{\lambda }\), e si indica con \(g_{\overline{\lambda }}\).
+\end{itemize}}
+
+\mprop{}{Sia \(\overline{\lambda }\) un autovalore di \(A \in M_n(K)\). Allora \[
+1 \le g_{\overline{\lambda }} \le a_{\overline{\lambda }}
+\] }
+
+\mprop{}{Sia \(A \in M_n(K)\) e siano \(\lambda _1, \lambda _2, \ldots ,\lambda_n\) \(t\) autovalori di \(A\) distinti tra loro, allora la somma dei relativi autospazi è diretta. \[
+V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t}
+\] }
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(A \in M_n(K) \implies \deg(p_A(\lambda )) = n\), quindi ho al massimo \(n\) autovalori;
+    \item \(\sum a_{\lambda _i}\le n\);
+    \item \(\sum a_{\lambda _i}= n \iff\) tutti gli autovalori di \(A\) sono in \(K\);
+    \item \(S =V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t} \implies \dim S = \sum \dim V_{\lambda _i} = \sum g_{\lambda _i}\)
+    \item Autovettori provenienti da autospazi diversi sono tra loro linearmente indipendenti (perché la somma è diretta).
+\end{enumerate}
+
+\thm{Secondo criterio di diagonalizzabilità}{Sia \(A \in M_n(K)\) e siano \(\lambda _1, \lambda _2, \ldots , \lambda _n\) gli autovalori distinti di \(A\). Allora \(A\) è diagonalizzabile se, e soltanto se:
+\begin{enumerate}
+    \item tutti gli autovalori di \(A\) sono in \(K\);
+    \item Per ogni autovalore vale \(a_{\lambda _i} = g_{\lambda _i}\)(e allora si dice che l'autovalore è regolare).
+\end{enumerate}}
+
+\pf{Dimostrazione}{"\(\implies\)" Per ipotesi \(A\) è diagonalizzabile. Per il primo criterio di diagonalizzabilità \(K^{n}\) ammette una base \(B\) formata da autovettori, cioè tale che  \(\mcL(B) = K^{n}\) e \(B \subseteq V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t} \le K^{n}\). Quindi \[
+K^{n} = \mcL(B) \le \mcL(V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t}) = V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t} \le K^{n} 
+\] \[
+\implies V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t} = K^{n} \]
+\[
+\implies n = \dim K^{n} = \dim (V_{\lambda _1} \oplus V_{\lambda _2} \oplus \ldots \oplus V_{\lambda _t}) = \sum g_{\lambda _i}\le \sum a_{\lambda _i} \le n
+\]
+Siccome  \(\sum a_{\lambda _i}=n\) tutti gli autovalori di \(A\) sono in \(K\). Inoltre \(\sum g_{\lambda _i} = \sum a_{\lambda _i}\) e \(g_{\lambda _i}\le a_{\lambda _i}\implies a_{\lambda _i}=g_{\lambda _i}\).
+
+"\(\impliedby \)" Per ipotesi abbiamo che tutti gli autovalori di \(A\) soni in \(K\) e per ogni autovalore vale \(a_{\lambda _i}= g_{\lambda _i}\). Per ogni autovalore \(\overline{\lambda }\) avremo un relativo autospazio a cui corrisponde una relativa base di autovettori  \(B_1, B_2, \ldots , B_t\). Chiamiamo \(B = \bigcup_{i = 1}^t B_i \), cioè l'unione di tutte le basi. Certamente \(B\) è libera perché la somma di sottospazi distinti è diretta. \[
+|B| = |\bigcup B_i | = \sum |B_i| = \sum \dim V_{\lambda _i}= \sum g_{\lambda _i}= \sum a_{\lambda _i}=n
+\] Quindi \(B\) è una base di \(K^{n}\) costituita da autovettori e per il primo criterio di diagonalizzabilità \(A\) è diagonalizable.}
+
+\chapter{Forme bilineari e prodotti scalari}
+\section{Forme bilineari}
+\dfn{Forma bilineare e prodotto scalare}{Sia \(V_n(K)\) uno spazio vettoriale. Una \textbf{forma bilineare} in \(V\) è una funzione \(*: \ V \times V \to K: \)
+\begin{itemize}
+    \item \((u+v) * w = u * w + v * w \qquad \forall u, v, w \in V \ \forall k \in K\)
+    \item \(u * (v + w) = u * v + u * w \qquad \forall u, v, w \in V \ \forall k \in K\)
+    \item \((ku) * v = u * (kv) = k (u * v) \qquad \forall u, v, w \in V \ \forall k \in K\) 
+\end{itemize} 
+Se poi \(*\) verifica anche l'ulteriore proprietà
+\begin{itemize}
+    \item \(v * w = w * v \qquad \forall u, v, w \in V \ \forall k \in K\)
+\end{itemize}
+Allora si chiama \textbf{prodotto scalare} (o forma bilineare simmetrica).}
+\paragraph{Osservazione:} Si deduce chiaramente che \(\forall v \in V \quad \ul{0} * v = 0 = v * \ul{0} \).
+
+\ex{Prodotto scalare euclideo e standard}{
+\begin{enumerate}
+    \item Definiamo il \textbf{prodotto scalare euclideo} come una funzione \(*:\RR^{n} \times \RR^{n} \to \RR: \) \[
+     (x_1, x_2, \ldots , x_n)*(x_1', x_2', \ldots , x_n') = x_1x_1'+x_2x_2'+\ldots +x_nx_n'
+    \] 
+    \item Definiamo il \textbf{prodotto scalare standard} come la funzione \(*: M_n(\RR) \times M_n(\RR) \to \RR:\) \[
+\begin{pmatrix}
+    x_{11} & x_{12} & \ldots  & x_{1n} \\
+    x_{21} & x_{22} & \ldots  & x_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    x_{n 1} & x_{n 2} & \ldots  & x_{n n} \\
+\end{pmatrix} \ * \
+\begin{pmatrix}
+    x_1' & x'_{12} & \ldots  & x'_{1n} \\
+    x'_{21} & x'_{22} & \ldots  & x'_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    x'_{n 1} & x'_{n 2} & \ldots  & x'_{n n} \\
+\end{pmatrix} = x_{11}x_{11}'+x_{12}x_{12}'+ \ldots + x_{n n}x_{n n}'
+    \] 
+\end{enumerate}
+}
+
+\section{Prodotti scalari e ortogonalità}
+\dfn{Ortogonalità}{In uno spazio vettoriale \(V(K)\), con prodotto scalare "\(\cdot \)", due vettori \(v\) e \(w\) di \(V\) si dicono \textbf{ortogonali}, e si scrive \(v \perp w\), se \(v \cdot w = 0\).}
+\dfn{Complemento ortogonale}{Sia \(V(K)\) uno spazio vettoriale e "\(\cdot \)" un prodotto scalare. Sia \(\emptyset \neq A \subseteq V\); si chiama  \textbf{complemento ortogonale} (o più semplicemente ortogonale) di \(A\) l'insieme \[
+A^{\perp} = \{v \in V : \ v \perp w, \ \forall w \in A\} \qquad \ul{0} \in A^{\perp} \neq \emptyset
+\] }
+
+\mprop{}{Sia \(V(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)". Sia \(\emptyset \neq A \subseteq V\). Allora \(A^{\perp}\) è un sottospazio vettoriale.}
+\pf{Dimostrazione}{Sappiamo che \(\ul{0} \in A^{\perp} \neq \emptyset\) \\ 
+Dobbiamo dimostrare che \[
+\forall u_1, u_2 \in A^{\perp}, \ \forall k_1,k_2 \in K \qquad k_1u_1+k_2u_2 \in A^{\perp}
+\] Possiamo scrivere per la proprietà di ortogonalità che\[
+\forall w \in A \quad u_1\cdot w = 0 \quad u_2 \cdot w = 0
+\] Quindi \[
+(k_1u_1+k_2u_2) \cdot w = (k_1u_1) \cdot w + (k_2u_2) \cdot w = k_1 (\underbrace{u_1 \cdot w}_{=0}) + k_2 (\underbrace{u_2 \cdot w}_{=0} )
+\] \[
+\implies k_1u_1+k_2u_2 \in A^{\perp} \implies A^{\perp} \ \text{è un sottospazio.}
+\] 
+}
+
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(A \subseteq B \implies A^{\perp} \supseteq B^{\perp}\)
+    \item \(A^{\perp} = [\mcL(A) ]^{\perp}\)
+    \item Generalmente se \(A \le V(K) \implies A \neq (A^{\perp})^{\perp}\), ma \(A \subseteq (A^{\perp})^{\perp}\)
+\end{enumerate}
 \end{document}
