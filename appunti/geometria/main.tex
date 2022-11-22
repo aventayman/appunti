@@ -226,7 +226,7 @@ In \(\AA_{2}(\RR)\) date due rette \(r\) e \(s\) o sono parallele o si interseca
     \]quindi la direzione \(V_1\) è l'elemento comune a tutte le rette parallele a \(r\). Poiché il parallelismo è una relazione di equivalenza tra le rette del piano. 
 
 \section{Ampliamento (proiettivo) di \(\AA_{2}(\RR)\)}
-\dfn{\(\~{\AA}_2(\RR)\) }{
+\dfn{\(\tilde{\AA}_2(\RR)\) }{
     \begin{itemize}
     \item Punti propri che sono tutti e soli i punti di \(\AA_{2}(\RR)\)
     \item I punti impropri che sono le direzioni delle rette del piano ovvero i sottospazi di \(\RR^{2} \) di dimensione 1.
@@ -241,9 +241,9 @@ Sia \(P_{\infty} \in r_{\infty} \implies \) non definiamo il vettore \(\vec{QP_{
 La funzione \(f : A \times A \rightarrow V_{2}(\\RR) \) 
 \textbf{da completare}
 
-\mprop{}{Due rette distinte di \(\~{\AA}_{2}(\RR)\) sono sempre incidenti.}
-\pf{Dimostrazione}{Siano \(r\) e \(s\) due rette distinte di \(\~{\AA}_{2}(\RR)\) \begin{enumerate}
-    \item \(r\) e \(s\) sono proprie e non parallele tra loro \( \implies \) \(r\) è incidente a \(s\) in \(\AA_{2}(\RR)\) \(\subseteq \) \(\~{\AA}_{2}(\RR)\) e il punto improprio di \(r\) è diverso da quello di \(s\).
+\mprop{}{Due rette distinte di \(\tilde{\AA}_{2}(\RR)\) sono sempre incidenti.}
+\pf{Dimostrazione}{Siano \(r\) e \(s\) due rette distinte di \(\tilde{\AA}_{2}(\RR)\) \begin{enumerate}
+    \item \(r\) e \(s\) sono proprie e non parallele tra loro \( \implies \) \(r\) è incidente a \(s\) in \(\AA_{2}(\RR)\) \(\subseteq \) \(\tilde{\AA}_{2}(\RR)\) e il punto improprio di \(r\) è diverso da quello di \(s\).
     \item \(r\) e \(s\) sono proprie ma \(r\) è parallelo a \(s\). \\
         \(r \cap s = \emptyset\) in \(\AA_{2}(\RR)\) ma \(r\) e \(s\) hanno la stessa direzione \( \implies \) lo stesso punto improprio.
     \item \(r\) è propria e \(s = r_{\infty} \). \\ \(r \cap s = r \cap r_{\infty} \) è il punto improprio di \(r\). 
@@ -252,7 +252,7 @@ La funzione \(f : A \times A \rightarrow V_{2}(\\RR) \)
 \textbf{Completare con il quinto assioma e la spiegazione di a due tilda di r}
 \nt{Tutte le rette proprie contengono un solo punto improprio e \(r_{\infty} \) contiene solo punti impropri.}
 
-\mprop{}{Per due punti distinti di \(\~{\AA}_{2}(\RR)\) passa un'unica retta. }
+\mprop{}{Per due punti distinti di \(\tilde{\AA}_{2}(\RR)\) passa un'unica retta. }
 \pf{Dimostrazione}{Siano \(A\) e \(B\) i due punti distinti considerati: \begin{enumerate}
     \item \(A, B\) sono entrambi propri \[
         \implies \exists ! r \in \AA_{2}(\RR) \text{  per  } A \ e \ B
@@ -262,4 +262,86 @@ La funzione \(f : A \times A \rightarrow V_{2}(\\RR) \)
     \item \(A\) è proprio e \(B\) è improprio (o viceversa). \( \implies B\) è la direazione \(V_1\) \( \implies \exists !\) retta per \(\) \textbf{completare} 
     \item \(A\) e \(B\) sono entrambi impropri. Nessuna retta propria li contiene entrambi (ogni retta propria ha solo 1 punto improprio) \( \implies A, B \in r_{\infty} \) che è l'unica che li contiene entrambi.
 \end{enumerate}}
+
+\section{Geometria analitica in \(\tilde{\AA}_{2}(\RR) \)}
+Enti definiti "a meno di un fattore" di proporzionalità:
+\begin{enumerate}
+    \item equazioni di rette in \(\AA_{2}(\RR) \) \[
+            ax + by + c = 0 \qquad \text{se} \ [(a,b,c)] = [(a',b', c')]
+    \] \[
+    \implies r' : \ a'x + b'y + c' = 0 \qquad \text{è coincidente a } r
+    \] 
+\item \([(l,m)] = P.d.r\) è come classe di equivalenza 
+\end{enumerate}
+Indichiamo con \(\rho \) la relazione di equivalenza data dalla proporzionalità su \(\RR^{3}\backslash \{(0,0,0)\} \) 
+\[
+    \frac{\RR^{3}\backslash \{(0,0,0)\}}{\rho} = \{[(x,y,z)] : \ x,y,z \in \RR^{3} \ e \ (x,y,z) \neq \ul{0} \} 
+\] 
+Quest'insieme definirà le coordinate dei punti.
+\[
+\tilde\AA_{2}(\RR) = \AA_{2}(\RR) \cup \AA_{\infty}
+\] Fissiamo il riferimento affine in \(\AA_{2}(\RR) \) \[
+\phi: \ \AA_2 \cup \AA_{\infty} \to \frac{\RR^{3}\backslash \{(0,0,0)\}}{\rho} 
+\] 
+\begin{itemize}
+    \item se \(P\) è proprio \((x,y) : \ \phi(x, y) = [(x,y,1)]\)
+    \item se \(P\) è improprio \(P: [(l,m)] \quad \phi (P) = [(l,m,0)]\)
+\end{itemize}
+
+\mprop{}{\(\phi\) è una biiezione tra \(\tilde{\AA}_{2}(\RR) \to \frac{\RR^{3}\backslash \{(0,0,0)\}}{\rho} \)}
+
+\paragraph{Osservazione:} Sia \(P\) di coordinate omogenee \([(x_1,x_2,x_3)]\) con \(x_3\neq 0\) \[
+    \left[ \left( \frac{x_1}{x_3}, \frac{x_2}{x_3}, 1 \right)  \right] 
+\] \(P\) è proprio \(P = (x,y) = (\frac{x_1}{x_3}, \frac{x_2}{x_3})\) \\
+Sia invece \(x_3= 0\) 
+\[
+    P = [(x_1,x_2, 0 )] \qquad [(l,m)] = [(x_1,x_2)]
+\] \(P\) non ha coordinate affini (non omogenee) \(\implies \) è improprio.
+
+\section{Rappresentazione delle rette in \(\tilde{\AA}_{2}(\RR) \)}
+Sia \(RA [O, B = (e_1, e_2)]\) un riferimento affine di \(\AA_{2}(\RR) \). In \(\AA_{2}(\RR) \) l'equazione cartesiana di una retta è \(ax+by+c = 0\) con \((a,b) \neq (0,0)\). Sui punti propri \(P = \left[ \left( \frac{x_1}{x_3}, \frac{x_2}{x_3}, 1 \right)  \right] \) dovrà valere \(ax+by+c = 0\)\[
+a \left( \frac{x_1}{x_3} \right) + b \left( \frac{x_2}{x_3} \right) + c = 0 \qquad ax_1+ bx_2+ cx_3=0
+\] Il punto improprio di \(ax+by+c=0\) è \([(-b, a, 0)]\). Sostituiamo in \(ax_1+ bx_2+ cx_3=0\) \([(-b, a, 0)]\) \[
+a(-b) + b a + 0 = 0
+\] \(\implies \) \(ax_1+ bx_2+ cx_3=0\) è l' equazione omogenea di una retta \(r\) di \(\tilde{\AA}_{2}(\RR) \). \\
+Siano ora \((a,b) = (0,0)\), allora \(ax_1+ bx_2+ cx_3=0\) si riduce a \(0 x_1+0x_2+cx_3=0\) con \(c \neq 0, \ cx_3 = 0, \ x_3 = 0\) è la \(r_{\infty}\) perché rispettata da tutti e soli i punti impropri. 
+L'equazione \(ax_1+bx_2+cx_3= 0\) con \((a,b,c) \neq (0,0,0)\) rappresenta, in ogni caso, una retta di \(\tilde{\AA}_{2}(\RR) \). Di conseguenza è l'equazione cartesiana di una retta di \(\tilde{\AA}_{2}(\RR)\).
+
+\section{Complessificazione di \(\tilde{\AA}_{2}(\RR) \)}
+
+\(\tilde{\AA}_{2}(\CC)\) = piano affine ampliato e \textbf{complessificato}.
+\paragraph{Osservazione:} 
+\begin{itemize}
+    \item \textbf{punti}: terne (\(\neq \ul{0} \)) di numeri complessi determinati a meno di un fattore di proporzionalità complesso e non nullo.
+\[
+\frac{\CC^{3}\backslash \{(0,0,0)\} }{\rho }
+\] 
+    \item \textbf{rette}: luogo delle autosoluzioni (soluzioni non nulle) di un'equazione del tipo \[
+    ax_1+bx_2+cx_3= 0 \quad \text{con} \quad (a,b,c) \neq \ul{0} \ e \ a,b,c \in \CC
+    \] 
+\end{itemize}
+
+\dfn{Punti e rette in \(\tilde{\AA}_{2}(\CC)\)}{In \(\tilde{\AA}_{2}(\CC)\) si dicono:
+\begin{itemize}
+    \item \textbf{punti} e \textbf{rette reali} i punti e le rette che ammettono una rappresentazione reale
+    \item \textbf{punti} e \textbf{rette immaginari} i punti e le rette che ammettono solo rappresentazioni immaginarie
+\end{itemize}}
+
+\ex{}{\(P:[(4,3+i, 1)]\) è immaginario.
+\pf{Dimostrazione}{Sia \(a+ib \in \CC: \ P = (4(a+ib), (3+i) (a+ib), a+ib)\) con \(x_1,x_2, x_3\) reali, quindi \(x_3 = a+ib \implies x_3= a\). \(P=[(4a, (3+i)a, a)]\), ma \(a \neq 0 \ (3+i)a\) non è reale \(\implies P\) non è reale.}}
+
+\dfn{Coniugati}{Si dicono \textbf{coniugati} due enti (punti, rette ecc\ldots) che ammettono rappresentazioni coniugate.}
+
+\mprop{}{Un ente geometrico (punto, retta, curva ecc\ldots ) è reale se, e soltanto se, coincide con il proprio coniugato.}
+
+\nt{Una retta reale ha infiniti punti immaginari
+\ex{}{\(x_1= 0  \implies [(0,x_2,x_3)] \implies [(0, a + ib, 1)]\) sono tutti immaginari.}}
+
+\paragraph{Osservazione:} Se un'equazione reale è realizzata da un punto \(P \implies \overline{P}\) è soluzione se \(r\) è reale e \(P \in r \implies \overline{P}\in \overline{r} = r\).
+
+\mprop{}{La retta che congiunge due punti \(P\) e \(\overline{P}\) immaginari e coniugati è reale.}
+\pf{Dimostrazione}{\(P \in r\) e \(\overline{P}\in r\) per costruzione. Poiché \(P \neq  \overline{P}\) \(r = rt(P, \overline{P})\). Poiché \(P \in r \implies \overline{P} \in \overline{r}\) e \(\overline{P} \in r \implies \overline{\overline{P}} \in \overline{r}\), ma \(\overline{\overline{P}}=P \in \overline{r}\). \(\implies \overline{P}\) e \(P \in \overline{r} \implies \overline{r}=rt(P, \overline{P})\). Per l'unicità della retta per \(P\) e \(\overline{P}\) \(\implies r = \overline{r} \implies r\) è reale.}
+
+\mprop{}{Per un punto \(P\) immaginario \((P \neq \overline{P})\) passa un'unica retta reale.}
+\pf{Dimostrazione}{La retta \(rt(P, \overline{P})\) è reale per la proposizione precedente. Supponiamo per assurdo che \(\exists \ s \neq rt(P, \overline{P})\) reale per \(P\). \(\implies \overline{P} \in  s\) poiché \(s\) è reale.  \(s = rt(P, \overline{P})\) che è \textbf{assurdo!}. Quindi esiste ed è unica la retta \(r\) reale per \(P\).}
 \end{document}

@@ -1,0 +1,16 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Geometria analitica in \(\ensuremath {\varmathbb {E}}_n(\RR )\) }{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Direzione \(\perp \) ad un iperpiano}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Circonferenze in \(\ensuremath {\varmathbb {E}}_{2}(\RR )\) }{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Sfere in \(\ensuremath {\varmathbb {E}}_{3}(\RR )\) }{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Circonferenze in \(\ensuremath {\varmathbb {E}}_{3}(\RR )\) }{7}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Ampliamento di \(\r A_{2}(\RR )\)}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ampliamento (proiettivo) di \(\r A_{2}(\RR )\)}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Geometria analitica in \(\tilde {\r A}_{2}(\RR ) \)}{9}{section.2.2}%
+\contentsline {paragraph}{Osservazione:}{10}{section*.2}%
+\contentsline {section}{\numberline {2.3}Rappresentazione delle rette in \(\tilde {\r A}_{2}(\RR ) \)}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Complessificazione di \(\tilde {\r A}_{2}(\RR ) \)}{10}{section.2.4}%
+\contentsline {paragraph}{Osservazione:}{10}{section*.3}%
+\contentsline {paragraph}{Osservazione:}{11}{section*.4}%
+\contentsfinish 

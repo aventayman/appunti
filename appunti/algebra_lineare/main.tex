@@ -876,4 +876,126 @@ Dobbiamo dimostrare che \[
     \item \(A^{\perp} = [\mcL(A) ]^{\perp}\)
     \item Generalmente se \(A \le V(K) \implies A \neq (A^{\perp})^{\perp}\), ma \(A \subseteq (A^{\perp})^{\perp}\)
 \end{enumerate}
+
+\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)" e siano \(v, w \in V(K)\) con \(w \cdot w \neq \ul{0} \). Allora \[
+\exists \ v_1, v_2 \in V: \ v = v_1+v_2, \ v_1 = kw, \ v_2 \perp w
+\] }
+
+\pf{Dimostrazione}{ \[
+k = \frac{v \cdot w}{w \cdot w} \qquad v_1= kw = \left( \frac{v \cdot w}{w \cdot w} \right) \cdot w
+\] \[
+v_2=v-v_1 \iff v_1+v_2=v
+\] Ora verifichiamo che \(v_2 \perp w\) \[
+v_2 \perp w \iff  (v-v_1) \cdot w = \left( v - \frac{v \cdot  w}{w \cdot w} \right) \cdot  w = v - w - \frac{v \cdot w}{w \cdot w}\cdot w \cdot w = v \cdot w - v \cdot w = 0
+\] }
+\dfn{Coefficiente di Fourier e proiezione}{Sia \(V_n(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)" e siano \(v, w \in V(K)\) con \(w \cdot w \neq \ul{0} \). Allora \[
+    k = \frac{v \cdot w}{w \cdot w}
+\] si chiama \textbf{coefficiente di Fourier} di \(v\) lungo \(w\) e \[
+v_1= \frac{v \cdot w}{w \cdot w}\cdot w
+\] si chiama \textbf{proiezione} di \(v\) lungo \(w\).}
+
+\dfn{Forma quadratica}{Sia \(V_n(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)" e sia \(v \in V(K)\). Si chiama \textbf{forma quadratica} associata a "\(\cdot \)" la funzione \[
+q: \ 
+\begin{cases}
+    \ V \to K  \\
+    \ v \mapsto q(v) = v \cdot v \\
+\end{cases}
+\] }
+
+\section{Spazi con prodotto scalare definito positivo}
+\dfn{Prodotto scalare definito positivo}{Sia \(V(K)\) uno spazio vettoriale su campo \(K\) \ul{ordinato}. Un prodotto scalare "\(\cdot \)" in \(V\) si dice \textbf{definito positivo} se \(\) \[
+\forall v \in V \quad v \cdot v \ge 0 \quad e \quad v \cdot v = 0 \iff v = \ul{0} 
+\] Per chiarezza da qui in avanti quando si parla di prodotti scalari definiti positivi \(K = \RR \) in modo tale che esso sia ordinato. Di conseguenza denotiamo con \textbf{spazio vettoriale metrico reale} \(V_n^{\circ}(\RR )\), cioè uno spazio vettoriale dotato di un prodotto scalare definito positivo.}
+
+\dfn{}{Dato \(V^{\circ}_n(\RR)\) si chiama  \textbf{norma} la funzione \[
+\|\cdot \|: \ 
+\begin{cases}
+    \ V \to \RR \\
+    \ v \mapsto \|v\|=\sqrt{v \cdot v} = \sqrt{q(v)} \\
+\end{cases}
+\] }
+\ex{Vettori geometrici}{\[
+\vec{v} \cdot \vec{w} = |\vec{v} | |\vec{w}| \cos \alpha 
+\] \[
+\|\vec{v}\|=\sqrt{\vec{v} \cdot \vec{v}} = \sqrt{|\vec{v}| |\vec{v}| \cos 0} = \sqrt{|\vec{v}| ^2} = |\vec{v}| 
+\] }
+
+\paragraph{Osservazioni:}
+
+\begin{enumerate}
+    \item La norma generalizza la nozione di "lunghezza" di un vettore.
+    \item \(\|v\|= \ul{0} \iff v \cdot v = 0 \iff v = \ul{0} \) 
+\end{enumerate}
+\mprop{}{In \(V^{\circ}_n(\RR )\) valgono i seguenti fatti
+\begin{enumerate}
+    \item \(\|v\|\ge 0 \quad e\quad \|v\|=0 \iff v = \ul{0} \) 
+    \item \(\|kv\|=|k|\|v\| \) 
+    \item \(|v \cdot w| \le \|v\|\cdot \|w\|\) (disuguaglianza di Schwarz)
+    \item \(\|v+w\|\le \|v\|+\|w\|\) (disuguaglianza triangolare)
+\end{enumerate}}
+
+\paragraph{Osservazioni:} Sia "\(\cdot \)" un prodotto scalare euclideo definito su \(\RR ^{n}(\RR )\). La sua base canonica è \[B_c = ((1,0,\ldots , 0), (0,1,0, \ldots , 0), \ldots , (0,0, \ldots , 0, 1)) = (e_1, e_2, \ldots , e_n)\] 
+\begin{enumerate}
+    \item \(\|e_i\|=\sqrt{e_i \cdot e_i} = 1\) 
+    \item \(e_i \cdot e_j = 0 \quad \forall i \neq j \implies e_i \perp e_j\) 
+    \item \(\forall \underbrace{(x_1, x_2, \ldots , x_n)}_{=v}  = x_1(1, 0, \ldots , 0) + x_2 (0,1, 0 , \ldots , 0) + \ldots + x_n(0,0, \ldots , 0, 1)\) \\ \(\implies v \cdot e_i = x_i =\) i-esima componente di \(v\) rispetto a \(B_c\)
+\end{enumerate}
+
+\dfn{Base ortogonale e ortonormale}{I vettori \(v_1, v_2, \ldots , v_n\) di uno spazio vettoriale \(V^{\circ}_n(\RR )\) formano un insieme \textbf{ortogonale} se \(v_i \cdot v_j = 0, \ i \neq j\). Se inoltre ciascuno dei \(v_i\) ha norma unitaria, allora parleremo di insieme  \textbf{ortonormale}. Se poi tali vettori costituiscono una base di \(V^{\circ}_n(\RR )\) parleremo di base ortogonale o ortonormale.}
+
+\mprop{}{Se \(\emptyset\neq A \subseteq V^{\circ}_n(\RR )\) e costituito da vettori tutti non nulli. Allora \(A\) è libero.}
+\pf{Dimostrazione}{\[A = \{v_1,v_2, \ldots , v_n\} \quad v_i \cdot v_j = 0 \quad \forall i \neq j. \quad  \text{Siano} \ \alpha _1, \alpha _2, \ldots , \alpha _n \in \RR : \ \alpha _1 v_1 + \alpha _2v_2 + \ldots + \alpha _n v_n = \ul{0} \]
+\[
+0 = 0 \cdot v_1=(\alpha _1, \alpha _2, \ldots , \alpha _n) \cdot v_1 = \alpha _1 \underbrace{v_1 \cdot v_1}_{\neq 0 \implies v_1 \neq \ul{0} \implies \|v_1\|^2 \neq 0}  + \alpha _2 \underbrace{v_2 \cdot v_2}_{=0}  + \ldots + \alpha _n \underbrace{v_n \cdot v_n}_{= 0}  = \underbrace{\|v_1\|^2}_{\neq 0} \underbrace{\alpha _1}_{\implies \alpha _1=0} 
+\] Ripeto il ragionamento per ciascuno dei \(v_i\) e ottengo che gli unici \(\alpha \) che mi danno il vettore nullo sono quelli tutti nulli. Quindi se \(\alpha _1 = \alpha _2 = \ldots = \alpha _n = 0 \implies A\) è libero.
+}
+
+\paragraph{Osservazione:} In \(V^{\circ}_n(\RR )\) se \(A\) è un insieme ortogonale di \(n\) vettori tutti diversi dal vettore nullo allora \(A\) è libero. Dunque fissato un ordine abbiamo una base ortogonale.
+
+\thm{Processo di ortogonalizzazione di Gram-Schmidt}{Siano \(V^{\circ}_n(\RR )\) e \(B = (e_1, e_2, \ldots , e_n)\) una base. La sequenza \(B' = (e_1', e_2', \ldots , e_n')\) così definita \[
+e_1'=e_1
+\] \[
+e_2'=e_2-\frac{e_2\cdot e_1'}{e_1'\cdot e_1'}\cdot e_1'
+\] \[
+e_3'=e_3-\frac{e_3\cdot e_1'}{e_1'\cdot e_1'}\cdot e_1'-\frac{e_3\cdot e_2'}{e_2'\cdot e_2'}\cdot e_2'
+\] \[
+\vdots
+\] \[
+e_n' = e_n - \frac{e_n \cdot e_1'}{e_1'\cdot e_1'}\cdot e_1'- \ldots - \frac{e_n \cdot e_{n-1}'}{e_{n-1}'\cdot e_{n-1}'}\cdot e'_{n-1}
+\] è una base ortogonale di  \(V^{\circ}_n(\RR )\).}
+\paragraph{Osservazione:} Se i primi \(p\) vettori di \(B\) sono già ortogonali tra loro il metodo di Gram-Schmidt non li cambia.
+
+\thm{}{Se \(A\) è un sottoinsieme non vuoto di \(V^{\circ}_n(\RR )\), la cui copertura non coincide con \(V^{\circ}_n(\RR )\), allora \[
+V^{\circ}_n(\RR ) = \mcL(A) \oplus A^{\perp}
+\] }
+\pf{Dimostrazione}{Prima di tutto dimostriamo che \(\mcL(A) \cap A^{\perp} = \{\ul{0} \} \) infatti: \(v \in \mcL(A) \cap A^{\perp}\) e se \(v \in A^{\perp}=[\mcL(A) ]^{\perp} \quad v \cdot v = 0 \implies v = \ul{0} \) poiché ci troviamo in un prodotto scalare definito positivo. Quindi la somma è diretta. Ora si può dimostrare che \(\mcL(A) \oplus A^{\perp}=V^{\circ}_n(\RR )\). Sia \(\dim \mcL(A) = p\) e sia \(B = (v_1, v_2, \ldots , v_p)\) una base ortogonale di \(\mcL(A) \); per il teorema di completamento ad una base possiamo completare \(B\) ad una base di \(V^{\circ}_n(\RR )\). Aggiungiamo a \(B\) \(n-p\) vettori. Ora applichiamo a tale base il processo di ortogonalizzazione di Gram-Schmidt.  \(B' = (v_1 , \ldots , v_p , v_{p+1}', \ldots , v_n')\) è una base ortogonale di \(V_n^{\circ}(\RR )\). Quindi \(\mcL(B') = V_n^{\circ}(\RR )\). Ora tutti i vettori aggiunti sono ortogonali ai vettori originali, cioè \(v_{p+1}', \ldots , v_n' \in \mcL(A)^{\perp} = A^{\perp} \implies \mcL(A) \oplus A^{\perp} = V^{\circ}_n(\RR ) \).}
+
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(A^{\perp}\) è un complemento diretto di \(\mcL(A) \) 
+    \item Per la formula di Grassmann abbiamo che \[
+    n = \dim (\mcL(A) \oplus A^{\perp}) = \dim \mcL(A) + \dim A^{\perp} \implies \dim A^{\perp} = n-\dim \mcL(A) 
+    \] 
+    \item Per il punto precedente possiamo affermare che se il prodotto scalare è definito positivo allora \(U \le V_n^{\circ}(\RR ) \implies U = (U^{\perp})^{\perp}\)
+\end{enumerate}
+
+\thm{}{L'insieme delle soluzioni di un sistema lineare omogeneo è un sottospazio vettoriale di \(\dim : \ n- \rho(A) \)}
+\pf{Dimostrazione}{ In \(\RR ^{n}\) con prodotto scalare euclideo \[
+(x_1,x_2, \ldots , x_n) \cdot (x_1', x_2', \ldots , x_n') = x_1x_1' + x_2x_2' + \ldots + x_n x_n'
+\] Quindi possiamo riscrivere il sistema come
+\[
+\begin{cases}
+    \ a_{11}x_1+\ldots +a_{1n}x_n = 0 \\
+    \ \ldots \ldots \ldots \ldots \ldots  \ldots \ldots \ldots  \\
+    \ a_{m 1}x_1+\ldots +a_{mn}x_n = 0 \\
+\end{cases} \iff
+\begin{cases}
+    \ (a_{11}, \ldots , a_{1n}) \cdot (x_1, \ldots , x_n) = 0 \\
+    \ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots  \\
+    \ (a_{m1}, \ldots , a_{mn}) \cdot (x_1, \ldots , x_n) = 0 \\
+\end{cases}
+\] Pensando alle righe di \(A\) come vettori di \(\RR ^{n}\) le equazioni del sistema esprimono il fatto che il prodotto scalare di tali righe per il generico vettore \((x_1, x_2, \ldots , x_n)\) è uguale a zero. Quindi il generico vettore è ortogonale a tutte le righe di \(A\). Chiamando \(\mcL(R) \) lo spazio generato dalle righe di \(A\). L'insieme \(S\) delle soluzioni di \(AX = \ul{0} \) coincide con \(\mcL(R) ^{\perp}\). E quindi per il teorema di Kronecker \(\dim S = n - \dim \mcL(R) = n - \rho(A) \).}
+
+\section{Matrici di forme bilineari}
+
 \end{document}

@@ -33,4 +33,11 @@
 \contentsline {paragraph}{Osservazione:}{27}{section*.10}%
 \contentsline {section}{\numberline {5.2}Prodotti scalari e ortogonalità}{27}{section.5.2}%
 \contentsline {paragraph}{Osservazioni:}{28}{section*.11}%
+\contentsline {section}{\numberline {5.3}Spazi con prodotto scalare definito positivo}{29}{section.5.3}%
+\contentsline {paragraph}{Osservazioni:}{29}{section*.12}%
+\contentsline {paragraph}{Osservazioni:}{30}{section*.13}%
+\contentsline {paragraph}{Osservazione:}{30}{section*.14}%
+\contentsline {paragraph}{Osservazione:}{31}{section*.15}%
+\contentsline {paragraph}{Osservazioni:}{31}{section*.16}%
+\contentsline {section}{\numberline {5.4}Matrici di forme bilineari}{31}{section.5.4}%
 \contentsfinish 
