@@ -11,11 +11,15 @@
 
 \begin{document}
 
+
 \maketitle
-\newpage% or \cleardoublepage
+\cleardoublepage
 % \pdfbookmark[<level>]{<title>}{<dest>}
 \pdfbookmark[section]{\contentsname}{toc}
 \tableofcontents
+\null\newpage
+
+\setlength{\headheight}{15pt}
 
 \pagestyle{fancy}
 %... then configure it.
@@ -997,5 +1001,94 @@ V^{\circ}_n(\RR ) = \mcL(A) \oplus A^{\perp}
 \] Pensando alle righe di \(A\) come vettori di \(\RR ^{n}\) le equazioni del sistema esprimono il fatto che il prodotto scalare di tali righe per il generico vettore \((x_1, x_2, \ldots , x_n)\) è uguale a zero. Quindi il generico vettore è ortogonale a tutte le righe di \(A\). Chiamando \(\mcL(R) \) lo spazio generato dalle righe di \(A\). L'insieme \(S\) delle soluzioni di \(AX = \ul{0} \) coincide con \(\mcL(R) ^{\perp}\). E quindi per il teorema di Kronecker \(\dim S = n - \dim \mcL(R) = n - \rho(A) \).}
 
 \section{Matrici di forme bilineari}
+
+\dfn{Matrice di forma bilineare}{Sia \(V_n(K)\) uno spazio vettoriale, "\(*\)" una forma bilineare e \(B=(e_1,e_2, \ldots , e_n)\) base di \(V_n(K)\). Si chiama \textbf{matrice della forma bilineare} "\(*\)" rispetto a \(B\) \[
+A^{*}_B =
+\begin{pmatrix}
+    e_1*e_1 & e_1*e_2 & \ldots  & e_1*e_n \\
+    e_2*e_1 & e_2*e_2 & \ldots  & e_2*e_n \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e_n*e_1 & e_n*e_2 & \ldots  & e_n*e_n \\
+\end{pmatrix} \in M_n(K)
+\] Si può indicare in modo più compatto con \[
+A^{*}_B = (e_i * e_j)
+\] }
+\nt{La matrice di una forma bilineare dipende dalla base fissata.}
+
+\mprop{}{La matrice che rappresenta un prodotto scalare rispetto a una base qualsiasi è simmetrica.}
+
+\pf{Dimostrazione}{\(B = (e_1, e_2, \ldots , e_n)\) e "\(\cdot \)" è il prodotto scalare. Allora \(A^{\cdot }_B = (e_i \cdot e_j) = (e_j \cdot e_i) = {^tA^{\cdot }_B}\).}
+
+\mprop{}{Sia "\(\cdot \)" un prodotto scalare su \(V_n(K)\) e sia \(B\) una sua base. Sia \(A^{\cdot }_B\) una matrice associata a "\(\cdot \)" rispetto alla base \(B\). Allora 
+\begin{itemize}
+    \item \(B\) è ortogonale \(\iff A^{\cdot }_B\) è diagonale \[
+    e_i \cdot e_j = 0 \quad \forall i \neq j \iff a_{ij} = 0 \quad \forall i \neq j
+    \] 
+    \item \(B\) è ortonormale \(\iff A^{\cdot }_B = I_n \in M_n(K)\) \[
+    e_i \cdot e_j = 0 \quad \forall i \neq j \quad e \quad e_i \cdot  e_i = 1 \quad \forall 1 \le i \le n \iff a_{ij} = 0 \quad \forall i \neq j \quad e\quad a_{ii} = 1 \quad \forall 1 \le i \le n
+    \] 
+\end{itemize}}
+
+\paragraph{Osservazione:} Utilizzando la matrice associata ad una forma bilineare "\(*\)" è possibile calcolare \[v * w \quad \forall v, w \in V_n(K)\].
+
+\mprop{}{Sia \(B\) una base di \(V_n(K)\) e sia "\(*\)" una forma bilineare su \(V\). Dette \[
+X = \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix} \quad e \quad  Y = \begin{pmatrix} y_1\\ \vdots\\ y_n \end{pmatrix}
+\] le matrici colonne delle componenti rispettivamente di \(v\) e di \(w \in V\) risulta: \[
+v * w = {^tX} A^{*}_B Y
+\] }
+
+\section{Matrici ortogonali e basi ortonormali}
+\dfn{Matrice ortogonale}{Sia \(A \in M_n(K)\) diciamo che \(A\) è \textbf{ortogonale} se \({^tA}= A ^{-1}\). Quindi \[A {^tA}= {^tA}A = I_n\]}
+
+\mprop{}{Sia \(A \in M_n(K)\) una matrice ortogonale. Allora \(|A|  \in \{-1, 1\} \)}
+
+\pf{Dimostrazione}{\[
+|I_n| = 1 = |A A ^{-1}| = |A {^tA}| = |A| |{^tA}| = |A| |A| = |A| ^2
+\] \[
+|A| ^2 = 1 \iff |A| = \pm 1
+\] }
+
+\mprop{}{Sia \(A \in M_n(K)\). \(A\) è ortogonale se, e soltanto se, le sue righe (o colonne) costituiscono una base ortonormale di \(\RR ^{n}(\RR )\) rispetto al prodotto scalare euclideo (dello spazio euclideo \(\RR ^{n}(\RR )\)).}
+
+\pf{Dimostrazione}{"\(\implies \)" \[
+\begin{pmatrix} R_1\\ \vdots\\ R_n \end{pmatrix} \iff  {^tA}= ({^tR_1}, \ldots , {^tR_n})
+\] \[
+A {^tA} = I_n = \begin{pmatrix} R_1\\ \vdots\\ R_n \end{pmatrix}({^tR_1}, \ldots , {^tR_n}) = 
+\begin{pmatrix}
+    R_1 \cdot R_1 & R_1 \cdot R_2 & \ldots  & R_1 \cdot R_n \\
+    R_2 \cdot R_1 & R_2 \cdot R_2 & \ldots  & R_2 \cdot R_n \\
+    \vdots & \vdots & \ddots & \vdots \\
+    R_n \cdot R_1 & R_n \cdot R_2 & \ldots  & R_n \cdot R_n \\
+\end{pmatrix}
+\] \[
+R_i \cdot R_j = 0 \quad \text{se} \quad i \neq j, \quad R_i \cdot R_i = 1 \quad \forall 1 \le i \le n
+\] Quindi le righe di \(A\) sono una base ortonormale. Il ragionamento è completamente analogo per le colonne. \\ "\(\impliedby \)" Si può dimostrare ripercorrendo le implicazioni al contrario.} 
+
+\section{Matrici reali simmetriche}
+\thm{}{Sia \(A \in M_n(\RR )\) simmetrica allora 
+\begin{enumerate}
+    \item Gli autovalori di \(A\) sono tutti reali (teorema spettrale)
+    \item Gli autovettori di \(A\) relativi ad autospazi distinti sono ortogonali tra loro
+\end{enumerate}}
+
+\pf{Dimostrazione del punto 2}{Siano \(x\) e \(y\) autovettori relativi ad autovalori \(\lambda \) e \(\mu\) distinti. Quindi \(AX = \lambda x\) e \(AX = \mu y\). Sia \(\lambda \neq 0\). Quindi \[
+        ({^tx}{^ty}) \lambda = (\lambda {^tx})y = {^t(x\lambda )y = {^t(Ax)y = \underbrace{({^tx}{^tA})y = ({^tx}A)y}_{\text{per la simmetria di \(A\)}}} = {^tx}(Ay)}
+\] \[
+= {^tx}\mu y = \mu ({^tx}y) = \mu ({^tx}{^ty}) \implies ({^tx}{^ty})\lambda = ({^tx}{^ty}) \mu
+\] \[
+\lambda k = \mu k \iff (\lambda - \mu) k = 0 \iff \mu = \lambda \quad \text{oppure}\quad {^tx}{^ty}=0
+\] ma \(\mu \neq \lambda \) perché \(x\) e \(y\) stanno in autospazi distinti \(\implies {^tx}{^ty}=0 \implies x\) e \(y\) sono ortogonali.}
+
+\cor{}{Una matrice reale e simmetrica di ordine \(n\) ammette \(n\) autovalori contati con la loro molteplicità algebrica.}
+
+\dfn{Matrice ortogonalmente diagonalizzabile}{Data \(A \in M_n(K)\) è detta \textbf{ortogonalmente diagonalizzabile} se esistono \(D\), matrice diagonale di ordine \(n\), e \(P\) matrice ortogonale di ordine \(n\) tali che \[
+D = P^{-1}AP = {^tP}AP
+\] }
+\thm{}{I seguenti fatti sono equivalenti
+\begin{enumerate}
+    \item \(A\in M_n(\RR )\) è ortogonalmente diagonalizzabile;
+    \item \(\RR ^{n}\) ammette una base ortonormale di autovettori di \(A\);
+    \item \(A\) è una matrice reale e simmetrica.
+\end{enumerate}}
 
 \end{document}
