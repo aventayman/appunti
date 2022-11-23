@@ -67,14 +67,14 @@ Allora si presentano questi casi
     \begin{tikzpicture}
         \begin{axis}[
             xmin= -2, xmax= 2,
-            ymin= -2, ymax = 2,
+            ymin= -1, ymax = 2,
             axis lines = middle,
         ]
-            \addplot[domain=-2:2, samples=100]{x};
+            \addplot[domain=-2:2, samples=100]{abs(x)};
         \end{axis}
     \end{tikzpicture}
-    \caption{}
-    \label{Modulo da cambiare poi}
+    \caption{\(f(x) = |x| \)}
+    \label{}
 \end{figure}
 
 \paragraph{Osservazione:} Se \(x_0\) è un punto angoloso \(\not\exists f'(x_0)\) perché \(f'_{+}(x_0) \neq f'_{-}(x_0)\)
@@ -117,7 +117,7 @@ f(x) =
             ymin= -10, ymax = 10,
             axis lines = middle,
         ]
-            \addplot[domain=-10:10, samples=100]{x * sin(1/x)};
+            \addplot[domain=-10:10, samples=1000]{x * sin(1/x)};
         \end{axis}
     \end{tikzpicture}
     \caption{Non esiste né la derivata destra né quella sinistra}
@@ -234,7 +234,89 @@ f'_{-}(b) = \lim_{x \to b ^{-}} f'(x)
 \chapter{Proprietà globali delle funzioni derivabili}
 I risultati che ci permetteranno di fare lo studio del grafico qualitativo delle funzioni si basano su altri risultati teorici che legano 
 \begin{itemize}
-    \item proprietà delle derivate
-    \item proprietà globali delle funzioni
+    \item proprietà delle derivate (la derivata è un concetto locale, di per sé dà informazioni sul comportamento di \(f\) \textbf{vicino} al punto);
+    \item proprietà globali delle funzioni;
 \end{itemize}
+
+Innanzitutto, daremo risultati che applicheremo allo studio dei punti di estremo relativo di una data funzione.
+
+\section{Massimi e minimi relativi}
+\dfn{Punti di minimo e massimo relativo e assoluto}{Sia \(\emptyset \neq A \subseteq \RR , \ f: A \to  \RR , \ x_0 \in A\). \\ Si dice che 
+\begin{itemize}
+    \item \(x_0\) è un \textbf{punto di massimo RELATIVO} (o locale), se esiste un intorno (\(x_0 - r, x_0+r\)) di \(x_0\) tale che \(x_0\) è punto di massimo per la restrizione di \(f\) a (\(x_0-r, x_0+r\))\(\cap A\) cioè: \[
+    \exists r > 0 : \ \forall x \in A \cap (x_0-r, x_0+r) \quad \text{si ha} \quad f(x) \le f(x_0)
+    \] 
+    \item \(x_0\) è un \textbf{punto di minimo RELATIVO} (o locale), se esiste un intorno (\(x_0 - r, x_0+r\)) di \(x_0\) tale che \(x_0\) è punto di massimo per la restrizione di \(f\) a (\(x_0-r, x_0+r\))\(\cap A\) cioè: \[
+    \exists r > 0 : \ \forall x \in A \cap (x_0-r, x_0+r) \quad \text{si ha} \quad f(x) \ge f(x_0)
+    \] 
+    \item \(x_0\) è un punto di estremo relativo (o locale) se è punto di massimo o di minimo relativo.
+\end{itemize}}
+
+\paragraph{Osservazioni:} 
+\begin{itemize}
+    \item Se \(x_0\) è un punto di massimo assoluto per \(f\) su \(A\), cioè \[
+    \forall x \in A \quad f(x) \le f(x_0)
+    \] allora anche \(x_0\) è un punto di massimo relativo. Ovviamente non vale il viceversa.
+\end{itemize}
+
+\ex{La funzione doppio pozzo}{\[
+W(x) = \frac{(x^2-1)^2}{4} \quad \forall x \in \RR 
+\] \(x_1 = -1\) , \(x_2= 1\) sono punti di minimo relativo. Anche di minimo assoluto. }
+\begin{figure}[]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xmin= -2, xmax= 2,
+            ymin= -1, ymax = 3,
+            axis lines = middle,
+        ]
+            \addplot[domain=-2:2, samples=100]{((x^2 - 1)^2)/4};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{funzione doppio pozzo}
+    \label{}
+\end{figure}
+
+\ex{}{\[
+f(x) = 
+\begin{cases}
+    \ x^2 \quad \text{se} \ x \in [-1, 1]\backslash \{0\}, \\
+    \ 2 \quad \text{se} \quad x = 0 \\
+\end{cases}
+\]
+\begin{itemize}
+    \item \(x_0=0\) è punto di massimo relativo; è anche punto di massimo assoluto.
+    \item \(x_1 = -1, \ x_2 = 1\) sono punti di massimo relativo; non assoluto.
+\end{itemize}
+Per quanto riguarda le derivate invece 
+\begin{itemize}
+    \item in  \(x_0=0\) \(f\) non è continua \(\implies f\) non è derivabile.
+    \item in \(x = -1\) ho che \(f'_{+}(-1) \le 0\), in \(x = 1\) ho che \(f'_{-}(1) \ge 0\).
+\end{itemize}}
+
+\ex{}{\[
+f(x) = \sqrt{|x| } , \quad \forall x \in \RR 
+\] \(x_0\) è punto di minimo relativo, è anche punti di minimo assoluto. \(f\) non ha punti di massimo relativo. \(x_0\) è un punto di cospide.}
+\begin{figure}[]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xmin= -10, xmax= 10,
+            ymin= -1, ymax = 5,
+            axis lines = middle,
+        ]
+            \addplot[domain=-10:10, samples=1000]{sqrt(abs(x))};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{\(f(x) = \sqrt{|x| } \)}
+    \label{}
+\end{figure}
+
+\dfn{Punto stazionario}{Sia \(f: \ I \to  \RR \) e \(x_0\) punto interno a \(I\). Diciamo che \(x_0\) è \textbf{punto stazionario (o critico)} per \(f\) se \(f\) è derivabile in \(x_0\) e \(f'(x_0) = 0\).}
+
+\thm{Teorema di Fermat}{Siano \(f: \  I \to  \RR \) e \(x_0\) un \textbf{punto interno} a \(I\). Se \[
+\exists f'(x_0) \quad e \quad \text{\(x_0\) è un punto di estremo relativo}
+\] allora \(x_0\) è un punto stazionario di \(f\).}
+Dati \(f: \ I \to  \RR , x_0 \in I\) interno in cui \(\exists f'(x_0)\) allora vale questa implicazione: \(x_0\) punto di estremo relativo \(\implies f'(x_0) = 0\). Essere punto stazionario è condizione necessaria perché \(x_0\) sia punto di estremo relativo.
+\nt{Non vale il viceversa! Falso che \(f'(x_0) = 0 \implies x_0\) punto di estremo relativo! Ad esempio \(f(x) = x^3\) è un controesempio.}
 \end{document}

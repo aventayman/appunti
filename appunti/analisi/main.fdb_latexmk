@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1669215661 "main.tex" "main.pdf" "main" 1669215662 0
+["pdflatex"] 1669219087 "main.tex" "main.pdf" "main" 1669219090 0
   "/etc/texmf/web2c/texmf.cnf" 1667938489 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -47,6 +47,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb" 1591219423 25273 57c06ae0831a03c4eb441ef7894a1639 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb" 1570136818 16003 379767f2e95213e4cfc7bfd5823fb860 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb" 1634156854 55131 37a379baccd50ac17c5ca120b382f7a1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb" 1622581553 40420 f45498301b5afd566294a3567cb80a1d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb" 1621283831 33424 f912ebe54685d0a65d3c046e3d517e38 ""
@@ -319,9 +320,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668085646 3060853 f7e804cdff618f3d911a426601015f4e ""
   "letterfonts.tex" 1669209110 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1669209127 3389 93000260d2aea292d29c76d4ace77a29 ""
-  "main.aux" 1669215662 3750 3bac100bfbff73e836312cb46d038040 "pdflatex"
-  "main.tex" 1669215659 10901 fca36490e31ec196315d752372ed62c5 ""
-  "main.toc" 1669215662 681 efb249543fd62895c54a03c7c984d09e "pdflatex"
+  "main.aux" 1669219090 5693 3f00817b4235dbc24efc1d59ee921116 "pdflatex"
+  "main.tex" 1669219086 15173 c0cafa28611ad39c256c33e99ae34a07 ""
+  "main.toc" 1669219090 926 117c585a4b31230d0662d5690b256004 "pdflatex"
   "preamble.tex" 1669209098 20136 13d941be01f919572af6572d5d1472ed ""
   (generated)
   "main.aux"
