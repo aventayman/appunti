@@ -1,0 +1,273 @@
+
+\chapter{Forme bilineari e prodotti scalari}
+\section{Forme bilineari}
+\dfn{Forma bilineare e prodotto scalare}{Sia \(V_n(K)\) uno spazio vettoriale. Una \textbf{forma bilineare} in \(V\) è una funzione \(*: \ V \times V \to K: \)
+\begin{itemize}
+    \item \((u+v) * w = u * w + v * w \qquad \forall u, v, w \in V \ \forall k \in K\)
+    \item \(u * (v + w) = u * v + u * w \qquad \forall u, v, w \in V \ \forall k \in K\)
+    \item \((ku) * v = u * (kv) = k (u * v) \qquad \forall u, v, w \in V \ \forall k \in K\) 
+\end{itemize} 
+Se poi \(*\) verifica anche l'ulteriore proprietà
+\begin{itemize}
+    \item \(v * w = w * v \qquad \forall u, v, w \in V \ \forall k \in K\)
+\end{itemize}
+Allora si chiama \textbf{prodotto scalare} (o forma bilineare simmetrica).}
+\paragraph{Osservazione:} Si deduce chiaramente che \(\forall v \in V \quad \ul{0} * v = 0 = v * \ul{0} \).
+
+\ex{Prodotto scalare euclideo e standard}{
+\begin{enumerate}
+    \item Definiamo il \textbf{prodotto scalare euclideo} come una funzione \(*:\RR^{n} \times \RR^{n} \to \RR: \) \[
+     (x_1, x_2, \ldots , x_n)*(x_1', x_2', \ldots , x_n') = x_1x_1'+x_2x_2'+\ldots +x_nx_n'
+    \] 
+    \item Definiamo il \textbf{prodotto scalare standard} come la funzione \(*: M_n(\RR) \times M_n(\RR) \to \RR:\) \[
+\begin{pmatrix}
+    x_{11} & x_{12} & \ldots  & x_{1n} \\
+    x_{21} & x_{22} & \ldots  & x_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    x_{n 1} & x_{n 2} & \ldots  & x_{n n} \\
+\end{pmatrix} \ * \
+\begin{pmatrix}
+    x_1' & x'_{12} & \ldots  & x'_{1n} \\
+    x'_{21} & x'_{22} & \ldots  & x'_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    x'_{n 1} & x'_{n 2} & \ldots  & x'_{n n} \\
+\end{pmatrix} = x_{11}x_{11}'+x_{12}x_{12}'+ \ldots + x_{n n}x_{n n}'
+    \] 
+\end{enumerate}
+}
+
+\section{Prodotti scalari e ortogonalità}
+\dfn{Ortogonalità}{In uno spazio vettoriale \(V(K)\), con prodotto scalare "\(\cdot \)", due vettori \(v\) e \(w\) di \(V\) si dicono \textbf{ortogonali}, e si scrive \(v \perp w\), se \(v \cdot w = 0\).}
+\dfn{Complemento ortogonale}{Sia \(V(K)\) uno spazio vettoriale e "\(\cdot \)" un prodotto scalare. Sia \(\emptyset \neq A \subseteq V\); si chiama  \textbf{complemento ortogonale} (o più semplicemente ortogonale) di \(A\) l'insieme \[
+A^{\perp} = \{v \in V : \ v \perp w, \ \forall w \in A\} \qquad \ul{0} \in A^{\perp} \neq \emptyset
+\] }
+
+\mprop{}{Sia \(V(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)". Sia \(\emptyset \neq A \subseteq V\). Allora \(A^{\perp}\) è un sottospazio vettoriale.}
+\pf{Dimostrazione}{Sappiamo che \(\ul{0} \in A^{\perp} \neq \emptyset\) \\ 
+Dobbiamo dimostrare che \[
+\forall u_1, u_2 \in A^{\perp}, \ \forall k_1,k_2 \in K \qquad k_1u_1+k_2u_2 \in A^{\perp}
+\] Possiamo scrivere per la proprietà di ortogonalità che\[
+\forall w \in A \quad u_1\cdot w = 0 \quad u_2 \cdot w = 0
+\] Quindi \[
+(k_1u_1+k_2u_2) \cdot w = (k_1u_1) \cdot w + (k_2u_2) \cdot w = k_1 (\underbrace{u_1 \cdot w}_{=0}) + k_2 (\underbrace{u_2 \cdot w}_{=0} )
+\] \[
+\implies k_1u_1+k_2u_2 \in A^{\perp} \implies A^{\perp} \ \text{è un sottospazio.}
+\] 
+}
+
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(A \subseteq B \implies A^{\perp} \supseteq B^{\perp}\)
+    \item \(A^{\perp} = [\mcL(A) ]^{\perp}\)
+    \item Generalmente se \(A \le V(K) \implies A \neq (A^{\perp})^{\perp}\), ma \(A \subseteq (A^{\perp})^{\perp}\)
+\end{enumerate}
+
+\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)" e siano \(v, w \in V(K)\) con \(w \cdot w \neq \ul{0} \). Allora \[
+\exists \ v_1, v_2 \in V: \ v = v_1+v_2, \ v_1 = kw, \ v_2 \perp w
+\] }
+
+\pf{Dimostrazione}{ \[
+k = \frac{v \cdot w}{w \cdot w} \qquad v_1= kw = \left( \frac{v \cdot w}{w \cdot w} \right) \cdot w
+\] \[
+v_2=v-v_1 \iff v_1+v_2=v
+\] Ora verifichiamo che \(v_2 \perp w\) \[
+v_2 \perp w \iff  (v-v_1) \cdot w = \left( v - \frac{v \cdot  w}{w \cdot w} \right) \cdot  w = v - w - \frac{v \cdot w}{w \cdot w}\cdot w \cdot w = v \cdot w - v \cdot w = 0
+\] }
+\dfn{Coefficiente di Fourier e proiezione}{Sia \(V_n(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)" e siano \(v, w \in V(K)\) con \(w \cdot w \neq \ul{0} \). Allora \[
+    k = \frac{v \cdot w}{w \cdot w}
+\] si chiama \textbf{coefficiente di Fourier} di \(v\) lungo \(w\) e \[
+v_1= \frac{v \cdot w}{w \cdot w}\cdot w
+\] si chiama \textbf{proiezione} di \(v\) lungo \(w\).}
+
+\dfn{Forma quadratica}{Sia \(V_n(K)\) uno spazio vettoriale con prodotto scalare "\(\cdot \)" e sia \(v \in V(K)\). Si chiama \textbf{forma quadratica} associata a "\(\cdot \)" la funzione \[
+q: \ 
+\begin{cases}
+    \ V \to K  \\
+    \ v \mapsto q(v) = v \cdot v \\
+\end{cases}
+\] }
+
+\section{Spazi con prodotto scalare definito positivo}
+\dfn{Prodotto scalare definito positivo}{Sia \(V(K)\) uno spazio vettoriale su campo \(K\) \ul{ordinato}. Un prodotto scalare "\(\cdot \)" in \(V\) si dice \textbf{definito positivo} se \(\) \[
+\forall v \in V \quad v \cdot v \ge 0 \quad e \quad v \cdot v = 0 \iff v = \ul{0} 
+\] Per chiarezza da qui in avanti quando si parla di prodotti scalari definiti positivi \(K = \RR \) in modo tale che esso sia ordinato. Di conseguenza denotiamo con \textbf{spazio vettoriale metrico reale} \(V_n^{\circ}(\RR )\), cioè uno spazio vettoriale dotato di un prodotto scalare definito positivo.}
+
+\dfn{}{Dato \(V^{\circ}_n(\RR)\) si chiama  \textbf{norma} la funzione \[
+\|\cdot \|: \ 
+\begin{cases}
+    \ V \to \RR \\
+    \ v \mapsto \|v\|=\sqrt{v \cdot v} = \sqrt{q(v)} \\
+\end{cases}
+\] }
+\ex{Vettori geometrici}{\[
+\vec{v} \cdot \vec{w} = |\vec{v} | |\vec{w}| \cos \alpha 
+\] \[
+\|\vec{v}\|=\sqrt{\vec{v} \cdot \vec{v}} = \sqrt{|\vec{v}| |\vec{v}| \cos 0} = \sqrt{|\vec{v}| ^2} = |\vec{v}| 
+\] }
+
+\paragraph{Osservazioni:}
+
+\begin{enumerate}
+    \item La norma generalizza la nozione di "lunghezza" di un vettore.
+    \item \(\|v\|= \ul{0} \iff v \cdot v = 0 \iff v = \ul{0} \) 
+\end{enumerate}
+\mprop{}{In \(V^{\circ}_n(\RR )\) valgono i seguenti fatti
+\begin{enumerate}
+    \item \(\|v\|\ge 0 \quad e\quad \|v\|=0 \iff v = \ul{0} \) 
+    \item \(\|kv\|=|k|\|v\| \) 
+    \item \(|v \cdot w| \le \|v\|\cdot \|w\|\) (disuguaglianza di Schwarz)
+    \item \(\|v+w\|\le \|v\|+\|w\|\) (disuguaglianza triangolare)
+\end{enumerate}}
+
+\paragraph{Osservazioni:} Sia "\(\cdot \)" un prodotto scalare euclideo definito su \(\RR ^{n}(\RR )\). La sua base canonica è \[B_c = ((1,0,\ldots , 0), (0,1,0, \ldots , 0), \ldots , (0,0, \ldots , 0, 1)) = (e_1, e_2, \ldots , e_n)\] 
+\begin{enumerate}
+    \item \(\|e_i\|=\sqrt{e_i \cdot e_i} = 1\) 
+    \item \(e_i \cdot e_j = 0 \quad \forall i \neq j \implies e_i \perp e_j\) 
+    \item \(\forall \underbrace{(x_1, x_2, \ldots , x_n)}_{=v}  = x_1(1, 0, \ldots , 0) + x_2 (0,1, 0 , \ldots , 0) + \ldots + x_n(0,0, \ldots , 0, 1)\) \\ \(\implies v \cdot e_i = x_i =\) i-esima componente di \(v\) rispetto a \(B_c\)
+\end{enumerate}
+
+\dfn{Base ortogonale e ortonormale}{I vettori \(v_1, v_2, \ldots , v_n\) di uno spazio vettoriale \(V^{\circ}_n(\RR )\) formano un insieme \textbf{ortogonale} se \(v_i \cdot v_j = 0, \ i \neq j\). Se inoltre ciascuno dei \(v_i\) ha norma unitaria, allora parleremo di insieme  \textbf{ortonormale}. Se poi tali vettori costituiscono una base di \(V^{\circ}_n(\RR )\) parleremo di base ortogonale o ortonormale.}
+
+\mprop{}{Se \(\emptyset\neq A \subseteq V^{\circ}_n(\RR )\) e costituito da vettori tutti non nulli. Allora \(A\) è libero.}
+\pf{Dimostrazione}{\[A = \{v_1,v_2, \ldots , v_n\} \quad v_i \cdot v_j = 0 \quad \forall i \neq j. \quad  \text{Siano} \ \alpha _1, \alpha _2, \ldots , \alpha _n \in \RR : \ \alpha _1 v_1 + \alpha _2v_2 + \ldots + \alpha _n v_n = \ul{0} \]
+\[
+0 = 0 \cdot v_1=(\alpha _1, \alpha _2, \ldots , \alpha _n) \cdot v_1 = \alpha _1 \underbrace{v_1 \cdot v_1}_{\neq 0 \implies v_1 \neq \ul{0} \implies \|v_1\|^2 \neq 0}  + \alpha _2 \underbrace{v_2 \cdot v_2}_{=0}  + \ldots + \alpha _n \underbrace{v_n \cdot v_n}_{= 0}  = \underbrace{\|v_1\|^2}_{\neq 0} \underbrace{\alpha _1}_{\implies \alpha _1=0} 
+\] Ripeto il ragionamento per ciascuno dei \(v_i\) e ottengo che gli unici \(\alpha \) che mi danno il vettore nullo sono quelli tutti nulli. Quindi se \(\alpha _1 = \alpha _2 = \ldots = \alpha _n = 0 \implies A\) è libero.
+}
+
+\paragraph{Osservazione:} In \(V^{\circ}_n(\RR )\) se \(A\) è un insieme ortogonale di \(n\) vettori tutti diversi dal vettore nullo allora \(A\) è libero. Dunque fissato un ordine abbiamo una base ortogonale.
+
+\thm{Processo di ortogonalizzazione di Gram-Schmidt}{Siano \(V^{\circ}_n(\RR )\) e \(B = (e_1, e_2, \ldots , e_n)\) una base. La sequenza \(B' = (e_1', e_2', \ldots , e_n')\) così definita \[
+e_1'=e_1
+\] \[
+e_2'=e_2-\frac{e_2\cdot e_1'}{e_1'\cdot e_1'}\cdot e_1'
+\] \[
+e_3'=e_3-\frac{e_3\cdot e_1'}{e_1'\cdot e_1'}\cdot e_1'-\frac{e_3\cdot e_2'}{e_2'\cdot e_2'}\cdot e_2'
+\] \[
+\vdots
+\] \[
+e_n' = e_n - \frac{e_n \cdot e_1'}{e_1'\cdot e_1'}\cdot e_1'- \ldots - \frac{e_n \cdot e_{n-1}'}{e_{n-1}'\cdot e_{n-1}'}\cdot e'_{n-1}
+\] è una base ortogonale di  \(V^{\circ}_n(\RR )\).}
+\paragraph{Osservazione:} Se i primi \(p\) vettori di \(B\) sono già ortogonali tra loro il metodo di Gram-Schmidt non li cambia.
+
+\thm{}{Se \(A\) è un sottoinsieme non vuoto di \(V^{\circ}_n(\RR )\), la cui copertura non coincide con \(V^{\circ}_n(\RR )\), allora \[
+V^{\circ}_n(\RR ) = \mcL(A) \oplus A^{\perp}
+\] }
+\pf{Dimostrazione}{Prima di tutto dimostriamo che \(\mcL(A) \cap A^{\perp} = \{\ul{0} \} \) infatti: \(v \in \mcL(A) \cap A^{\perp}\) e se \(v \in A^{\perp}=[\mcL(A) ]^{\perp} \quad v \cdot v = 0 \implies v = \ul{0} \) poiché ci troviamo in un prodotto scalare definito positivo. Quindi la somma è diretta. Ora si può dimostrare che \(\mcL(A) \oplus A^{\perp}=V^{\circ}_n(\RR )\). Sia \(\dim \mcL(A) = p\) e sia \(B = (v_1, v_2, \ldots , v_p)\) una base ortogonale di \(\mcL(A) \); per il teorema di completamento ad una base possiamo completare \(B\) ad una base di \(V^{\circ}_n(\RR )\). Aggiungiamo a \(B\) \(n-p\) vettori. Ora applichiamo a tale base il processo di ortogonalizzazione di Gram-Schmidt.  \(B' = (v_1 , \ldots , v_p , v_{p+1}', \ldots , v_n')\) è una base ortogonale di \(V_n^{\circ}(\RR )\). Quindi \(\mcL(B') = V_n^{\circ}(\RR )\). Ora tutti i vettori aggiunti sono ortogonali ai vettori originali, cioè \(v_{p+1}', \ldots , v_n' \in \mcL(A)^{\perp} = A^{\perp} \implies \mcL(A) \oplus A^{\perp} = V^{\circ}_n(\RR ) \).}
+
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(A^{\perp}\) è un complemento diretto di \(\mcL(A) \) 
+    \item Per la formula di Grassmann abbiamo che \[
+    n = \dim (\mcL(A) \oplus A^{\perp}) = \dim \mcL(A) + \dim A^{\perp} \implies \dim A^{\perp} = n-\dim \mcL(A) 
+    \] 
+    \item Per il punto precedente possiamo affermare che se il prodotto scalare è definito positivo allora \(U \le V_n^{\circ}(\RR ) \implies U = (U^{\perp})^{\perp}\)
+\end{enumerate}
+
+\thm{}{L'insieme delle soluzioni di un sistema lineare omogeneo è un sottospazio vettoriale di \(\dim : \ n- \rho(A) \)}
+\pf{Dimostrazione}{ In \(\RR ^{n}\) con prodotto scalare euclideo \[
+(x_1,x_2, \ldots , x_n) \cdot (x_1', x_2', \ldots , x_n') = x_1x_1' + x_2x_2' + \ldots + x_n x_n'
+\] Quindi possiamo riscrivere il sistema come
+\[
+\begin{cases}
+    \ a_{11}x_1+\ldots +a_{1n}x_n = 0 \\
+    \ \ldots \ldots \ldots \ldots \ldots  \ldots \ldots \ldots  \\
+    \ a_{m 1}x_1+\ldots +a_{mn}x_n = 0 \\
+\end{cases} \iff
+\begin{cases}
+    \ (a_{11}, \ldots , a_{1n}) \cdot (x_1, \ldots , x_n) = 0 \\
+    \ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots  \\
+    \ (a_{m1}, \ldots , a_{mn}) \cdot (x_1, \ldots , x_n) = 0 \\
+\end{cases}
+\] Pensando alle righe di \(A\) come vettori di \(\RR ^{n}\) le equazioni del sistema esprimono il fatto che il prodotto scalare di tali righe per il generico vettore \((x_1, x_2, \ldots , x_n)\) è uguale a zero. Quindi il generico vettore è ortogonale a tutte le righe di \(A\). Chiamando \(\mcL(R) \) lo spazio generato dalle righe di \(A\). L'insieme \(S\) delle soluzioni di \(AX = \ul{0} \) coincide con \(\mcL(R) ^{\perp}\). E quindi per il teorema di Kronecker \(\dim S = n - \dim \mcL(R) = n - \rho(A) \).}
+
+\section{Matrici di forme bilineari}
+
+\dfn{Matrice di forma bilineare}{Sia \(V_n(K)\) uno spazio vettoriale, "\(*\)" una forma bilineare e \(B=(e_1,e_2, \ldots , e_n)\) base di \(V_n(K)\). Si chiama \textbf{matrice della forma bilineare} "\(*\)" rispetto a \(B\) \[
+A^{*}_B =
+\begin{pmatrix}
+    e_1*e_1 & e_1*e_2 & \ldots  & e_1*e_n \\
+    e_2*e_1 & e_2*e_2 & \ldots  & e_2*e_n \\
+    \vdots & \vdots & \ddots & \vdots \\
+    e_n*e_1 & e_n*e_2 & \ldots  & e_n*e_n \\
+\end{pmatrix} \in M_n(K)
+\] Si può indicare in modo più compatto con \[
+A^{*}_B = (e_i * e_j)
+\] }
+\nt{La matrice di una forma bilineare dipende dalla base fissata.}
+
+\mprop{}{La matrice che rappresenta un prodotto scalare rispetto a una base qualsiasi è simmetrica.}
+
+\pf{Dimostrazione}{\(B = (e_1, e_2, \ldots , e_n)\) e "\(\cdot \)" è il prodotto scalare. Allora \(A^{\cdot }_B = (e_i \cdot e_j) = (e_j \cdot e_i) = {^tA^{\cdot }_B}\).}
+
+\mprop{}{Sia "\(\cdot \)" un prodotto scalare su \(V_n(K)\) e sia \(B\) una sua base. Sia \(A^{\cdot }_B\) una matrice associata a "\(\cdot \)" rispetto alla base \(B\). Allora 
+\begin{itemize}
+    \item \(B\) è ortogonale \(\iff A^{\cdot }_B\) è diagonale \[
+    e_i \cdot e_j = 0 \quad \forall i \neq j \iff a_{ij} = 0 \quad \forall i \neq j
+    \] 
+    \item \(B\) è ortonormale \(\iff A^{\cdot }_B = I_n \in M_n(K)\) \[
+    e_i \cdot e_j = 0 \quad \forall i \neq j \quad e \quad e_i \cdot  e_i = 1 \quad \forall 1 \le i \le n \iff a_{ij} = 0 \quad \forall i \neq j \quad e\quad a_{ii} = 1 \quad \forall 1 \le i \le n
+    \] 
+\end{itemize}}
+
+\paragraph{Osservazione:} Utilizzando la matrice associata ad una forma bilineare "\(*\)" è possibile calcolare \[v * w \quad \forall v, w \in V_n(K)\].
+
+\mprop{}{Sia \(B\) una base di \(V_n(K)\) e sia "\(*\)" una forma bilineare su \(V\). Dette \[
+X = \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix} \quad e \quad  Y = \begin{pmatrix} y_1\\ \vdots\\ y_n \end{pmatrix}
+\] le matrici colonne delle componenti rispettivamente di \(v\) e di \(w \in V\) risulta: \[
+v * w = {^tX} A^{*}_B Y
+\] }
+
+\section{Matrici ortogonali e basi ortonormali}
+\dfn{Matrice ortogonale}{Sia \(A \in M_n(K)\) diciamo che \(A\) è \textbf{ortogonale} se \({^tA}= A ^{-1}\). Quindi \[A {^tA}= {^tA}A = I_n\]}
+
+\mprop{}{Sia \(A \in M_n(K)\) una matrice ortogonale. Allora \(|A|  \in \{-1, 1\} \)}
+
+\pf{Dimostrazione}{\[
+|I_n| = 1 = |A A ^{-1}| = |A {^tA}| = |A| |{^tA}| = |A| |A| = |A| ^2
+\] \[
+|A| ^2 = 1 \iff |A| = \pm 1
+\] }
+
+\mprop{}{Sia \(A \in M_n(K)\). \(A\) è ortogonale se, e soltanto se, le sue righe (o colonne) costituiscono una base ortonormale di \(\RR ^{n}(\RR )\) rispetto al prodotto scalare euclideo (dello spazio euclideo \(\RR ^{n}(\RR )\)).}
+
+\pf{Dimostrazione}{"\(\implies \)" \[
+\begin{pmatrix} R_1\\ \vdots\\ R_n \end{pmatrix} \iff  {^tA}= ({^tR_1}, \ldots , {^tR_n})
+\] \[
+A {^tA} = I_n = \begin{pmatrix} R_1\\ \vdots\\ R_n \end{pmatrix}({^tR_1}, \ldots , {^tR_n}) = 
+\begin{pmatrix}
+    R_1 \cdot R_1 & R_1 \cdot R_2 & \ldots  & R_1 \cdot R_n \\
+    R_2 \cdot R_1 & R_2 \cdot R_2 & \ldots  & R_2 \cdot R_n \\
+    \vdots & \vdots & \ddots & \vdots \\
+    R_n \cdot R_1 & R_n \cdot R_2 & \ldots  & R_n \cdot R_n \\
+\end{pmatrix}
+\] \[
+R_i \cdot R_j = 0 \quad \text{se} \quad i \neq j, \quad R_i \cdot R_i = 1 \quad \forall 1 \le i \le n
+\] Quindi le righe di \(A\) sono una base ortonormale. Il ragionamento è completamente analogo per le colonne. \\ "\(\impliedby \)" Si può dimostrare ripercorrendo le implicazioni al contrario.} 
+
+\section{Matrici reali simmetriche}
+\thm{}{Sia \(A \in M_n(\RR )\) simmetrica allora 
+\begin{enumerate}
+    \item Gli autovalori di \(A\) sono tutti reali (teorema spettrale)
+    \item Gli autovettori di \(A\) relativi ad autospazi distinti sono ortogonali tra loro
+\end{enumerate}}
+
+\pf{Dimostrazione del punto 2}{Siano \(x\) e \(y\) autovettori relativi ad autovalori \(\lambda \) e \(\mu\) distinti. Quindi \(AX = \lambda x\) e \(AX = \mu y\). Sia \(\lambda \neq 0\). Quindi \[
+        ({^tx}{^ty}) \lambda = (\lambda {^tx})y = {^t(x\lambda )y = {^t(Ax)y = \underbrace{({^tx}{^tA})y = ({^tx}A)y}_{\text{per la simmetria di \(A\)}}} = {^tx}(Ay)}
+\] \[
+= {^tx}\mu y = \mu ({^tx}y) = \mu ({^tx}{^ty}) \implies ({^tx}{^ty})\lambda = ({^tx}{^ty}) \mu
+\] \[
+\lambda k = \mu k \iff (\lambda - \mu) k = 0 \iff \mu = \lambda \quad \text{oppure}\quad {^tx}{^ty}=0
+\] ma \(\mu \neq \lambda \) perché \(x\) e \(y\) stanno in autospazi distinti \(\implies {^tx}{^ty}=0 \implies x\) e \(y\) sono ortogonali.}
+
+\cor{}{Una matrice reale e simmetrica di ordine \(n\) ammette \(n\) autovalori contati con la loro molteplicità algebrica.}
+
+\dfn{Matrice ortogonalmente diagonalizzabile}{Data \(A \in M_n(K)\) è detta \textbf{ortogonalmente diagonalizzabile} se esistono \(D\), matrice diagonale di ordine \(n\), e \(P\) matrice ortogonale di ordine \(n\) tali che \[
+D = P^{-1}AP = {^tP}AP
+\] }
+\thm{}{I seguenti fatti sono equivalenti
+\begin{enumerate}
+    \item \(A\in M_n(\RR )\) è ortogonalmente diagonalizzabile;
+    \item \(\RR ^{n}\) ammette una base ortonormale di autovettori di \(A\);
+    \item \(A\) è una matrice reale e simmetrica.
+\end{enumerate}}

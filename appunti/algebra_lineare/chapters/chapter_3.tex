@@ -1,0 +1,298 @@
+
+\chapter{Sistemi lineari}
+\section{Determinante di una matrice quadrata}
+\dfn{Determinante}{Sia \(A = (a _{ij})\) una matrice quadrata, di ordine \(n\), a elementi in un campo \(K.\) Si dice \textbf{determinante} di \(A\), e si scrive \(|A|\) oppure \(\det(A)\), l'elemento di \(K\) definito ricorsivamente come segue: \begin{enumerate}
+    \item se \(n = 1 \qquad A = (a _{11}) \qquad \det(A) = |A| = a _{11}\) 
+    \item se \(n > 1 \qquad A = a _{ij} \qquad \det(A)=(-1)^{1+1} a _{11} \det A _{11} + (-1)^{1+2} a _{12} \det A _{12} + ... + (-1)^{1 + n} a _{1n} \det A _{1n}\) 
+\end{enumerate}}
+
+Se \(A = \begin{pmatrix} a _{11} & a _{12} \\ a _{21} & a _{22} \end{pmatrix} \), il suo determinante è \(|A| = a _{11} a _{22} - a _{12} a _{21}\).
+
+Mentre se \[A = 
+\begin{pmatrix}
+    a_{11} & a _{12} & a _{13} \\
+    a _{21} & a _{22} & a _{23} \\
+    a _{31} & a _{32} & a _{33} \\
+\end{pmatrix}
+\]
+Allora la il determinante di \(A\) è \[
+    |A| = a _{11} a _{22} a_{33} + a_{13} a_{21} a_{32} + a_{12} a_{23} a_{31} - a_{13} a_{22} a_{32} - a_{11} a_{23} a_{32} - a_{12} a_{21} a_{33}  
+\]
+\dfn{Complemento algebrico}{Sia \(A = (a_{ij} )\) una matrice quadrata di ordine \(n\), a elementi in campo \(K\). Si dice \textbf{complemento algebrico} dell'elemento \(a_{hk} \), e si indica \(\Gamma_{hk} \), il determinante della matrice quadrata di ordine \(n -1\), ottenuta da \(A\) sopprimendo la h-esima riga e la k-esima colonna, preso con il segno \((-1)^{h+k} \). }
+\thm{Primo teorema di Laplace}{Data la matrice quadrata di ordine \(n\), la somma dei prodotti degli elementi di una sua riga (o colonna), per i rispettivi complementi algebrici, è il determinante di \(A.\) }
+Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispetto alla a i-esima riga è \[
+    |A| = \sum_{j = 1}^{n} a_{ij} \Gamma _{ij} \qquad \forall i = 1,2,..., n
+\] rispetto alla j-esima colonna è \[
+    |A| = \sum_{i = 1}^{n} a_{ij} \Gamma _{ij} \qquad \forall j = 1,2,..., n
+\]
+
+\thm{Secondo teorema di Laplace}{Sia \(A\) una matrice quadrata di ordine \(n\). La somma dei prodotti degli elementi di una sua riga (o colonna) per i complementi algebrici degli elementi di un'altra riga (o colonna) vale zero. Quindi \[
+    A \in M_n(K) \implies
+\begin{cases}
+    a_{i1} \Gamma_{j1} + a_{i2} \Gamma_{j2} + ... + a_{in} \Gamma_{jn} = 0 \quad i \neq j \\
+    a_{1i} \Gamma_{1j} + a_{2i} \Gamma_{2j} + ... + a_{ni} \Gamma_{nj} = 0 \quad i \neq j \\
+\end{cases}
+\]}
+
+\thm{Teorema di Bidet}{Date due matrici quadrate di ordine \(n\), \(A\) e \(B\), il determinante della matrice prodotto \(A \cdot B\) è uguale al prodotto dei determinanti di \(A\) e \(B\), cioè \[
+    |A \cdot B| = |A| |B| 
+\] }
+
+\section{Matrici invertibili}
+\dfn{Matrice invertibile}{Una matrice quadrata, di ordine \(n\), si dice \textbf{invertibile} quando esiste una matrice \(B\), quadrata e dello stesso ordine, tale che \(A \cdot B = B \cdot A = I_n\), dove \(I_n\) è la matrice identica di ordine \(n\). La matrice \(B\) si dice \textbf{inversa} di \(A\) e si indica \(A^{-1} \).}
+
+\thm{}{Sia \(A \in M_n(K)\); allora \(A\) è invertibile \( \iff |A| \neq 0\) e in tal caso \[
+    A^{-1} = \frac{1}{|A| }\left.^tA_a\right.
+\] dove \(A_a\) si chiama \textbf{matrice aggiunta} di \(A\) ed è la matrice ottenuta da \(A\) sostituendo ogni elemento con il suo complemento algebrico \(\Gamma\). }
+
+\section{Dipendenza lineare e determinanti}
+\dfn{Minore}{Sia \(A \in K^{m,n} \). Si chiama \textbf{minore di ordine \(p\)} estratto da \(A\), con \(p \in \mathbb{N}\), \(p \neq 0\), \(p \le \min \{m,n\} \), una matrice quadrata di ordine \(p\) ottenuta cancellando \(m-p\) righe e \(n-p\) colonna da \(A\). }
+
+\thm{}{ Una sequenza \(S=(v_1,v_2, \ldots,v_n)\) di \(n\) vettori dello spazio vettoriale \(V_n(K)\) è libera se, e soltanto se, la matrice \(A\), che ha nelle proprie righe (o colonne) le componenti dei vettori di \(S\) in una base di \(V_n(K)\), ha determinante non nullo ed è legata se, e soltanto se, tale matrice \(A\) ha determinante nullo.}
+
+\dfn{Rango di una matrice}{Sia \(A\) una matrice di \(K^{m,n}(K)\). Si dice \textbf{rango} della matrice \(A\), e si scrive \(\rho (A)\), l'ordine massimo di un minore estraibile da \(A\) con determinante non nullo.}
+
+\newpage
+\paragraph{Osservazione:} Data la matrice \(A\) di \(K^{m,n}(K)\)
+\begin{enumerate}
+    \item \(\rho (A)=0 \iff A\) è la matrice nulla;
+    \item \(\rho (A) = \rho (^{t}A)\) ;
+    \item \(\rho (A) \le \min(m,n)\).
+\end{enumerate}
+
+\dfn{Spazio delle righe e delle colonne}{Data una matrice \(A\), avente \(m\) righe ed \(n\) colonne, si dice \textbf{spazio delle righe} di \(A\), e si indica \(\mcL(R) \), il sottospazio \(K^{n}(K)\) generato dalle righe di \(A\). Si dice  \textbf{spazio delle colonne} di \(A\), e si indica \(\mcL(C) \), il sottospazio vettoriale di \(K^{m}(K)\) generato dalle colonne di \(A\).}
+
+\thm{Teorema di Kronecker}{Gli spazi vettoriali \(\mcL(R) \) ed \(\mcL(C)\), di una matrice \(A \in K^{m,n}(K)\), hanno la stessa dimensione e tale dimensione coincide con il rango di \(A\). Cioè: \[
+\dim(\mcL(R) ) = \dim(\mcL(C) ) = \rho (A)
+.\] }
+\pf{Dimostrazione}{Dimostriamo che \(\dim(\mcL(R) ) = \rho (A)\). La dimostrazione per quanto riguarda le colonne è completamente analoga. Sia \(s = \dim(\mcL(R) )\implies\) abbiamo \(s\) righe linearmente indipendenti nella matrice \(A\) e quindi per il teorema precedente esiste un minore in \(A\) di ordine \(s\) a determinante non nullo. Pertanto \(\rho (A) \ge s\). Sia per assurdo \(\rho (A) = r > s\), dovrebbe esistere in \(A\) un minore di ordine \(r\) a determinante non nullo. Se chiamiamo ora \(S = (R_1, R_2, \ldots, R_r)\) la sequenza di righe nella matrice \(A\), la matrice \(A\) ha un minore di ordine \(r\) non singolare e di conseguenza è libera. Quindi \[
+\dim \mcL(R) \ge \dim \mcL(S) = r > s = \dim \mcL(R) 
+.\] Ma questo è un \textbf{assurdo!} Quindi \[
+\rho (A) = r \le s = \dim \mcL(R) \implies r = s 
+.\]}
+
+\cor{}{Se \(A\) è una matrice quadrata di ordine \(n\), con elementi in un campo \(K\), le sequent condizioni sono equivalenti:
+\begin{enumerate}
+    \item \(|A| \neq 0\) ;
+    \item \(A\) è invertibile;
+    \item \(\rho (A) = n\) ;
+    \item le righe sono linearmente indipendenti e, quindi, sono base di \(K^{n}\);
+    \item le colonne sono linearmente indipendenti e, quindi, sono base di \(K^{n}\).
+\end{enumerate}}
+
+\thm{Teorema degli orlati}{Una matrice \(A \in K^{m,n}(K)\) ha rango \(p\) se, e solo se, esiste un minore \(M\) di ordine \(p\) a determinante non nullo e tutti i minori di ordine \(p + 1\), che contengono \(M\), hanno determinante nullo.}
+
+\section{Sistemi lineari}
+\dfn{Sistema lineare}{Un \textbf{sistema lineare} è un insieme di \(m\) equazioni lineari in \(n\) incognite a coefficienti in campo \(K\).} Un sistema lineare si può, quindi, indicare nel modo seguente: \[
+\begin{cases}
+    \ a_{11}x_1+a_{12}x_2+\ldots +a_{1n}x_n = b_1 \\
+    \ a_{21}x_1+a_{22}x_2+\ldots +a_{2n}x_n = b_2 \\
+    \ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots  \\
+    \ a_{m_1}x_1+a_{m_2}x_2+\ldots +a_{mn}x_n = b_m \\
+\end{cases}
+\] con \(a_{ij}, b_l \in K\). Gli elementi \(a_{ij}\) si chiamano coefficienti delle incognite, gli elementi \(b_l\) si dicono termini noti.
+
+La matrice \(m \times n\) \[
+A =
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots  & a_{1n} \\
+    a_{21} & a_{22} & \ldots  & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m 2} & \ldots  & a_{mn} \\
+\end{pmatrix}
+\] è detta matrice dei coefficienti o \textbf{matrice incompleta}, la matrice \(n \times 1\) \[
+X =
+\begin{pmatrix}
+    x_1 \\
+    x_2 \\
+    \vdots \\
+    x_n \\
+\end{pmatrix}
+\] è detta delle matrice colonna delle incognite, mentre la matrice \(m\times 1\) \[
+B = 
+\begin{pmatrix}
+    b_1 \\
+    b_2 \\
+    \vdots \\
+    b_m \\
+\end{pmatrix}
+\] è detta matrice colonna dei termini noti. La matrice \(m \times (n+1)\) \[
+A | B = 
+\begin{pmatrix}
+    a_{11} & \ldots  & a_{1n} & b_1 \\
+    a_{21} & \ldots  & a_{2n} & b_2 \\
+    \vdots & \ddots & \vdots & \vdots \\
+    a_{m1} & \ldots  & a_{mn} & b_m \\
+\end{pmatrix}
+\] è detta \textbf{matrice completa}.
+Infine, il sistema iniziale si può riscrivere come: \(A \cdot X = B\), cioè \[
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots  & a_{1n} \\
+    a_{21} & a_{22} & \ldots  & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{m1} & a_{m 2} & \ldots  & a_{mn} \\
+\end{pmatrix}
+\begin{pmatrix}
+    x_1 \\
+    x_2 \\
+    \vdots \\
+    x_n \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+    b_1 \\
+    b_2 \\
+    \vdots \\
+    b_m \\
+\end{pmatrix}
+\] 
+
+\dfn{Sistema omogeneo}{Un sistema lineare si dice \textbf{omogeneo} quando tutti i termini noti sono nulli. \[
+AX = \ul{0} 
+\] }
+
+\paragraph{Osservazione:} Data \(A \in K^{m,n} \quad A = 
+\begin{pmatrix}
+    C_1 & C_2 & \ldots & C_n \\
+\end{pmatrix}
+\) ove le colonne \(C_j\) sono vettori di \(K^{m,1}\) e quindi utilizziamo utilizzando questa notazione il sistema si può scrivere come \[
+x_1C_1 + x_2C_2+\ldots +x_nC_n = B
+\] 
+
+\dfn{Sistema compatibile}{Un sistema lineare in \(m\) equazioni ed \(n\) incognite ha soluzione, ovvero si dice che il sistema è \textbf{compatibile}, se esiste almeno una n-upla  \(\alpha _1, \alpha _2, \ldots , \alpha _n\) di elementi di \(K\) che risolve tutte le equazioni del sistema. Tale n-upla è detta \textbf{soluzione}.}
+
+\paragraph{Osservazione:} Posto \(A = (C_1, C_2, \ldots , C_n)\) \[
+A 
+\begin{pmatrix}
+    \alpha _1 \\
+    \alpha _2 \\
+    \vdots \\
+    \alpha _n \\
+\end{pmatrix}=B \iff 
+\alpha _1 C_1 + \alpha _2 C_2 + \ldots + \alpha _n C_n = B
+\] che è equivalente a dire che \(B\) è combinazione lineare delle colonne di \(A\). Quindi il sistema è risolubile se, e soltanto se, \(B \in \mcL(C_1, C_2, \ldots ,C_n) \).
+
+\thm{Teorema di Rouché-Capelli}{Un sistema lineare \(A X = B\)
+ è compatibile se, e soltanto se, \(\rho (A) = \rho (A|B)\).}
+
+ \pf{Dimostrazione}{"\(\implies \)" Sia \(AX = B\) risolubile, \(\implies \exists \ (\alpha _1, \alpha _2, \ldots ,\alpha _n) : \ \alpha _1 C_1 + \alpha _2 C_2 + \ldots + \alpha _n C_n = B\) quindi 
+\[ B \in \mcL(C_1, C_2, \ldots , C_n) \implies \underbrace{\dim \mcL(C_1, C_2, \ldots ,C_n, B)}_{= \rho (A|B)} = \underbrace{\dim \mcL(C_1, C_2, \ldots ,C_n)   }_{= \rho (A)} \]
+\[\implies \rho (A|B) = \rho (A)\] 
+ "\(\impliedby \)" Per ipotesi abbiamo che \(\rho (A|B) = \rho (A)\). Quindi 
+\[
+\dim \mcL(C_1, C_2, \ldots ,C_n, B) = \dim \mcL(C_1, C_2, \ldots ,C_n) \implies \mcL(C_1, C_2, \ldots ,C_n, B) = \mcL(C_1, C_2, \ldots ,C_n)\]
+\[\implies B \in \mcL(C_1, C_2, \ldots ,C_n)  
+    \]\[\implies  \exists (k_1,k_2, \ldots ,k_n): \ k_1C_1+k_2C_2+\ldots +k_nC_n = B\]
+Quindi la n-upla \((k_1, k_2, \ldots , k_n)\) è soluzione di \(AX = B\) e di conseguenza il sistema è compatibile.}
+
+\thm{Teorema di Cramer}{Sia \(AX = B\) un sistema lineare in \(n\) equazioni ed \(n\) incognite. Se \(\det(A) \neq 0\) allora \(AX = B\) ammette un'unica soluzione.}
+Indichiamo con \(B_1\), la matrice ottenuta sostituendo a \(C_i\) la colonna dei termini noti (\(B\)).
+\[
+A = (C_1, C_2, \ldots , C_n) \quad B_1 = (C_1, C_2, \ldots , C_{i-1}, B, C_{i+1}, \ldots , C_n)
+\] Se \(\det (A) \neq 0\) allora (\(X_1, X_2, \ldots , X_n\)) è data da: \[
+X_1 = \frac{|B_1| }{|A| }=\frac{\det(B_1)}{\det(A)}
+\]
+
+\dfn{Sistema principale equivalente}{Sia \(AX = B\) un sistema compatibile, si dice sistema principale equivalente un sistema \(A'X = B'\) ottenuto eliminando \(m-p\) equazioni da \(AX=B\) tale che \(\rho (A'|B') = \rho (A') = p\).}
+\thm{}{Un sistema \(AX = B\) compatibile ha le stesse soluzioni di un suo sistema principale equivalente.}
+
+\paragraph{Osservazione:}\(\rho (A)=\rho (A|B)\) se il sistema lineare è omogeneo e quindi è sempre compatibile. In particolare \(X = 
+\begin{pmatrix}
+    0 \\
+    \vdots \\
+    0 \\
+\end{pmatrix}
+\) è sempre soluzione di \(AX = \ul{0} \).
+
+\dfn{Autosoluzioni}{Le soluzioni di un sistema lineare omogeneo diverse dalla soluzione nulla si dicono  \textbf{autosoluzioni}.}
+\newpage
+\nt{Non è detto che un sistema lineare omogeneo ammetta autosoluzioni.}
+
+\mprop{}{Un sistema lineare omogeneo \(AX = B = \ul{0} \) ammette autosoluzioni se, e solo se, \(\rho (A) < n\) (con \(n\) numero di incognite).}
+
+\cor{}{Un sistema lineare omogeneo \(AX = B = \ul{0} \) con \(A \in M_n(K)\) ammette autosoluzioni se, e soltanto se,  \(\det (A) = 0\).}
+
+\thm{}{Sia \(AX = \ul{0} \) un sistema lineare omogeneo con \(A \in K^{m,n}\) e sia \(S\) l'insieme delle sue soluzioni, allora \(S\) è un sottospazio di \(K^{n}\) di dimensione \(n-\rho (A)\).}
+
+\paragraph{Osservazioni:} 
+\begin{enumerate}
+    \item \(\ul{0} \in S\) 
+    \item se \(n-\rho (A) > 0\) abbiamo autosoluzioni 
+    \item Se \(B \neq \ul{0} \) l'insieme delle soluzioni di \(AX = B\) non è un sottospazio di \(K^{n}\) perché \(A\ul{0} = \ul{0} \neq B \implies \{\ul{0} \} \notin S\).
+\end{enumerate}
+
+\mprop{}{Sia \(AX = B\) un sistema lineare in \(m\) equazioni ed \(n\) incognite, detto \(S\) l'insieme delle soluzioni abbiamo che \[
+S =
+\begin{cases}
+    \ \{x_0+z : \ x_0 \in S, \ z \in S\}\text{ se }AX = B\text{ è compatibile } \\
+    \ \emptyset \text{ se } AX = B \text{ non è compatibile} \\
+\end{cases}
+\] }
+
+\dfn{Sistema lineare omogeneo associato}{Dato \(AX = B\) sistema lineare in \(m\) equazioni ed \(n\) incognite diciamo che \(AX = \ul{0} \) è il \textbf{sistema lineare omogeneo associato} a \(AX = B\).}
+
+\mprop{}{Le soluzioni di un sistema lineare compatibile \(AX=B\) sono tutte e sole del tipo \(\overline{X}= X_0 + Z\), ove \(X_0\) è una soluzione particolare di \(AX = B\) e \(Z\) è la soluzione di \(AX = \ul{0} \), sistema omogeneo associato ad \(AX = B\).}
+
+\pf{Dimostrazione}{Sia \(\overline{X}\) soluzione di \(AX=B\), poniamo \(Z = \overline{X}-X_0 \iff \overline{X}=X_0+Z\) \[
+AZ = A(\overline{X}-X_0) = A\overline{X}- AX_0 = B- B = \ul{0} 
+\] Quindi \(Z\) è soluzione del sistema lineare omogeneo associato ad \(A\). Di conseguenza \(\overline{X}= X_0 + Z\) }
+
+Dato \(AX=B\) sistema lineare in \(m\) equazioni ed \(n\) incognite compatibile, le sue soluzioni sono tante quante quelle del sistema lineare omogeneo associato che costituiscono uno spazio vettoriale di dimensione \(n- \rho (A)\). Se il campo è infinito, posto \(\rho (A) = p\), si dice che le soluzioni sono \(\infty^{n-p}\) (cioè che l'insieme delle soluzioni dipende da \(n-\rho(A)\) parametri).
+
+\newpage
+\thm{}{Sia \(AX = \ul{0} \) un sistema lineare omogeneo in \(n\) incognite e sia \(\rho(A) = n-1\). Se si indica con \(A'X = \ul{0} \) un sistema principale equivalente ad \(AX = \ul{0} \) e si indicano con \(\Gamma_1, \Gamma_2, \ldots , \Gamma_n\) i determinanti dei minori di ordine \(n-1\), ottenuti eliminando in \(A'\) successivamente la prima, la seconda, \ldots , la n-esima colonna, allora le soluzioni del sistema sono, al variare di \(\lambda \in K\), \[
+S = (\lambda \Gamma _1, -\lambda \Gamma _2, \ldots , (-1)^{n-1} \lambda \Gamma _n)
+\] }
+
+\section{Cambiamenti di base}
+in uno spazio vettoriale \(V_n(K)\), di dimensione \(n\), siano \(B = (e_1,e_2, \ldots ,e_n)\) e \(B' = (e'_1,e'_2, \ldots ,e'_n)\) due basi assegnate. Ogni vettore della base \(B'\) si può esprimere come combinazione lineare dei vettori della base \(B\), cioè \[
+\begin{cases}
+    \ e_1' = a_{11}e_1+ a_{12}e_2+\ldots + a_{1n}e_n \\
+    \ e_2' = a_{21}e_1+ a_{22}e_2+\ldots +a_{2n}e_n \\
+    \ \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots \ldots  \\
+    \ e_n'= a_{n 1}e_1+ a_{n 2}e_2 + \ldots + a_{nn}e_n \\
+\end{cases}
+\]con le seguenti posizioni \[
+A = 
+\begin{pmatrix}
+    a_{11} & a_{12} & \ldots  & a_{1n} \\
+    a_{21} & a_{22} & \ldots  & a_{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a_{n1} & a_{n 2} & \ldots  & a_{nn} \\
+\end{pmatrix}, \ E= 
+\begin{pmatrix}
+    e_1 \\
+    e_2 \\
+    \vdots \\
+    e_n \\
+\end{pmatrix} \text{ ed } E'=
+\begin{pmatrix}
+    e_1' \\
+    e_2' \\
+    \vdots \\
+    e_n' \\
+\end{pmatrix}
+\] 
+il sistema si può scrivere in forma compatta \[
+E' = AE
+\] 
+\dfn{Matrice del cambiamento di base}{La matrice A si dice \textbf{matrice del cambiamento di base} da \(B\) a \(B'\).}
+
+\mprop{}{La matrice \(A\) del cambiamento di base da \(B\) a \(B'\) è invertibile e \(A^{-1}=A'\).}
+\pf{Dimostrazione}{\[
+    E = A'E' = A'(AE) = (A'A)E \implies A'A=I_n \] \[
+E' = AE = A(A'E') = (AA')E' \implies AA'=I_n
+\] }
+
+Stabiliamo il legame tra le componenti di uno stesso vettore \(v\), rispetto a due basi diverse \(B\) e \(B'\). Poniamo \[
+X = \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix} \text{ e } X'=\begin{pmatrix} x'_1\\ \vdots\\ x'_n \end{pmatrix}
+\] Possiamo scrivere il generico vettore \(v \in V_n(K)\) \[
+v = x_1e_1+x_2e_2 + \ldots + x_n e_n = (x_1,x_2, \ldots , x_n)E= {^{t}X}E \] \[
+v = x_1'e_1'+x_2'e_2' + \ldots + x_n' e_n' = (x_1',x_2', \ldots , x_n')E= {^{t}X'}E'
+\] \[
+v = {^{t}X}E = {^{t}X'}E
+\] Sostituendo si ha \({^{t}X}E = {^tX'}AE\), ove \(A\) è la matrice del cambiamento di base da \(B\) a \(B'\), quindi, dato che le componenti dei vettori sono univocamente determinate \[
+X = {^tA}X'
+\] \[
+X' = {^tA^{-1}}X
+\] Possiamo dire quindi che le componenti di uno stesso vettore rispetto a due basi \(B\) e \(B'\) sono legate dalla matrice del cambiamento di base da \(B\) a \(B'\).

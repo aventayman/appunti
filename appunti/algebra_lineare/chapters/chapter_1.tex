@@ -1,0 +1,84 @@
+
+\chapter{Nozioni preliminari}
+\section{Relazioni su un insieme}
+\dfn{Relazione su un insieme}{Una \textbf{relazione} su un insieme \textit{A} è un qualunque sottoinsieme di \(\mcR\) del prodotto cartesiano \(A \times A\).
+
+Una relazione \(\mcR\) su un insieme \textit{A} si dice:
+\begin{itemize}
+    \item \textbf{riflessiva} se, per ogni \(a \in A, \ a\mcR a\);
+    \item \textbf{simmetrica} se, per ogni \(a,b \in A, \ a\mcR b \ \text{allora} \ a = b\);
+    \item \textbf{antisimmetrica} se, per ogni \(a,b \in A, \ a\mcR b \text{ e } b\mcR a \text{ allora } a = b\);
+    \item \textbf{transitiva} se, per ogni \(a,b,c \in A, \ a\mcR b \text{ e } b\mcR c \text{ allora } a \mcR c\);
+\end{itemize}}
+
+\dfn{Relazione d'ordine totale}{Una relazione d'ordine \(\mcR\) su un insieme \textit{A} si dice \textbf{relazione d'ordine} se è riflessiva, antisimmetrica e transitiva. Se inoltre, gli elementi di \textit{A} sono a due a due confrontabili, cioè, per ogni \(a, b \in A\), risulta \(a \mcR b\) oppure  \(b \mcR a\), la relazione \(\mcR\) si dice \textbf{relazione d'ordine totale}.}
+
+\section{Strutture algebriche}
+\dfn{Gruppo}{Sia \((G, \star)\) un insieme con un'operazione \(\star\). La struttura \((G, \star)\) si dice \textbf{gruppo} se:
+\begin{itemize}
+    \item l'operazione \(\star\)  è associativa;
+    \item esiste in \textit{G} l'elemento neutro;
+    \item ogni elemento di \(g \in G\) è simmetrizzabile.  
+\end{itemize}
+Se l'operazione \(\star\) soddisfa anche la proprietà commutativa, il gruppo si dice \textbf{abeliano}.}
+
+\dfn{Campo}{Sia \textit{A} un insieme sul quale sono definite due operazioni che indichiamo con i simboli "\(+\)" e "\(\cdot\)" e che chiamiamo somma e prodotto rispettivamente. La struttura \((A, +, \cdot)\) è un \textbf{campo} se sussistono le condizioni seguenti:
+\begin{itemize}
+    \item \((A, +)\) è un gruppo abeliano il cui elemento neutro è indicato con 0;
+    \item \((A\backslash\{0\}, \cdot)\) è un gruppo abeliano con elemento neutro \(e \neq 0\);
+    \item valgono le proprietà distributive (sinistra e destra) del prodotto rispetto alla somma, cioè per ogni \(a,b,c \in A\) \[
+        a \cdot (b + c) = a \cdot b + a \cdot c; \ (a + b) \cdot c = a \cdot c + b \cdot c
+    \]
+\end{itemize}}
+
+\section{Matrici}
+
+\dfn{Matrice}{Dato un campo K si dice \textbf{matrice} di tipo \(m \times n\) su \(K\) una tabella del tipo: \[ A=
+\begin{pmatrix}
+    a _{11} & a _{12} & \hdots & a _{1n} \\
+    a _{21} & a _{22} & \hdots & a _{2n} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    a _{m1} & a _{m2} & \hdots & a _{mn} \\
+\end{pmatrix}
+\] avente \(m\) righe ed \(n\) colonne, i cui elementi \(a _{ij}\) sono elementi di \(K.\) }
+
+\dfn{Matrice quadrata}{Una matrice di tipo \(n \times n\) è detta \textbf{matrice quadrata} di ordine \(n\). Queste vengono indicate con \(M_n(K)\).}
+
+\dfn{Prodotto righe per colonne}{Date le matrici \(A = (a _{ih}) \in K ^{m,n}(K)\) con \(i \in I_m, h \in I_n\) e \(B = (b _{hj}) \in K ^{n,p}\) con \(h \in I_n, j \in I_p\), si dice \textbf{prodotto righe per colonne} di \(A\) per \(B\) la matrice \[
+    A \cdot B = (c _{ij}) \text{ con } i \in I_m, \ j \in I_p \qquad \text{ove}
+\] \[
+    c _{ij} = a _{i1} b _{1j} + a _{i2} b _{2j} + ... + a _{in} b _{nj}= \sum_{h \in I_n} a _{ih} b _{hj}
+\]    }
+
+\ex{}{Prendiamo per esempio le due matrici: \[A=
+\begin{pmatrix}
+    -3 & 0 & 2 \\
+    -4 & 7 & 1 \\
+\end{pmatrix} \quad B=
+\begin{pmatrix}
+    -5 & -1 & 2 \\
+    0 & 1 & -2 \\
+    1 & 1 & 3 \\
+\end{pmatrix}\]
+ Il loro prodotto è \[
+\begin{pmatrix}
+    -3 \cdot (-5) + 0 \cdot 0 + 2 \cdot 1 & -3 \cdot (-1) + 0 \cdot 1 + 2 \cdot 1 & -3 \cdot 2 + 0 \cdot (-2) + 2 \cdot 3 \\
+    -4 \cdot (-5) + 7 \cdot 0 + 1 \cdot 1 & -4 \cdot (-1) + 7 \cdot 1 + 1 \cdot 1 & -4 \cdot 2 + 7 \cdot (-2) + 1 \cdot 3 \\
+\end{pmatrix}
+\] Quindi \[
+    A \cdot B =
+\begin{pmatrix}
+    17 & 5 & 0 \\
+    21 & 12 & -19 \\
+\end{pmatrix}
+\]}
+\dfn{Matrice identica}{L'elemento neutro delle matrici quadrate di ordine \(n\) è la \textbf{matrice identica}, cioè la matrice: \[
+\begin{pmatrix}
+    1 & 0 & \hdots & 0 \\
+    0 & 1 & \hdots & 0 \\
+    \vdots & \vdots & \ddots & \vdots \\
+    0 & 0 & \hdots & 1 \\
+\end{pmatrix}
+\]}
+
+\dfn{Trasposta di una matrice}{Sia \(A = (a _{ij})\) una matrice di \(K ^{m,n}\). Si dice \textbf{trasposta} di \(A\) la matrice \(K^{n,m}\) ottenuta scambiando tra loro le righe con le colonne, cioè \(^{t}A = (b _{ji})\) ove \(b _{ji} = a _{ij}\) per ogni \(i \in I_n\) e \(j \in I_m.\)  }
