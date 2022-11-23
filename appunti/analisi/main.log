@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.10)  23 NOV 2022 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.10)  23 NOV 2022 16:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,9 +464,9 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 20.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 20.
 
-(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks35
 \pgfutil@tempdima=\dimen179
 \pgfutil@tempdimb=\dimen180
@@ -536,15 +536,15 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen191
 \pgfmath@count=\count308
 \pgfmath@box=\box59
 \pgfmath@toks=\toks42
 \pgfmath@stack@operand=\toks43
 \pgfmath@stack@operation=\toks44
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count309
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -598,13 +598,13 @@ File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen271
 \pgf@sys@shading@range@num=\count311
 \pgf@shadingcount=\count312
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box63
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -623,47 +623,18 @@ Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepend=\dimen273
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks45
-\verbatim@line=\toks46
-\verbatim@in@stream=\read4
-) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
- (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-\tcb@titlebox=\box65
-\tcb@upperbox=\box66
-\tcb@lowerbox=\box67
-\tcb@phantombox=\box68
-\c@tcbbreakpart=\count313
-\c@tcblayer=\count314
-\c@tcolorbox@number=\count315
-\tcb@temp=\box69
-\tcb@temp=\box70
-\tcb@temp=\box71
-\tcb@temp=\box72
- (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
-\c@tcbrastercolumn=\count316
-\c@tcbrasterrow=\count317
-\c@tcbrasternum=\count318
-\c@tcbraster=\count319
-) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen274
 \pgffor@skip=\dimen275
-\pgffor@stack=\toks47
-\pgffor@toks=\toks48
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count320
+\pgf@plot@mark@count=\count313
 \pgfplotmarksize=\dimen276
 )
 \tikz@lastx=\dimen277
@@ -674,26 +645,95 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@lastmovetoy=\dimen282
 \tikzleveldistance=\dimen283
 \tikzsiblingdistance=\dimen284
-\tikz@figbox=\box73
-\tikz@figbox@bg=\box74
-\tikz@tempbox=\box75
-\tikz@tempbox@bg=\box76
-\tikztreelevel=\count321
-\tikznumberofchildren=\count322
-\tikznumberofcurrentchild=\count323
-\tikz@fig@count=\count324
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count314
+\tikznumberofchildren=\count315
+\tikznumberofcurrentchild=\count316
+\tikz@fig@count=\count317
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count325
-\pgfmatrixcurrentcolumn=\count326
-\pgf@matrix@numberofcolumns=\count327
+\pgfmatrixcurrentrow=\count318
+\pgfmatrixcurrentcolumn=\count319
+\pgf@matrix@numberofcolumns=\count320
 )
-\tikz@expandcount=\count328
+\tikz@expandcount=\count321
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)))
-\tcb@waterbox=\box77
- (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks47
+\t@pgfplots@tokb=\toks48
+\t@pgfplots@tokc=\toks49
+\pgfplots@tmpa=\dimen285
+\c@pgfplots@coordindex=\count322
+\c@pgfplots@scanlineindex=\count323
+ (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count324
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count325
+\t@pgfplotstable@a=\toks50
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count326
+ (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen286
+\pgfdecoratedremainingdistance=\dimen287
+\pgfdecoratedinputsegmentcompleteddistance=\dimen288
+\pgfdecoratedinputsegmentremainingdistance=\dimen289
+\pgf@decorate@distancetomove=\dimen290
+\pgf@decorate@repeatstate=\count327
+\pgfdecorationsegmentamplitude=\dimen291
+\pgfdecorationsegmentlength=\dimen292
+)
+\tikz@lib@dec@box=\box69
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count328
+\pgfplots@xmin@reg=\dimen293
+\pgfplots@xmax@reg=\dimen294
+\pgfplots@ymin@reg=\dimen295
+\pgfplots@ymax@reg=\dimen296
+\pgfplots@zmin@reg=\dimen297
+\pgfplots@zmax@reg=\dimen298
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks51
+\verbatim@line=\toks52
+\verbatim@in@stream=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box70
+\tcb@upperbox=\box71
+\tcb@lowerbox=\box72
+\tcb@phantombox=\box73
+\c@tcbbreakpart=\count329
+\c@tcblayer=\count330
+\c@tcolorbox@number=\count331
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+ (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
+\c@tcbrastercolumn=\count332
+\c@tcbrasterrow=\count333
+\c@tcbrasternum=\count334
+\c@tcbraster=\count335
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
+\tcb@waterbox=\box78
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.1.1'
 )) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
@@ -701,41 +741,41 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box78
-\tcb@totalupperbox=\box79
-\tcb@totallowerbox=\box80
+\tcb@testbox=\box79
+\tcb@totalupperbox=\box80
+\tcb@totallowerbox=\box81
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '5.1.1'
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
-\tcbfitdim=\dimen285
-\tcb@lowerfitdim=\dimen286
-\tcb@upperfitdim=\dimen287
-\tcb@cur@hbadness=\count329
+\tcbfitdim=\dimen299
+\tcb@lowerfitdim=\dimen300
+\tcb@upperfitdim=\dimen301
+\tcb@cur@hbadness=\count336
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '5.1.1'
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count330
-\lst@gtempboxa=\box81
-\lst@token=\toks49
-\lst@length=\count331
-\lst@currlwidth=\dimen288
-\lst@column=\count332
-\lst@pos=\count333
-\lst@lostspace=\dimen289
-\lst@width=\dimen290
-\lst@newlines=\count334
-\lst@lineno=\count335
-\lst@maxwidth=\dimen291
+\lst@mode=\count337
+\lst@gtempboxa=\box82
+\lst@token=\toks53
+\lst@length=\count338
+\lst@currlwidth=\dimen302
+\lst@column=\count339
+\lst@pos=\count340
+\lst@lostspace=\dimen303
+\lst@width=\dimen304
+\lst@newlines=\count341
+\lst@lineno=\count342
+\lst@maxwidth=\dimen305
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count336
-\lst@skipnumbers=\count337
-\lst@framebox=\box82
+\c@lstnumber=\count343
+\lst@skipnumbers=\count344
+\lst@framebox=\box83
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -748,7 +788,7 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count338
+\c@tcblisting=\count345
 )) (/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
@@ -767,34 +807,33 @@ File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 Library (tcolorbox): 'tcbposter.code.tex' version '5.1.1'
 )) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box83
-\sift@deathcycles=\count339
-\@vwid@loff=\dimen292
-\@vwid@roff=\dimen293
+\@vwid@box=\box84
+\sift@deathcycles=\count346
+\@vwid@loff=\dimen306
+\@vwid@roff=\dimen307
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count340
-\mult@box=\box84
-\multicol@leftmargin=\dimen294
-\c@unbalance=\count341
-\c@collectmore=\count342
-\doublecol@number=\count343
-\multicoltolerance=\count344
-\multicolpretolerance=\count345
-\full@width=\dimen295
-\page@free=\dimen296
-\premulticols=\dimen297
-\postmulticols=\dimen298
+\c@tracingmulticols=\count347
+\mult@box=\box85
+\multicol@leftmargin=\dimen308
+\c@unbalance=\count348
+\c@collectmore=\count349
+\doublecol@number=\count350
+\multicoltolerance=\count351
+\multicolpretolerance=\count352
+\full@width=\dimen309
+\page@free=\dimen310
+\premulticols=\dimen311
+\postmulticols=\dimen312
 \multicolsep=\skip62
 \multicolbaselineskip=\skip63
-\partial@page=\box85
-\last@line=\box86
-\maxbalancingoverflow=\dimen299
-\mult@rightbox=\box87
-\mult@grightbox=\box88
-\mult@firstbox=\box89
-\mult@gfirstbox=\box90
-\@tempa=\box91
+\partial@page=\box86
+\last@line=\box87
+\maxbalancingoverflow=\dimen313
+\mult@rightbox=\box88
+\mult@grightbox=\box89
+\mult@firstbox=\box90
+\mult@gfirstbox=\box91
 \@tempa=\box92
 \@tempa=\box93
 \@tempa=\box94
@@ -830,24 +869,25 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box124
 \@tempa=\box125
 \@tempa=\box126
-\c@minrows=\count346
-\c@columnbadness=\count347
-\c@finalcolumnbadness=\count348
-\last@try=\dimen300
-\multicolovershoot=\dimen301
-\multicolundershoot=\dimen302
-\mult@nat@firstbox=\box127
-\colbreak@box=\box128
-\mc@col@check@num=\count349
+\@tempa=\box127
+\c@minrows=\count353
+\c@columnbadness=\count354
+\c@finalcolumnbadness=\count355
+\last@try=\dimen314
+\multicolovershoot=\dimen315
+\multicolundershoot=\dimen316
+\mult@nat@firstbox=\box128
+\colbreak@box=\box129
+\mc@col@check@num=\count356
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen303
-\ar@mcellbox=\box129
-\extrarowheight=\dimen304
-\NC@list=\toks50
+\col@sep=\dimen317
+\ar@mcellbox=\box130
+\extrarowheight=\dimen318
+\NC@list=\toks54
 \extratabsurround=\skip64
 \backup@length=\skip65
-\ar@cellbox=\box130
+\ar@cellbox=\box131
 ) (/usr/share/texlive/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
  (/usr/share/texlive/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
@@ -856,20 +896,20 @@ File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen305
-\pgfarrowlength=\dimen306
-\pgfarrowwidth=\dimen307
-\pgfarrowlinewidth=\dimen308
+\pgfarrowinset=\dimen319
+\pgfarrowlength=\dimen320
+\pgfarrowwidth=\dimen321
+\pgfarrowlinewidth=\dimen322
 ))) (/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count350
+\c@AlgoLine=\count357
  (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip66
  (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count351
+\c@checkoddpage=\count358
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
@@ -883,33 +923,33 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip72
 \algomargin=\skip73
 \skipalgocfslide=\skip74
-\algowidth=\dimen309
-\inoutsize=\dimen310
-\inoutindent=\dimen311
-\interspacetitleruled=\dimen312
-\interspacealgoruled=\dimen313
-\interspacetitleboxruled=\dimen314
+\algowidth=\dimen323
+\inoutsize=\dimen324
+\inoutindent=\dimen325
+\interspacetitleruled=\dimen326
+\interspacealgoruled=\dimen327
+\interspacetitleboxruled=\dimen328
 \algocf@ruledwidth=\skip75
-\algocf@inoutbox=\box131
-\algocf@inputbox=\box132
+\algocf@inoutbox=\box132
+\algocf@inputbox=\box133
 \AlCapSkip=\skip76
 \AlCapHSkip=\skip77
 \algoskipindent=\skip78
-\algocf@nlbox=\box133
-\algocf@hangingbox=\box134
-\algocf@untilbox=\box135
+\algocf@nlbox=\box134
+\algocf@hangingbox=\box135
+\algocf@untilbox=\box136
 \algocf@skipuntil=\skip79
-\algocf@capbox=\box136
+\algocf@capbox=\box137
 \algocf@lcaptionbox=\skip80
 \algoheightruledefault=\skip81
 \algoheightrule=\skip82
 \algotitleheightruledefault=\skip83
 \algotitleheightrule=\skip84
-\c@algocfline=\count352
-\c@algocfproc=\count353
-\c@algocf=\count354
-\algocf@algoframe=\box137
-\algocf@algobox=\box138
+\c@algocfline=\count359
+\c@algocfproc=\count360
+\c@algocf=\count361
+\algocf@algoframe=\box138
+\algocf@algobox=\box139
 ) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
  Excluding comment 'comment') (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
@@ -922,37 +962,48 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
  (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen315
-\ESO@tempdimb=\dimen316
+\ESO@tempdima=\dimen329
+\ESO@tempdimb=\dimen330
 )
-\AM@pagewidth=\dimen317
-\AM@pageheight=\dimen318
-\AM@fboxrule=\dimen319
+\AM@pagewidth=\dimen331
+\AM@pageheight=\dimen332
+\AM@fboxrule=\dimen333
  (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count355
-\AM@pagebox=\box139
-\AM@global@opts=\toks51
-\AM@pagecnt=\count356
-\AM@toc@title=\toks52
-\c@AM@survey=\count357
-\AM@templatesizebox=\box140
+\pdfpages@includegraphics@status=\count362
+\AM@pagebox=\box140
+\AM@global@opts=\toks55
+\AM@pagecnt=\count363
+\AM@toc@title=\toks56
+\c@AM@survey=\count364
+\AM@templatesizebox=\box141
 ) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
+\f@nch@headwidth=\skip85
+\f@nch@O@elh=\skip86
+\f@nch@O@erh=\skip87
+\f@nch@O@olh=\skip88
+\f@nch@O@orh=\skip89
+\f@nch@O@elf=\skip90
+\f@nch@O@erf=\skip91
+\f@nch@O@olf=\skip92
+\f@nch@O@orf=\skip93
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/09/17 3.80 The Babel package
-\babel@savecnt=\count358
-\U@D=\dimen320
+\babel@savecnt=\count365
+\U@D=\dimen334
 \l@unhyphenated=\language87
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read5
-\bbl@dirlevel=\count359
+\bbl@dirlevel=\count366
  (/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2022/03/27 v.1.4.07 Italian support for the babel system
-\it@lettering=\count360
-\it@doublequoteactive=\count361
-\it@ISOcompliance=\count362
+\it@lettering=\count367
+\it@doublequoteactive=\count368
+\it@ISOcompliance=\count369
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
 Package babel Info: Importing font and identification data for italian
 (babel)             from babel-it.ini. Reported on input line 11.
@@ -960,178 +1011,167 @@ Package babel Info: Importing font and identification data for italian
 Package: tikzsymbols 2021/12/14 v4.12a Some symbols created using tikz and LaTeX3.
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen321
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen322
-\pgfdecoratedremainingdistance=\dimen323
-\pgfdecoratedinputsegmentcompleteddistance=\dimen324
-\pgfdecoratedinputsegmentremainingdistance=\dimen325
-\pgf@decorate@distancetomove=\dimen326
-\pgf@decorate@repeatstate=\count363
-\pgfdecorationsegmentamplitude=\dimen327
-\pgfdecorationsegmentlength=\dimen328
-)
-\tikz@lib@dec@box=\box141
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+\arrowsize=\dimen335
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-\l__tikzsymbols_Moai_thickness_dim=\dimen329
-\l__tikzsymbols_Kochtopf_nr_arguments_int=\count364
-\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count365
-\l__tikzsymbols_Schneebesen_nr_arguments_int=\count366
-\l__tikzsymbols_Sieb_nr_arguments_int=\count367
-\l__tikzsymbols_Purierstab_nr_arguments_int=\count368
-\l__tikzsymbols_Dreizack_nr_arguments_int=\count369
-\l__tikzsymbols_Backblech_nr_arguments_int=\count370
-\l__tikzsymbols_Ofen_nr_arguments_int=\count371
-\l__tikzsymbols_Pfanne_nr_arguments_int=\count372
-\l__tikzsymbols_Herd_nr_arguments_int=\count373
-\l__tikzsymbols_Saftpresse_nr_arguments_int=\count374
-\l__tikzsymbols_Schussel_nr_arguments_int=\count375
-\l__tikzsymbols_Schaler_nr_arguments_int=\count376
-\l__tikzsymbols_Reibe_nr_arguments_int=\count377
-\l__tikzsymbols_Flasche_nr_arguments_int=\count378
-\l__tikzsymbols_Nudelholz_nr_arguments_int=\count379
-\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count380
-\l__tikzsymbols_Sadey_nr_arguments_int=\count381
-\l__tikzsymbols_dSadey_nr_arguments_int=\count382
-\l__tikzsymbols_Changey_nr_arguments_int=\count383
-\l__tikzsymbols_dChangey_nr_arguments_int=\count384
-\l__tikzsymbols_cChangey_nr_arguments_int=\count385
-\l__tikzsymbols_dcChangey_nr_arguments_int=\count386
-\l__tikzsymbols_Annoey_nr_arguments_int=\count387
-\l__tikzsymbols_dAnnoey_nr_arguments_int=\count388
-\l__tikzsymbols_Smiley_nr_arguments_int=\count389
-\l__tikzsymbols_dSmiley_nr_arguments_int=\count390
-\l__tikzsymbols_Laughey_nr_arguments_int=\count391
-\l__tikzsymbols_dLaughey_nr_arguments_int=\count392
-\l__tikzsymbols_Neutrey_nr_arguments_int=\count393
-\l__tikzsymbols_dNeutrey_nr_arguments_int=\count394
-\l__tikzsymbols_Winkey_nr_arguments_int=\count395
-\l__tikzsymbols_oldWinkey_nr_arguments_int=\count396
-\l__tikzsymbols_dWinkey_nr_arguments_int=\count397
-\l__tikzsymbols_olddWinkey_nr_arguments_int=\count398
-\l__tikzsymbols_Sey_nr_arguments_int=\count399
-\l__tikzsymbols_dSey_nr_arguments_int=\count400
-\l__tikzsymbols_Xey_nr_arguments_int=\count401
-\l__tikzsymbols_dXey_nr_arguments_int=\count402
-\l__tikzsymbols_Innocey_nr_arguments_int=\count403
-\l__tikzsymbols_wInnocey_nr_arguments_int=\count404
-\l__tikzsymbols_dInnocey_nr_arguments_int=\count405
-\l__tikzsymbols_Cooley_nr_arguments_int=\count406
-\l__tikzsymbols_dCooley_nr_arguments_int=\count407
-\l__tikzsymbols_Tongey_nr_arguments_int=\count408
-\l__tikzsymbols_dTongey_nr_arguments_int=\count409
-\l__tikzsymbols_Nursey_nr_arguments_int=\count410
-\l__tikzsymbols_dNursey_nr_arguments_int=\count411
-\l__tikzsymbols_Vomey_nr_arguments_int=\count412
-\l__tikzsymbols_dVomey_nr_arguments_int=\count413
-\l__tikzsymbols_Walley_nr_arguments_int=\count414
-\l__tikzsymbols_rWalley_nr_arguments_int=\count415
-\l__tikzsymbols_dWalley_nr_arguments_int=\count416
-\l__tikzsymbols_drWalley_nr_arguments_int=\count417
-\l__tikzsymbols_Cat_nr_arguments_int=\count418
-\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count419
-\l__tikzsymbols_Ninja_nr_arguments_int=\count420
-\l__tikzsymbols_dNinja_nr_arguments_int=\count421
-\l__tikzsymbols_Sleepey_nr_arguments_int=\count422
-\l__tikzsymbols_dSleepey_nr_arguments_int=\count423
-\l__tikzsymbols_Maskey_nr_arguments_int=\count424
-\l__tikzsymbols_NiceReapey_nr_arguments_int=\count425
-\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count426
-\l__tikzsymbols_Person_nr_arguments_int=\count427
-\l__tikzsymbols_Heart_nr_arguments_int=\count428
-\l__tikzsymbols_dHeart_nr_arguments_int=\count429
-\l__tikzsymbols_HeartBroken_nr_arguments_int=\count430
-\l__tikzsymbols_Candle_nr_arguments_int=\count431
-\l__tikzsymbols_Fire_nr_arguments_int=\count432
-\l__tikzsymbols_Coffeecup_nr_arguments_int=\count433
-\l__tikzsymbols_Chair_nr_arguments_int=\count434
-\l__tikzsymbols_Bed_nr_arguments_int=\count435
-\l__tikzsymbols_Tribar_nr_arguments_int=\count436
-\l__tikzsymbols_Moai_nr_arguments_int=\count437
-\l__tikzsymbols_Snowman_nr_arguments_int=\count438
-\l__tikzsymbols_BasicTree_nr_arguments_int=\count439
-\l__tikzsymbols_WorstTree_nr_arguments_int=\count440
-\l__tikzsymbols_Springtree_nr_arguments_int=\count441
-\l__tikzsymbols_Summertree_nr_arguments_int=\count442
-\l__tikzsymbols_Autumntree_nr_arguments_int=\count443
-\l__tikzsymbols_Wintertree_nr_arguments_int=\count444
+\l__tikzsymbols_Moai_thickness_dim=\dimen336
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count370
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count371
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count372
+\l__tikzsymbols_Sieb_nr_arguments_int=\count373
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count374
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count375
+\l__tikzsymbols_Backblech_nr_arguments_int=\count376
+\l__tikzsymbols_Ofen_nr_arguments_int=\count377
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count378
+\l__tikzsymbols_Herd_nr_arguments_int=\count379
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count380
+\l__tikzsymbols_Schussel_nr_arguments_int=\count381
+\l__tikzsymbols_Schaler_nr_arguments_int=\count382
+\l__tikzsymbols_Reibe_nr_arguments_int=\count383
+\l__tikzsymbols_Flasche_nr_arguments_int=\count384
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count385
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count386
+\l__tikzsymbols_Sadey_nr_arguments_int=\count387
+\l__tikzsymbols_dSadey_nr_arguments_int=\count388
+\l__tikzsymbols_Changey_nr_arguments_int=\count389
+\l__tikzsymbols_dChangey_nr_arguments_int=\count390
+\l__tikzsymbols_cChangey_nr_arguments_int=\count391
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count392
+\l__tikzsymbols_Annoey_nr_arguments_int=\count393
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count394
+\l__tikzsymbols_Smiley_nr_arguments_int=\count395
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count396
+\l__tikzsymbols_Laughey_nr_arguments_int=\count397
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count398
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count399
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count400
+\l__tikzsymbols_Winkey_nr_arguments_int=\count401
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count402
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count403
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count404
+\l__tikzsymbols_Sey_nr_arguments_int=\count405
+\l__tikzsymbols_dSey_nr_arguments_int=\count406
+\l__tikzsymbols_Xey_nr_arguments_int=\count407
+\l__tikzsymbols_dXey_nr_arguments_int=\count408
+\l__tikzsymbols_Innocey_nr_arguments_int=\count409
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count410
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count411
+\l__tikzsymbols_Cooley_nr_arguments_int=\count412
+\l__tikzsymbols_dCooley_nr_arguments_int=\count413
+\l__tikzsymbols_Tongey_nr_arguments_int=\count414
+\l__tikzsymbols_dTongey_nr_arguments_int=\count415
+\l__tikzsymbols_Nursey_nr_arguments_int=\count416
+\l__tikzsymbols_dNursey_nr_arguments_int=\count417
+\l__tikzsymbols_Vomey_nr_arguments_int=\count418
+\l__tikzsymbols_dVomey_nr_arguments_int=\count419
+\l__tikzsymbols_Walley_nr_arguments_int=\count420
+\l__tikzsymbols_rWalley_nr_arguments_int=\count421
+\l__tikzsymbols_dWalley_nr_arguments_int=\count422
+\l__tikzsymbols_drWalley_nr_arguments_int=\count423
+\l__tikzsymbols_Cat_nr_arguments_int=\count424
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count425
+\l__tikzsymbols_Ninja_nr_arguments_int=\count426
+\l__tikzsymbols_dNinja_nr_arguments_int=\count427
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count428
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count429
+\l__tikzsymbols_Maskey_nr_arguments_int=\count430
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count431
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count432
+\l__tikzsymbols_Person_nr_arguments_int=\count433
+\l__tikzsymbols_Heart_nr_arguments_int=\count434
+\l__tikzsymbols_dHeart_nr_arguments_int=\count435
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count436
+\l__tikzsymbols_Candle_nr_arguments_int=\count437
+\l__tikzsymbols_Fire_nr_arguments_int=\count438
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count439
+\l__tikzsymbols_Chair_nr_arguments_int=\count440
+\l__tikzsymbols_Bed_nr_arguments_int=\count441
+\l__tikzsymbols_Tribar_nr_arguments_int=\count442
+\l__tikzsymbols_Moai_nr_arguments_int=\count443
+\l__tikzsymbols_Snowman_nr_arguments_int=\count444
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count445
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count446
+\l__tikzsymbols_Springtree_nr_arguments_int=\count447
+\l__tikzsymbols_Summertree_nr_arguments_int=\count448
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count449
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count450
 )
-\c@tcb@cnt@Theorem=\count445
-\c@tcb@cnt@theorem=\count446
-\c@tcb@cnt@Corollary=\count447
-\c@tcb@cnt@corollary=\count448
-\c@tcb@cnt@Lenma=\count449
-\c@tcb@cnt@lenma=\count450
-\c@tcb@cnt@Prop=\count451
-\c@tcb@cnt@prop=\count452
-\c@tcb@cnt@claim=\count453
-\c@tcb@cnt@Exercise=\count454
-\c@tcb@cnt@exercise=\count455
-\c@tcb@cnt@Example=\count456
-\c@tcb@cnt@example=\count457
-\c@tcb@cnt@Definition=\count458
-\c@tcb@cnt@definition=\count459
-\c@tcb@cnt@question=\count460
-\c@tcb@cnt@qstion=\count461
-\c@tcb@cnt@wconc=\count462
+\c@tcb@cnt@Theorem=\count451
+\c@tcb@cnt@theorem=\count452
+\c@tcb@cnt@Corollary=\count453
+\c@tcb@cnt@corollary=\count454
+\c@tcb@cnt@Lenma=\count455
+\c@tcb@cnt@lenma=\count456
+\c@tcb@cnt@Prop=\count457
+\c@tcb@cnt@prop=\count458
+\c@tcb@cnt@claim=\count459
+\c@tcb@cnt@Exercise=\count460
+\c@tcb@cnt@exercise=\count461
+\c@tcb@cnt@Example=\count462
+\c@tcb@cnt@example=\count463
+\c@tcb@cnt@Definition=\count464
+\c@tcb@cnt@definition=\count465
+\c@tcb@cnt@question=\count466
+\c@tcb@cnt@qstion=\count467
+\c@tcb@cnt@wconc=\count468
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-\pgfbs@fading@count=\count463
+\pgfbs@fading@count=\count469
 )
-\c@mylabelcounter=\count464
+\c@mylabelcounter=\count470
 \diffdbox=\box142
  (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen330
+\ttl@leftsep=\dimen337
 )) (./macros.tex) (./letterfonts.tex) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 11.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 12.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 12.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 12.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 12.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 11.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 12.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 12.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1140,7 +1180,7 @@ LaTeX Font Info:    ... okay on input line 11.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(61.42993pt, 491.43513pt, 61.42993pt)
 * v-part:(T,H,B)=(61.42993pt, 676.63455pt, 56.9055pt)
 * \paperwidth=614.295pt
@@ -1154,7 +1194,7 @@ LaTeX Font Info:    ... okay on input line 11.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=14.45377pt
-* \marginparwidth=65.0pt
+* \marginparwidth=121.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -1162,38 +1202,43 @@ LaTeX Font Info:    ... okay on input line 11.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 11.
-LaTeX Info: Command `\ddddot' is already robust on input line 11.
+LaTeX Info: Command `\dddot' is already robust on input line 12.
+LaTeX Info: Command `\ddddot' is already robust on input line 12.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count465
-\scratchdimen=\dimen331
+\scratchcounter=\count471
+\scratchdimen=\dimen338
 \scratchbox=\box143
-\nofMPsegments=\count466
-\nofMParguments=\count467
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count468
-\MPscratchDim=\dimen332
-\MPnumerator=\count469
-\makeMPintoPDFobject=\count470
-\everyMPtoPDFconversion=\toks54
+\nofMPsegments=\count472
+\nofMParguments=\count473
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count474
+\MPscratchDim=\dimen339
+\MPnumerator=\count475
+\makeMPintoPDFobject=\count476
+\everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 11.
-\c@lstlisting=\count471
- (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package hyperref Info: Link coloring ON on input line 12.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
+ on input line 12.
+
+\c@lstlisting=\count477
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks55
-\inpenc@posthook=\toks56
+\inpenc@prehook=\toks59
+\inpenc@posthook=\toks60
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
@@ -1201,8 +1246,8 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Info: Redefining \it@ocap on input line 11.
-LaTeX Info: Redefining \it@ccap on input line 11.
+LaTeX Info: Redefining \it@ocap on input line 12.
+LaTeX Info: Redefining \it@ccap on input line 12.
 
 
 File italian.ldf warning: 
@@ -1210,463 +1255,65 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 11.
+italian.ldf    on input line 12.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 14.
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 14.
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 14.
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 16.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 17.
+(Font)              using `OT1/cmr/bx/n' instead on input line 19.
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 (./main.toc
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 3.
-
 Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Command \r invalid in math mode on input line 8.
-
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: Command \r invalid in math mode on input line 8.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 9.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 9.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 10.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 10.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 10.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 10.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 12.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 12.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 12.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 12.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 13.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 13.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 13.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 13.
-
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-\g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box144
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 \chapter
-             {Geometria analitica in \(\EE_n(\RR)\) } [1
+ [3
 
 ]
 Capitolo 1.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 27.
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 40.
 
+\g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box144
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@thbbch@rE' on input line 27.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 65.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 27.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 27.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.2> not available
-(Font)              size <17.28> substituted on input line 27.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.7> not available
-(Font)              size <14.4> substituted on input line 27.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\perp' on input line 49.
-
-[2
-
-] [3] [4]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@thbbch@rE' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 161.
-
-[5]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@thbbch@rE' on input line 175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 175.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@thbbch@rE' on input line 190.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 190.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 190.
-
-[6] [7]
-Capitolo 2.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 223.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 223.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 223.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 223.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 224.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 228.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 228.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 228.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 228.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 233.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 233.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 233.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 237.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 244.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 244.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 250.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 250.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 250.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 250.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 250.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 250.
-
-[8
+[4
 
 ]
 
-LaTeX Warning: Command \r invalid in math mode on input line 255.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 112.
 
-
-LaTeX Warning: Command \r invalid in math mode on input line 255.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 264.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 266.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 266.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 269.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 282.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 283.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 284.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 284.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 291.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 291.
-
-[9]
-
-LaTeX Warning: Command \r invalid in math mode on input line 301.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 301.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 301.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 301.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 301.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 302.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 302.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 306.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 306.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 308.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 308.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 308.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 308.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 310.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 310.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 310.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 310.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\RR' on input line 310.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 312.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 312.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 328.
-
-[10]
-
-LaTeX Warning: Command \r invalid in math mode on input line 348.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 348.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 351.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 351.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 357.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 357.
-
-[11]
-
-LaTeX Warning: Command \r invalid in math mode on input line 359.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 359.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 374.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 376.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 376.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 383.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 383.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 389.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 389.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 395.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 395.
-
-[12] [13] (./main.aux)
+[5] [6] [7] [8] [9] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1676,18 +1323,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 38585 strings out of 475075
- 769057 string characters out of 5781541
- 1235293 words of memory out of 5000000
- 59166 multiletter control sequences out of 15000+600000
- 542920 words of font info for 236 fonts, out of 8000000 for 9000
+ 48402 strings out of 475075
+ 1101782 string characters out of 5781541
+ 1680415 words of memory out of 5000000
+ 68928 multiletter control sequences out of 15000+600000
+ 514856 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,13n,102p,718b,1718s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb>
-Output written on main.pdf (14 pages, 260491 bytes).
+ 104i,13n,106p,760b,2252s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb>
+Output written on main.pdf (9 pages, 195336 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 95 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 243 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 

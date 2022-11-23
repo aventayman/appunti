@@ -344,4 +344,53 @@ L'equazione \(ax_1+bx_2+cx_3= 0\) con \((a,b,c) \neq (0,0,0)\) rappresenta, in o
 
 \mprop{}{Per un punto \(P\) immaginario \((P \neq \overline{P})\) passa un'unica retta reale.}
 \pf{Dimostrazione}{La retta \(rt(P, \overline{P})\) è reale per la proposizione precedente. Supponiamo per assurdo che \(\exists \ s \neq rt(P, \overline{P})\) reale per \(P\). \(\implies \overline{P} \in  s\) poiché \(s\) è reale.  \(s = rt(P, \overline{P})\) che è \textbf{assurdo!}. Quindi esiste ed è unica la retta \(r\) reale per \(P\).}
+
+\mprop{}{Due rette immaginarie e coniugate si intersecano in un punto reale di \(\tilde{\AA}_{2}(\CC) \).}
+\pf{Dimostrazione}{Sia \(r\) immaginaria \(\implies r \neq \overline{r}\). Sia \(P = r \implies \overline{P}\in \overline{r}\). \(P \in \overline{r}\implies \overline{P}\in \overline{r}=r\). \(\overline{P}\in r \cap \overline{r} = P \implies \overline{P}=P \implies P\) è reale.}
+
+\mprop{}{Ogni retta \(r\) immaginaria ha un unico punto reale in \(\tilde{\AA}_{2}(\CC)\).}
+
+\pf{Dimostrazione}{Per ipotesi \(r \neq \overline{r} \implies \exists \ P\) intersezione di \(r\) e \(\overline{r}\). Quindi per la proposizione precedente \(P\) è reale. Sia \(S \in r\) un punti reale. Essendo reale \(S = \overline{S} \implies S \in \overline{r} \implies S \implies S \in r \cap \overline{r}\). Quindi per l'unicità del punto di intersezione, \(S = P\).}
+
+\dfn{Curve algebriche reali in \(\tilde{\AA}_{2}(\CC) \)}{Curva algebrica reale di \(\tilde{\AA}_{2}(\CC) \) è il luogo delle autosoluzioni di un'equazione del tipo \[
+F(x_1, x_2, x_3) = 0
+\] dove \(F(x_1, x_2, x_3) = 0\) è un polinomio omogeneo a coefficienti reali nelle variabili \(x_1, x_2, x_3\).}
+
+\paragraph{Osservazione:} Ogni curva algebrica reale di \(\tilde{\AA}_{2}(\CC)\) che contiene un punto  \(P\) contiene anche \(\overline{P}\).
+
+\ex{}{Per esempio prendiamo una circonferenza\[
+x^2+2ax + y^2+2by+c=0 \qquad r^2=a^2+ b ^2 - c = 0
+\] \[
+(x+a)^2+(y+b)^2=0 \qquad 
+C: \ (-a, -b)
+\] Ora consideriamo l'equazione \[
+(x+a)^2+(y+b)^2=0 \qquad \text{in} \quad \AA_{2}(\CC) \quad x=\frac{x_1}{x_3} \quad y = \frac{x_2}{x_3} 
+\] \[
+\left( \frac{x_1}{x_3} + a \right) ^2+ \left( \frac{x_2}{x_3}+b \right) ^2=0
+\] Moltiplichiamo dentro entrambi i membri per \(x_3\) e sviluppiamo\[
+x_1^2+2ax_1x_3+a^2x_3^2 + x_2^2+2bx_2x_3+b ^2 x_3^2=0
+\] \[
+1+2a+a^2+1+2b+b ^2=0
+\] }
+
+\dfn{Curva riducibile}{In \(\tilde{\AA}_{2}(\CC) \) una curva \(F(x_1, x_2, x_3)\) si dice riducibile se \(F\) è il prodotto di polinomi di grado più basso.}
+\ex{}{\[F(x_1, x_2, x_3) = F_1(x_1, x_2, x_3)^{n_1} \cdot  F_2(x_1, x_2, x_3)^{n_2} \cdot F_3(x_1, x_2, x_3)^{n_3}\] \[
+\deg(F) = n_1 \deg(F_1) + \ldots + n_t \deg (F_t)
+\] }
+
+\paragraph{Osservazione:} Geometricamente una curva riducibile si riduce in componenti ottenute uguagliando a zero i vari fattori.
+
+\dfn{Ordine}{Si dice \textbf{ordine} di una curva algebrica in \(\tilde{\AA}_{2}(\CC) \) il grado del polinomio \(F\) che la definisce.}
+
+\thm{Teorema dell'ordine}{L'ordine di una curva algebrica reale è uguale al numero di intersezioni in comune con una qualsiasi retta \(r\) di \(\tilde{\AA}_{2}(\CC) \) a patto che 
+\begin{enumerate}
+    \item \(r\) non sia componente della curva
+    \item le intersezioni siano contate con la loro molteplicità
+\end{enumerate}}
+
+\dfn{Punti semplici ed r-upli}{Sia \(C\) una curva algebrica di \(\tilde{\AA}_{2}(\CC) \) e sia \(P \in C\)
+\begin{itemize}
+    \item \(P\) si dice \textbf{semplice} se la generica retta per \(P\) interseca \(C\) in \(P\) con molteplicità unitaria ed esiste un'unica retta, chiamata retta tangente, con molteplicità di intersezione in \(P\) maggiore di 1.
+    \item \(P\) si dice \textbf{r-uplo} (doppio, triplo, ecc\ldots ) se la generica retta per \(P\) interseca \(C\) in \(P\) con molteplicità \(r\), ed esistono \(r\) (contate con la loro molteplicità) rette con molteplicità di intersezione in \(P\) maggiore di \(r\) (rette tangenti).
+\end{itemize}}
 \end{document}

@@ -1,0 +1,240 @@
+\documentclass[twoside]{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Analisi Matematica 1}\\Ingegneria dell'Automazione Industriale}
+\author{\huge{Ayman Marpicati}}
+\date{A.A. 2022/2023}
+\setlength\parindent{0pt}
+
+\begin{document}
+
+
+\maketitle
+\cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\null\newpage
+
+\setlength{\headheight}{15pt}
+
+\pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[LO]{\rightmark}
+\fancyhead[RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LE]{\thepage}
+\fancyfoot{} % clear all footer fields
+
+\chapter{Derivate}
+\dfn{Derivate unilatere}{Sia \(I\) intervallo , \(f: \ I \to  \RR \) e \(x_0\) \textbf{un punto interno ad \(I\)}.
+\begin{enumerate}
+    \item Se esiste il limite \[
+    \lim_{x \to x_0^{-}} \frac{f(x) - f(x_0)}{x- x_0}=     \lim_{h \to 0^{-}} \frac{f(x_0+h) - f(x_0)}{h} \in \overline{\RR }
+    \] (cioè, il limite \textbf{sinistro} del rapporto incrementale), esso viene detto \textbf{derivata sinistra} di \(f\) in \(x_0\) e si indica con \(f'_{-}(x_0)\) 
+    \item Analogamente per la derivata destra
+\end{enumerate}}
+
+\thm{Legame fra la derivata e le derivate unilatere}{Siano \(f : \ I \to  \RR \) e \(x'\) \textbf{ punto interno} ad \(I\). Allora \[
+\exists  f'(x_0) \in \overline{\RR } \quad \text{se e solo se }
+\] \[
+\exists f'_{+}(x_0) \in \overline{\RR }, \ \exists f'_{-}(x_0) \in \overline{\RR } \quad e \quad f'(x_0)_{-} = f'(x_0)_{+}
+\] }
+\pf{Dimostrazione}{Inserire dimostrazione}
+
+\section{Classificazione dei punti di non derivabilità}
+Siano \(I\) intervallo , \(f: \ I \to  \RR \) e \(x_0\) \textbf{un punto interno ad \(I\)} tale che
+\begin{itemize}
+    \item \(f\) è continua in \(x_0\) 
+    \item \(f\) non è derivabile in \(x_0\)
+\end{itemize}
+Allora si presentano questi casi
+\begin{enumerate}
+    \item Punto angoloso;
+    \item Punto a tangente verticale;
+    \item Cuspide
+\end{enumerate}
+
+\dfn{Punto angoloso}{Diciamo che \(x_0\) è un \textbf{punto angoloso} se \[
+\exists f'_{-}(x_0), \ f'_{+}(x_0) \in \overline{\RR }, \quad (f'_{-}(x_0) \neq f'_{+}(x_0))
+\] e almeno una delle due è finita}
+\begin{figure}[]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xmin= -2, xmax= 2,
+            ymin= -2, ymax = 2,
+            axis lines = middle,
+        ]
+            \addplot[domain=-2:2, samples=100]{x};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{}
+    \label{Modulo da cambiare poi}
+\end{figure}
+
+\paragraph{Osservazione:} Se \(x_0\) è un punto angoloso \(\not\exists f'(x_0)\) perché \(f'_{+}(x_0) \neq f'_{-}(x_0)\)
+
+\dfn{Punto di flesso a tangente verticale}{Diciamo che \(x_0\) è un \textbf{punto di flesso a tangente verticale} se \[
+\exists f'(x_0) \in \{-\infty,+\infty\} 
+\] }
+
+\dfn{Cuspide}{Diciamo che \(x_0\) è un \textbf{punto di cuspide} se \[
+\exists f'_{-}(x_0),f'_{+}(x_0) \in \{-\infty, +\infty\} , \quad f'_{-}(x_0) \neq f'_{+}(x_0)
+\] }
+\paragraph{Osservazione:} Dei tre tipi di punti di non derivabilità \[
+f'(x_0)
+\begin{cases}
+    \ \text{esiste se \(x_0\) è punto di flesso a tangente verticale} \\
+    \ \text{non esiste se \(x_0\) è punto di cuspide o punto angoloso} \\
+\end{cases}
+\] 
+
+\paragraph{Osservazione:} In tutti i casi classificati una, fra derivata destra e derivata sinistra della funzione del punto, esiste (finita o infinita). Nel prossimo esempio, \(f\) è continua in \(x_0\), ma \[
+\not\exists f'_{-}(x_0), \quad f'_{+}(x_0)
+\] 
+Il caso in cui ho continuità e non esiste almeno una fra le due non viene classificato
+\ex{}{\[
+f(x) = 
+\begin{cases}
+    \ x \sin \frac{1}{x} \quad \text{se} \ x \neq 0 \\
+    \ 0 \quad \text{se} \ x = 0 \\
+\end{cases}
+\] \(f\) è continua in \(x_0=0:\) \[
+\lim_{x \to 0} f(x) = \lim_{x \to 0} x \sin \frac{1}{x}= 0
+\] 
+\nt{\(|x \sin \frac{1}{x}| = |x| |\sin \frac{1}{x}| \le |x| \quad \forall x \in \RR \implies graf (f)\) è compreso fra \(y = x\) e \(y = -x\)}}
+
+\begin{figure}[]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xmin= -10, xmax= 10,
+            ymin= -10, ymax = 10,
+            axis lines = middle,
+        ]
+            \addplot[domain=-10:10, samples=100]{x * sin(1/x)};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Non esiste né la derivata destra né quella sinistra}
+    \label{}
+\end{figure}
+
+Diamo uno strumento per lo studio delle forme indeterminate \[
+\frac{0}{0}, \ \frac{\infty}{\infty}
+\] 
+o riconducibili ad esse.
+
+\section{Teorema di de l'Hopital}
+\thm{Il teorema di de l'Hopital per le f.i. \(\frac{0}{0}\)}{Siano \(f, g : \ (a, b) \to  \RR \) funzioni continue su \((a,b)\) e sia \(x_0 \in (a,b)\) tale che \(f(x_0) = g(x_0) = 0\). Supponiamo inoltre che:
+\begin{enumerate}
+    \item \(f, g\) derivabili in \((a,b) \backslash \{x_0\} \) 
+    \item \(g'(x) \neq  0 \quad \forall x \in (a,b) \backslash \{x_0\} \);
+    \item ESISTA il limite \(\lim_{x \to x_0} \frac{f'(x)}{g'(x)}= L \in \overline{\RR }\)
+\end{enumerate} Allora esiste anche il limite \[
+\lim_{x \to x_0} \frac{f(x)}{g(x)}= \lim_{x \to x_0} \frac{f'(x)}{g'(x)}= L \in \overline{\RR }
+\] }
+\paragraph{Commentiamo l'ipotesi:}
+\[
+\begin{cases}
+    \ f(x_0) = g(x_0) = 0 \\
+    \ f, g \ \text{continue in} x_0 \\
+\end{cases}
+\] 
+Quindi \(\lim_{x \to x_0} \frac{f(x)}{g(x)}\) è una forma indeterminata \(\frac{0}{0}\). \\ Ricordiamo che \(f,g\) derivabili in \((a,b) \backslash \{x_0\} \). \\ Questo è in vista del fatto che considero \(\lim_{x \to x_0} \frac{f'(x)}{g'(x)}\).  \[
+g'(x) \neq  0 \quad \forall (a,b) \backslash \{x_0\} 
+\] 
+L'ipotesi misteriosa è \(\exists \lim_{x \to x_0} \frac{f'(x)}{g'(x)}\). Se valgono tutte le ipotesi e esiste il limite allora  \[
+\lim_{x \to x_0} \frac{f(x)}{g(x)}= \lim_{x \to x_0} \frac{f'(x)}{g'(x)}
+\] la validità dell'uguaglianza è condizionata al fatto che il secondo limite esista.
+
+\thm{Il teorema di de l'Hopital per le f.i. \(\frac{\infty}{\infty}\)}{Siano \(f, g : \ (a, b) \to  \RR \) funzioni continue su \((a,b)\) e sia \(x_0 \in (a,b)\). Supponiamo inoltre che:
+\begin{enumerate}
+    \item \(f, g\) derivabili in \((a,b) \backslash \{x_0\} \) 
+    \item \(\lim_{x \to x_0} f(x) = \lim_{x \to x_0} g(x) = + \infty \)
+    \item \(g'(x) \neq  0 \quad \forall x \in (a,b) \backslash \{x_0\} \);
+    \item ESISTA il limite \(\lim_{x \to x_0} \frac{f'(x)}{g'(x)}= L \in \overline{\RR }\)
+\end{enumerate} Allora esiste anche il limite \[
+\lim_{x \to x_0} \frac{f(x)}{g(x)}= \lim_{x \to x_0} \frac{f'(x)}{g'(x)}= L \in \overline{\RR }
+\] }
+
+\paragraph{Osservazione:} Anche per le f.i. \(\frac{\infty}{\infty}\), l'uguaglianza \[
+\lim_{x \to x_0} \frac{f(x)}{g(x)}= \lim_{x \to x_0} \frac{f'(x)}{g'(x)}
+\] è condizionata al fatto che il secondo limite esista.
+
+\ex{Esempio di applicazione}{\[
+\lim_{x \to 0} \frac{1-\cos(x)}{x^2}=\lim_{x \to 0} \frac{(1-\cos(x))'}{(x^2)'} = \lim_{x \to 0} \frac{\sin(x)}{2x}= \frac{1}{2}
+\]} 
+\ex{}{
+\[
+\lim_{x \to 0} x \log(|x| )
+\] 
+La riformulo come f.i. quoziente, ho due possibilità 
+\begin{itemize}
+    \item \(\lim_{x \to 0} x \log(|x| ) = \lim_{x \to 0} \frac{\log(|x| )}{\frac{1}{x}}\) 
+    \item \(\lim_{x \to 0} x \log (|x| ) = \lim_{x \to 0} \frac{x}{\frac{1}{\log(|x| )}}\)
+\end{itemize} Conviene utilizzare la prima riscrittura per l'applicazione di de l'Hopital. \[
+\lim_{x \to 0} x \log (|x| ) = \lim_{x \to 0} \frac{\log(|x| )}{\frac{1}{x}} = \lim_{x \to 0} \frac{f'(x)}{g'(x)}= \lim_{x \to 0} \frac{\frac{|x| }{x} \frac{1}{x}}{-\frac{1}{x^2}} = \lim_{x \to 0} \frac{\frac{1}{x}}{-\frac{1}{x^2}}= \lim_{x \to 0} \frac{1}{x} (-x^2) = 0
+\] }
+
+\ex{}{\[
+\lim_{x \to 0^{+}} x^{x} = 1
+\] La forma esponenziale si riconduce alla forma del prodotto \[
+x^{x}= \exp ( \log (x^{x}) ) = \exp (x \log(x)) \to  1
+\] \[
+\lim_{x \to 0^{+}} x \log (x) = 0 
+\] }
+
+A volte è necessario applicare il teorema di de l'Hopital più volte \[
+\lim_{x \to 0^{+}} \left( \frac{1}{x}- \frac{1}{\sin(x)} \right) = \lim_{x \to 0^{+}} \frac{\sin(x) - x}{x \sin(x)} = \lim_{x \to 0^{+}} \frac{\cos(x) - 1}{\sin(x) + x \cos(x)} 
+\] Non siamo arrivati ad una conclusione quindi dobbiamo ripetere il procedimento \[
+\lim_{x \to 0^{+}} \frac{-\sin(x)}{\cos(x) + \cos(x) - x \sin(x)} = \lim_{x  \to 0^{+}} \frac{-\sin(x)}{2\cos(x) - x \sin(x)}=0
+\] A posteriori vedo che tutte le uguaglianze condizionate sono vere.
+
+\ex{}{\[
+\lim_{x \to +\infty} x^{n}e^{-x}=\lim_{x \to +\infty} \frac{x^{n}}{e^{x}}
+\] \[
+\lim_{x \to +\infty} \frac{x^{n}}{e^{x}}=\lim_{x \to +\infty}  \frac{n x^{n-1}}{e^{x}}
+\] è una forma indeterminata se \(n \ge 2\) \[
+= \lim_{x \to +\infty} \frac{n (n-1) x^{n-2}}{e^{x}}
+\] è una forma indeterminata se \(n \ge 3\). Applico il teorema di de l'Hopital \(n\) volte \[
+\lim_{x \to +\infty} \frac{n!}{e^{x}}= 0
+\] }
+
+\ex{}{\[
+f(x) = x^2\sin(\frac{1}{x}), \quad g(x) = \sin(x)
+\] Provo ad applicare il teorema di de l'Hopital per \[
+\lim_{x \to 0} \frac{f(x)}{g(x)}=\lim_{x \to 0} \frac{x^2 \sin (\frac{1}{x})}{\sin(x)} \quad \left[ \frac{0}{0} \right] 
+\] \[
+= \lim_{x \to 0} \frac{2x \sin(\frac{1}{x}) + x^2 \left( - \frac{1}{x^2} \right) \cos(\frac{1}{x})}{\cos(x)}
+\] \[
+= \lim_{x \to 0} \frac{2x \sin(\frac{1}{x}) - \cos(\frac{1}{x})}{\cos(x)}
+\]Siccome \(\not\exists \lim_{x \to 0} \cos(\frac{1}{x})\) il \(\lim_{x \to 0} \frac{f'(x)}{g'(x)}\) \textbf{non esiste.} Quindi non posso applicare il teorema di de l'Hopital, non sono autorizzato a scrivere \(=\). L'uguaglianza non vale. Infatti \[
+\lim_{x \to 0} \frac{x^2 \sin(\frac{1}{x})}{\sin(x)}
+\] esiste.}
+
+\thm{Teorema del limite della derivata (enunciato per le derivate destre)}{Sia \(f: [a, b) \to  \RR \) una funzione continua in \(a\) e derivabile in \((a,b)\). Se esiste, finito o no, il limite \(\lim_{x \to a^{+}} f'(x)\), allora esiste anche \(f'_{+}(a)\) e si ha che \[
+f'_{+}(a) = \lim_{x \to a^{+}f'(x)} 
+\] "La derivata destra di \(f\) in \(a\) coincide con il limite destre di \(f'\) in \(a\)".}
+\pf{Dimostrazione}{Considero \[
+f'_{+}(a) = \lim_{h \to 0^{+}} \frac{f(a+h) - f(a)}{h} = \lim_{x \to a^{+}} \frac{f(x) - f(a)}{x-a}
+\] Quando calcolo questo limite mi trovo in una f.i. \(\frac{0}{0}\), infatti \(f\) è continua in \(a\) per ipotesi \(\implies f(x) \to f(a)\) per \(x \to a^{+} \implies f(x) - f(a) \to 0\) per \(x \to a^{+}\). Le ipotesi del teorema mi permettono di applicare il teorema di de l'Hopital \[
+= \lim_{x \to a^{+}} \frac{(f(x) - f(a))'}{(x-a)'}=\lim_{x \to a^{+}} \frac{f'(x)}{1}= \lim_{x \to a^{+}} f'(x)
+\] Per ipotesi, ho richiesto che \(\exists \lim_{x \to a^{+}} f'(x)\). L'uguaglianza non è più condizionata e deduco \[
+\lim_{x \to a^{+}} \frac{f(x) - f(a)}{x-a} = \lim_{x \to a^{+}} f'(x)
+\] }
+\paragraph{Osservazione:} Sotto ipotesi analoghe vale anche il risultato per  \[
+f'_{-}(b) = \lim_{x \to b ^{-}} f'(x)
+\] Ma si consiglia negli esercizi di non usare i limiti unilateri di \(f'\) al posto delle derivate unilatere.
+
+\chapter{Proprietà globali delle funzioni derivabili}
+I risultati che ci permetteranno di fare lo studio del grafico qualitativo delle funzioni si basano su altri risultati teorici che legano 
+\begin{itemize}
+    \item proprietà delle derivate
+    \item proprietà globali delle funzioni
+\end{itemize}
+\end{document}

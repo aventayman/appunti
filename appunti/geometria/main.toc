@@ -13,4 +13,6 @@
 \contentsline {section}{\numberline {2.4}Complessificazione di \(\tilde {\r A}_{2}(\RR ) \)}{10}{section.2.4}%
 \contentsline {paragraph}{Osservazione:}{10}{section*.3}%
 \contentsline {paragraph}{Osservazione:}{11}{section*.4}%
+\contentsline {paragraph}{Osservazione:}{12}{section*.5}%
+\contentsline {paragraph}{Osservazione:}{12}{section*.6}%
 \contentsfinish 

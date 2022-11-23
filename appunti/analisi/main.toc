@@ -1,0 +1,12 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Derivate}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Classificazione dei punti di non derivabilità}{4}{section.1.1}%
+\contentsline {paragraph}{Osservazione:}{5}{section*.2}%
+\contentsline {paragraph}{Osservazione:}{5}{section*.3}%
+\contentsline {paragraph}{Osservazione:}{5}{section*.4}%
+\contentsline {section}{\numberline {1.2}Teorema di de l'Hopital}{6}{section.1.2}%
+\contentsline {paragraph}{Commentiamo l'ipotesi:}{6}{section*.5}%
+\contentsline {paragraph}{Osservazione:}{7}{section*.6}%
+\contentsline {paragraph}{Osservazione:}{9}{section*.7}%
+\contentsfinish 
