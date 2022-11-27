@@ -5,6 +5,8 @@
 
 //Calcola il fattoriale di un numero
 int fact(int n){
+    if (n == 0)
+        return 1;
     for (int i = 1; i < n; i++) {
         n *= i;
     }
@@ -13,8 +15,9 @@ int fact(int n){
 
 //Eleva un numero ad un altro
 double elevato(double x, int n){
-    for (int i = 0; i < n; i++) {
-        x *= x;
+    int p = x;
+    for (int i = 1; i < n; i++) {
+        x *= p;
     }
     return x;
 }
@@ -23,7 +26,7 @@ double elevato(double x, int n){
 double calcolare_somma(double x, int n){
     double risultato = 3.1415/2;
     for (int i = 0; i <= n; i++) {
-        risultato -= (fact(2 * n) * elevato(x, 2 * n + 1))/(elevato(4, n) * elevato(fact(n), 2) * (2 * n + 1));
+        risultato -= (fact(2 * i) * elevato(x, 2 * i + 1))/(elevato(4, i) * elevato(fact(i), 2) * (2 * i + 1));
     }
     return risultato;
 }
