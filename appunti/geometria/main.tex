@@ -567,4 +567,131 @@ Dimostriamo tutti i casi singolarmente:
     \item \(C\) è doppiamente degenere se ha \(\infty^{1}\) punti doppi \(\iff AX = \ul{0} \) ha \(\infty^{2}\) soluzioni (se \([(x_1, x_2, x_3)]\) è soluzione \([(2x_1, 2x_2, 2x_3)]\) è lo stesso punto doppio) \(\iff \rho(A) =1\)
 \end{enumerate}
 }
+
+\section{Classificazione affine di una conica generale}
+
+Sia \(C\) una conica di \(\tilde{\AA}_{2}(\CC) \) e \(r\) una retta osserviamo che \(r \cap C =\)
+\begin{enumerate}
+    \item due punti reali e distinti
+    \item un punto reale con molteplicità doppia
+    \item due punti immaginari e coniugati
+\end{enumerate}
+Se consideriamo la \(r_{\infty}\) questa casistica ci dà la classificazione affine delle coniche generali.
+
+\dfn{Ellisse, iperbole e parabola}{Sia \(C\) una conica di \(\tilde{\AA}_{2}(\CC) \) e sia \(C\) generale. Allora \(C \cap r_{\infty}\) è data dai due punti \(P, Q\) (non necessariamente distinti) e \(C\) si dice:
+\begin{enumerate}
+    \item \textbf{ellisse} se \(P\) e \(Q\) sono immaginari e coniugati;
+    \item \textbf{iperbole} se \(P\) e \(Q\) sono reali e distinti;
+    \item \textbf{parabola} se \(P\) e \(Q\) sono reali e coincidenti.
+\end{enumerate}}
+
+\section{Condizioni analitiche}
+Sia \(C\) una conica generale di equazione \[
+a_{11}x_1^2+ 2a_{12}x_1x_2+2a_{13}x_1x_3+a_{22}x_2^2+2a_{23}x_2x_3+a_{33}x_3^2=0
+\] 
+La \(r_{\infty}\) ha equazione \(x_{3}=0\) \[
+\begin{cases}
+    \ a_{11}x_1^2+2a_{12}x_1x_2+a_{22}x_2^2= 0 = C \cap r_{\infty} \\
+    \ x_3 = 0 \\
+\end{cases}
+\]
+Almeno uno fra \(x_1, x_2 \neq 0\). Supponiamo \(x_2 \neq 0\) e dividiamo per \(x_2^2\) \[
+a_{11} \left( \frac{x_1}{x_2} \right) ^2 + 2a_{12} \frac{x_1}{x_2} + a_{22} = 0
+\] 
+La risolviamo in \(\frac{x_1}{x_2}\). Se 
+\begin{enumerate}
+    \item \(\frac{\Delta}{4} > 0\) abbiamo due soluzioni reali e distinte \(\implies \) \textbf{iperbole};
+    \item \(\frac{\Delta}{4} = 0\) abbiamo due soluzioni coincidenti \(\implies \) \textbf{parabola};
+    \item \(\frac{\Delta}{4} < 0\) abbiamo due soluzioni immaginarie e coniugate \(\implies \) \textbf{ellisse}.
+\end{enumerate}
+
+\[
+\frac{\Delta}{4} = \left( \frac{b}{2} \right) ^2 - ac = \left( \frac{2a_{12}}{2} \right) ^2 - a_{11} a_{22} = a_{12}^2 - a_{11} a_{22}
+\] \[
+A = 
+\begin{pmatrix}
+    a_{11} & a_{12} & a_{13} \\
+    a_{12} & a_{22} & a_{23} \\
+    a_{13} & a_{23} & a_{33} \\
+\end{pmatrix}
+\quad \text{poniamo} \quad A^* =
+\begin{pmatrix}
+    a_{11} & a_{12} \\
+    a_{12} & a_{22} \\
+\end{pmatrix} \]
+\[
+|A^{*}| = a_{11}a_{22}-a_{12}^2= - \frac{\Delta}{4}
+\] Se \(C\) è una conica generale \((|A| = 0)\) allora si applicano le casistiche sopra elencate.
+
+\dfn{Polarità associata ad una conica}{Data una conica \(C: {^tX}AX = 0\) e dati due punti del piano \((\tilde{\AA}_{2}(\CC) )\) \[
+        P' = [(x_1', x_2', x_3')] \quad e \quad P '' = [(x_1 '', x_2 '', x_3 '')]
+\] si dice che \(P'\) è coniugato a \( P ''\) rispetto a \(C\) se \[
+{^tX'AX '' = 0 \quad con \quad X' = \begin{pmatrix} x'_1\\ x_2'\\ x'_3 \end{pmatrix}} \quad  e \quad X '' = \begin{pmatrix} x''_1\\ x_2 ''\\ x''_3 \end{pmatrix}
+\] }
+
+\paragraph{Osservazione:} Sia \(P'\) coniugato a \(P ''\), ovvero \[
+    {^tX'} A X '' = 0 \implies {^t({^tX'}AX '')} = 0 = {^tX ''} {^tA}{^t({^tX'})} = {^tX ''} A X' = 0 \implies P '' \text{ è coniugato a } P' 
+\] Quindi la relazione di coniugio è simmetrica \(\implies \) potremo dire semplicemente che \(P'\) e \(P ''\) sono coniugati.
+
+\dfn{Polare}{Sia \(C\) una conica di \(\tilde{\AA}_{2}(\CC) \) e sia \(P \in \tilde{\AA}_{2}(\CC) \) si dice \textbf{polare} di \(P\) rispetto a \(C\) il luogo dei punti \(Q\) coniugati di \(P\) rispetto alla conica \(C\).}
+
+\mprop{}{In \(\tilde{\AA}_{2}(\CC) \) la polare di un punto \(P\) rispetto ad una conica generale \textbf{è una retta}.}
+\pf{Dimostrazione}{Siano \([(x_1', x_2', x_3')] = P\) allora \(Q = [(x_1, x_2, x_3)]\) appartiene alla polare di \(P\) se e soltanto se \[
+        (x_1', x_2', x_3') A \begin{pmatrix} x_1\\ x_2\\ x_3 \end{pmatrix} = 0 \quad (x_1', x_2', x_3') A = (a,b,c)
+\] \[
+(a, b, c) \begin{pmatrix} x_1\\ x_2\\ x_3 \end{pmatrix} = ax_1+bx_2+cx_3=0
+\] Dimostriamo che \((a,b,c) \neq \ul{0} \). Sia per assurdo \((a,b,c) = \ul{0} \implies (x_1', x_2', x_3') A = \ul{0} \) \[
+\iff {^tA} \begin{pmatrix} x'_1\\ x_2'\\ x'_3 \end{pmatrix} \iff A \begin{pmatrix} x'_1\\ x_2'\\ x'_3 \end{pmatrix} = \ul{0} 
+\] \(\begin{pmatrix} x_1'\\ x_2'\\ x_3' \end{pmatrix}\) è le coordinate di un punto doppio \(\implies P\) è un punto doppio di \(C \implies \) ma \(C\) è generale \(\implies \) \textbf{assurdo!} \(\implies (a,b,c) \neq \ul{0} \implies ax_1 + bx_2+ cx_3 = 0\) è una retta. Essa è chiamata retta polare di \(P\) rispetto a \(C\).}
+\dfn{}{\(P\) è detto polo della sua retta polare. La relazione \textbf{polo} \(\leftrightarrow\) \textbf{polare} è detta polarità ed è una biiezione. }
+
+\subsection{Principio di reciprocità}
+Sia \(C\) una conica generale di \(\tilde{\AA}_{2}(\CC) \), sia \(P \in \tilde{\AA}_{2}(\CC) \) e sia \(p\) la polare di \(P\). Allora
+\begin{enumerate}
+    \item le polari dei punti di \(p\) passano per \(P\).
+        \pf{Dimostrazione}{Sia \(Q \in p \implies Q, P\) sono coniugati \(\implies P \in q\) di \(Q\).}
+    \item i poli delle rette per \(P\) appartengono a \(p\).
+        \pf{Dimostrazione}{Sia \(q\) una retta per \(P\). Il polo \(Q\) di \(q\) è coniugato a tutti i punti di \(q \implies Q\) è coniugato a \(P \implies Q \in p\).}
+\end{enumerate}
+
+\mprop{}{Sia \(C\) una conica generale di \(\tilde{\AA}_{2}(\CC) \). Allora
+\begin{enumerate}
+    \item sia \(P \in C \implies \) la polare \(p\) di \(P\) è la retta tangente a \(C\) in \(P\).
+        \pf{Dimostrazione}{Sia \(P\) di coordinate \(x_P = \begin{pmatrix} x'_1\\ x_2'\\ x'_3 \end{pmatrix}\) appartenente alla conica allora la polare di \(P\) ha equazione \({^tX_P}A \begin{pmatrix} x_1\\ x_2\\ x_3 \end{pmatrix} = 0\) che è la formula della retta tangente a \(C\) in \(P\).}
+    \item Sia \(P \notin C\). La polare di \(P\) è la congiungente dei due punti \(T_1\) e \(T_2\) ottenuti intersecando le tangenti \(t_1\) e \(t_2\) alla conica per \(P\).
+        \pf{Dimostrazione}{\(T_1 \in C \implies \) la polare di \(T_1\) rispetto a \(C\) è \(t_1\). \(P \in t_1 \implies P\) appartiene alla polare di \(T_1\). Quindi per il principio di reciprocità \(T_1\) appartiene alla polare di \(P\) \(\implies T_1 \in p\). Analogamente \(T_2 \in C \implies \) la polare di \(T_2\) è \(t_2\) e \(P \in t_2 \implies T_2 \in p\). Quindi \(T_1, T_2 \in p \implies p\) è la congiungente di \(T_1\) e \(T_2\).}
+\end{enumerate}}
+
+\paragraph{Osservazione:} Equivalentemente il punto 2 si può riscrivere
+ \mprop{}{Se \(P \notin C\) la sua polare \(p\) si ottiene congiungendo i punti \(T_1\) e \(T_2\) di tangenza delle tangenti per \(P\).}
+
+ \dfn{Centro e diametri di una conica}{Si dice \textbf{centro} di una conica generale di \(\tilde{\AA}_{2}(\CC) \) il polo della retta impropria. Si dicono diametri di una conica generale le rette polari dei punti impropri.}
+\paragraph{Osservazione:} Per il principio di reciprocità i diametri passano per il centro della conica. Quindi sono il fascio proprio (se c'è proprio) di rette per \(C\).
+
+Per determinare le coordinate del centro dobbiamo scegliere due punti \(X_{\infty} = [(1, 0, 0)]\), punto improprio dell'asse \(x\), e \(Y_{\infty} = [(0,1,0)]\), punto improprio dell'asse \(y\). La polare di \(X_{\infty}\) è \[
+    (1,0,0)
+\begin{pmatrix}
+    a_{11} & a_{12} & a_{13} \\
+    a_{12} & a_{22} & a_{23} \\
+    a_{13} & a_{23} & a_{33} \\
+\end{pmatrix}
+\begin{pmatrix} x_1 \\ x_2\\ x_3 \end{pmatrix} = 0 \qquad (a_{11}, a_{12}, a_{13}) \begin{pmatrix} x_1 \\ x_2\\ x_3 \end{pmatrix} = a_{11}x_1+a_{12}x_2 + a_{13} x_3 = 0
+\] Analogamente la polare di \(y_{\infty}\) è  \[
+a_{12}x_1 + a_{22}x_2 + a_{23}x_3 = 0
+\] \[
+\begin{cases}
+    \ a_{11}x_1+a_{12}x_2+a_{13}x_3 = 0 \qquad P_1 \\
+    \ a_{12}x_1+a_{22}x_2+a_{23}x_3=0 \qquad P_2 \\
+\end{cases}
+\] 
+Il centro \(C\) è proprio se \(P_1\) e \(P_2\) non sono paralleli. Se \[
+\begin{dmatrix}
+    a_{11} & a_{12} \\
+    a_{12} & a_{22} \\
+\end{dmatrix} = |A^{*}| \neq 0
+\] Il centro è un punto proprio. Quindi il centro è un punto proprio se \(C\) è un ellisse o un'iperbole. Quindi in questo caso i diametri sono un fascio proprio di rette di centro \(C\). \[
+F: \ \lambda (a_{11}x_1+a_{12}x_2+a_{13}x_3) + \mu (a_{12}x_1 + a_{22}x_2 + a_{23}x_3) = 0
+\] \textbf{Equazione del fascio dei diametri.} Se \(C\) è una parabola \(\implies |A^{*}| = 0 \implies P_1 \) parallelo a \(P_2 \implies  \) il centro è un punto improprio. \(\implies \) i diametri formano un fascio improprio di equazione \[
+a_{11}x_1+a_{12}x_2 + kx_3 = 0 \quad \text{con} \quad k \in \CC
+\] fascio improprio dei diametri della parabola.
 \end{document}
