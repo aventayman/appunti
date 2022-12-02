@@ -685,13 +685,83 @@ a_{12}x_1 + a_{22}x_2 + a_{23}x_3 = 0
 \end{cases}
 \] 
 Il centro \(C\) è proprio se \(P_1\) e \(P_2\) non sono paralleli. Se \[
-\begin{dmatrix}
+\begin{vmatrix}
     a_{11} & a_{12} \\
     a_{12} & a_{22} \\
-\end{dmatrix} = |A^{*}| \neq 0
+\end{vmatrix} = |A^{*}| \neq 0
 \] Il centro è un punto proprio. Quindi il centro è un punto proprio se \(C\) è un ellisse o un'iperbole. Quindi in questo caso i diametri sono un fascio proprio di rette di centro \(C\). \[
 F: \ \lambda (a_{11}x_1+a_{12}x_2+a_{13}x_3) + \mu (a_{12}x_1 + a_{22}x_2 + a_{23}x_3) = 0
 \] \textbf{Equazione del fascio dei diametri.} Se \(C\) è una parabola \(\implies |A^{*}| = 0 \implies P_1 \) parallelo a \(P_2 \implies  \) il centro è un punto improprio. \(\implies \) i diametri formano un fascio improprio di equazione \[
 a_{11}x_1+a_{12}x_2 + kx_3 = 0 \quad \text{con} \quad k \in \CC
 \] fascio improprio dei diametri della parabola.
+
+\section{Asintoti di una conica}
+\dfn{Asintoti}{Si dicono \textbf{asintoti} di una conica le rette proprie tangenti alla conica nei suoi punti impropri.}
+\paragraph{Osservazione:} Gli asintoti di una conica sono quindi le rette polari nei suoi punti impropri. Gli asintoti sono quindi dei diametri e passano per il centro. Se il centro è proprio (cioè se \(C\) è un'ellisse o un'iperbole) gli asintoti sono le rette che congiungono il centro con i punti impropri di \(C\).
+
+\mprop{}{La parabola è una conica con centro improprio e priva di asintoti.}
+\pf{Dimostrazione}{Sia \(C\) una parabola \(\implies C\) è tangente alla retta impropria in un punto che chiamiamo \(P_{\infty}\). Quindi la retta polare di \(P_{\infty}\) è \(r_{\infty} \implies \) il polo della \(r_{\infty}\) è \(P_{\infty} \implies \) il punto \(P_\infty\) è il centro della parabola. Osserviamo che \(C\) ha solo un punto improprio \(P_\infty \implies \) ammette solo una tangente nel suo punto improprio. Ma \(t\) è la \(r_\infty \implies \) la \(r_{\infty}\) non è un asintoto.}
+
+\dfn{Coniche a centro}{Diremo che l'iperbole e l'ellisse sono coniche \textbf{a centro}, mentre la parabola è detta conica \textbf{non a centro}.}
+
+\section{Proprietà metriche}
+\dfn{Iperbole equilatera}{Un'iperbole si dice \textbf{equilatera} se i suoi asintoti sono ortogonali.}
+
+\mprop{}{Una conica generale è un'iperbole equilatera se, e soltanto se, \(a_{11} + a_{22} = 0\).}
+
+\ex{}{Si stabiliscano i valori di \(k \in \RR:\) \[
+C: \ 2kx^2 + 2 (k-2) xy - 4 y ^2 + 2x + 1 = 0
+\] sia un'iperbole equilatera. \\ 
+\begin{enumerate}
+    \item \(2k = -(-4) \to k = 2\)
+    \item Sostituiamo dentro all'equazione e scriviamola in forma omogenea \[ 4x_1 ^2 + 0 x_1 x_2 - 4 x_2 ^2 + 2 x_1 x_3 + x_3 ^2 = 0 \quad 
+        A = 
+\begin{vmatrix}
+    4 & 0 & 1 \\
+    0 & -4 & 0 \\
+    1 & 0 & 1 \\
+\end{vmatrix} \neq 0
+\] \(k = 2\) dà luogo ad un'iperbole equilatera.
+\end{enumerate}}
+
+\dfn{Ortogonale al punto improprio}{Diremo che la retta \(p\) di parametri direttori \([(l', m')]\) è ortogonale al punto improprio \(P: [(l,m,0)]\) se \(ll' + mm' = 0\).}
+
+\dfn{Asse di una conica}{Si dice \textbf{asse} di una conica ogni diametro ortogonale al proprio polo.}
+
+\dfn{Vertici}{Si dicono \textbf{vertici} le intersezioni proprie della conica con i propri assi.}
+
+\section{Condizioni analitiche}
+\mprop{}{Gli assi di una conica a centro (ellisse o iperbole) sono due e sono ortogonali tra loro, a meno che non si tratti di una circonferenza generalizzata, in tal caso tutti i diametri sono assi.}
+\pf{Dimostrazione}{Per definizione i diametri sono le polari dei punti impropri. Dato \(P_\infty : [(l,m,0)]\) \[
+\begin{pmatrix}
+    l & m & 0 \\
+\end{pmatrix}
+\begin{pmatrix}
+    a_{11} & a_{12} & a_{13} \\
+    a_{12} & a_{22} & a_{23} \\
+    a_{13} & a_{23} & a_{33} \\
+\end{pmatrix}
+\begin{pmatrix} x_1 \\ x_2\\ x_3 \end{pmatrix} = 0
+\] Il generico diametro è: \[
+\begin{pmatrix}
+    la_{11} + m a_{12} & l a_{12} + m a_{22} & l a_{13} + m a_{23} \\
+\end{pmatrix}
+\begin{pmatrix} x_1 \\ x_2\\ x_3 \end{pmatrix} = 0
+\] \[
+(la_{11} + m a_{12}) x_1 + (la_{12} + ma_{22}) x_2 + (la_{13} + ma_{23}) x_3 = 0
+\] \[
+p.d.d : \ [(-la_{12} - m a_{22}, l a_{11} + ma_{12})]
+\] Il polo di \(d\) è \(P_\infty: [(l,m,0)]\). \(d\) è un asse se è ortogonale a \(P_\infty\) ovvero se \[
+l ( -la_{12}-ma_{22} ) + m(la_{11} + ma_{12}) = 0
+\] \[
+-l^2 a_{12} + ml (-a_{22}+a_{11}) + m^2 a_{12} = 0 \qquad l^2a_{12} + ml(a_{22}- a_{11}) - m^2 a_{12} = 0 
+\] \[
+a_{12} \left( \frac{l}{m} \right) ^2 + \frac{l}{m} (a_{22} - a_{11}) - a_{12} = 0
+\] Se \(a_{12}=0\) e \(a_{22} = a_{11}\) l'equazione è risolta da tutte le coppie \((l,m)\). Quindi se la conica è una circonferenza generalizzata tutti i diametri sono assi. I due assi hanno polo \(P_\infty : [(l',m',0)]\) e \(Q_\infty : [(l '', m '', 0)]\). Sia \(p'\) l'asse associato al polo \(P_\infty\) e sia \(A_\infty\) il suo punto improprio. Sia \(a\) la retta che congiunge il centro al punto improprio \(rt(C, P_\infty)\), per ipotesi \(a \perp p'\). \(a\) contiene \(P_\infty\) che è il polo di \(p'\), quindi per il principio di reciprocità \(p'\) contiene il polo di \(a\). Il polo di \(a\) è improprio (perché \(a\) è diametro) \(\implies \) il punto improprio di \(a\) è \(A_\infty\), ma \(A_\infty \) è ortogonale alla direzione di \(a \implies a\) è un asse. Quindi i due assi sono ortogonali.}
+
+\mprop{}{La parabola ha un unico asse e un solo vertice \(v\). Inoltre la tangente alla parabola in \(v\) è ortogonale all'asse.}
+
+\pf{Dimostrazione}{Il punto \(P_\infty\) di una parabola è \([(-a_{12}, a_{11}, 0)]\). I \(p.d.d = [(-a_{12}, a_{11})]\). La direzione ortogonale è data da \([(a_{11}, a_{12})]\), quindi il punto \(P_\infty\) è \([(a_{11}, a_{12}, 0)]\). Da cui segue che l'asse è unico ed è la polare di \((a_{11}, a_{12}, 0)\). Sostituendo nell'equazione del fascio improprio dei diametri abbiamo che l'asse ha equazione: \[
+a_{11}(a_{11}x_1+ a_{12}x_2 + a_{13}x_3) + a_{12}(a_{12}x_1 + a_{22}x_2 + a_{23}x_3) = 0
+\] Per il teorema dell'ordine \(a\) interseca la parabola \(C\) in due punti, ma uno è \(P_\infty\) quindi l'altro punto sarà l'unico vertice della parabola.}
 \end{document}

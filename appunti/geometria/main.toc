@@ -24,4 +24,8 @@
 \contentsline {subsection}{\numberline {3.2.1}Principio di reciprocità}{19}{subsection.3.2.1}%
 \contentsline {paragraph}{Osservazione:}{20}{section*.10}%
 \contentsline {paragraph}{Osservazione:}{20}{section*.11}%
+\contentsline {section}{\numberline {3.3}Asintoti di una conica}{21}{section.3.3}%
+\contentsline {paragraph}{Osservazione:}{21}{section*.12}%
+\contentsline {section}{\numberline {3.4}Proprietà metriche}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Condizioni analitiche}{22}{section.3.5}%
 \contentsfinish 
