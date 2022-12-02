@@ -22,7 +22,7 @@
 \setlength{\headheight}{15pt}
 
 \pagestyle{fancy}
-%... then configure it.
+%... Then configure it.
 \fancyhead{} % clear all header fields
 \fancyhead[LO]{\rightmark}
 \fancyhead[RO]{\thepage}
@@ -30,10 +30,81 @@
 \fancyhead[LE]{\thepage}
 \fancyfoot{} % clear all footer fields
 
-\input{./chapters/chapter_1}
-\input{./chapters/chapter_2}
-\input{./chapters/chapter_3}
-\input{./chapters/chapter_4}
-\input{./chapters/chapter_5}
+%\input{./chapters/chapter_1}
+%\input{./chapters/chapter_2}
+%\input{./chapters/chapter_3}
+%\input{./chapters/chapter_4}
+%\input{./chapters/chapter_5}
+\input{./chapters/chapter_6}
 
+\chapter{Spazi affini}
+\section{\(A_n(K)\), spazio affine di dimensione \(n\)}
+\dfn{Spazio affine}{Si dice \textbf{spazio affine} di dimensione \(n\) sul campo \(K\), e si indica \(\AA_{n}(K) \), la struttura costituita da
+\begin{enumerate}
+    \item un insieme non vuoto \(A \), detto insieme dei punti
+    \item uno spazio vettoriale \(V_n(K)\) 
+    \item un'applicazione \[
+    f: \quad A \times A \to V_n(K)
+    \] con le seguenti proprietà
+    \begin{enumerate}
+        \item \(\forall P \in A \ e \ \forall v \in V \quad \exists ! \ Q \in A : \quad f(P, Q) = \vec{PQ} = v\)
+        \item \(\vec{PQ} + \vec{QR} = \vec{PR} \quad \forall P, Q, R \in A\)
+    \end{enumerate}
+\end{enumerate}}
+
+\mprop{}{In \(A_n(K)\), per ogni \(P,Q\) e \(R \in A\)
+\begin{enumerate}
+    \item il vettore \(\vec{RR} = \ul{0} \)
+    \item \(\vec{PQ} = \vec{PR} \iff Q = R\)
+    \item \(\vec{PQ} = \ul{0}  \iff P=Q\)
+    \item \(v = \vec{PQ} \implies -v = \vec{QP}\)
+    \item \(\forall P_1, P_2, Q_1, Q_2 \in A\) risulta \(\vec{P_1P_2} = \vec{Q_1Q_2} \iff \vec{P_1Q_1} = \vec{P_2Q_2}\)
+\end{enumerate}}
+
+\pf{Dimostrazione}{ Dimostriamo ogni punto separatamente
+\begin{enumerate}
+    \item \(\vec{R R} + \vec{RR} = \vec{RR}\) perciò \(2 \vec{RR} = \vec{RR} \iff \vec{RR} = \ul{0} \)
+    \item posto \(v = \vec{PQ}\) allora \(v = \vec{PR}\), ma \(\exists ! \ Q : \ \vec{PQ}=v \implies R = Q\) 
+    \item per la proprietà 1 \(\vec{RR} = \ul{0} \implies \) per l'unicità di \(Q: \vec{PQ}=\ul{0} \implies Q=P\)
+    \item \(\vec{PQ} + \vec{QP} = \vec{PP} = \ul{0} \implies \vec{PQ} = - \vec{QP}\)
+    \item ovvio, essendo \(\vec{P_1P_2} + \vec{P_2Q_2} = \vec{P_1Q_2} = \vec{P_1Q_1} + \vec{Q_1Q_2}\)
+\end{enumerate}
+}
+
+\dfn{Sottospazio affine}{Sia \(A_n(K)\) uno spazio affine. Si dice \textbf{sottospazio affine} di dimensione \(m \le n\) una struttura data da
+\begin{enumerate}
+    \item \(\emptyset \neq A' \subseteq A\), detto \textbf{sostegno del sottospazio affine} 
+    \item \(V_m(K)\) sottospazio di \(V_n(K)\) 
+    \item la restrizione dell'applicazione \(f\) ad \(A' \times A'\) troncata a \(V_m(K)\), purché questa sia ancora un'applicazione che gode delle proprietà elencate nella definizione di spazio affine
+\end{enumerate}}
+
+\dfn{Traslazione}{Fissato un vettore \(v \in V_n(K)\) si dice \textbf{traslazione}, individuata da \(v\), la corrispondenza \[
+t_v: A \to A \quad e \quad P \to Q
+\] che associa a un punto \(P \in A\) il punto \(Q\) traslato di \(P\) mediante il vettore \(v\).}
+
+\paragraph{Osservazione:} \(\forall v \in V_n(K)\) la mappa \(t_v\) è una biiezione di \(A\), insieme di punti di \((A, V_n(K), f)\). E l'inversa di \(t_v\) è \(t_{-v}\).
+
+\dfn{Sottospazio lineare}{Sia \(A_n(K)\) uno spazio affine. Si dice \textbf{sottospazio lineare} l'insieme dei traslati di un punto \(P\), detto \textbf{origine}, mediante i vettori \(v \in V_h(K) \le V_n(K)\), con \(h\) detta dimensione del sottospazio lineare. Inoltre si denota con \(S_h = [P, V_h(K)]\) il sottospazio lineare dato dal punto \(P\) e dallo spazio di traslazione \(V_h\).}
+
+\dfn{Punti, rette, piani e iperpiani}{Sia \(A_n(K)\) uno spazio affine. Si dicono
+\begin{itemize}
+    \item \textbf{punti} i sottospazi lineari di dimensione 0 \[
+            S_0 = [P, \{\ul{0} \} ] = \{P\} 
+    \]
+    \item \textbf{rette} i sottospazi lineari di dimensione 1 \[
+            S_1 = [P, \mcL(v) ] \quad \text{con} \ v \neq \ul{0} \quad e \quad v \in V_n(K)
+    \] 
+    \item \textbf{piani} i sottospazi lineari di dimensione 2 \[
+            S_2 = [P, \mcL(v_1, v_2) ] \quad \text{con} \ v_1, v_2 \neq \ul{0} \quad e \quad v_1, v_2 \in V_n(K)
+    \] 
+    \item \textbf{iperpiani} sono i sottospazi di dimensione \(n-1\)
+\end{itemize}}
+\mprop{}{Sia \(S_h = [P,V_h(K)]\) un sottospazio lineare di dimensione \(h\) sottospazio di \(A_n(K)\).
+\begin{enumerate}
+    \item siano \(Q, R \in S_h \implies \vec{QR} \in V_h(K)\) 
+    \item 
+\end{enumerate}}
+
+\mprop{}{Sia \(S_h=[P, V_h(K)]\) un sottospazio lineare di \(A_n(K)\). Ogni punto di \(S_h\) può essere scelto come origine di \(S_h\). Cioè dato \(Q \in S_h\) abbiamo che \([Q, V_h(K)] = S_h\).}
+\pf{Dimostrazione}{Sia \(R \in S_h\). Allora \(\vec{PR} \in V_n\) e \(\vec{PQ}\in V_n\). Quindi \(\vec{QR} = \vec{QP} + \vec{PR} = - \vec{PQ} + \vec{PR} \in V_h\)}
 \end{document}
