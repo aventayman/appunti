@@ -68,6 +68,23 @@
     \item per la proprietà 1 \(\vec{RR} = \ul{0} \implies \) per l'unicità di \(Q: \vec{PQ}=\ul{0} \implies Q=P\)
     \item \(\vec{PQ} + \vec{QP} = \vec{PP} = \ul{0} \implies \vec{PQ} = - \vec{QP}\)
     \item ovvio, essendo \(\vec{P_1P_2} + \vec{P_2Q_2} = \vec{P_1Q_2} = \vec{P_1Q_1} + \vec{Q_1Q_2}\)
+        \begin{center}
+            \begin{tikzpicture}
+                \coordinate (P_1) at (0, 0);
+                \coordinate (P_2) at (2, 0);
+                \coordinate (Q_1) at (1, 1);
+                \coordinate (Q_2) at (3, 1);
+                \draw[thick, ->] (P_1) -- (P_2);
+                \draw[thick, ->] (P_1) -- (Q_1);
+                \draw[thick, ->] (Q_1) -- (Q_2);
+                \draw[thick, ->] (P_2) -- (Q_2);
+                \draw[red, thick, ->] (P_1) -- (Q_2);
+                \node[below left] at (P_1) {\(P_1\)};
+                \node[below right] at (P_2) {\(P_2\)};
+                \node[above right] at (Q_2) {\(Q_2\)};
+                \node[above left] at (Q_1) {\(Q_1\)};
+            \end{tikzpicture}
+        \end{center} 
 \end{enumerate}
 }
 
@@ -102,9 +119,129 @@ t_v: A \to A \quad e \quad P \to Q
 \mprop{}{Sia \(S_h = [P,V_h(K)]\) un sottospazio lineare di dimensione \(h\) sottospazio di \(A_n(K)\).
 \begin{enumerate}
     \item siano \(Q, R \in S_h \implies \vec{QR} \in V_h(K)\) 
-    \item 
+    \item se \(Q \in S_h\) e \(v \in V_h\), allora \(R = t_v (Q) \in S_h\)
+\end{enumerate}}
+
+\pf{Dimostrazione}{Dimostriamo entrambi i punti separatamente
+\begin{enumerate}
+    \item Per ipotesi \(Q \in S_h\), quindi \(Q = t_v(P)\) con \(v \in V_h(K)\). \(v = \vec{PQ} \in V_h\) e analogamente \(\vec{PR} \in V_h\). Ma allora \(\vec{QR} = \vec{QP} + \vec{PR} = - \vec{PQ} + \vec{PR} \in V_h\).
+\begin{center}
+        \begin{tikzpicture}
+            \coordinate (P) at (0, 0);
+            \coordinate (Q) at (2, 0);
+            \coordinate (R) at (1.5, 1);
+            \draw[thick, ->] (P) -- (R);
+            \draw[thick, ->] (P) -- (Q);
+            \draw[red, thick, ->] (Q) -- (R);
+            \node[above right] at (R) {\(R\)};
+            \node[below right] at (Q) {\(Q\)};
+            \node[below left] at (P) {\(P\)};
+        \end{tikzpicture}
+\end{center}
+    \item Poiché \(Q \in S_h, \ \vec{PQ} \in V_h\). Allora \(\vec{PR} + \vec{QR} = \vec{PQ} + \vec{v} \in V_h \implies \vec{PR} \in V_h\). Posto \(w = \vec{PR}\), \(t_w(P) = R\) con \(w \in V_h \implies R \in S_h\).
+\begin{center}
+        \begin{tikzpicture}
+            \coordinate (P) at (0, 0);
+            \coordinate (Q) at (2, 0);
+            \coordinate (R) at (1.5, 1);
+            \draw[red, thick, ->] (P) -- (R);
+            \draw[thick, ->] (P) -- (Q);
+            \draw[red, thick, ->] (R) -- (Q);
+            \node[above right] at (R) {\(Q\)};
+            \node[below right] at (Q) {\(R\)};
+            \node[below left] at (P) {\(P\)};
+            \node[red] at (2, 0.6) {\(v\)};
+        \end{tikzpicture}
+\end{center}
 \end{enumerate}}
 
 \mprop{}{Sia \(S_h=[P, V_h(K)]\) un sottospazio lineare di \(A_n(K)\). Ogni punto di \(S_h\) può essere scelto come origine di \(S_h\). Cioè dato \(Q \in S_h\) abbiamo che \([Q, V_h(K)] = S_h\).}
-\pf{Dimostrazione}{Sia \(R \in S_h\). Allora \(\vec{PR} \in V_n\) e \(\vec{PQ}\in V_n\). Quindi \(\vec{QR} = \vec{QP} + \vec{PR} = - \vec{PQ} + \vec{PR} \in V_h\)}
+
+\pf{Dimostrazione}{Sia \(R \in S_h\). Allora \(\vec{PR} \in V_n\) e \(\vec{PQ}\in V_n\). Quindi \(\vec{QR} = \vec{QP} + \vec{PR} = - \vec{PQ} + \vec{PR} \in V_h \implies \vec{QR} \in V_h\).
+\begin{center}
+        \begin{tikzpicture}
+            \coordinate (P) at (0, 0);
+            \coordinate (Q) at (2, 0);
+            \coordinate (R) at (1.5, 1);
+            \draw[thick, ->] (P) -- (R);
+            \draw[thick, ->] (P) -- (Q);
+            \draw[red, thick, ->] (Q) -- (R);
+            \node[above right] at (R) {\(R\)};
+            \node[below right] at (Q) {\(Q\)};
+            \node[below left] at (P) {\(P\)};
+        \end{tikzpicture}
+\end{center}
+Detto \(w = \vec{QR}\) abbiamo che \(R = t_v(Q)\). \(R\) è traslato di \(Q\) tramite il vettore \(w \in V_h \implies R \in [Q, V_h]\), quindi \[
+    S_h \subseteq [Q, V_h]
+\] con lo stesso ragionamento scambiamo \(P\) e \(Q\) si dimostra che  \[
+[Q, V_h] \subseteq [P, V_h] = S_h
+\] e ciò vale solo se \(S_h = [Q, V_h]\).}
+
+\mprop{}{Siano \(S_h\) e \(S_k\) due sottospazi lineari di \(A_n(K)\). Allora \(S_h \subseteq S_k \iff S_h \cap S_k \neq \emptyset\) e \(V_h \le V_k\).}
+\pf{Dimostrazione}{"\(\implies \)" Ovviamente \(S_h \cap S_k \neq \emptyset\) e sia \(P \in S_h \cap S_k\). Potremo scrivere \(S_h = [P, V_h]\) e \(S_k = [P, V_k]\). Sia \(v \in V_h\) e sia \(Q = t_v(P) \in S_h \subseteq S_k \implies Q \in S_k\) e sia \(Q = t_v(P)\) ovvero \(\vec{PQ}=v \in V_k \implies V_h \le V_k\).
+
+"\(\impliedby \)" Sia \(P \in S_h \implies [P, V_h] \subseteq [P, V_k]\) (poiché per ipotesi \(V_h \subseteq V_k\)) \([P, V_h] = S_h\) e \([P, V_k]= S_k \implies S_h \subseteq S_k\).}
+
+\mprop{}{Siano \(S_h\) e \(S_k\) sottospazi lineari di \(A_n(K)\). Sia \(S_h \cap S_k \neq \emptyset\) e sia \(P \in S_h \cap S_k\). Allora \[
+        S_h \cap S_k = [P, V_h \cap V_k]
+\] }
+
+\pf{Dimostrazione}{Sia \(Q \in S_h \cap S_k\). Osserviamo che \(S_h = [P, V_h]\) e \(S_k = [P, V_k]\). \(Q = t_v(P)\) con \(v \in V_h\) (perché \(Q \in S_h\)). Ma \(Q = t_v(P)\) con \(v \in V_k\) (perché \(Q \in S_k\)). Quindi \(Q \in [P, V_h \cap V_k]\) perché \(v \in V_h \cap V_k\), cioè \[
+        S_h \cap S_k \subseteq [P, V_h \cap V_k]
+\] Viceversa dato \(Q = t_v(P)\) con \(v \in V_h \cap V_k \implies Q \) appartiene sia a \(S_h\) che ad \(S_k\), quindi \(Q \in S_h \cap S_k\), ovvero  \[
+[P, V_h \cap V_k] \subseteq S_h \cap S_k
+\] \[
+\implies [P, V_h \cap V_k] = S_h \cap S_k
+\] }
+
+\dfn{Parallelismo tra sottospazi}{Due sottospazi lineari, \(S_p = [P, V_p]\) ed \(S_q = [Q, V_q]\), di \(A_n(K)\) si dicono \textbf{paralleli}, e si scrive \(S_p || S_q\), se i rispettivi spazi di traslazione sono confrontabili, ovvero quando \(V_p \subseteq V_q\), oppure \(V_q \subseteq V_p\).}
+
+\paragraph{Osservazione 1:} La relazione di parallelismo non è transitiva. E' invece riflessiva e simmetrica. Non è quindi una relazione d'equivalenza.
+\paragraph{Osservazione 2:} Due sottospazi lineari della stessa dimensione sono paralleli se, e soltanto se, hanno lo stesso spazio di traslazione. Quindi la relazione di parallelismo considerata tra spazi della stessa dimensione è una relazione d'equivalenza.
+
+\mprop{}{Due sottospazi lineari paralleli e di uguale dimensione o coincidono oppure hanno intersezione vuota.}
+\dfn{}{
+\begin{itemize}
+    \item Sia \(S=[P, V_1]\) una retta. Lo spazio \(V_1\) si dice \textbf{direzione} della retta \(S\). Quindi due rette sono parallele se, e soltanto se, hanno la stessa direzione
+    \item Sia \(\pi = [P, V_2]\subseteq A_n(K)\) con \(n \ge 2\). Lo spazio \(V_2\) è detto \textbf{giacitura} di \(\pi\). Quindi due piani sono paralleli se, e soltanto se, hanno la stessa giacitura.
+    \item Tre o più punti si dicono \textbf{allineati} se esiste una retta che li contiene tutti.
+    \item Due o più rette si dicono \textbf{complanari} se esiste un piano che le contiene tutte.
+\end{itemize}
+}
+
+\section{Proprietà di punti, rette e piani}
+\mprop{}{In \(A_n(k)\), con \(n \ge 2\) 
+\begin{enumerate}
+    \item per ogni due punti distinti passa un'unica retta
+    \item per due rette distinte, parallele o incidenti, passa un unico piano
+    \item due rette complanari, aventi intersezione vuota, sono parallele
+    \item per un punto passa un'unica retta parallela a una retta data (V Postulato di Euclide)
+    \item per un punto passa un unico piano, parallelo ad un piano dato
+    \item per tre punti, non allineati, passa un unico piano
+    \item una retta, avente due punti distinti in un piano, giace nel piano
+    \item per un punto passano almeno due rette distinte
+\end{enumerate}}
+
+\mprop{}{In \(A_3(K)\),
+\begin{enumerate}
+    \item una retta e un piano, aventi intersezione vuota, sono paralleli
+    \item due piani, aventi intersezione vuota, sono paralleli
+    \item due piani distinti, aventi in comune un punto, hanno in comune una retta per quel punto
+    \item per una retta passano almeno due piani distinti
+\end{enumerate}}
+
+\dfn{Rette sghembe}{In \(A_n(K)\), con \(n \ge 3\), due rette non complanari si dicono \textbf{sghembe}.}
+\mprop{}{In \(A_n(K)\), con \(n \ge 3\), esistono due rette \(r_1\) e \(r_2\) sghembe tra loro. Inoltre due rette sghembe \(r_1\) e \(r_2\), sono contenute su due piani \(\pi_1\) e \(\pi_2\) paralleli tra loro e distinti.}
+
+\pf{Dimostrazione}{ Per ipotesi, \(A_n(K)\) ha dimensione almeno 3, quindi esistono nello spazio vettoriale  \(V_n(K)\) almeno 3 vettori linearmente indipendenti. Siano  essi \(u, v, w\). Siano inoltre, \(P\) un punto di \(A\) e \(Q\) il traslato di \(P\) mediante il vettore \(u\) (\(Q = t_u(P)\)). Dimostriamo che le rette \(r = [P, \mcL(v) ]\) ed \(s = [Q, \mcL(w) ]\) sono sghembe. Se infatti, esistesse un piano \(\pi = [P, V_2]\) che le contiene entrambe, lo spazio di traslazione di \(\pi \) conterrebbe 3 vettori linearmente indipendenti, cioè \(v, w\) e \(u = \vec{PQ}\) e ciò è un \textbf{assurdo!}
+\begin{center}
+    \begin{tikzpicture}
+        \coordinate (P) at (0, 0);
+        \draw[thin, -] (0, 2) -- (2, 2.5);
+        \draw[thin, -] (0.2, 0.8) -- (2, 0);
+        \node[above right] at (R) {\(R\)};
+    \end{tikzpicture}
+\end{center}
+}
+
 \end{document}
