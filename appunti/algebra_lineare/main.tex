@@ -234,14 +234,91 @@ Detto \(w = \vec{QR}\) abbiamo che \(R = t_v(Q)\). \(R\) è traslato di \(Q\) tr
 \mprop{}{In \(A_n(K)\), con \(n \ge 3\), esistono due rette \(r_1\) e \(r_2\) sghembe tra loro. Inoltre due rette sghembe \(r_1\) e \(r_2\), sono contenute su due piani \(\pi_1\) e \(\pi_2\) paralleli tra loro e distinti.}
 
 \pf{Dimostrazione}{ Per ipotesi, \(A_n(K)\) ha dimensione almeno 3, quindi esistono nello spazio vettoriale  \(V_n(K)\) almeno 3 vettori linearmente indipendenti. Siano  essi \(u, v, w\). Siano inoltre, \(P\) un punto di \(A\) e \(Q\) il traslato di \(P\) mediante il vettore \(u\) (\(Q = t_u(P)\)). Dimostriamo che le rette \(r = [P, \mcL(v) ]\) ed \(s = [Q, \mcL(w) ]\) sono sghembe. Se infatti, esistesse un piano \(\pi = [P, V_2]\) che le contiene entrambe, lo spazio di traslazione di \(\pi \) conterrebbe 3 vettori linearmente indipendenti, cioè \(v, w\) e \(u = \vec{PQ}\) e ciò è un \textbf{assurdo!}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{0.3\columnwidth}
+    \incfig{due-rette-complanari-con-3-vettori-linearmente-indipendenti}
+    \label{fig:due-rette-complanari-con-3-vettori-linearmente-indipendenti}
+\end{figure}
+Siano ora \(t = [T, \mcL(v) ]\) e \(t' = [T', \mcL(v') ]\) due rette sghembe. I vettori \(v\) e \(v'\) generano uno spazio vettoriale \(V_2\) di dimensione 2. Pertanto, i piani  \(\pi = [T, V_2]\) e \(\pi' = [T', V_2]\), che risultano paralleli, sono distinti e contengono, rispettivamente le rette \(t\) e \(t'\).}
+
+\section{Geometria analitica in \(A_n(\RR )\)}
+\dfn{Riferimento affine}{Si dice \textbf{riferimento affine} di \(A_n(\RR )\) una coppia \(RA = [O,B]\) costituita da un punto \(O\) fissato, detto origine, e da una base \(B\) dello spazio vettoriale \(V_n(\RR )\).}
+
+\dfn{Coordinate}{Fissato, in \(A_n(\RR )\), un riferimento affine \(RA = [O,B]\), si dicono \textbf{coordinate} del punto \(P\) in \(RA\) le componenti, in \(B\), del vettore \(\vec{OP}\) e si scrive \(P=(x_i)_{i \in I_n}\).}
+
+\begin{enumerate}
+\item In \(A_1(\RR )\), un riferimento affine è una coppia \(RA = [O,B]\), ove \(O\) è un punto fissato e \(B = (e_1)\) è una base di \(V_1(\RR )\). Se \(\vec{OP}=xe_1\), si scrive \(P=(x)\) e si dice che \(x\) è l'\textbf{ascissa} del punto \(P\) in \(RA\). 
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{0.5\columnwidth}
+    \incfig{ascissa}
+    \label{fig:ascissa}
+\end{figure}
+\item In \(A_2(\RR )\), un riferimento affine è una coppia \(RA = [O,B]\), ove \(O\) è un punto fissato e \(B = (e_1, e_2)\) è una base di \(V_2(\RR )\). La retta \([O, \mcL(e_1) ]\) è detta \textbf{asse delle ascisse} e la retta \([O, \mcL(e_2) ]\) è detta \textbf{asse delle ordinate}. Se \(\vec{OP} = xe_1 + y e_2\), si scrive \(P = (x, y)\) e si dice che \((x,y)\) è la coppia delle coordinate di \(P\) in \(RA\), dette rispettivamente \textbf{ascissa} e \textbf{ordinata} del punto \(P\).
+\begin{figure}[ht]
+    \centering
+    \incfig{ascissa-e-ordinata}
+    \label{fig:ascissa-e-ordinata}
+\end{figure}
+\item In \(A_3(\RR )\), un riferimento affine è una coppia \(RA = [O,B]\), ove \(O\) è un punto fissato e \(B = (e_1, e_2, e_3)\) è una base di \(V_3(\RR )\). La retta \([O, \mcL(e_1) ]\) è detta \textbf{asse delle ascisse}, la retta \([O, \mcL(e_2) ]\) è detta \textbf{asse delle ordinate} e la retta \([O, \mcL(e_3) ]\) è detta \textbf{asse delle quote}. Sono detti \textbf{piani coordinati} i piani \(xy = [O, \mcL(e_1, e_2) ], xz = [O, \mcL(e_1, e_3) ]\) e \(yz = [O, \mcL(e_2, e_3) ]\). Inoltre, se \(\vec{OP}=xe_1+ ye_2 + ze_3\), si scrive \(P = (x, y,z)\) e si dice che \((x, y, z)\) è la terna delle coordinate di \(P\) in \(RA\), dette rispettivamente \textbf{ascissa, ordinata} e \textbf{quota} del punto \(P\).
+\begin{figure}[ht]
+    \centering
+    \incfig{terne-di-coordinate}
+    \label{fig:terne-di-coordinate}
+\end{figure}
+\end{enumerate}
+
+\newpage
+\thm{}{In \(A_n(K)\), con \(RA = [O, B]\), siano \(P = (x_1', x_2', \ldots , x_n')\) e \(Q = (x_1 '', x_2 '', \ldots  , x_n '')\) due punti di \(A\). Allora le componenti di \(\vec{PQ}\) rispetto a \(B\) sono \[
+(x_1 '' - x_1', x_2 '' - x_2' , \ldots, x_n '' - x_n')
+\] }
+
+\pf{Dimostrazione}{Posti due vettori \[
+\vec{OP} : \ x_1' e_1+ x_2' e_2 + \ldots + x_n' e_n
+\] \[
+\vec{OQ}: \ x_1 '' e_1 + x_2 '' e_2 + \ldots + x_n '' e_n
+\]Per la proprietà della definizione di spazio affine possiamo dire che \[
+\vec{PQ} = \vec{PO} + \vec{OQ} = \vec{OQ} - \vec{OP} = \sum_{i \in I_n} (x_i '' - x_i') e_i
+\] }
+Posti \[
+ X '' = \begin{pmatrix} x ''_1 \\ x ''_2\\ \vdots \\ x ''_n \end{pmatrix}, X' = \begin{pmatrix} x'_1 \\ x'_2\\ \vdots \\ x'_n \end{pmatrix} \text{ e } T = \begin{pmatrix} t_1 \\ t_2\\ \vdots \\ t_n \end{pmatrix}
+\] si ottiene l'equivalente, ma spesso più agevole, forma matriciale: \[
+X '' - X' = T
+\] che può essere riscritta come \[
+X '' = X' + T
+\] Da quest'ultima equazione si vede che le coordinate del traslato del punto \(P = (x_1', x_2', \ldots , x_n')\), attraverso il vettore \(v\) di componenti \((t_1, t_2, \ldots , t_n)\), si ottengono sommando, ordinatamente, alle coordinate di \(P\) le componenti del vettore di traslazione. Per questo le relazioni che compaiono nell'equazione sono anche dette \textbf{equazioni della traslazione individuata da \(v\)}.
+
+\dfn{Punto medio}{Dato \(P\) e \(Q \in A\) (insieme dei punti di \(A_n(\RR )\)), definiamo il punto medio del segmento \([PQ]\) come \[
+M = t_{1/2 \vec{PQ}} (P)
+\] 
 \begin{center}
     \begin{tikzpicture}
         \coordinate (P) at (0, 0);
-        \draw[thin, -] (0, 2) -- (2, 2.5);
-        \draw[thin, -] (0.2, 0.8) -- (2, 0);
-        \node[above right] at (R) {\(R\)};
+        \coordinate (M) at (2, 0);
+        \coordinate (R) at (4, 0);
+        \draw[thick, -stealth] (P) -- (M);
+        \draw[thin, -stealth] (P) -- (R);
+        \node[above] at (R) {\(R\)};
+        \node[above] at (M) {\(M\)};
+        \node[above] at (P) {\(P\)};
     \end{tikzpicture}
-\end{center}
-}
+\end{center}}
+
+\mprop{}{Dati \(P, Q \in A\) e dato un riferimento affine \(RA = [O, B]\) abbiamo che le coordinate del punto medio di \(P\) e \(Q\) sono le semisomme delle coordinate omonime di \(P\) e di \(Q\).}
+
+\dfn{Punto simmetrico}{In \(A_n(\RR )\) dati i punti \(P\) e \(C\) diremo che \(S\) è il \textbf{punto simmetrico} di \(P\) rispetto a \(C\) se \(C\) è il punto medio di \([P, S]\).}
+
+\section{Rappresentazioni analitiche}
+\dfn{Equazioni parametriche di una retta in \(A_n(\RR )\)}{Sia \(RA = [O,B]\) un riferimento fissato in \(A_n(\RR )\), ove \(B = (e_1, e_2, \ldots , e_n)\). Sia \(r = [P, V_1 = \mcL(v) ]\) la retta di origine il punto \(P = (x_1', x_2', \ldots , x_n')\) e spazio di traslazione generato da \(v = (l_1, l_2, \ldots , l_n)\). Il generico vettore \(w\) di \(\mcL(v) \) è proporzionale al vettore \(v\), cioè \(w = tv\), con \(t \in \RR \), quindi, \(w = (tl_1, tl_2, \ldots , tl_n)\). Dato che la retta \(r\) è il luogo dei traslati di \(P\) attraverso i vettori di \(\mcL(v) \), applicando le equazioni del teorema precedente si ottengono le coordinate del generico punto di \(r\) \[
+\begin{cases}
+    \ x_1 = x_1' + l_1t \\
+    \ x_2 = x_2' + l_2t \\
+    \ \ldots \ldots \ldots \ldots \\
+    \ x_n = x_n' + l_nt \\
+\end{cases} \quad \text{con} \quad t \in \RR , \quad (l_1, l_2, \ldots , l_n) \neq \ul{0} 
+\] tali equazioni sono dette \textbf{equazioni parametriche} di \(r\) in \(A_n(\RR )\). Al variare di \(t \in \RR \), si ottengono le coordinate di tutti i punti di una retta e, quindi, tutti i punti di una retta sono \(\infty^{1}\).}
+
+\dfn{Parametri direttori}{Si dicono \textbf{parametri direttori} di \(r = [P, V_1]\), le componenti di un qualunque vettore nullo di \(V_1\).}
 
 \end{document}
