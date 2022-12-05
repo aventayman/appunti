@@ -34,12 +34,12 @@ Se l'operazione \(\star\) soddisfa anche la proprietà commutativa, il gruppo si
 \section{Matrici}
 
 \dfn{Matrice}{Dato un campo K si dice \textbf{matrice} di tipo \(m \times n\) su \(K\) una tabella del tipo: \[ A=
-\begin{pmatrix}
+\left( \; \begin{matrix}
     a _{11} & a _{12} & \hdots & a _{1n} \\
     a _{21} & a _{22} & \hdots & a _{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
     a _{m1} & a _{m2} & \hdots & a _{mn} \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] avente \(m\) righe ed \(n\) colonne, i cui elementi \(a _{ij}\) sono elementi di \(K.\) }
 
 \dfn{Matrice quadrata}{Una matrice di tipo \(n \times n\) è detta \textbf{matrice quadrata} di ordine \(n\). Queste vengono indicate con \(M_n(K)\).}
@@ -51,34 +51,34 @@ Se l'operazione \(\star\) soddisfa anche la proprietà commutativa, il gruppo si
 \]    }
 
 \ex{}{Prendiamo per esempio le due matrici: \[A=
-\begin{pmatrix}
+\left( \; \begin{matrix}
     -3 & 0 & 2 \\
     -4 & 7 & 1 \\
-\end{pmatrix} \quad B=
-\begin{pmatrix}
+\end{matrix} \; \right) \quad B=
+\left( \; \begin{matrix}
     -5 & -1 & 2 \\
     0 & 1 & -2 \\
     1 & 1 & 3 \\
-\end{pmatrix}\]
+\end{matrix} \; \right)\]
  Il loro prodotto è \[
-\begin{pmatrix}
+\left( \; \begin{matrix}
     -3 \cdot (-5) + 0 \cdot 0 + 2 \cdot 1 & -3 \cdot (-1) + 0 \cdot 1 + 2 \cdot 1 & -3 \cdot 2 + 0 \cdot (-2) + 2 \cdot 3 \\
     -4 \cdot (-5) + 7 \cdot 0 + 1 \cdot 1 & -4 \cdot (-1) + 7 \cdot 1 + 1 \cdot 1 & -4 \cdot 2 + 7 \cdot (-2) + 1 \cdot 3 \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] Quindi \[
     A \cdot B =
-\begin{pmatrix}
+\left( \; \begin{matrix}
     17 & 5 & 0 \\
     21 & 12 & -19 \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \]}
 \dfn{Matrice identica}{L'elemento neutro delle matrici quadrate di ordine \(n\) è la \textbf{matrice identica}, cioè la matrice: \[
-\begin{pmatrix}
+\left( \; \begin{matrix}
     1 & 0 & \hdots & 0 \\
     0 & 1 & \hdots & 0 \\
     \vdots & \vdots & \ddots & \vdots \\
     0 & 0 & \hdots & 1 \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \]}
 
 \dfn{Trasposta di una matrice}{Sia \(A = (a _{ij})\) una matrice di \(K ^{m,n}\). Si dice \textbf{trasposta} di \(A\) la matrice \(K^{n,m}\) ottenuta scambiando tra loro le righe con le colonne, cioè \(^{t}A = (b _{ji})\) ove \(b _{ji} = a _{ij}\) per ogni \(i \in I_n\) e \(j \in I_m.\)  }

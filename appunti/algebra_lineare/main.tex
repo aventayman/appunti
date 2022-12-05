@@ -30,11 +30,11 @@
 \fancyhead[LE]{\thepage}
 \fancyfoot{} % clear all footer fields
 
-\input{./chapters/chapter_1}
-\input{./chapters/chapter_2}
-\input{./chapters/chapter_3}
-\input{./chapters/chapter_4}
-\input{./chapters/chapter_5}
+%\input{./chapters/chapter_1}
+%\input{./chapters/chapter_2}
+%\input{./chapters/chapter_3}
+%\input{./chapters/chapter_4}
+%\input{./chapters/chapter_5}
 %\input{./chapters/chapter_6}
 
 \chapter{Spazi affini}
@@ -282,7 +282,7 @@ Siano ora \(t = [T, \mcL(v) ]\) e \(t' = [T', \mcL(v') ]\) due rette sghembe. I 
 \vec{PQ} = \vec{PO} + \vec{OQ} = \vec{OQ} - \vec{OP} = \sum_{i \in I_n} (x_i '' - x_i') e_i
 \] }
 Posti \[
- X '' = \begin{pmatrix} x ''_1 \\ x ''_2\\ \vdots \\ x ''_n \end{pmatrix}, X' = \begin{pmatrix} x'_1 \\ x'_2\\ \vdots \\ x'_n \end{pmatrix} \text{ e } T = \begin{pmatrix} t_1 \\ t_2\\ \vdots \\ t_n \end{pmatrix}
+ X '' = \left( \; \begin{matrix} x ''_1 \\ x ''_2\\ \vdots \\ x ''_n \end{matrix} \; \right), X' = \left( \; \begin{matrix} x'_1 \\ x'_2\\ \vdots \\ x'_n \end{matrix} \; \right) \text{ e } T = \left( \; \begin{matrix} t_1 \\ t_2\\ \vdots \\ t_n \end{matrix} \; \right)
 \] si ottiene l'equivalente, ma spesso più agevole, forma matriciale: \[
 X '' - X' = T
 \] che può essere riscritta come \[
@@ -320,5 +320,139 @@ M = t_{1/2 \vec{PQ}} (P)
 \] tali equazioni sono dette \textbf{equazioni parametriche} di \(r\) in \(A_n(\RR )\). Al variare di \(t \in \RR \), si ottengono le coordinate di tutti i punti di una retta e, quindi, tutti i punti di una retta sono \(\infty^{1}\).}
 
 \dfn{Parametri direttori}{Si dicono \textbf{parametri direttori} di \(r = [P, V_1]\), le componenti di un qualunque vettore nullo di \(V_1\).}
+\paragraph{Osservazione:} I parametri direttori di una retta sono, quindi, determinati a meno di un fattore non nullo di proporzionalità. Definiamo la classe dei parametri direttori di \(r\) come \(p.d.r = [(l_1, l_2, \ldots , l_n)]\) con \((l_1, l_2, \ldots , l_n)\) un qualsiasi vettore appartenente a \(V_1\).
+
+\subsection{Equazioni parametriche di una retta in \(A_2(\RR )\)} 
+In \(A_2(\RR )\), sia fissato un riferimento \(RA = [O, B]\), ove \(B = (e_1, e_2)\). Una retta \(r = [P, V_1]\) è il luogo dei traslati di un punto \(P\) mediante i vettori di \(V_1 \subset V_2\). Se \(P\) ha coordinate \((x_0, y_0)\) e \(V_1 = \mcL(v) \), ove \(v = le_1 + me_2\), le equazioni della definizione diventano \[
+\begin{cases}
+    \ x = x_0 + lt \\
+    \ y = y_0 + mt \\
+\end{cases}
+\quad \text{ove}\quad t \in \RR , \quad (l,m) \neq (0,0)\] 
+e sono dette \textbf{equazioni parametriche} di \(r\) in \(A_2(\RR )\).
+
+\subsection{Equazioni parametriche di una retta in \(A_3(\RR )\)}
+In \(A_3(\RR )\), sia fissato un riferimento \(RA = [O, B]\), ove \(B = (e_1, e_2, e_3)\). Una retta \(r = [P, V_1]\) è il luogo dei traslati di un punto \(P\) mediante i vettori di \(V_1 \subset V_3\). Se \(P\) ha coordinate \((x_0, y_0, z_0)\) e \(V_1 = \mcL(v) \), ove \(v = le_1 + me_2 + ne_3\), le equazioni della definizione diventano \[
+\begin{cases}
+    \ x = x_0 + lt \\
+    \ y = y_0 + mt \\
+    \ z = z_0 + nt \\
+\end{cases}
+\quad \text{ove}\quad t \in \RR , \quad (l,m,n) \neq (0,0,0)\] 
+e sono dette \textbf{equazioni parametriche} di \(r\) in \(A_3(\RR )\).
+
+\paragraph{Osservazione:} In modo del tutto analogo possiamo determinare le equazioni parametriche di sottospazi lineari di dimensione \(n\), che quindi dipenderanno da \(n\) parametri.
+
+\subsection{Equazione cartesiana di una retta in \(A_2(\RR )\)}
+In \(A_2(\RR )\) una retta si può rappresentare attraverso le sue equazioni parametriche in questo modo \[
+\begin{cases}
+    \ x = x_p + lt \\
+    \ y = y_p + mt \\
+\end{cases}
+\] possiamo convertire questo sistema lineare in forma matriciale e quindi \[
+\left( \;
+\begin{matrix}
+    x \\
+    y \\
+\end{matrix} \;
+\right) = 
+\left( \; \begin{matrix}
+    x_p \\
+    y_p \\
+\end{matrix} \; \right) +
+t  
+\left( \; \begin{matrix}
+    l \\
+    m \\
+\end{matrix} \; \right) \iff 
+\left( \; \begin{matrix}
+    x - x_p \\
+    y - y_p \\
+\end{matrix} \; \right) = t
+\left( \; \begin{matrix}
+    l \\
+    m \\
+\end{matrix} \; \right) \iff 
+\left| \;
+\begin{matrix}
+    x - x_p & y - y_p \\
+    l & m \\
+\end{matrix} \;
+\right| = 0
+\] 
+Quindi vale la relazione \[
+    ((x-x_p) m) (l (y-y_p)) = mx - ly -mx_p + ly_p = 0
+\] Possiamo raggruppare i termini noti \(-mx_p + ly_p\) in un generico termine \(c\) e quindi l'equazione cartesiana della retta diventa \[
+ax + by + c = 0 \quad \text{con}\quad (a,b) \neq (0,0)
+\] Quindi i parametri direttori della generica retta \(r\) saranno \(p.d.r = [(l,m)] = [(-b, a)]\).
+
+\subsection{Mutua posizione di due rette in \(A_2(\RR )\)}
+Siano due rette \[
+r: ax + by + c = 0 \quad (a,b) \neq (0,0)
+\] \[
+s: a'x + b'y + c' = 0 \quad (a', b') \neq (0,0)
+\]
+La loro intersezione può essere \[ r \cap s = \
+\begin{cases}
+    \ \text{un unico punto se \(r\) e \(s\) sono incidenti} \\
+    \ \emptyset \text{ se \(r\) e \(s\) sono parallele e distinte} \\
+    \ r \equiv s \text{ se sono coincidenti } \\
+\end{cases}
+\]
+Consideriamo il sistema \[r \cap s=
+\begin{cases}
+    \ ax + by + c = 0 \\
+    \ a'x + b'y + c' = 0 \\
+\end{cases}
+\]
+Le coordinate dei punti di \(r \cap s\) sono le soluzioni del sistema. Posti \[
+A =
+\left( \; \\
+ \begin{matrix}
+    a & b \\
+    a' & b' \\
+\end{matrix} \; \\
+ \right) \quad \text{la matrice incompleta del sistema,}
+ \quad A|B =
+\left( \; \\
+ \begin{matrix}
+    a & b & -c \\
+    a' & b' & -c' \\
+\end{matrix} \; \\
+ \right) \quad \text{la matrice completa del sistema}
+\] possiamo dire che \(\rho(A) \ge 1\) poiché abbiamo richiesto che \((a,b) \neq (0,0)\) e \(\rho(A) \le 2\). Quindi abbiamo due casi possibili
+\begin{enumerate}
+    \item se \(\rho(A) = 2 \implies \rho(A) = \rho(A|B) =2\), quindi il sistema è compatibile e ha \(\infty^{2-2}\) soluzioni \(\implies \exists !\) soluzione del sistema \(\implies r \cap s = \{P\} \implies r \cap s\) sono \textbf{incidenti}.
+    \item se \(\rho(A) = 1\) allora \(r || s\), ma non sappiamo se esse siano parallele e distinte o se esse coincidano. Perciò dobbiamo suddividere in due sottocasi
+        \begin{enumerate}
+            \item se fossero parallele e distinte il sistema non sarebbe compatibile, perciò \(2= \rho(A|B) > \rho(A) = 1\)
+            \item se invece \(\rho(A) = 1\) e \(\rho(B) = 1\) il sistema ammette \(\infty^{2-1}\) soluzioni, perciò \(r \equiv s \implies r||s\) se \(\rho(A) = 1\)
+        \end{enumerate}
+\end{enumerate}
+\newpage
+\subsection{Fasci di rette in \(A_2(\RR )\)}
+\dfn{Fascio improprio di rette}{Si dice \textbf{fascio improprio di rette} l'insieme di tutte e sole le rette del piano \(A_2(\RR )\) parallele ad una retta data.}
+\mprop{}{Una retta appartiene al fascio improprio di rette parallele alla retta \(r = [P, V_1]: ax + by + c = 0, \ (a,b) \neq (0,0)\), se, e soltanto se, ha un'equazione del tipo \[
+ax + by + k = 0 \quad \text{ove} \quad k \in \RR 
+\] detta \textbf{equazione del fascio improprio di rette}. Da cui si deduce che le rette di un fascio improprio di rette sono \(\infty^{1}\)}
+\paragraph{Osservazione:} Tutte e sole le rette parallele ad \(r\) hanno parametri direttori \([(-b, a)]\) e quindi \(r\) e \(s\) sono la stessa retta \(\iff (a,b,c) \sim (a',b', c')\).
+
+\dfn{Fascio proprio di rette}{Si dice \textbf{fascio proprio di rette} l'insieme di tutte le rette di \(A_2(\RR )\) passanti per un punto \(P\) dato, detto \textbf{centro} o \textbf{sostegno} del fascio.}
+
+\mprop{}{Siano \(r: ax + by + c = 0\) e \(r': a'x + b'y + c' = 0\), con \((a,b) \neq (0,0)\) e \((a', b') \neq (0,0)\), due distinte rette incidenti in un punto \(P\). Una retta \(s\) appartiene al fascio di centro \(P\) se, e soltanto se, ha un'equazione di tipo \[
+\lambda (ax + by + c) + \mu(a'x+ b'y + c') = 0 \quad \text{ove} \quad \lambda , \mu \in \RR \quad e \quad (\lambda , \mu) \neq (0,0)
+\] detta \textbf{equazione del fascio proprio di rette}. Se nell'equazione risulta \(\lambda  \neq 0\), posto \(k = \mu / \lambda \), si ottiene \[
+ax + by + c + k (a'x + b'y + c') = 0 \quad \text{ove} \quad k \in \RR 
+\] detta \textbf{equazione ridotta del fascio proprio di rette}, in cui, ovviamente, la retta \(r' : a'x + b'y + c' = 0\) non è rappresentata. Quindi possiamo dire che le rette di un fascio proprio di rette sono \(\infty^{1}\).}
+
+\subsection{Simmetrie in \(A_2(\RR )\)}
+\dfn{Simmetria rispetto ad una retta}{Il punto \(T\) si dice \textbf{simmetrico} del punto \(H\), rispetto alla retta \(r = [P, V_1]\), detta \textbf{asse di simmetria}, nella direzione \(W_1 \neq V_1\), se lo è nella simmetria di centro \(C = r \cap s\), dove \(s = [H, W_1]\). Tale simmetria si dice anche \textbf{simmetria rispetto ad una retta in una direzione assegnata}.}
+
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{160pt}
+    \incfig{simmetria-punto-retta}
+    \label{fig:simmetria-punto-retta}
+\end{figure}
 
 \end{document}

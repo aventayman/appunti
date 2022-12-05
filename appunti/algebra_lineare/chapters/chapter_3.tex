@@ -6,14 +6,14 @@
     \item se \(n > 1 \qquad A = a _{ij} \qquad \det(A)=(-1)^{1+1} a _{11} \det A _{11} + (-1)^{1+2} a _{12} \det A _{12} + ... + (-1)^{1 + n} a _{1n} \det A _{1n}\) 
 \end{enumerate}}
 
-Se \(A = \begin{pmatrix} a _{11} & a _{12} \\ a _{21} & a _{22} \end{pmatrix} \), il suo determinante è \(|A| = a _{11} a _{22} - a _{12} a _{21}\).
+Se \(A = \left( \; \begin{matrix} a _{11} & a _{12} \\ a _{21} & a _{22} \end{matrix} \; \right) \), il suo determinante è \(|A| = a _{11} a _{22} - a _{12} a _{21}\).
 
 Mentre se \[A = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     a_{11} & a _{12} & a _{13} \\
     a _{21} & a _{22} & a _{23} \\
     a _{31} & a _{32} & a _{33} \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \]
 Allora la il determinante di \(A\) è \[
     |A| = a _{11} a _{22} a_{33} + a_{13} a_{21} a_{32} + a_{12} a_{23} a_{31} - a_{13} a_{22} a_{32} - a_{11} a_{23} a_{32} - a_{12} a_{21} a_{33}  
@@ -94,57 +94,57 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 
 La matrice \(m \times n\) \[
 A =
-\begin{pmatrix}
+\left( \; \begin{matrix}
     a_{11} & a_{12} & \ldots  & a_{1n} \\
     a_{21} & a_{22} & \ldots  & a_{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
     a_{m1} & a_{m 2} & \ldots  & a_{mn} \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] è detta matrice dei coefficienti o \textbf{matrice incompleta}, la matrice \(n \times 1\) \[
 X =
-\begin{pmatrix}
+\left( \; \begin{matrix}
     x_1 \\
     x_2 \\
     \vdots \\
     x_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] è detta delle matrice colonna delle incognite, mentre la matrice \(m\times 1\) \[
 B = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     b_1 \\
     b_2 \\
     \vdots \\
     b_m \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] è detta matrice colonna dei termini noti. La matrice \(m \times (n+1)\) \[
 A | B = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     a_{11} & \ldots  & a_{1n} & b_1 \\
     a_{21} & \ldots  & a_{2n} & b_2 \\
     \vdots & \ddots & \vdots & \vdots \\
     a_{m1} & \ldots  & a_{mn} & b_m \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] è detta \textbf{matrice completa}.
 Infine, il sistema iniziale si può riscrivere come: \(A \cdot X = B\), cioè \[
-\begin{pmatrix}
+\left( \; \begin{matrix}
     a_{11} & a_{12} & \ldots  & a_{1n} \\
     a_{21} & a_{22} & \ldots  & a_{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
     a_{m1} & a_{m 2} & \ldots  & a_{mn} \\
-\end{pmatrix}
-\begin{pmatrix}
+\end{matrix} \; \right)
+\left( \; \begin{matrix}
     x_1 \\
     x_2 \\
     \vdots \\
     x_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 =
-\begin{pmatrix}
+\left( \; \begin{matrix}
     b_1 \\
     b_2 \\
     \vdots \\
     b_m \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] 
 
 \dfn{Sistema omogeneo}{Un sistema lineare si dice \textbf{omogeneo} quando tutti i termini noti sono nulli. \[
@@ -152,9 +152,9 @@ AX = \ul{0}
 \] }
 
 \paragraph{Osservazione:} Data \(A \in K^{m,n} \quad A = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     C_1 & C_2 & \ldots & C_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \) ove le colonne \(C_j\) sono vettori di \(K^{m,1}\) e quindi utilizziamo utilizzando questa notazione il sistema si può scrivere come \[
 x_1C_1 + x_2C_2+\ldots +x_nC_n = B
 \] 
@@ -163,12 +163,12 @@ x_1C_1 + x_2C_2+\ldots +x_nC_n = B
 
 \paragraph{Osservazione:} Posto \(A = (C_1, C_2, \ldots , C_n)\) \[
 A 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     \alpha _1 \\
     \alpha _2 \\
     \vdots \\
     \alpha _n \\
-\end{pmatrix}=B \iff 
+\end{matrix} \; \right)=B \iff 
 \alpha _1 C_1 + \alpha _2 C_2 + \ldots + \alpha _n C_n = B
 \] che è equivalente a dire che \(B\) è combinazione lineare delle colonne di \(A\). Quindi il sistema è risolubile se, e soltanto se, \(B \in \mcL(C_1, C_2, \ldots ,C_n) \).
 
@@ -197,11 +197,11 @@ X_1 = \frac{|B_1| }{|A| }=\frac{\det(B_1)}{\det(A)}
 \thm{}{Un sistema \(AX = B\) compatibile ha le stesse soluzioni di un suo sistema principale equivalente.}
 
 \paragraph{Osservazione:}\(\rho (A)=\rho (A|B)\) se il sistema lineare è omogeneo e quindi è sempre compatibile. In particolare \(X = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     0 \\
     \vdots \\
     0 \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \) è sempre soluzione di \(AX = \ul{0} \).
 
 \dfn{Autosoluzioni}{Le soluzioni di un sistema lineare omogeneo diverse dalla soluzione nulla si dicono  \textbf{autosoluzioni}.}
@@ -254,24 +254,24 @@ in uno spazio vettoriale \(V_n(K)\), di dimensione \(n\), siano \(B = (e_1,e_2, 
 \end{cases}
 \]con le seguenti posizioni \[
 A = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     a_{11} & a_{12} & \ldots  & a_{1n} \\
     a_{21} & a_{22} & \ldots  & a_{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
     a_{n1} & a_{n 2} & \ldots  & a_{nn} \\
-\end{pmatrix}, \ E= 
-\begin{pmatrix}
+\end{matrix} \; \right), \ E= 
+\left( \; \begin{matrix}
     e_1 \\
     e_2 \\
     \vdots \\
     e_n \\
-\end{pmatrix} \text{ ed } E'=
-\begin{pmatrix}
+\end{matrix} \; \right) \text{ ed } E'=
+\left( \; \begin{matrix}
     e_1' \\
     e_2' \\
     \vdots \\
     e_n' \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] 
 il sistema si può scrivere in forma compatta \[
 E' = AE
@@ -285,7 +285,7 @@ E' = AE = A(A'E') = (AA')E' \implies AA'=I_n
 \] }
 
 Stabiliamo il legame tra le componenti di uno stesso vettore \(v\), rispetto a due basi diverse \(B\) e \(B'\). Poniamo \[
-X = \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix} \text{ e } X'=\begin{pmatrix} x'_1\\ \vdots\\ x'_n \end{pmatrix}
+X = \left( \; \begin{matrix} x_1\\ \vdots\\ x_n \end{matrix} \; \right) \text{ e } X'=\left( \; \begin{matrix} x'_1\\ \vdots\\ x'_n \end{matrix} \; \right)
 \] Possiamo scrivere il generico vettore \(v \in V_n(K)\) \[
 v = x_1e_1+x_2e_2 + \ldots + x_n e_n = (x_1,x_2, \ldots , x_n)E= {^{t}X}E \] \[
 v = x_1'e_1'+x_2'e_2' + \ldots + x_n' e_n' = (x_1',x_2', \ldots , x_n')E= {^{t}X'}E'

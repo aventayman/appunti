@@ -27,46 +27,46 @@ p_B(\lambda ) = |B - \lambda I_n| = |P^{-1}AP - \lambda P^{-1}I_n P| = |P^{-1}(A
 
 \thm{Primo criterio di diagonalizzabilità}{Una matrice \(A \in M_n(K)\) è diagonalizzabile se, e soltanto se, \(K^{n}\) ammette una base costituita da autovettori di \(A\).}
 \pf{Dimostrazione}{\("\implies "\) Per ipotesi \(A\) è diagonalizzabile quindi \(\exists \ D,P \in M_n(K): D\) è diagonale \(|P| \neq 0\) e \(PD = AP\). Per semplicità denotiamo le colonne di \(P= 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     P_1 & P_2 & \ldots  & P_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \). \[
 AP = A 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     P_1 & P_2 & \ldots  & P_n \\
-\end{pmatrix} =
-\begin{pmatrix}
+\end{matrix} \; \right) =
+\left( \; \begin{matrix}
     AP_1 & AP_2 & \ldots  & AP_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] \[
 PD = 
-\begin{pmatrix}
+\left( \; \begin{matrix}
     P_1 & P_2 & \ldots  & P_n \\
-\end{pmatrix} 
-\begin{pmatrix}
+\end{matrix} \; \right) 
+\left( \; \begin{matrix}
     d_1 & 0 & \ldots  & 0 \\
     0 & d_2 & \ldots  & 0 \\
     \vdots & \vdots & \ddots & \vdots \\
     0 & 0 & \ldots  & d_n \\
-\end{pmatrix} = 
-\begin{pmatrix}
+\end{matrix} \; \right) = 
+\left( \; \begin{matrix}
     d_1P_1 & d_2P_2 & \ldots  & d_nP_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] Quindi \[
-\begin{pmatrix}
+\left( \; \begin{matrix}
     AP_1 & AP_2 & \ldots  & AP_n \\
-\end{pmatrix} = 
-\begin{pmatrix}
+\end{matrix} \; \right) = 
+\left( \; \begin{matrix}
     d_1P_1 & d_2P_2 & \ldots  & d_nP_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \iff 
 AP_1=d_1P_1, \ AP_2 = d_2P_2, \ \ldots, \ AP_n = d_n P_n
 \] \[
 \implies AX = \lambda X \quad \lambda =d_i \quad X = P_i
 \] dove \(d_i\) è un autovalore, \(P_i\) è un autovettore di \(A\) e \(
-\begin{pmatrix}
+\left( \; \begin{matrix}
     P_1 & P_2 & \ldots  & P_n \\
-\end{pmatrix} 
+\end{matrix} \; \right) 
 \) è una sequenza di \(n\) autovettori. Poiché \(\dim K^{n}=n\) e la sequenza è composta da \(n\) vettori, è sufficiente controllare la lineare indipendenza di \(P\). Ma siccome avevamo supposto per ipotesi che \(|P| \neq 0\) le sue \(n\) colonne sono linearmente indipendenti. Quindi \(B = (P_1, P_2, \ldots , P_n)\) è una base di \(K^{n}\) costituita da autovettori di \(A\).
 
 "\(\impliedby \)" è analogo, basta ripercorrere il ragionamento a ritroso.}

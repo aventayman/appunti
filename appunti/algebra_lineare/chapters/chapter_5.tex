@@ -20,18 +20,18 @@ Allora si chiama \textbf{prodotto scalare} (o forma bilineare simmetrica).}
      (x_1, x_2, \ldots , x_n)*(x_1', x_2', \ldots , x_n') = x_1x_1'+x_2x_2'+\ldots +x_nx_n'
     \] 
     \item Definiamo il \textbf{prodotto scalare standard} come la funzione \(*: M_n(\RR) \times M_n(\RR) \to \RR:\) \[
-\begin{pmatrix}
+\left( \; \begin{matrix}
     x_{11} & x_{12} & \ldots  & x_{1n} \\
     x_{21} & x_{22} & \ldots  & x_{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
     x_{n 1} & x_{n 2} & \ldots  & x_{n n} \\
-\end{pmatrix} \ * \
-\begin{pmatrix}
+\end{matrix} \; \right) \ * \
+\left( \; \begin{matrix}
     x_1' & x'_{12} & \ldots  & x'_{1n} \\
     x'_{21} & x'_{22} & \ldots  & x'_{2n} \\
     \vdots & \vdots & \ddots & \vdots \\
     x'_{n 1} & x'_{n 2} & \ldots  & x'_{n n} \\
-\end{pmatrix} = x_{11}x_{11}'+x_{12}x_{12}'+ \ldots + x_{n n}x_{n n}'
+\end{matrix} \; \right) = x_{11}x_{11}'+x_{12}x_{12}'+ \ldots + x_{n n}x_{n n}'
     \] 
 \end{enumerate}
 }
@@ -185,12 +185,12 @@ V^{\circ}_n(\RR ) = \mcL(A) \oplus A^{\perp}
 
 \dfn{Matrice di forma bilineare}{Sia \(V_n(K)\) uno spazio vettoriale, "\(*\)" una forma bilineare e \(B=(e_1,e_2, \ldots , e_n)\) base di \(V_n(K)\). Si chiama \textbf{matrice della forma bilineare} "\(*\)" rispetto a \(B\) \[
 A^{*}_B =
-\begin{pmatrix}
+\left( \; \begin{matrix}
     e_1*e_1 & e_1*e_2 & \ldots  & e_1*e_n \\
     e_2*e_1 & e_2*e_2 & \ldots  & e_2*e_n \\
     \vdots & \vdots & \ddots & \vdots \\
     e_n*e_1 & e_n*e_2 & \ldots  & e_n*e_n \\
-\end{pmatrix} \in M_n(K)
+\end{matrix} \; \right) \in M_n(K)
 \] Si può indicare in modo più compatto con \[
 A^{*}_B = (e_i * e_j)
 \] }
@@ -213,7 +213,7 @@ A^{*}_B = (e_i * e_j)
 \paragraph{Osservazione:} Utilizzando la matrice associata ad una forma bilineare "\(*\)" è possibile calcolare \[v * w \quad \forall v, w \in V_n(K)\].
 
 \mprop{}{Sia \(B\) una base di \(V_n(K)\) e sia "\(*\)" una forma bilineare su \(V\). Dette \[
-X = \begin{pmatrix} x_1\\ \vdots\\ x_n \end{pmatrix} \quad e \quad  Y = \begin{pmatrix} y_1\\ \vdots\\ y_n \end{pmatrix}
+X = \left( \; \begin{matrix} x_1\\ \vdots\\ x_n \end{matrix} \; \right) \quad e \quad  Y = \left( \; \begin{matrix} y_1\\ \vdots\\ y_n \end{matrix} \; \right)
 \] le matrici colonne delle componenti rispettivamente di \(v\) e di \(w \in V\) risulta: \[
 v * w = {^tX} A^{*}_B Y
 \] }
@@ -232,15 +232,15 @@ v * w = {^tX} A^{*}_B Y
 \mprop{}{Sia \(A \in M_n(K)\). \(A\) è ortogonale se, e soltanto se, le sue righe (o colonne) costituiscono una base ortonormale di \(\RR ^{n}(\RR )\) rispetto al prodotto scalare euclideo (dello spazio euclideo \(\RR ^{n}(\RR )\)).}
 
 \pf{Dimostrazione}{"\(\implies \)" \[
-\begin{pmatrix} R_1\\ \vdots\\ R_n \end{pmatrix} \iff  {^tA}= ({^tR_1}, \ldots , {^tR_n})
+\left( \; \begin{matrix} R_1\\ \vdots\\ R_n \end{matrix} \; \right) \iff  {^tA}= ({^tR_1}, \ldots , {^tR_n})
 \] \[
-A {^tA} = I_n = \begin{pmatrix} R_1\\ \vdots\\ R_n \end{pmatrix}({^tR_1}, \ldots , {^tR_n}) = 
-\begin{pmatrix}
+A {^tA} = I_n = \left( \; \begin{matrix} R_1\\ \vdots\\ R_n \end{matrix} \; \right)({^tR_1}, \ldots , {^tR_n}) = 
+\left( \; \begin{matrix}
     R_1 \cdot R_1 & R_1 \cdot R_2 & \ldots  & R_1 \cdot R_n \\
     R_2 \cdot R_1 & R_2 \cdot R_2 & \ldots  & R_2 \cdot R_n \\
     \vdots & \vdots & \ddots & \vdots \\
     R_n \cdot R_1 & R_n \cdot R_2 & \ldots  & R_n \cdot R_n \\
-\end{pmatrix}
+\end{matrix} \; \right)
 \] \[
 R_i \cdot R_j = 0 \quad \text{se} \quad i \neq j, \quad R_i \cdot R_i = 1 \quad \forall 1 \le i \le n
 \] Quindi le righe di \(A\) sono una base ortonormale. Il ragionamento è completamente analogo per le colonne. \\ "\(\impliedby \)" Si può dimostrare ripercorrendo le implicazioni al contrario.} 
