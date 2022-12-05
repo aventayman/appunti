@@ -258,18 +258,19 @@ Siano ora \(t = [T, \mcL(v) ]\) e \(t' = [T', \mcL(v') ]\) due rette sghembe. I 
 \item In \(A_2(\RR )\), un riferimento affine è una coppia \(RA = [O,B]\), ove \(O\) è un punto fissato e \(B = (e_1, e_2)\) è una base di \(V_2(\RR )\). La retta \([O, \mcL(e_1) ]\) è detta \textbf{asse delle ascisse} e la retta \([O, \mcL(e_2) ]\) è detta \textbf{asse delle ordinate}. Se \(\vec{OP} = xe_1 + y e_2\), si scrive \(P = (x, y)\) e si dice che \((x,y)\) è la coppia delle coordinate di \(P\) in \(RA\), dette rispettivamente \textbf{ascissa} e \textbf{ordinata} del punto \(P\).
 \begin{figure}[ht]
     \centering
+    \def\svgwidth{100pt}
     \incfig{ascissa-e-ordinata}
     \label{fig:ascissa-e-ordinata}
 \end{figure}
 \item In \(A_3(\RR )\), un riferimento affine è una coppia \(RA = [O,B]\), ove \(O\) è un punto fissato e \(B = (e_1, e_2, e_3)\) è una base di \(V_3(\RR )\). La retta \([O, \mcL(e_1) ]\) è detta \textbf{asse delle ascisse}, la retta \([O, \mcL(e_2) ]\) è detta \textbf{asse delle ordinate} e la retta \([O, \mcL(e_3) ]\) è detta \textbf{asse delle quote}. Sono detti \textbf{piani coordinati} i piani \(xy = [O, \mcL(e_1, e_2) ], xz = [O, \mcL(e_1, e_3) ]\) e \(yz = [O, \mcL(e_2, e_3) ]\). Inoltre, se \(\vec{OP}=xe_1+ ye_2 + ze_3\), si scrive \(P = (x, y,z)\) e si dice che \((x, y, z)\) è la terna delle coordinate di \(P\) in \(RA\), dette rispettivamente \textbf{ascissa, ordinata} e \textbf{quota} del punto \(P\).
 \begin{figure}[ht]
     \centering
+    \def\svgwidth{200pt}
     \incfig{terne-di-coordinate}
     \label{fig:terne-di-coordinate}
 \end{figure}
 \end{enumerate}
 
-\newpage
 \thm{}{In \(A_n(K)\), con \(RA = [O, B]\), siano \(P = (x_1', x_2', \ldots , x_n')\) e \(Q = (x_1 '', x_2 '', \ldots  , x_n '')\) due punti di \(A\). Allora le componenti di \(\vec{PQ}\) rispetto a \(B\) sono \[
 (x_1 '' - x_1', x_2 '' - x_2' , \ldots, x_n '' - x_n')
 \] }
@@ -322,7 +323,7 @@ M = t_{1/2 \vec{PQ}} (P)
 \dfn{Parametri direttori}{Si dicono \textbf{parametri direttori} di \(r = [P, V_1]\), le componenti di un qualunque vettore nullo di \(V_1\).}
 \paragraph{Osservazione:} I parametri direttori di una retta sono, quindi, determinati a meno di un fattore non nullo di proporzionalità. Definiamo la classe dei parametri direttori di \(r\) come \(p.d.r = [(l_1, l_2, \ldots , l_n)]\) con \((l_1, l_2, \ldots , l_n)\) un qualsiasi vettore appartenente a \(V_1\).
 
-\subsection{Equazioni parametriche di una retta in \(A_2(\RR )\)} 
+\subsubsection{Equazioni parametriche di una retta in \(A_2(\RR )\)} 
 In \(A_2(\RR )\), sia fissato un riferimento \(RA = [O, B]\), ove \(B = (e_1, e_2)\). Una retta \(r = [P, V_1]\) è il luogo dei traslati di un punto \(P\) mediante i vettori di \(V_1 \subset V_2\). Se \(P\) ha coordinate \((x_0, y_0)\) e \(V_1 = \mcL(v) \), ove \(v = le_1 + me_2\), le equazioni della definizione diventano \[
 \begin{cases}
     \ x = x_0 + lt \\
@@ -331,7 +332,7 @@ In \(A_2(\RR )\), sia fissato un riferimento \(RA = [O, B]\), ove \(B = (e_1, e_
 \quad \text{ove}\quad t \in \RR , \quad (l,m) \neq (0,0)\] 
 e sono dette \textbf{equazioni parametriche} di \(r\) in \(A_2(\RR )\).
 
-\subsection{Equazioni parametriche di una retta in \(A_3(\RR )\)}
+\subsubsection{Equazioni parametriche di una retta in \(A_3(\RR )\)}
 In \(A_3(\RR )\), sia fissato un riferimento \(RA = [O, B]\), ove \(B = (e_1, e_2, e_3)\). Una retta \(r = [P, V_1]\) è il luogo dei traslati di un punto \(P\) mediante i vettori di \(V_1 \subset V_3\). Se \(P\) ha coordinate \((x_0, y_0, z_0)\) e \(V_1 = \mcL(v) \), ove \(v = le_1 + me_2 + ne_3\), le equazioni della definizione diventano \[
 \begin{cases}
     \ x = x_0 + lt \\
@@ -343,7 +344,7 @@ e sono dette \textbf{equazioni parametriche} di \(r\) in \(A_3(\RR )\).
 
 \paragraph{Osservazione:} In modo del tutto analogo possiamo determinare le equazioni parametriche di sottospazi lineari di dimensione \(n\), che quindi dipenderanno da \(n\) parametri.
 
-\subsection{Equazione cartesiana di una retta in \(A_2(\RR )\)}
+\subsubsection{Equazione cartesiana di una retta in \(A_2(\RR )\)}
 In \(A_2(\RR )\) una retta si può rappresentare attraverso le sue equazioni parametriche in questo modo \[
 \begin{cases}
     \ x = x_p + lt \\
@@ -386,7 +387,7 @@ Quindi vale la relazione \[
 ax + by + c = 0 \quad \text{con}\quad (a,b) \neq (0,0)
 \] Quindi i parametri direttori della generica retta \(r\) saranno \(p.d.r = [(l,m)] = [(-b, a)]\).
 
-\subsection{Mutua posizione di due rette in \(A_2(\RR )\)}
+\subsubsection{Mutua posizione di due rette in \(A_2(\RR )\)}
 Siano due rette \[
 r: ax + by + c = 0 \quad (a,b) \neq (0,0)
 \] \[
@@ -429,8 +430,7 @@ A =
             \item se invece \(\rho(A) = 1\) e \(\rho(B) = 1\) il sistema ammette \(\infty^{2-1}\) soluzioni, perciò \(r \equiv s \implies r||s\) se \(\rho(A) = 1\)
         \end{enumerate}
 \end{enumerate}
-\newpage
-\subsection{Fasci di rette in \(A_2(\RR )\)}
+\subsubsection{Fasci di rette in \(A_2(\RR )\)}
 \dfn{Fascio improprio di rette}{Si dice \textbf{fascio improprio di rette} l'insieme di tutte e sole le rette del piano \(A_2(\RR )\) parallele ad una retta data.}
 \mprop{}{Una retta appartiene al fascio improprio di rette parallele alla retta \(r = [P, V_1]: ax + by + c = 0, \ (a,b) \neq (0,0)\), se, e soltanto se, ha un'equazione del tipo \[
 ax + by + k = 0 \quad \text{ove} \quad k \in \RR 
@@ -445,7 +445,7 @@ ax + by + k = 0 \quad \text{ove} \quad k \in \RR
 ax + by + c + k (a'x + b'y + c') = 0 \quad \text{ove} \quad k \in \RR 
 \] detta \textbf{equazione ridotta del fascio proprio di rette}, in cui, ovviamente, la retta \(r' : a'x + b'y + c' = 0\) non è rappresentata. Quindi possiamo dire che le rette di un fascio proprio di rette sono \(\infty^{1}\).}
 
-\subsection{Simmetrie in \(A_2(\RR )\)}
+\subsubsection{Simmetrie in \(A_2(\RR )\)}
 \dfn{Simmetria rispetto ad una retta}{Il punto \(T\) si dice \textbf{simmetrico} del punto \(H\), rispetto alla retta \(r = [P, V_1]\), detta \textbf{asse di simmetria}, nella direzione \(W_1 \neq V_1\), se lo è nella simmetria di centro \(C = r \cap s\), dove \(s = [H, W_1]\). Tale simmetria si dice anche \textbf{simmetria rispetto ad una retta in una direzione assegnata}.}
 
 \begin{figure}[ht]
@@ -454,5 +454,200 @@ ax + by + c + k (a'x + b'y + c') = 0 \quad \text{ove} \quad k \in \RR
     \incfig{simmetria-punto-retta}
     \label{fig:simmetria-punto-retta}
 \end{figure}
+
+\subsubsection{Equazione cartesiana di un piano in \(A_3(\RR )\)}
+In \(A_3(\RR )\) dato il \(RA = [O, B]\), con \(B = (e_1, e_2, e_3)\). Sia \(\alpha = [P, V_2]\) un piano con \(P = (x_p, y_p, z_p)\) e \(V_2 = \mcL(v, v') \) (con \(v \neq kv'\)), tali che  \[
+v = le_1 + me_2 + ne_3 \qquad 
+v' = l'e_1 + m'e_2 + n'e_3
+\] 
+Il generico vettore \(w \in V_2\) si scrive come \(w = tv + t' v'\). Quindi \(t_w(P)\) è il generico punto appartenente a \(\alpha \). Di conseguenza possiamo dire che \[
+\begin{cases}
+    \ x = x_p + tl + t'l' \\
+    \ y = y_p + tm + t'm' \\
+    \ z = z_p + tn + t'n' \\
+\end{cases} \implies 
+\left( \;
+ \begin{matrix}
+    x \\
+    y \\
+    z \\
+\end{matrix} \;
+ \right) =
+\left( \;
+ \begin{matrix}
+    x_p \\
+    y_p \\
+    z_p \\
+\end{matrix} \;
+ \right) +
+\left( \;
+ \begin{matrix}
+    tl + t'l' \\
+    tm + t'm' \\
+    tn + t'm' \\
+\end{matrix} \;
+ \right) 
+\] cioè, per l'equazione della traslazione \(\left( \; \begin{matrix} x \\ y\\ z \end{matrix} \; \right) \) sono le coordinate del generico punto di \(\alpha \). Date dalla somma di \(\left( \; \begin{matrix} x_p \\ y_p\\ z_p \end{matrix} \; \right) \) cioè le coordinate di \(P\) con \(\left( \; \begin{matrix} tl + t'l' \\ tm + t'm'\\ tn + t'n' \end{matrix} \; \right) \) cioè le componenti di \(w\).
+
+Seguendo un ragionamento analogo a quello fatto per le rette in \(A_2(\RR )\) possiamo descrivere un piano in \(A_3(\RR )\) come \[
+\left| \; \begin{matrix}
+    x-x_p & y-y_p & z-z_p \\
+    l & m & n \\
+    l' & m' & n' \\
+\end{matrix} \; \right| = 0
+\] e da questa ne ricaviamo la seguente equazione \[
+ax + by + cz + d = 0 \quad \text{con} \quad  (a,b,c) \neq (0,0,0)
+\] detta \textbf{equazione cartesiana} del piano in \(A_3(\RR )\). Tale equazione è definita a meno di un fattore di proporzionalità non nullo.
+
+\subsubsection{Equazioni cartesiane delle rette in \(A_3(\RR )\)}
+
+Fissiamo un \(RA = [O, B]\) con \(B = (e_1, e_2, e_3)\) e data una retta \(r = [P, V_1=\mcL(l,m,n) ]\) possiamo scrivere l'equazione parametrica della retta \[
+r : \
+\begin{cases}
+    \ x = x_p + tl \\
+    \ y = y_p + tm \\
+    \ z = z_p + tn \\
+\end{cases} \quad \text{con}\quad (l,m,n) \neq (0,0,0)
+\] Da cui deriva la seguente relazione \[
+\frac{x-x_p}{l} = \frac{y-y_p}{m} = \frac{z - z_p}{n}
+\] in particolare, se poniamo ad esempio \(l \neq 0\), otteniamo il seguente sistema \[
+\begin{cases}
+    \ y = \frac{m}{l} (x-x_p) + y_p \\
+    \ z = \frac{n}{l} (x-x_p) + z_p \\
+\end{cases} \implies 
+\begin{cases}
+    \ y = \frac{m}{l} x + k \\
+    \ z = \frac{n}{l} x + h \\
+\end{cases} \ \text{ove} \quad h, k \in \RR 
+\] esistono, ovviamente le equazioni relative ai casi \(m \neq 0\) e \(n \neq 0\) e, dato che la terna \((l,m,n)\) è non nulla, ogni retta ammette sempre, almeno, una rappresentazione simile. In ogni caso, qualunque essa sia, possiamo concludere che una retta si rappresenta con un sistema di due equazioni lineari nelle incognite \(x, y\) e \(z\), in cui il rango della matrice incompleta è uguale a 2. E infatti sussiste anche il viceversa, cioè \[
+\begin{cases}
+    \ ax + by + cz + d = 0 \\
+    \ a'x + b'y + c'z + d' = 0 \\
+\end{cases} \ \text{con} \quad \rho
+\left( \; \begin{matrix}
+    a & b & c \\
+    a' & b' & c' \\
+\end{matrix} \; \right) = 2
+\] rappresenta una retta. Infatti per il teorema di Rouché-Capelli il sistema è compatibile e ammette \(\infty^{1}\) soluzioni, cioè le sue soluzioni dipendono da un solo parametro.  
+
+Analogamente a quanto già osservato in \(A_2(\RR )\), dalla precedente equazione deriva che le componenti, dei vettori dello spazio di traslazione della retta \(r\), sono le soluzioni del sistema omogeneo associato a una rappresentazione cartesiana di \(r\) stessa. Quindi possiamo dedurre la classe dei parametri direttori della retta \(r\) attraverso la regola dei minori. L'insieme delle \(\infty^{1}\) soluzioni del sistema omogeneo \[
+\begin{cases}
+    \ ax + by + cz + d = 0 \\
+    \ a'x + b'y + c'z + d' = 0 \\
+\end{cases} \ \text{con} \quad \rho
+\left( \; \begin{matrix}
+    a & b & c \\
+    a' & b' & c' \\
+\end{matrix} \; \right) = 2
+\] è \[
+\left\{ \left( t
+\left| \; \begin{matrix}
+    b & c \\
+    b' & c' \\
+\end{matrix} \; \right|,
+-t
+\left| \; \begin{matrix}
+    a & c \\
+    a' & c' \\
+\end{matrix} \; \right|, t
+\left| \; \begin{matrix}
+    a & b \\
+    a' & b' \\
+\end{matrix} \; \right| \right)
+: \ t \in R \right\}
+\] 
+\subsubsection{Mutua posizione di due piani in \(A_3(\RR )\)}
+Fissato un \(RA\) e dati due piani in \(A_3(\RR )\)\[
+\alpha : ax + by + cz + d = 0 \qquad \alpha' : a'x + b'y + c'z + d' = 0
+\] la loro intersezione è data dal sistema \[
+\alpha \cap \alpha' : \
+\begin{cases}
+    \ ax + by + cz + d = 0 \\
+    \ a'x + b'y + c'z + d' = 0 \\
+\end{cases}
+\] Quindi possiamo distinguere in 3 casi:
+\begin{enumerate}
+    \item \(\rho(A) = 2 \implies \rho(A) = \rho(A|B) = 2 \) quindi il sistema è compatibile e ammette \(\infty^{3-2} = \infty^{1}\) soluzioni \(\implies \alpha \cap \alpha' = r\), quindi \(\alpha \) e \(\alpha'\) sono due piani \textbf{incidenti}.
+    \item Nel caso in cui \(\rho(A) = 1\) dobbiamo distinguere in due sottocasi
+        \begin{enumerate}
+            \item \(\rho(A|B) = 2 \) e \(\rho(A) = 1\), il sistema non è compatibile, quindi \(\alpha \cap \alpha' = \emptyset\) e \(\alpha \) è parallelo e distinto da \(\alpha'\). \(\alpha \) e \(\alpha'\) sono detti \textbf{paralleli e distinti}.
+            \item \(\rho(A) = 1\) e \(\rho(A|B) = 1\), il sistema è compatibile e ammette \(\infty^{3-1} = \infty^{2}\) soluzioni. Quindi l'insieme delle soluzioni dipende da due parametri \(\implies \alpha \equiv \alpha'\).
+        \end{enumerate}
+\end{enumerate}
+
+\mprop{Condizione di parallelismo tra piani}{\(\alpha || \alpha' \iff \rho(A) = 1 \iff a = ka' \ b = kb' \ c = kc' \iff [(a,b,c)] = [(ka',kb',kc')] = [(a', b', c')]\). Questa viene denominata condizione analitica di parallelismo tra piani.}
+
+\subsubsection{Fasci di piani in \(A_3(\RR )\)}
+\dfn{Fascio improprio di piani}{Si dice \textbf{fascio improprio di piani} l'insieme di tutti e soli i piani di \(A_3(\RR )\) paralleli a un piano dato.}
+\mprop{}{Un piano appartiene al fascio improprio di piani paralleli ad \(\alpha =[P, V_2]: ax + by + cz + d = 0\), con \((a,b,c) \neq (0,0,0)\), se, e soltanto se, ha un'equazione del tipo \[
+ax + by + cz + k = 0 \quad \text{ove} \quad k \in \RR 
+\] detta \textbf{equazione del fascio improprio di piani}. I piani di un fascio improprio sono \(\infty^{1}\).}
+
+\dfn{Fascio proprio di piani}{Si dice \textbf{fascio proprio di piani}, l'insieme di tutti e soli i piani di \(A_3(\RR )\) passanti per una retta data \(r\), detta \textbf{asse} o \textbf{sostegno} del fascio.}
+\mprop{}{Siano \(r\) una retta, \(\alpha : ax + by + cz + d = 0\) e \(\alpha' : a'x + b'y + c'z + d' = 0\), con \((a,b,c) \neq (0,0,0)\) e \((a',b',c') \neq (0,0,0)\), due distinti piani per \(r\). Un piano \(\beta \) appartiene al fascio di sostegno \(r\) se, e soltanto se, ha un'equazione del tipo \[
+\lambda (ax+by+cz+d) + \mu (a'x + b'y +c'z+d') = 0 \quad \text{ove}\quad \lambda , \mu \in \RR \quad e \quad (\lambda , \mu) \neq (0,0)
+\] detta \textbf{equazione del fascio proprio di piani}. Se nell'equazione risulta \(\lambda \neq 0\), posto \(h = \mu / \lambda \), si ottiene \[
+ax + by + cz + d + h(a'x + b'y + c'z + d') = 0 \quad \text{ove} \quad h \in \RR 
+\] detta \textbf{equazione ridotta del fascio proprio di piani}, in cui ovviamente il piano \(\beta : a'x + b'y + c'z + d' = 0\) non è rappresentato. Dalla rappresentazione ridotta del fascio si deduce che i piani di un fascio proprio sono \(\infty^{1}\).}
+
+\subsubsection{Mutua posizione di due rette in \(A_3(\RR )\)}
+Siano assegnate le rette \[
+r :
+\begin{cases}
+    \ ax + by + cz + d = 0 \\
+    \ a'x + b'y + c'z + d' = 0 \\
+\end{cases} \quad \rho
+\left( \; \begin{matrix}
+    a & b & c \\
+    a' & b' & c' \\
+\end{matrix} \; \right) = 2
+\] \[
+s :
+\begin{cases}
+    \ a ''x + b ''y + c ''z + d '' = 0 \\
+    \ a'''x + b'''y + c'''z + d''' = 0 \\
+\end{cases} \quad \rho
+\left( \; \begin{matrix}
+    a ''& b '' & c ''\\
+    a''' & b''' & c''' \\
+\end{matrix} \; \right) = 2
+\] Sia \[
+r \cap s:
+\begin{cases}
+    \ ax + by + cz + d = 0 \\
+    \ a'x + b'y + c'z + d' = 0 \\
+    \ a ''x + b ''y + c ''z + d '' = 0 \\
+    \ a'''x + b'''y + c'''z + d''' = 0 \\
+\end{cases}
+\] il sistema costituito dalle loro equazioni e siano \(A\) e \(A|B\) le matrici incompleta e completa associate al sistema. \[
+AX = B \quad \text{con} \quad B =
+\left( \; \begin{matrix}
+    -d \\
+    -d' \\
+    -d'' \\
+    -d''' \\
+\end{matrix} \; \right) 
+\quad X = 
+\left( \; \begin{matrix}
+    x \\
+    y \\
+    z \\
+\end{matrix} \; \right) 
+\quad A =
+\left( \; \begin{matrix}
+    a & b & c \\
+    a' & b' & c' \\
+    a '' & b '' & c '' \\
+    a''' & b''' & c''' \\
+\end{matrix} \; \right) 
+\] Esaminiamo i 4 casi possibili:
+
+\begin{enumerate}
+    \item \(\rho(A|B) = 4 \implies \rho(A) = 3\) poiché \(A|B\) è ottenuta aggiungendo una colonna ad \(A\), quindi \(\rho(A|B) \le \rho(A) + 1 \implies \rho(A) =3 \). Il sistema non è compatibile per il teorema di Rouché-Capelli \(\implies r  \) e \(s\) sono o parallele e disgiunte, oppure sghembe. Ma siccome \(\rho(A) = 3 \implies r = [P,V_1] \quad s =[P', V_1'] \quad V_1 \neq V_1' \implies r\) non è parallela ad \(s\). Quindi \(r\) e \(s\) sono \textbf{sghembe}.
+    \item \(\rho(A|B) = 3\) e \(\rho(A) =3\). Il sistema è compatibile e per il teorema di Rouché-Capelli  esiste un'unica soluzione \(r \cap s = \{P\} \implies r\) e \(s\) si dicono \textbf{incidenti}.
+    \item \(\rho(A|B) = 3\) e \(\rho(A) = 2\). Il sistema non è compatibile per il teorema di R.C. Siccome \(\rho(A) =2 \implies V_1= V_1' \implies r\) è parallela a \(s\) e \(r \neq s\). Si dice che \(r\) e \(s\) sono \textbf{parallele e distinte}.
+    \item \(\rho(A|B) = \rho(A) = 2\) il sistema è compatibile e ammette \(\infty^{1}\) soluzioni. Si dice che  le rette \(r\) e \(s\) sono \textbf{coincidenti}.
+\end{enumerate}
+
 
 \end{document}

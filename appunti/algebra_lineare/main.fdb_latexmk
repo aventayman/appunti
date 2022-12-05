@@ -1,8 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1670239975 "main.tex" "main.pdf" "main" 1670239977 2
+["pdflatex"] 1670283197 "main.tex" "main.pdf" "main" 1670283199 0
   "/etc/texmf/web2c/texmf.cnf" 1667938489 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -19,6 +18,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm" 1136768653 1272 e2d13f0df30bf3ad990bb9d028e37f34 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/NewPXMI.tfm" 1591219423 1160 c2197cdaa08622262260a0a34b1dfcef ""
@@ -45,6 +45,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb" 1591219423 25273 57c06ae0831a03c4eb441ef7894a1639 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb" 1570136818 16003 379767f2e95213e4cfc7bfd5823fb860 ""
@@ -316,7 +317,6 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1669588429 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1636152094 2900 1537cc8184ad1792082cd229ecc269f4 ""
-  "/usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb" 1668068191 149037 995a6f1e12c1d647b99b1cf55db78699 ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb" 1636152094 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1669588429 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1669731891 4623429 ed16de41d8b39db3d8ec06984af1a4c0 ""
@@ -333,9 +333,9 @@
   "figures/terne-di-coordinate.pdf_tex" 1670173909 2852 5dbe539ea27c2b5e1a226608846bec44 ""
   "letterfonts.tex" 1668252671 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1668252671 3389 93000260d2aea292d29c76d4ace77a29 ""
-  "main.aux" 1670239976 9186 c318aa8ea241177180ec038e92c88c71 "pdflatex"
-  "main.tex" 1670239949 26996 cb4ec89eedeb970ea6b4556c62d3951d ""
-  "main.toc" 1670239976 1559 87cb9b396e2445db24e297e4a237d248 "pdflatex"
+  "main.aux" 1670283199 6495 f96e4b7253c1650e3543dc98242c4622 "pdflatex"
+  "main.tex" 1670283195 37028 1e5920f3b02593e5fed8016d853bcb4c ""
+  "main.toc" 1670283199 1900 9ab992288a1a8adeb1449903c86523aa "pdflatex"
   "preamble.tex" 1670164762 20294 a24e07e2a733ae12ab9a49fc51017c5a ""
   (generated)
   "main.aux"
