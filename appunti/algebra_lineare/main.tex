@@ -30,11 +30,57 @@
 \fancyhead[LE]{\thepage}
 \fancyfoot{} % clear all footer fields
 
-\input{./chapters/chapter_1}
-\input{./chapters/chapter_2}
-\input{./chapters/chapter_3}
-\input{./chapters/chapter_4}
-\input{./chapters/chapter_5}
-\input{./chapters/chapter_6}
+%\input{./chapters/chapter_1}
+%\input{./chapters/chapter_2}
+%\input{./chapters/chapter_3}
+%\input{./chapters/chapter_4}
+%\input{./chapters/chapter_5}
+%\input{./chapters/chapter_6}
 
+\chapter{Spazi euclidei}
+\section{\(E_n(\RR )\), spazio euclideo di dimensione \(n\)}
+\dfn{Spazio euclideo}{Si dice \textbf{spazio euclideo} di dimensione \(n\) sul campo \(\RR \) la struttura costituita da uno spazio affine \(A_n(\RR )\) il cui spazio vettoriale \(V_n^{\circ}(\RR )\) sia dotato di un prodotto scalare "\(\cdot \)" definito positivo.}
+\dfn{Ortogonalità tra sottospazi}{Siano \(S_h = [P, V_h]\) e \(S_k = [Q, V_k]\) due sottospazi lineari di \(E_{n}(\RR) \). Diremo che \(S_h\) è \textbf{ortogonale} a \(S_k\) se \[
+V_h \subseteq V_k^{\perp} \quad \text{oppure} \quad V_h \supseteq V_k^{\perp}
+\] }
+
+\paragraph{Osservazione:} La relazione di ortogonalità è simmetrica. Infatti se \(S_h \perp S_k\) allora
+\begin{enumerate}
+    \item \(V_h \subseteq V_k^{\perp} \implies V_h^{\perp} \supseteq \left( V_k^{\perp} \right) ^{\perp} = V_k \implies V_k \subseteq V_h^{\perp} \implies S_k \perp S_h\)
+    \item \(V_h \supseteq V_k^{\perp} \implies V_h^{\perp} \subseteq \left( V_k^{\perp} \right) ^{\perp} = V_k \implies V_k \supseteq V_h^{\perp} \implies S_h \perp S_k\)
+\end{enumerate}
+In entrambi i casi \(S_h \perp S_k \iff S_k \perp S_h\). Quindi diremo semplicemente che \(S_h\) e \(S_k\) sono ortogonali.
+
+\mprop{}{In \(E_2(\RR )\), dati la retta \(r\) e il punto \(H\), esiste un'unica retta passante per \(H\) e ortogonale a \(r\).}
+\pf{Dimostrazione}{Dimostriamo prima di tutto l'esistenza della retta, successivamente ci occuperemo dell'unicità. Poniamo \(r : [P, V_1]\) e definiamo una \(s : [H, V_1^{\perp}]\). \(s\) è una retta poiché \(\RR ^{2} = V_1 \oplus V_1^{\perp}\), per la formula di Grassmann \(V_1^{\perp}\) ha dimensione 1, quindi \(s\) è una retta. \(H \in s\) per costruzione e \(r \perp s\) perché \(V_1^{\perp} \subseteq V_1^{\perp}\), cioè lo spazio di traslazione della retta \(s\) contiene la direzione ortogonale a \(V_1\). Ora l'unicità della retta segue dall'unicità dello spazio di traslazione e poiché esso ha dimensione 1, anche la retta è unica.}
+
+\mprop{}{In \(E_3(\RR )\), siano assegnati una retta \(r\) e un piano \(\alpha \). Dato un punto \(H\) 
+\begin{enumerate}
+    \item esiste un'unica retta \(s\) passante per \(H\) e ortogonale al piano \(\alpha \)
+    \item esiste un unico piano \(\beta \) passante per \(H\) e ortogonale alla retta \(r\)
+\end{enumerate}}
+
+\pf{Dimostrazione}{Dimostriamo i 2 punti separatamente
+\begin{enumerate}
+    \item poniamo \(\alpha = [P, V_2]\) e \(s = [H, V_2^{\perp}]\). \(s\) è una retta perché \(\dim(V_2^{\perp}) = 1\), poiché \(\RR^{3} = V_2 \oplus V_2^{\perp}\) per la formula di Grassmann. \(H \in s\) e \(s \perp\alpha \) valgono per costruzione.
+    \item poniamo \(r = [Q, V_1]\) e definiamo \(\beta = [H, V_1^{\perp}]\). Verifichiamo che \(\beta \) sia un piano. Osserviamo che dato che  \[
+    \underbrace{\RR ^{3}}_{3} = \underbrace{V_1}_{1} \oplus \underbrace{V_1^{\perp}}_{2}  \implies \dim(V_1^{\perp}) = 2
+    \] quindi \(\beta \) è un piano. \(H \in \beta \) e \(\beta \perp r\) valgono per costruzione. L'unicità del piano segue dall'unicità di \(V_2\) di dimensione 2 e perpendicolare a \(V_1\).
+\end{enumerate}}
+
+\mprop{}{Siano \(r: [P, V_1]\) e \(\alpha = [Q, V_2]\) rispettivamente una retta e un piano di \(E_3(\RR )\). Se \(r \perp \alpha \) abbiamo che
+\begin{enumerate}
+    \item \(r \perp s \quad \forall s \subseteq \alpha \), cioè \(r\) è perpendicolare a ogni retta \(s\) contenuta nel piano \(\alpha \)
+    \item \(\alpha \perp \beta \quad \forall \beta \supseteq r\), cioè \(\alpha \) è perpendicolare a ogni piano \(\beta \) contenente \(r\)
+\end{enumerate}}
+
+\pf{Dimostrazione}{Dimostriamo i 2 punti separatamente
+\begin{enumerate}
+    \item Sia \(s \subseteq \alpha \) con \(s = [H, V_1']\), allora  \[
+    \underbrace{V_1' \subseteq V_2}_{\text{poiché } s \subseteq \alpha } = \underbrace{V_1^{\perp}}_{\text{poiché } r \perp s} \implies r \perp s
+    \] 
+    \item Sia \(\beta \subseteq \alpha \) con \(\beta = [H, V_2']\), allora  \[
+    \underbrace{V_2' \supseteq V_1}_{\text{poiché } \beta \supseteq r } = \underbrace{V_2^{\perp}}_{\text{poiché } r \perp \alpha } \implies \alpha \perp \beta
+    \] 
+\end{enumerate}}
 \end{document}
