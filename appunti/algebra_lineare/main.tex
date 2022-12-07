@@ -30,12 +30,12 @@
 \fancyhead[LE]{\thepage}
 \fancyfoot{} % clear all footer fields
 
-%\input{./chapters/chapter_1}
-%\input{./chapters/chapter_2}
-%\input{./chapters/chapter_3}
-%\input{./chapters/chapter_4}
-%\input{./chapters/chapter_5}
-%\input{./chapters/chapter_6}
+\input{./chapters/chapter_1}
+\input{./chapters/chapter_2}
+\input{./chapters/chapter_3}
+\input{./chapters/chapter_4}
+\input{./chapters/chapter_5}
+\input{./chapters/chapter_6}
 
 \chapter{Spazi euclidei}
 \section{\(E_n(\RR )\), spazio euclideo di dimensione \(n\)}
@@ -83,4 +83,40 @@ In entrambi i casi \(S_h \perp S_k \iff S_k \perp S_h\). Quindi diremo semplicem
     \underbrace{V_2' \supseteq V_1}_{\text{poiché } \beta \supseteq r } = \underbrace{V_2^{\perp}}_{\text{poiché } r \perp \alpha } \implies \alpha \perp \beta
     \] 
 \end{enumerate}}
+
+\mprop{}{Siano \(\alpha\) e \(r\) rispettivamente un piano e una retta di \(E_3(\RR)\), con \(\alpha \) non ortogonale a \(r\). Allora esiste un unico piano \(\beta\) ortogonale ad \(\alpha\) e contenente la retta \(r\).}
+
+\pf{Dimostrazione}{Sia \(\beta = [P, V_1 \oplus V_2^{\perp}]\) dove \(r = [P, V_1]\) e \(\alpha = [Q, V_2]\). \(\beta\) è un piano perché \(\dim(V_1) = 1, \ \dim(V_2^{\perp})= 1\) e \(V_1 \neq V_2^{\perp}\) (poiché \(\alpha \not\perp r\) ) \( \implies \dim(V_1 \oplus V_2^{\perp}) = 2 \implies \beta\) è un piano. Per costruzione abbiamo che \(\beta \perp \alpha\), infatti lo spazio di traslazione di \(\beta\) è: \[
+        V_1 \oplus V_2^{\perp} \supseteq V_2^{\perp} \text{  }
+    \] e \(V_2\) è lo spazio di traslazione di \(\alpha\). Inoltre \(\beta \) contiene \(r\) per le proposizioni precedenti ed è ovviamente ortogonale a \(\alpha \). Per costruzione \(\beta \) è l'unico piano che soddisfa queste condizioni.}
+
+\section{Geometria analitica in \(E_n(\RR)\) }
+\dfn{}{In \(E_n(\RR)\) si dice \textbf{riferimento cartesiano ortogonale monometrico} la coppia \(RC = [O, \mcB]\) dove \(O\) è un punto di \(E_n(\RR)\) e \(\mcB=(e_1, e_2, ..., e_n)\) è una base ortonormale.}
+\nt{\begin{enumerate}
+    \item In \(E_2(\RR)\) si conviene indicare la base ortonormale come \(\mcB = (i,j)\) 
+    \item In \(E_3(\RR)\) si conviene indicare la base ortonormale come \(\mcB = (i,j, k)\) 
+\end{enumerate}}
+
+\section{Ortogonalità}
+\subsubsection{Ortogonalità fra rette}
+Siano \(r_1, r_2\) due rette di \(E_2(\RR)\) e sia \(r_1 = [P, f(v)]\) con \(v = li + mj\), analogamente \(r_2 = [P, f(v')]\) con \( v' = l'i + m'j\) \[
+    v \perp v' \iff ll' + mm' = 0
+    \] se \(r_1\) ha equazione \(ax + by + c = 0\) e \(r_2\) ha equazione \(a'x + b'y + c' = 0\) allora \(P.d.r_1 = [(-b,a)]\), e \(P.d.r_2 = [(-b', a')]\) quindi \[
+    r_1 \perp r_2 \iff -b (-b') + aa' = bb' + aa' = 0
+\]
+Se abbiamo due rette \(r_1, r_2\) in \(E_3(\RR)\) con \(p.d.r_1 = [(l,m,n)]\), \(p.d.r_2 = [(l',m',n')]\) allor a \(r_1 \perp r_2 \iff v_1\), cioè il generatore della direzione della retta \(r_1\), è ortogonale a \(v_2\), che è generatore della direzione della retta \(r_2\). \[
+    v_1 = li + mj + nk \qquad v_2 = l'i + m'j + n'k
+\] \[
+    v_1 \perp v_2 \iff r_1 \perp r_2 \iff ll' + mm' + nn' = 0
+\] Analogamente se \(r_1, r_2\) sono rette in \(E_n(\RR)\) con \(p.d.r_1 = [(x_1, x_2, ..., x_n)]\), \(p.d.r_2 = [(x_1', x_2', ..., x_n')]\) \[
+r_1 \perp r_2 \iff x_1x_1' + x_2 x_2' + \ldots  + x_n x_n' = 0
+\] 
+
+\subsubsection{Direzione ortogonale a un iperpiano}
+\mprop{}{Sia \(r: ax + by + c = 0\) una retta di \(E_2(\RR)\), allora \([(a, b)]\) è la classe dei parametri direttori della direzione ortogonale a \(r\).}
+\pf{Dimostrazione}{Per ipotesi \(p.d.r = [(-b,a)]\) e abbiamo che per essere ortogonale la direzione \((a, b)(-b, a)= 0\) oppure equivalentemente \((ai + bj)( -b i + aj ) = 0 \implies [(a, b)] \perp r\).  }
+\mprop{}{Sia \(\pi: ax + by + cz + d = 0\) un piano in \(E_3(\RR)\), allora \([(a, b, c)]\) è la classe dei parametri direttori della direzione ortogonale a \(\pi\).}
+\pf{Dimostrazione}{Sia \(v \in V_2\) tale che \(pi\) ha spazio di traslazione \(V_2\). Se \(v = (x, y, z) \implies ax + by + cz = 0 \iff (x, y, z)(a, b, c) = 0 \implies (a,b,c) \perp v \ \forall v \in V_2 \) }
+\mprop{}{Più in generale: sia \(S _{n-1}\) un iperpiano in \(E_n(\RR)\) di equazione cartesiana \(a_1 x_1 + a_2 x_2 + ... + a_n x_n + a_0 = 0 \implies [(a_1, a_2, ..., a_n)]\) è la classe dei parametri direttori della direzione ortogonale a \(S _{n-1}\).}
+
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.29)  7 DEC 2022 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.29)  7 DEC 2022 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1293,22 +1293,153 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 (./main.toc
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 4.
+(Font)              size <5> substituted on input line 47.
 
+[3
+
+]
+Missing character: There is no ; in font nullfont!
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3
-
-]
+ [4] (./chapters/chapter_1.tex
 Capitolo 1.
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 41.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [5
+
+] [6]) (./chapters/chapter_2.tex [7]
+Capitolo 2.
+\g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box144
+[8
+
+] [9] [10] [11] [12] [13]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 206.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
+ [14] [15] [16]) (./chapters/chapter_3.tex [17]
+Capitolo 3.
+[18
+
+] [19] [20] [21] [22] [23]) (./chapters/chapter_4.tex [24] [25]
+Capitolo 4.
+[26
+
+] [27]) (./chapters/chapter_5.tex [28]
+Capitolo 5.
+[29
+
+] [30] [31] [32]
+Underfull \vbox (badness 2894) has occurred while \output is active []
+
+ [33] [34] [35]) (./chapters/chapter_6.tex [36]
+Capitolo 6.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 14.
+
+[37
+
+] [38] [39] [40] (./figures/due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf_tex
+<./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf, id=612, page=1, 322.74178pt x 228.5377pt>
+File: ./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf Graphic file (type pdf)
+<use ./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf, page 1>
+Package pdftex.def Info: ./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 147.43204pt x 104.39978pt.
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 206.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 206.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\RR' on input line 206.
+
+[41 <./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf>] (./figures/ascissa.pdf_tex
+<./figures//ascissa.pdf, id=631, page=1, 249.34656pt x 30.09775pt>
+File: ./figures//ascissa.pdf Graphic file (type pdf)
+<use ./figures//ascissa.pdf, page 1>
+Package pdftex.def Info: ./figures//ascissa.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 245.71756pt x 29.65953pt.
+) (./figures/ascissa-e-ordinata.pdf_tex
+<./figures//ascissa-e-ordinata.pdf, id=632, page=1, 95.56403pt x 100.52168pt>
+File: ./figures//ascissa-e-ordinata.pdf Graphic file (type pdf)
+<use ./figures//ascissa-e-ordinata.pdf, page 1>
+Package pdftex.def Info: ./figures//ascissa-e-ordinata.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 100.0pt x 105.18887pt.
+<./figures//ascissa-e-ordinata.pdf, id=633, page=2, 95.56403pt x 100.52168pt>
+File: ./figures//ascissa-e-ordinata.pdf Graphic file (type pdf)
+<use ./figures//ascissa-e-ordinata.pdf, page 2>
+Package pdftex.def Info: ./figures//ascissa-e-ordinata.pdf , page2 used on input line 61.
+(pdftex.def)             Requested size: 100.0pt x 105.18887pt.
+) (./figures/terne-di-coordinate.pdf_tex
+<./figures//terne-di-coordinate.pdf, id=634, page=1, 243.52034pt x 174.80777pt>
+File: ./figures//terne-di-coordinate.pdf Graphic file (type pdf)
+<use ./figures//terne-di-coordinate.pdf, page 1>
+Package pdftex.def Info: ./figures//terne-di-coordinate.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 200.0pt x 143.56735pt.
+<./figures//terne-di-coordinate.pdf, id=635, page=2, 243.52034pt x 174.80777pt>
+File: ./figures//terne-di-coordinate.pdf Graphic file (type pdf)
+<use ./figures//terne-di-coordinate.pdf, page 2>
+Package pdftex.def Info: ./figures//terne-di-coordinate.pdf , page2 used on input line 62.
+(pdftex.def)             Requested size: 200.0pt x 143.56735pt.
+) [42 <./figures//ascissa.pdf> <./figures//ascissa-e-ordinata.pdf> <./figures//ascissa-e-ordinata.pdf> <./figures//terne-di-coordinate.pdf> <./figures//terne-di-coordinate.pdf>]
+Underfull \vbox (badness 2990) has occurred while \output is active []
+
+ [43] [44] [45] (./figures/simmetria-punto-retta.pdf_tex
+<./figures//simmetria-punto-retta.pdf, id=681, page=1, 269.67336pt x 178.58733pt>
+File: ./figures//simmetria-punto-retta.pdf Graphic file (type pdf)
+<use ./figures//simmetria-punto-retta.pdf, page 1>
+Package pdftex.def Info: ./figures//simmetria-punto-retta.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 160.0pt x 105.95692pt.
+) [46 <./figures//simmetria-punto-retta.pdf>] [47] [48] [49] [50] (./figures/simmetria-retta-giacitura.pdf_tex
+<./figures//simmetria-retta-giacitura.pdf, id=737, page=1, 173.83243pt x 159.15628pt>
+File: ./figures//simmetria-retta-giacitura.pdf Graphic file (type pdf)
+<use ./figures//simmetria-retta-giacitura.pdf, page 1>
+Package pdftex.def Info: ./figures//simmetria-retta-giacitura.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 150.0pt x 137.338pt.
+) (./figures/simmetria-direzione-piano.pdf_tex
+<./figures//simmetria-direzione-piano.pdf, id=738, page=1, 217.6092pt x 210.8784pt>
+File: ./figures//simmetria-direzione-piano.pdf Graphic file (type pdf)
+<use ./figures//simmetria-direzione-piano.pdf, page 1>
+Package pdftex.def Info: ./figures//simmetria-direzione-piano.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 150.0pt x 145.36787pt.
+)
+Underfull \vbox (badness 7030) has occurred while \output is active []
+
+ [51 <./figures//simmetria-retta-giacitura.pdf>]) [52 <./figures//simmetria-direzione-piano.pdf>]
+Capitolo 7.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 41.
@@ -1325,31 +1456,43 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 41.
 
-\g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box144
-[4
+[53
 
-] [5] (./main.aux)
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\RR' on input line 93.
+
+[54] [55] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
+(Font)              up to 1.97499pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 47876 strings out of 474971
- 1088340 string characters out of 5778661
- 1628087 words of memory out of 5000000
- 68517 multiletter control sequences out of 15000+600000
- 513229 words of font info for 154 fonts, out of 8000000 for 9000
+ 49120 strings out of 474971
+ 1111573 string characters out of 5778661
+ 1646225 words of memory out of 5000000
+ 69289 multiletter control sequences out of 15000+600000
+ 531082 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,12n,106p,850b,1389s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb>
-Output written on main.pdf (5 pages, 152540 bytes).
+ 104i,15n,106p,1271b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
+Output written on main.pdf (55 pages, 501531 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1109 PDF objects out of 1200 (max. 8388607)
+ 913 compressed objects within 10 object streams
+ 436 named destinations out of 1000 (max. 500000)
+ 596 words of extra memory for PDF output out of 10000 (max. 10000000)
 
