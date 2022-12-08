@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1670409013 "main.tex" "main.pdf" "main" 1670409019 0
+["pdflatex"] 1670502833 "main.tex" "main.pdf" "main" 1670502839 0
   "/etc/texmf/web2c/texmf.cnf" 1667938489 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -347,8 +347,10 @@
   "chapters/chapter_4.tex" 1670233445 8203 e58ce70a22334f6a35157a5b4d4727c2 ""
   "chapters/chapter_5.tex" 1670233550 17429 1a2e9fd3d959454bfe8cdcf4f8b426fe ""
   "chapters/chapter_6.tex" 1670369223 42427 79e6e48d027790b3c170674eb3b3c9dc ""
+  "chapters/chapter_7.tex" 1670502820 19955 9b18b3611d5b0f892a03dad2c633e839 ""
   "figures//ascissa-e-ordinata.pdf" 1670172063 2143 849bdd90ee6a7ddc39fad8eb16461eef ""
   "figures//ascissa.pdf" 1670166826 1415 4e5b032dbcc0289310c80cc751d7314f ""
+  "figures//circonferenza-tridimensionale.pdf" 1670502544 1553 d1898904ecaecec37022b0a48f834dd8 ""
   "figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf" 1670166882 1543 599ce5484d366083a4318c58c48d2cee ""
   "figures//simmetria-direzione-piano.pdf" 1670368510 1581 b7aa186bc731b5adbb2826f3443fa264 ""
   "figures//simmetria-punto-retta.pdf" 1670239973 1561 628297ebc522f03f6fd1457db48f06fb ""
@@ -356,6 +358,7 @@
   "figures//terne-di-coordinate.pdf" 1670173183 2294 8e80ef7761b6d25da0a0fa60410e7aed ""
   "figures/ascissa-e-ordinata.pdf_tex" 1670174473 2714 f8a42e0d1c6d21fd7a2f838b1c00e550 ""
   "figures/ascissa.pdf_tex" 1670166826 2477 ebf506b1c10ed28a5df0dcb9e599a343 ""
+  "figures/circonferenza-tridimensionale.pdf_tex" 1670502544 2925 d194e14db976942e4f1d7d04af5d9585 ""
   "figures/due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf_tex" 1670166882 2853 28b10ae42c872cc5b0e730c42c41274e ""
   "figures/simmetria-direzione-piano.pdf_tex" 1670368510 2917 f1529cebedb82a7f683231a659c4e392 ""
   "figures/simmetria-punto-retta.pdf_tex" 1670239973 2769 faf933204dd073959d94f07aa343adec ""
@@ -363,9 +366,9 @@
   "figures/terne-di-coordinate.pdf_tex" 1670173909 2852 5dbe539ea27c2b5e1a226608846bec44 ""
   "letterfonts.tex" 1668252671 8702 ef32ca12e97530ef5734ca4adcb1f6b1 ""
   "macros.tex" 1668252671 3389 93000260d2aea292d29c76d4ace77a29 ""
-  "main.aux" 1670409019 27695 2f9b34ea772f90d9d358210c89996029 "pdflatex"
-  "main.tex" 1670409001 8623 84734a5ceba0dbdceda36bcc09f08877 ""
-  "main.toc" 1670409019 6323 8b0b5619ed3b24ee9dc50db3ae5c4078 "pdflatex"
+  "main.aux" 1670502839 30336 88afbb3a8ea891681bc8889fbcd8ebdb "pdflatex"
+  "main.tex" 1670502823 898 d6e9b56cbf9caa291a2652b72fecbf3f ""
+  "main.toc" 1670502839 7662 61de185860a868f587335e93c92324bc "pdflatex"
   "preamble.tex" 1670164762 20294 a24e07e2a733ae12ab9a49fc51017c5a ""
   (generated)
   "main.aux"

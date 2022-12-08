@@ -80,4 +80,20 @@
 \contentsline {section}{\numberline {7.3}Ortogonalità}{55}{section.7.3}%
 \contentsline {subsubsection}{Ortogonalità fra rette}{55}{section*.43}%
 \contentsline {subsubsection}{Direzione ortogonale a un iperpiano}{55}{section*.44}%
+\contentsline {subsubsection}{Ortogonalità fra piani in \(E_3(\RR )\)}{55}{section*.45}%
+\contentsline {subsubsection}{Ortogonalità fra retta e piano in \(E_3(\RR )\)}{56}{section*.46}%
+\contentsline {section}{\numberline {7.4}Distanza}{56}{section.7.4}%
+\contentsline {subsubsection}{Distanza fra due punti in \(E_n(\RR )\)}{56}{section*.47}%
+\contentsline {subsubsection}{Distanza punto retta in \(E_2(\RR )\)}{56}{section*.48}%
+\contentsline {subsubsection}{Distanza punto piano in \(E_3(\RR )\)}{57}{section*.49}%
+\contentsline {subsubsection}{Distanza punto retta in \(E_{3}(\RR )\) }{57}{section*.50}%
+\contentsline {subsubsection}{Distanza tra due rette sghembe in \(E_3(\RR )\)}{57}{section*.51}%
+\contentsline {subsubsection}{Assi e piani assiali}{58}{section*.52}%
+\contentsline {section}{\numberline {7.5}Circonferenza e sfera}{59}{section.7.5}%
+\contentsline {paragraph}{Osservazione:}{59}{section*.53}%
+\contentsline {subsubsection}{Rappresentazione analitica di una circonferenza in \(E_2(\RR )\)}{59}{section*.54}%
+\contentsline {subsubsection}{Rappresentazione analitica di una sfera in \(E_3(\RR )\)}{59}{section*.55}%
+\contentsline {subsubsection}{Circonferenze in \(E_{3}(\RR )\) }{60}{section*.56}%
+\contentsline {paragraph}{Osservazione:}{60}{section*.57}%
+\contentsline {paragraph}{Osservazione:}{60}{section*.58}%
 \contentsfinish 
