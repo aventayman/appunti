@@ -109,4 +109,12 @@
 \contentsline {paragraph}{Osservazione:}{65}{section*.64}%
 \contentsline {chapter}{\numberline {9}Coniche}{67}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Coniche in \(\tilde {A}_{2}(\CC )\)}{67}{section.9.1}%
+\contentsline {paragraph}{Osservazione:}{68}{section*.65}%
+\contentsline {subsubsection}{Punti multipli di una conica}{68}{section*.66}%
+\contentsline {subsubsection}{Classificazione affine di una conica generale}{69}{section*.67}%
+\contentsline {subsubsection}{Condizioni analitiche}{70}{section*.68}%
+\contentsline {section}{\numberline {9.2}Polarità associata a una conica}{71}{section.9.2}%
+\contentsline {paragraph}{Osservazione:}{71}{section*.69}%
+\contentsline {paragraph}{Osservazione:}{72}{section*.70}%
+\contentsline {paragraph}{Osservazione:}{72}{section*.71}%
 \contentsfinish 
