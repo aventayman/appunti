@@ -38,4 +38,229 @@
 \input{./chapters/chapter_6}
 \input{./chapters/chapter_7}
 
+
+\chapter{Ampliamento e complessificazione}
+Il concetto di ampliamento dello spazio affine, e di conseguenza anche di quello euclideo, si basa sulla relazione di parallelismo. Abbiamo visto che la relazione di parallelismo tra sottospazi lineari di uno spazio affine \(A_n(K)\) è una relazione di equivalenza. La classe delle delle rette parallele è costituita da tutte le rette che hanno lo stesso spazio di traslazione \(V_1\) e che ora diciamo avere la stessa \textbf{direzione}. Allo stesso modo abbiamo definito la classe dei piani paralleli come tutti i piani aventi lo stesso spazio di traslazione \(V_2\) e che ora diciamo avere la stessa \textbf{giacitura}. Qui avviene il passo fondamentale che è necessario assimilare al meglio per capire tutto ciò che seguirà. Dobbiamo \textbf{liberarci della nozione di parallelismo}, da ora in poi quando si parla di spazi ampliati non esisteranno più rette che non si incontrano mai o piani che non si intersecano. Possiamo ora considerare ad esempio lo spazio di traslazione \(V_1\) di una retta \(r = [P, V_1]\) come un \textbf{punto}, di natura particolare, che chiameremo \textbf{punto improprio}, a essa appartenente. La direzione della retta \(r\) accomuna anche tutte le rette parallele ad essa e quindi, essendo essa il punto improprio, appartiene a tutte le rette parallele a \(r\) e di conseguenza tutte le rette con la stessa direzione si intersecano nel loro punto improprio. Allo stesso modo daremo definizioni di ulteriori enti geometrici impropri, ma il concetto rimane invariato. Rette complanari risultano sempre incidenti, piani paralleli si intersecano nella loro retta impropria. Questo, una volta capito, è il modo più semplice e intuitivo per avvicinarci alla \textbf{geometria proiettiva} e, come vedremo in seguito, costituisce l'ambiente migliore per studiare curve, superfici e più in particolare coniche e quadriche.
+
+\section{Ampliamento proiettivo di \(A_{2}(\RR)\)}
+\dfn{Piano affine ampliato \(\tilde{A}_2(\RR)\) }{
+Il \textbf{piano affine ampliato} \(\tilde{A}_{2}(\RR ) \), indotto da \(A_2(\RR )\), è la struttura algebrica così definita
+\begin{enumerate}
+    \item l'insieme dei punti che possono essere
+        \begin{itemize}
+            \item \textbf{propri} cioè l'insieme dei punti di \(A\) di \(A_2(\RR )\) 
+            \item \textbf{impropri} cioè l'insieme dei punti di \(A_\infty\), che sono le direzioni delle rette, ovvero gli spazi di traslazione di dimensione 1
+        \end{itemize}
+    \item l'insieme delle rette che possono essere
+        \begin{itemize}
+            \item \textbf{proprie} cioè l'insieme delle rette esistenti nello spazio affine, ciascuna arricchita del proprio punto improprio
+            \item \textbf{la retta impropria} cioè il luogo degli \(\infty^{1}\) punti impropri del piano, tale retta viene indicata con \(r_\infty\)
+        \end{itemize}
+    \item l'applicazione \(f\) dello spazio affine, la quale rimane inalterata, mantiene cioè lo stesso dominio, lo stesso codominio e le stesse proprietà
+\end{enumerate}}
+
+\mprop{}{Due rette distinte di \(\tilde{A}_{2}(\RR)\) sono sempre incidenti.}
+\pf{Dimostrazione}{La dimostrazione segue banalmente dalla definizione, ma la diamo per esteso per consolidare meglio le idee. Siano \(r\) e \(s\) due rette distinte di \(\tilde{A}_{2}(\RR)\), allora abbiamo 3 possibili casi
+\begin{enumerate}
+    \item \(r\) e \(s\) sono proprie e non parallele tra loro, ciò significa che \(r\) è incidente a \(s\) in \(A_{2}(\RR)\) \(\subseteq \) \(\tilde{A}_{2}(\RR)\) e il punto improprio di \(r\) è diverso da quello di \(s\).
+    \item \(r\) e \(s\) sono proprie ma sono fra loro parallele. \(r \cap s = \emptyset\) in \(A_{2}(\RR)\), ma \(r\) e \(s\) hanno la stessa direzione, quindi si intersecano nello stesso punto improprio in \(\tilde{A}_{2}(\RR ) \).
+    \item \(r\) è propria e \(s = r_{\infty} \), cioè la retta impropria. Quindi \(r \cap s = r \cap r_{\infty} \), alla retta impropria appartiene per definizione il punto improprio di \(r\) e quindi si intersecano nel punto improprio di \(r\).
+\end{enumerate}}
+
+\mprop{}{Per due punti distinti di \(\tilde{A}_{2}(\RR)\) passa un'unica retta. }
+\pf{Dimostrazione}{Siano \(A\) e \(B\) i due punti distinti considerati, abbiamo 3 casi possibili
+\begin{enumerate}
+    \item \(A\) e \(B\) sono entrambi propri, quindi esiste un'unica retta in \(A_2(\RR )\) passante per \(A\) e \(B\). Inoltre la retta impropria non li contiene essendo essi punti propri e quindi esiste un'unica retta passante per \(A\) e \(B\).
+    \item \(A\) è proprio e \(B\) è improprio (o viceversa). Poniamo \(B\) come direzione \(V_1\), ciò implica che esiste un'unica retta passante per \(A\) e avente come direzione \(V_1 = B\). 
+    \item \(A\) e \(B\) sono entrambi impropri. Nessuna retta propria li contiene entrambi (ogni retta propria ha un unico punto improprio), tuttavia \(A, B \in r_{\infty} \) che è l'unica che li contiene entrambi.
+\end{enumerate}}
+
+\section{Geometria analitica in \(\tilde{A}_{2}(\RR ) \)}
+
+Indichiamo con \[ \frac{\RR ^{3} \backslash  \{(0,0,0)\}}{\rho } \] l'insieme delle terne definite a meno di un fattore di proporzionalità reale e non nullo. In cui \(\rho \) indica la relazione di equivalenza data dalla proporzionalità. Quindi consideriamo due terne equivalenti se sono proporzionali.
+
+\mprop{}{Sia \(RA = [O, B]\) un riferimento affine di \(A_{2}(\RR) \) e sia \[
+\phi : A \cup A_\infty \quad  \to \quad \frac{\RR ^{3} \backslash  \{(0,0,0)\}}{\rho }
+\] sia \(P \in A\) di coordinate \((x,y)\) \[
+\phi(P) = [(x,y,1)]
+\] sia \(P \in A_\infty\) corrispondente alla direzione \([(l,m)]\) \[
+\phi (P) = [(l,m,0)]
+\] la mappa \(\phi\) è una biiezione e le coordinate indotte da \(\phi\) sono chiamate \textbf{coordinate omogenee}.}
+
+\paragraph{Osservazione:} Sia \(P\) di coordinate omogenee \([(x_1, x_2, x_3)]\), con \(x_3 \neq 0\), quindi punto proprio. Allora le sue coordinate omogenee sono \[
+    \left[ \left( \frac{x_1}{x_3}, \frac{x_2}{x_3}, 1 \right)  \right] 
+\] quindi scritto in coordinate affini \[
+P = (x,y) = \left[ \left( \frac{x_1}{x_3}, \frac{x_2}{x_3} \right) \right]
+\] Se invece \(P\) è improprio, quindi \(x_3 = 0\), allora \[
+P = [(x_1, x_2, 0)] \quad [(l,m)] = [(x_1, x_2)]
+\] quindi \(P\) non ha coordinate affini e le sue coordiante omogenee sono date dai parametri direttori della retta.
+
+\subsubsection{Rappresentazione delle rette in \(\tilde{A}_{2}(\RR) \)}
+Sia \(RA [O, B]\) un riferimento affine di \(A_{2}(\RR) \). In \(A_{2}(\RR) \) l'equazione cartesiana di una retta è 
+\[ax+by+c = 0 \quad \text{con} \quad  (a,b) \neq (0,0)\]
+per i sui punti propri \(P = \left[ \left( \frac{x_1}{x_3}, \frac{x_2}{x_3}, 1 \right)  \right] \) dovrà valere l'equazione \(ax+by+c = 0\), quindi \[
+a \left( \frac{x_1}{x_3} \right) + b \left( \frac{x_2}{x_3} \right) + c = 0 \]
+quindi, moltiplicando tutto per \(x_3\), che si suppone non nullo, otteniamo
+\[ ax_1+ bx_2+ cx_3=0 \quad \text{con}\quad (a,b) \neq (0,0)
+\] Il punto improprio di \(ax+by+c=0\) è \([(-b, a, 0)]\). Sostituiamo in \(ax_1+ bx_2+ cx_3=0\) le coordinate omogenee \([(-b, a, 0)]\) e otteniamo la seguente \[
+a(-b) + b a + 0 = 0
+\] che è sempre verificata, quindi \(ax_1+ bx_2+ cx_3=0\) è l'\textbf{equazione omogenea di una retta} \(r\) in \(\tilde{A}_{2}(\RR) \). \\
+Siano ora \((a,b) = (0,0)\), allora \(ax_1+ bx_2+ cx_3=0\) si riduce a \(0 x_1+0x_2+cx_3=0\) con \(c \neq 0, \ cx_3 = 0, \ x_3 = 0\) è la \(r_{\infty}\) perché rispettata da tutti e soli i punti impropri. 
+L'equazione \(ax_1+bx_2+cx_3= 0\) con \((a,b,c) \neq (0,0,0)\) rappresenta in ogni caso, anche quello della \(r_\infty\), una retta di \(\tilde{A}_{2}(\RR) \). Di conseguenza è l'equazione cartesiana di una retta di \(\tilde{A}_{2}(\RR)\).
+
+\section{Complessificazione di \(\tilde{A}_{2}(\RR) \)}
+
+Utilizzare il campo complesso, anziché quello reale, ci consente di dimostrare i teoremi dell'ordine per le curve e le superfici, il cui utilizzo agevola in maniera determinante lo studio delle proprietà geometriche. Definiamo \(\tilde{A}_{2}(\CC) \) il piano affine ampliato e complessificato, in cui
+\begin{itemize}
+    \item i \textbf{punti} sono le terne, non nulle, di numeri complessi determinati a meno di un fattore di proporzionalità complesso e non nullo.
+\[
+\frac{\CC^{3}\backslash \{(0,0,0)\} }{\rho }
+\] 
+    \item le \textbf{rette} sono il luogo delle autosoluzioni, non nulle, di un'equazione del tipo \[
+    ax_1+bx_2+cx_3= 0 \quad \text{con} \quad (a,b,c) \neq (0,0,0) \quad e \quad a,b,c \in \CC
+    \] 
+\end{itemize}
+
+\dfn{Punti e rette in \(\tilde{A}_{2}(\CC)\)}{In \(\tilde{A}_{2}(\CC)\) si dicono:
+\begin{itemize}
+    \item \textbf{punti e rette reali} tutti i punti e le rette che ammettono una rappresentazione reale
+    \item \textbf{punti e rette immaginari} tutti i punti e le rette che ammettono solo rappresentazioni immaginarie
+\end{itemize}}
+
+\dfn{Coniugati}{Si dicono \textbf{coniugati} due enti (punti, rette ecc\ldots) che ammettono rappresentazioni coniugate. La funzione di coniugio è quella che ad ogni numero complesso \(z = x + iy \in \CC\), associa il suo complesso coniugato \[
+\overline{z} = x - iy = \text{Re}(z) - i \text{Im}(z)
+\] }
+
+\mprop{}{Un ente geometrico (punto, retta, curva ecc\ldots ) è reale se, e soltanto se, coincide con il proprio coniugato.}
+
+\paragraph{Osservazione:} Una retta reale ha infiniti punti immaginari
+\paragraph{Osservazione:} Se un'equazione reale è realizzata da un punto \(P\) allora \(\overline{P}\) è soluzione se, e soltanto se, \(P \in r\) è reale. Quindi \(\overline{P} \in \overline{r}\) e \(r = \overline{r}\).
+
+\mprop{}{In \(\tilde{A}_{2}(\CC) \)
+\begin{enumerate}
+    \item la retta che congiunge due punti \(P\) e \(\overline{P}\) immaginari e coniugati è reale.
+    \item per un punto \(P\) immaginario \((P \neq \overline{P})\) passa un'unica retta reale.
+    \item due rette immaginarie e coniugate si intersecano in un punto reale di \(\tilde{A}_{2}(\CC) \).
+    \item ogni retta \(r\) immaginaria ha un unico punto reale in \(\tilde{A}_{2}(\CC)\).
+\end{enumerate}}
+\pf{Dimostrazione}{Dimostriamo ogni punto separatemente
+\begin{enumerate}
+    \item Siano \(P\) e \(\overline{P}\) due punti immaginari e coniugati. Sia \(r\) la retta che li congiunge. La retta \(\overline{r}\), coniugata di \(r\), rimane individuata da \(P\) e \(\overline{P}\), quindi, per l'unicità della retta che congiunge due punti, \(r = \overline{r}\), che pertanto è anche reale.
+    \item La retta \(rt(P, \overline{P})\) è reale per la proposizione precedente. Supponiamo per assurdo che esista un \(s \neq rt(P, \overline{P})\) retta reale per \(P\). Ciò implica che \(\overline{P} \in s\) poiché \(s\) è reale. Quindi \(s = rt(P, \overline{P})\) che è \textbf{assurdo!} Poiché avevamo supposto che \(s\) fosse distinta dalla congiungente fra \(P\) e \(\overline{P}\). Quindi esiste ed è unica la retta \(r\) reale per \(P\).
+    \item Sia \(r\) una retta immaginaria e \(\overline{r}\) la sua coniugata. Ovviamente, \(r \neq \overline{r}\), altrimenti \(r\) sarebbe reale, quindi \(r \cap \overline{r}\) è un punto \(P\). Dato che \(P\) appartiene ad \(r\) e a \(\overline{r}\), il suo coniugato \(\overline{P}\) appartiene sia a \(\overline{r}\) che a \(\overline{\overline{r}}\), che coincide con \(r\). Quindi \(P\) coincide con \(\overline{P}\) e di conseguenza è reale.
+    \item Per ipotesi \(r \neq \overline{r}\) quindi esiste un punto \(P\) intersezione di \(r\) e \(\overline{r}\). Per la proposizione precedente \(P\) è reale. Sia \(S \in r\) un punto reale. Essendo reale \(S\) coincide con il proprio coniugato \(\overline{S}\) e inoltre \(S \in r \cap \overline{r}\). Ma per l'unicità del punto di intersezione, \(S = P\).
+\end{enumerate}}
+
+\section{Curve algebriche reali in \(\tilde{A}_{2}(\CC)\)}
+\dfn{Curve algebriche reali in \(\tilde{A}_{2}(\CC) \)}{Una \textbf{curva algebrica reale di \(\tilde{A}_{2}(\CC)\)} è il luogo delle autosoluzioni di un'equazione del tipo \[
+F(x_1, x_2, x_3) = 0
+\] dove \(F(x_1, x_2, x_3) = 0\) è un polinomio omogeneo a coefficienti reali nelle variabili \(x_1, x_2, x_3\).}
+
+\paragraph{Osservazione:} Ogni curva algebrica reale di \(\tilde{A}_{2}(\CC)\) che contiene un punto  \(P\) contiene anche \(\overline{P}\).
+
+\dfn{Curva riducibile}{In \(\tilde{A}_{2}(\CC) \) una curva algebrica reale \(C : F(x_1, x_2, x_3)\) si dice \textbf{riducibile} se \(F\) è il prodotto di polinomi di grado più basso. Altrimenti la curva si dice \textbf{irriducibile}.}
+Se \(C\) è riducibile risulta \[F(x_1, x_2, x_3) = [F_1(x_1, x_2, x_3)]^{n_1} \cdot [F_2(x_1, x_2, x_3)]^{n_2} \cdot \ldots \cdot [F_t(x_1, x_2, x_3)]^{n_t}\] dove i polinomi \(F_i(x_1, x_2, x_3)\) sono polinomi irriducibili di grado positivo. Quindi avremo che \[
+\deg(F) = n_1 \deg(F_1) + \ldots + n_t \deg (F_t)
+\] 
+\paragraph{Osservazione:} Geometricamente una curva riducibile si riduce in componenti ottenute uguagliando a zero i vari fattori. \[
+C = C_1 \cup C_2 \cup \ldots \cup C_t
+\] 
+
+\dfn{Ordine}{Si dice \textbf{ordine} di una curva algebrica reale in \(\tilde{A}_{2}(\CC) \) il grado del polinomio \(F\) che la definisce.}
+
+\thm{Teorema dell'ordine}{L'ordine di una curva algebrica reale è uguale al numero di intersezioni in comune con una qualsiasi retta \(r\) di \(\tilde{A}_{2}(\CC) \) a patto che \(r\) non sia componente della curva e che le intersezioni siano contate con la dovuta molteplicità.}
+
+\dfn{Punti semplici ed r-upli}{Sia \(C\) una curva algebrica di \(\tilde{A}_{2}(\CC) \) e sia \(P \in C\)
+\begin{itemize}
+    \item \(P\) si dice \textbf{semplice} se la generica retta per \(P\) interseca \(C\) in \(P\) con molteplicità unitaria ed esiste un'unica retta, chiamata retta tangente, con molteplicità di intersezione in \(P\) maggiore di 1.
+    \item \(P\) si dice \textbf{r-uplo} (doppio, triplo, ecc\ldots ) se la generica retta per \(P\) interseca \(C\) in \(P\) con molteplicità \(r\), ed esistono \(r\) (contate con la loro molteplicità) rette con molteplicità di intersezione in \(P\) maggiore di \(r\) (rette tangenti).
+\end{itemize}}
+
+\mprop{}{Sia \(C\) una curva algebrica reale di \(\tilde{A}_{2}(\CC) \). Se una retta \(r\) ha più di \(n\) intersezioni con \(C\), con \(n\) l'ordine di \(C\), allora \(r\) è componente di \(C\).}
+\pf{Dimostrazione}{Per il teorema dell'ordine se \(r\) non fosse componente della curva \(C\) avrebbe esattamente \(n\) intersezioni con \(C\) (a patto di contarle con la dovuta molteplicità).}
+
+\mprop{}{Sia \(C\) una curva algebrica reale di \(\tilde{A}_{2}(\CC) \) di ordine \(n\). Allora \(C\) non possiede punti (\(n + 1\))-upli.}
+\pf{Dimostrazione}{Dato che \(C\) è di ordine \(n\) questo significa che esiste una retta \(r \in \tilde{A}_{2}(\CC) \) non componente di \(C\) passante per un punto dato di \(C\). Sia, per assurdo \(P\) un punto \((n+1)\)-uplo. \[
+|r \cap C| \ge n+1 \quad  \text{perché passa per \(P\)}
+\] ma dato che \(r\) non è componente per il teorema dell'ordine \[
+|r \cap C| = n < n+1
+\] \textbf{Assurdo!} }
+
+\mprop{}{Sia \(C\) una curva algebrica reale di \(\tilde{A}_{2}(\CC)\) di ordine \(n\). \(C\) ha un punto \(n\)-uplo \(P\) se, e soltanto se, \(C\) è unione di \(n\) rette (contate con la dovuta molteplicità) per \(P\).}
+\pf{Dimostrazione}{"\(\implies \)" Sia \(P \neq Q \in C\) e sia \(r\) la retta \(rt(P,Q)\). Supponiamo per assurdo \(r\) non sia componente, allora per il teorema dell'ordine \[
+n = |r \cap C| \ge \underbrace{n}_{\in P}  + \underbrace{1}_{\in Q}
+\] \textbf{Assurdo!} Quindi per ogni punto \(Q \in C\) la retta \(PQ\) è componente. Di conseguenza \(C\) è unione di rette per \(P\). Quindi queste rette sono \(n = \deg(F) = \) ordine di \(C\). \\
+"\(\impliedby \)" Sia \(C\) unione di \(n\) rette per \(P\). Allora la generica retta per \(P\) non componente di \(C\) interseca \(C\) solo in \(P\), quindi \(P\) è punto \(n\)-uplo.
+}
+
+\dfn{Punto multiplo}{Sia \(C\) una curva algebrica reale di \(\tilde{A}_{2}(\CC)\) e sia \(P \in C\). Se \(P\) non è un punto semplice allora si dice \textbf{punto multiplo}.}
+
+\thm{}{Sia \(C\) una curva algebrica reale di \(\tilde{A}_{2}(\CC)\) di ordine \(n\) e sia \(F(x_1, x_2, x_3) = 0\) il polinomio omogeneo che la definisce. I punti multipli di \(C\) sono le classi di autosoluzioni del sistema associato alle derivate: \[
+\begin{cases}
+    \ \frac{dF}{dx_1}= 0 \\
+    \ \frac{dF}{dx_2}=0 \\
+    \ \frac{dF}{dx_3}=0 \\
+\end{cases}
+\] }
+
+\ex{}{Ad esempio prendiamo una curva algebrica reale\[
+x_1^2+2x_2^2+3x_1x_3-3x_2x_3=0
+\] I punti multipli di \(C\) sono le classi di autosoluzioni del seguente sistema \[
+\begin{cases}
+    \ \frac{dF}{dx_1}= 2x_1+3x_3=0 \\
+    \ \frac{dF}{dx_2}= 4x_2-3x_3=0 \\
+    \ \frac{dF}{dx_3} = 3x_1-3x_2 = 0 \\
+\end{cases}
+\] da cui ricaviamo la seguente matrice, con determinante non nullo \[
+A = 
+\left( \; \begin{matrix}
+    2 & 0 & 3 \\
+    0 & 4 & -3 \\
+    3 & -3 & 0 \\
+\end{matrix} \; \right) \qquad |A| \neq 0
+\] }
+
+\chapter{Coniche}
+\section{Coniche in \(\tilde{A}_{2}(\CC)\)}
+\dfn{Conica}{Si dice \textbf{conica} una curva algebrica reale di \(\tilde{A}_{2}(\CC)\) (curva piana) del secondo ordine. Una conica si rappresenta eguagliando a \(0\) un polinomio omogeneo \(F\) di secondo grado nelle variabili  \(x_1, x_2, x_3\), a coefficienti reali. La generica equazione della conica è \[
+C: a_{11}x_1^2+ 2a_{12}x_1x_2+2a_{13}x_1x_3+a_{22}x_2^2+2a_{23}x_2x_3+a_{33}x_3^2=0
+\] Se chiamiamo \[
+X = \left( \; \begin{matrix} x_1\\ x_2 \\ x_3 \end{matrix} \; \right) \quad A =
+\left( \; \begin{matrix}
+    a_{11} & a_{12} & a_{13} \\
+    a_{12} & a_{22} & a_{23} \\
+    a_{13} & a_{23} & a_{33} \\
+\end{matrix} \; \right)
+\] Possiamo riscrivere l'equazione come prodotto righe per colonne \[
+{^tX}AX = 0
+\] \(A\) è una matrice reale e simmetrica ed è detta \textbf{matrice della conica}.} 
+
+\ex{}{Consideriamo la conica \[
+-x_1^2+ax_1x_2+5x_2^2-3x_2x_3+6x_3^2=0
+\] \[
+A = 
+\left( \; \begin{matrix}
+    -1 & 2 & 0 \\
+    2 & 5 & -\frac{3}{2} \\
+    0 & -\frac{3}{2} & 6 \\
+\end{matrix} \; \right)
+\] Ora facciamo il prodotto  \[
+\left( \; \begin{matrix}
+    x_1 & x_2 & x_3 \\
+\end{matrix} \; \right) \cdot 
+\left( \; \begin{matrix}
+    -1 & 2 & 0 \\
+    2 & 5 & -\frac{3}{2} \\
+    0 & -\frac{3}{2} & 6 \\
+\end{matrix} \; \right) \cdot 
+\left( \; \begin{matrix} x_1\\ x_2\\ x_3 \end{matrix} \; \right) = 0
+\] \[
+\left( \; \begin{matrix}
+    -x_1+2x_2 & 2x_1+5x_2-\frac{3}{2}x_3 & -\frac{3}{2}x_2+6x_3 \\
+\end{matrix} \; \right) \cdot \left( \; \begin{matrix} x_1\\ x_2\\ x_3 \end{matrix} \; \right) = 0
+\] \[
+x_1(-x_1+2x_2) + x_2\left(2x_1+5x_2- \frac{3}{2}x_3\right) + x_3\left(-\frac{3}{2}x_2 + 6x_3\right) = 0
+\] \[
+-x_1^2+4x_1x_2+5x_2^2-3x_2x_3+6x_3^2=0
+\] che è uguale all'equazione di partenza.}
 \end{document}

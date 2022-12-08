@@ -1,33 +1,19 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {subsubsection}{Circonferenze in \(E_{3}(\RR )\) }{1}{section*.2}%
+\contentsline {paragraph}{Osservazione:}{1}{section*.2}%
 \contentsline {paragraph}{Osservazione:}{1}{section*.3}%
-\contentsline {paragraph}{Osservazione:}{2}{section*.4}%
-\contentsline {chapter}{\numberline {1}Ampliamento di \(A_{2}(\RR )\)}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Ampliamento (proiettivo) di \(A_{2}(\RR )\)}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Geometria analitica in \(\tilde {A}_{2}(\RR ) \)}{4}{section.1.2}%
+\contentsline {section}{\numberline {0.1}Classificazione affine di una conica generale}{3}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Condizioni analitiche}{3}{section.0.2}%
+\contentsline {paragraph}{Osservazione:}{4}{section*.4}%
+\contentsline {subsection}{\numberline {0.2.1}Principio di reciprocità}{5}{subsection.0.2.1}%
 \contentsline {paragraph}{Osservazione:}{5}{section*.5}%
-\contentsline {section}{\numberline {1.3}Rappresentazione delle rette in \(\tilde {A}_{2}(\RR ) \)}{5}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Complessificazione di \(\tilde {A}_{2}(\RR ) \)}{5}{section.1.4}%
-\contentsline {paragraph}{Osservazione:}{5}{section*.6}%
+\contentsline {paragraph}{Osservazione:}{6}{section*.6}%
+\contentsline {section}{\numberline {0.3}Asintoti di una conica}{6}{section.0.3}%
 \contentsline {paragraph}{Osservazione:}{6}{section*.7}%
-\contentsline {paragraph}{Osservazione:}{7}{section*.8}%
-\contentsline {paragraph}{Osservazione:}{7}{section*.9}%
-\contentsline {chapter}{\numberline {2}Coniche in \(\tilde {A}_{2}(\CC )\)}{10}{chapter.2}%
-\contentsline {paragraph}{Osservazione:}{11}{section*.10}%
-\contentsline {paragraph}{Osservazione:}{11}{section*.11}%
-\contentsline {section}{\numberline {2.1}Classificazione affine di una conica generale}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Condizioni analitiche}{13}{section.2.2}%
-\contentsline {paragraph}{Osservazione:}{14}{section*.12}%
-\contentsline {subsection}{\numberline {2.2.1}Principio di reciprocità}{14}{subsection.2.2.1}%
-\contentsline {paragraph}{Osservazione:}{15}{section*.13}%
-\contentsline {paragraph}{Osservazione:}{15}{section*.14}%
-\contentsline {section}{\numberline {2.3}Asintoti di una conica}{16}{section.2.3}%
-\contentsline {paragraph}{Osservazione:}{16}{section*.15}%
-\contentsline {section}{\numberline {2.4}Proprietà metriche}{16}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Condizioni analitiche}{17}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Ampliamento di \(A_3(\RR )\)}{18}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Geometria analitica in \(\tilde {A}_{3}(\RR ) \)}{18}{section.3.1}%
-\contentsline {paragraph}{Osservazione:}{19}{section*.16}%
-\contentsline {section}{\numberline {3.2}Complessificazione di \(\tilde {A}_{3}(\CC )\)}{20}{section.3.2}%
+\contentsline {section}{\numberline {0.4}Proprietà metriche}{7}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Condizioni analitiche}{7}{section.0.5}%
+\contentsline {chapter}{\numberline {1}Ampliamento di \(A_3(\RR )\)}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Geometria analitica in \(\tilde {A}_{3}(\RR ) \)}{9}{section.1.1}%
+\contentsline {paragraph}{Osservazione:}{10}{section*.8}%
+\contentsline {section}{\numberline {1.2}Complessificazione di \(\tilde {A}_{3}(\CC )\)}{11}{section.1.2}%
 \contentsfinish 
