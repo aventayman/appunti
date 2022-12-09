@@ -1,0 +1,19 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {0.1}Asintoti di una conica}{2}{section.0.1}%
+\contentsline {paragraph}{Osservazione:}{2}{section*.2}%
+\contentsline {section}{\numberline {0.2}Proprietà metriche}{2}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Condizioni analitiche}{3}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Ampliamento di \(A_3(\RR )\)}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Geometria analitica in \(\tilde {A}_{3}(\RR ) \)}{4}{section.1.1}%
+\contentsline {paragraph}{Osservazione:}{5}{section*.3}%
+\contentsline {section}{\numberline {1.2}Complessificazione di \(\tilde {A}_{3}(\CC )\)}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Quadriche}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Coni e cilindri}{9}{section.2.1}%
+\contentsline {subsubsection}{Punti multipli di una quadrica}{10}{section*.4}%
+\contentsline {section}{\numberline {2.2}Condizioni analitiche}{11}{section.2.2}%
+\contentsline {subsubsection}{Sezioni piane riducibili}{11}{section*.5}%
+\contentsline {section}{\numberline {2.3}Conica impropria di una quadrica irriducibile}{12}{section.2.3}%
+\contentsline {subsubsection}{Cono o cilindro}{12}{section*.6}%
+\contentsline {subsubsection}{Classificazione affine dei cilindri}{12}{section*.7}%
+\contentsfinish 

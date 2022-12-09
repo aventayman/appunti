@@ -283,4 +283,101 @@ F(x_1, x_2, x_3, x_4) = 0 \quad \text{ove} \quad F \ \text{è un polinomio omoge
     \ \frac{\partial F}{\partial x_4} = 0 \\
 \end{cases}
 \] }
+
+\chapter{Quadriche}
+\dfn{Quadrica}{Si dice \textbf{quadrica} una superficie algebrica reale del secondo ordine. Analiticamente si indica come \[
+a_{11}x_1^2 + a_{12}x_1x_2 + 2a_{13}x_1x_3 + 2a_{14}x_1x_4 + a_{22}x_2^2 + a_{23}x_2x_3 + 2a_{24}x_2x_4 + 2a_{34}x_3x_4 + a_{33}x_3^2 + a_{44}x_4^2 = 0
+\] con almeno un \(a_{ij}\neq 0\). Ponendo \[
+X =
+\left( \; \begin{matrix}
+    x_1 \\
+    x_2 \\
+    x_3 \\
+    x_4 \\
+\end{matrix} \; \right) \quad \text{si ha che} \quad A =
+\left( \; \begin{matrix}
+    a_{11} & a_{12} & a_{13} & a_{14} \\
+    a_{12} & a_{22} & a_{23} & a_{24} \\
+    a_{13} & a_{23} & a_{33} & a_{34} \\
+    a_{14} & a_{24} & a_{34} & a_{44} \\
+\end{matrix} \; \right) 
+\] è tale che \[
+Q : \ {^tX}AX = \ul{0} 
+\] Quindi dipende da 10 coefficienti e abbiamo \(\infty^{9}\) quadriche.}
+
+\mprop{}{Se una quadrica è riducibile, si riduce in due piani che possono essere reali e coincidenti, reali e distinti o immaginari e coniugati. Inoltre tutte le sue sezioni sono riducibili.}
+\pf{Dimostrazione}{\(F\) è di  secondo grado (\(Q\) è del second'ordine), quindi se si fattorizza in due polinomi di primo grado, essendo \(F\) reale, le possibilità sono quelle elencate.
+Sia \(Q = \alpha \cup \beta \) e sia \(\gamma\) un terzo piano abbiamo che \[
+Q \cap \gamma = (\alpha \cup \beta ) \cap \gamma = (\alpha \cap \gamma) \cup (\beta \cap \gamma)
+\] è unione di due rette, quindi è riducibile.}
+
+\section{Coni e cilindri}
+\dfn{Cono e cilindro}{Si dice \textbf{cono} quadrico il luogo delle rette che proiettano dal punto \(V\), chiamato \textbf{vertice}, i punti di una conica generale \(C\), chiamata \textbf{direttrice}, dove \(C\) appartiene ad un piano non contenente il \(V\). Se \(V\) è proprio otteniamo un \textbf{cono}, se \(V\) è improprio otteniamo un \textbf{cilindro}.}
+
+\subsubsection{Punti multipli di una quadrica}
+\thm{}{Una quadrica non ha punti tripli e i punti multipli di una quadrica sono i punti doppi.}
+\pf{Dimostrazione}{Poiché la quadrica \(Q\) ha ordine 2, per il primo teorema dell'ordine \(r\) non può intersecare \(Q\) in un punto \(P\) con molteplicità 3.}
+
+\thm{}{Una quadrica \(Q\) ha almeno 2 punti doppi se, e soltanto se, è riducibile.}
+\pf{Dimostrazione}{"\(\implies \)" Siano \(R\) e \(S\) due punti doppi distinti e sia \(H \in Q\), ma non appartenente a \(rt(R,S)\). Prima di tutto osserviamo che \(rt(R,S)\) ha molteplicità di intersezione con \(Q\) almeno di \(2 + 2 = 4\) (\(|R| +  |S| \)). Quindi per il primo teorema dell'ordine la \(rt(R,S) \subseteq Q\). Allo stesso modo \(rt(R,H)\) (ma analogamente anche \(rt(S,H)\)) ha molteplicità di intersezione con \(Q\), almeno di \(1 + 2 = 3 > 2 \implies \) per il primo teorema dell'ordine  \(rt(R,H) \subseteq Q\), ugualmente per \(rt(S,H) \subseteq Q\). Chiamiamo \(\pi \) il piano contenente  \(R, S\) e \(H\). \[Q \cap \pi \supseteq \underbrace{rt(R,S) \cup rt(R,H) \cup rt(S,H)}_{\text{curva \(C\) di ordine \(3\)}} \]quindi poiché \(\ord(C) > \ord(Q) = 2\) per il secondo teorema dell'ordine il piano \(\pi \) è componente di \(Q\), per questo motivo \(Q\) è riducibile. \\
+"\(\impliedby \)" Sia \(Q = \alpha \cup \beta \) e sia \(P \in \alpha \cap \beta \). Osserviamo che data \(r\) retta passante per \(P\) non in \(\alpha \cup \beta \) abbiamo che \(r \cap (Q) = r \cap (\alpha \cup \beta ) = (r \cap \alpha ) \cup (r \cap \beta )\), cioè l'unione dello stesso punto, quindi \(P\) è punto doppio. Di conseguenza abbiamo che ogni punto di \(\alpha \cap \beta \) è doppio e abbiamo due possibili casi
+\begin{itemize}
+    \item \(\infty^{1}\) punti (se \(\alpha \neq \beta \))
+    \item \(\infty^2\) punti (se \(\alpha = \beta \))
+\end{itemize}}
+
+\thm{}{Una quadrica ha un unico punto doppio se, e soltanto se, è un cono o un cilindro quadrico.}
+\pf{Dimostrazione}{"\(\implies \)" Sia \(V\) l'unico punto doppio della quadrica \(Q\). Ora dimostriamo prima di tutto che tutte le rette \(r\) contenute in \(Q\) passano per \(V\). Sia, per assurdo, \(r\) contenuta in \(Q\) con \(v \notin r\). Siano \(A, B \in r\) due punti distinti. Osserviamo che la retta \(rt(V,A)\) ha molteplicità di intersezione con \(Q\) pari ad almeno 1 in \(A\) e esattamente 2 in \(V\), quindi ha molteplicità di intersezione almeno 3. Quindi per il primo teorema dell'ordine \(rt(V,A) \subseteq Q\). Analogamente \(rt(V,B)\) è contenuta in \(Q\). Chiamiamo \(\pi \) il piano contenente \(r\) e \(V\). \[
+Q \cap \pi \supseteq \underbrace{r \cup rt(V,A) \cup rt(V,B)}_{\text{curva \(C\) di ordine \(3\)}} 
+\] poiché \(\ord(C) >\ord(Q) \implies \pi \subseteq Q\). Quindi \(\pi \) è componente di \(Q\), di conseguenza \(Q\) è riducibile e ha almeno \(\infty^{1}\) punti doppi. \textbf{Assurdo!} Perciò tutte le rette di \(Q\) passano per \(V\). Sia \(\alpha \) piano non contenente \(V\). \(\alpha \) non è componente di \(Q\), poiché \(Q\) è irriducibile, perciò \(\alpha  \cap Q\) è una conica (per il secondo teorema dell'ordine). Poiché \(C\) non si riduce in due rette \(C\) è generale. Sia ora \(P \in C\) la retta \(rt(P,V)\) ha molteplicità di intersezione con \(Q\) di almeno \(1 + 2 = 3 > \ord(Q) = 2\), quindi per il primo teorema dell'ordine \(rt(P,V) \subseteq Q\) per ogni punto di \(C\). Di conseguenza \(Q\) è un cono o un cilindro quadrico.\\
+"\(\impliedby \)" Sia \(Q\) un cono o un cilindro quadrico con vertice \(V\). \(Q\) ha al più un punto doppio, altrimenti sarebbe riducibile. Sia \(r\) una retta non contenuta in \(Q\) e passante per \(V\), l'unico punto di intersezione è \(r \cap Q = V\). Poiché per il primo teorema dell'ordine la somma delle intersezioni (contate con la dovuta molteplicità) è 2, segue che \(v\) è doppio.}
+
+\section{Condizioni analitiche}
+\dfn{}{Una quadrica \(Q \in \tilde{A}_{3}(\CC) \) si dice 
+\begin{itemize}
+    \item \textbf{generale} se è priva di punti doppi
+    \item \textbf{semplicemente degenere} se ha 1 unico punto doppio (cono o cilindro)
+    \item \textbf{doppiamente degenere} se ha \(\infty^{1}\) punti doppi
+    \item \textbf{tre volte degenere} se ha \(\infty^2\) punti doppi
+\end{itemize} 
+Inoltre le quadriche doppiamente e tre volte degeneri sono \textbf{riducibili}.}
+
+\mprop{}{I punti doppi di una quadrica \(Q: {^tX}AX = \ul{0} \) sono le classi di autosoluzioni del sistema omogeneo \(AX = \ul{0} \).}
+\thm{}{Sia la quadrica \(Q : {^tX}AX = \ul{0} \). Abbiamo le seguenti possibilità
+\begin{itemize}
+    \item Se \(\rho(A) = 4\), allora \(Q\) è generale
+    \item Se \(\rho(A) = 3\), allora \(Q\) è semplicemente degenere
+    \item Se \(\rho(A) = 2\), allora \(Q\) è doppiamente degenere
+    \item se \(\rho(A) = 1\), allora \(Q\) è tre volte degenere
+\end{itemize}}
+
+\subsubsection{Sezioni piane riducibili}
+Dati data una quadrica \(Q\) e un piano \(\pi \) abbiamo \(C = Q \cap \pi \), se \(\pi \not\subseteq Q\), allora \(C\) è una conica per il secondo teorema dell'ordine. 
+\nt{Se \(Q\) è una quadrica riducibile, allora \(C\) è riducibile.}
+
+\thm{}{Sia \(Q\) una quadrica irriducibile (cioè cono, cilindro o quadrica generale) e sia \(P \in Q\) e sia \(\alpha \) un piano contenente \(P\). Allora
+\begin{itemize}
+    \item se \(P\) è doppio, allora \(P\) è doppio anche per \(C = Q \cap \pi \), quindi \(C\) è riducibile
+    \item se \(P\) è un punto semplice, allora \(P\) è doppio per \(C = Q \cap \alpha \) se, e soltanto se, \(\alpha \) è il piano tangente in \(P\) a \(Q\), quindi \(C\) è riducibile 
+\end{itemize}}
+\nt{Se \(Q\) è generale, allora le sezioni piane di \(Q \cap \alpha \) sono riducibili se, e soltanto se, \(\alpha \) è un piano tangente a \(Q\).}
+\section{Conica impropria di una quadrica irriducibile}
+\subsubsection{Cono o cilindro}
+\mprop{}{Sia \(Q\) un cono e sia \(C_{\infty} = Q \cap \pi _\infty\) la sua conica impropria, allora
+\begin{enumerate}
+    \item \(C_\infty\) è una conica generale
+    \item se \(C_\infty\) è reale, il cono ha generatrici reali ed è detto \textbf{a falda reale}
+    \item se \(C_\infty\) non ha punti reali, allora l'unico punto reale di \(Q\) è il vertice \(V\) del cono, quindi il cono ha generatrici a coppie immaginarie e coniugate ed è detto \textbf{privo di falda reale}
+\end{enumerate}}
+
+\mprop{}{La conica impropria \(C_\infty = Q \cap \pi _\infty\) di un cilindro \(Q\) è riducibile.}
+\pf{Dimostrazione}{\(V\), vertice del cilindro, appartiene a \(\pi _{\infty}\), quindi \(V\) è doppio anche in \(Q \cap \pi _\infty = C\), di conseguenza \(C\) ha un punto doppio ed è riducibile.}
+
+\subsubsection{Classificazione affine dei cilindri}
+Un cilindro \(Q\) è detto 
+\begin{enumerate}
+    \item \textbf{iperbolico}, se \(C_\infty\) è unione di due rette reali e distinte
+    \item \textbf{ellittico}, se \(C_\infty\) è unione di due rette immaginarie e coniugate
+    \item \textbf{parabolico}, se \(C_\infty\) è unione di una retta contata 2 volte
+\end{enumerate}
 \end{document}
