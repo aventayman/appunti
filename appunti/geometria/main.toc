@@ -1,3 +1,10 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {0.1}Classificazione delle quadriche}{1}{section.0.1}%
+\contentsline {paragraph}{Osservazione 1:}{1}{section*.2}%
+\contentsline {paragraph}{Osservazione 2:}{1}{section*.3}%
+\contentsline {paragraph}{Osservazione:}{2}{section*.4}%
+\contentsline {subsubsection}{Classificazione dei punti semplici di una quadrica}{2}{section*.5}%
+\contentsline {paragraph}{Osservazione:}{3}{section*.6}%
+\contentsline {paragraph}{Osservazione:}{4}{section*.7}%
 \contentsfinish 
