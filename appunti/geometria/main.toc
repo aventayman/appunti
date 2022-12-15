@@ -1,10 +1,14 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {0.1}Classificazione delle quadriche}{1}{section.0.1}%
-\contentsline {paragraph}{Osservazione 1:}{1}{section*.2}%
-\contentsline {paragraph}{Osservazione 2:}{1}{section*.3}%
-\contentsline {paragraph}{Osservazione:}{2}{section*.4}%
-\contentsline {subsubsection}{Classificazione dei punti semplici di una quadrica}{2}{section*.5}%
-\contentsline {paragraph}{Osservazione:}{3}{section*.6}%
+\contentsline {paragraph}{Osservazione:}{1}{section*.2}%
+\contentsline {paragraph}{Osservazione:}{2}{section*.3}%
+\contentsline {section}{\numberline {0.2}Punti semplici di una quadrica irriducibile}{3}{section.0.2}%
+\contentsline {paragraph}{Osservazione:}{3}{section*.4}%
+\contentsline {paragraph}{Osservazione:}{4}{section*.5}%
+\contentsline {section}{\numberline {0.3}Sezioni piane irriducibili di una quadrica}{4}{section.0.3}%
+\contentsline {subsubsection}{Coni e cilindri}{4}{section*.6}%
 \contentsline {paragraph}{Osservazione:}{4}{section*.7}%
+\contentsline {subsubsection}{Quadriche generali}{4}{section*.8}%
+\contentsline {subsubsection}{Studio analitico}{4}{section*.9}%
 \contentsfinish 

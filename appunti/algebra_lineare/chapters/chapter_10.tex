@@ -21,6 +21,12 @@ Q : \ {^tX}AX = \ul{0}
 \] Quindi, essendo dipendente da 10 coefficienti, abbiamo \(\infty^{9}\) quadriche.}
 
 \mprop{}{Se una quadrica è riducibile, si riduce in due piani che possono essere reali e coincidenti, reali e distinti o immaginari e coniugati. Inoltre tutte le sue sezioni sono riducibili.}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{400pt}
+    \incfig{quadrica-riducibile-piani}
+    \label{fig:quadrica-riducibile-piani}
+\end{figure}
 \pf{Dimostrazione}{\(F\) è di  secondo grado (\(Q\) è del second'ordine), quindi se si fattorizza in due polinomi di primo grado, essendo \(F\) reale, le possibilità sono quelle elencate.
 Sia \(Q = \alpha \cup \beta \) e sia \(\gamma\) un terzo piano abbiamo che \[
 Q \cap \gamma = (\alpha \cup \beta ) \cap \gamma = (\alpha \cap \gamma) \cup (\beta \cap \gamma)
@@ -33,6 +39,12 @@ Q \cap \gamma = (\alpha \cup \beta ) \cap \gamma = (\alpha \cap \gamma) \cup (\b
 \pf{Dimostrazione}{Poiché la quadrica \(Q\) ha ordine 2, per il primo teorema dell'ordine \(r\) non può intersecare \(Q\) in un punto \(P\) con molteplicità 3.}
 
 \thm{}{Una quadrica \(Q\) ha almeno 2 punti doppi se, e soltanto se, è riducibile.}
+\begin{figure}[ht!]
+    \centering
+    \def\svgwidth{150pt}
+    \incfig{quadrica-almeno-due-punti-doppi}
+    \label{fig:quadrica-almeno-due-punti-doppi}
+\end{figure}
 \pf{Dimostrazione}{"\(\implies \)" Siano \(R\) e \(S\) due punti doppi distinti e sia \(H \in Q\), ma non appartenente a \(rt(R,S)\). Prima di tutto osserviamo che \(rt(R,S)\) ha molteplicità di intersezione con \(Q\) almeno di \(2 + 2 = 4\) (\(|R| +  |S| \)). Quindi per il primo teorema dell'ordine la \(rt(R,S) \subseteq Q\). Allo stesso modo \(rt(R,H)\) (ma analogamente anche \(rt(S,H)\)) ha molteplicità di intersezione con \(Q\), almeno di \(1 + 2 = 3 > 2 \implies \) per il primo teorema dell'ordine  \(rt(R,H) \subseteq Q\), ugualmente per \(rt(S,H) \subseteq Q\). Chiamiamo \(\pi \) il piano contenente  \(R, S\) e \(H\). \[Q \cap \pi \supseteq \underbrace{rt(R,S) \cup rt(R,H) \cup rt(S,H)}_{\text{curva \(C\) di ordine \(3\)}} \]quindi poiché \(\ord(C) > \ord(Q) = 2\) per il secondo teorema dell'ordine il piano \(\pi \) è componente di \(Q\), per questo motivo \(Q\) è riducibile. \\
 "\(\impliedby \)" Sia \(Q = \alpha \cup \beta \) e sia \(P \in \alpha \cap \beta \). Osserviamo che data \(r\) retta passante per \(P\) non in \(\alpha \cup \beta \) abbiamo che \(r \cap (Q) = r \cap (\alpha \cup \beta ) = (r \cap \alpha ) \cup (r \cap \beta )\), cioè l'unione dello stesso punto, quindi \(P\) è punto doppio. Di conseguenza abbiamo che ogni punto di \(\alpha \cap \beta \) è doppio e abbiamo due possibili casi
 \begin{itemize}
@@ -41,6 +53,12 @@ Q \cap \gamma = (\alpha \cup \beta ) \cap \gamma = (\alpha \cap \gamma) \cup (\b
 \end{itemize}}
 
 \thm{}{Una quadrica ha un unico punto doppio se, e soltanto se, è un cono o un cilindro quadrico.}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{150pt}
+    \incfig{punto-doppio-cilindro-quadrico}
+    \label{fig:punto-doppio-cilindro-quadrico}
+\end{figure}
 \pf{Dimostrazione}{"\(\implies \)" Sia \(V\) l'unico punto doppio della quadrica \(Q\). Ora dimostriamo prima di tutto che tutte le rette \(r\) contenute in \(Q\) passano per \(V\). Sia, per assurdo, \(r\) contenuta in \(Q\) con \(v \notin r\). Siano \(A, B \in r\) due punti distinti. Osserviamo che la retta \(rt(V,A)\) ha molteplicità di intersezione con \(Q\) pari ad almeno 1 in \(A\) e esattamente 2 in \(V\), quindi ha molteplicità di intersezione almeno 3. Quindi per il primo teorema dell'ordine \(rt(V,A) \subseteq Q\). Analogamente \(rt(V,B)\) è contenuta in \(Q\). Chiamiamo \(\pi \) il piano contenente \(r\) e \(V\). \[
 Q \cap \pi \supseteq \underbrace{r \cup rt(V,A) \cup rt(V,B)}_{\text{curva \(C\) di ordine \(3\)}} 
 \] poiché \(\ord(C) >\ord(Q) \implies \pi \subseteq Q\). Quindi \(\pi \) è componente di \(Q\), di conseguenza \(Q\) è riducibile e ha almeno \(\infty^{1}\) punti doppi. \textbf{Assurdo!} Perciò tutte le rette di \(Q\) passano per \(V\). Sia \(\alpha \) piano non contenente \(V\). \(\alpha \) non è componente di \(Q\), poiché \(Q\) è irriducibile, perciò \(\alpha  \cap Q\) è una conica (per il secondo teorema dell'ordine). Poiché \(C\) non si riduce in due rette \(C\) è generale. Sia ora \(P \in C\) la retta \(rt(P,V)\) ha molteplicità di intersezione con \(Q\) di almeno \(1 + 2 = 3 > \ord(Q) = 2\), quindi per il primo teorema dell'ordine \(rt(P,V) \subseteq Q\) per ogni punto di \(C\). Di conseguenza \(Q\) è un cono o un cilindro quadrico.\\
@@ -95,3 +113,160 @@ Un cilindro \(Q\) è detto
     \item \textbf{ellittico}, se \(C_\infty\) è unione di due rette immaginarie e coniugate
     \item \textbf{parabolico}, se \(C_\infty\) è unione di una retta contata 2 volte
 \end{enumerate}}
+
+\section{Classificazione delle quadriche}
+\dfn{Conica impropria di una quadrica generale}{
+Dati una quadrica generale \(Q\) e il piano improprio \(\alpha _{\infty}\) Se intersechiamo otteniamo una curva \[C_\infty = Q \cap \alpha _{\infty}\] detta \textbf{conica impropria} di \(Q\).}
+\dfn{Ellissoide, iperboloide e paraboloide}{Una conica generale \(Q\) si chiama
+\begin{enumerate}
+    \item \textbf{ellissoide}, se \(C_\infty\) è irriducibile e priva di punti reali
+    \item \textbf{iperboloide}, se \(C_\infty\) è irriducibile con punti reali
+    \item \textbf{paraboloide}, se \(C_\infty\) è irriducibile
+\end{enumerate}}
+\paragraph{Osservazione:}
+\begin{enumerate}
+    \item Il paraboloide, avendo \(C_\infty\) riducibile, è tangente con \(\alpha _{\infty}\).
+    \item Per \(C_\infty\) non ha senso la distinzione in ellisse, parabola o iperbole perché tutti i suoi punti sono punti impropri.
+\end{enumerate}
+
+\mprop{}{Sia \(Q: {^tX}AX = 0\) una quadrica irriducibile, allora \(C_\infty\) è riducibile se, e soltanto se, \(|A^{*}| = 0\), dove \[
+A^{*} =
+\left( \; \begin{matrix}
+    a_{11} & a_{12} & a_{13} \\
+    a_{12} & a_{22} & a_{23} \\
+    a_{13} & a_{23} & a_{33} \\
+\end{matrix} \; \right) 
+\] }
+\pf{Dimostrazione}{Sia \(C_\infty = Q \cap \alpha _\infty\), quindi \[
+C_\infty :
+\begin{cases}
+    \ a_{11}x_1^2 + a_{22}x_2^2 + 2a_{12}x_1x_2 + a_{33}x_3^2 + 2a_{13}x_1x_3 + 2a_{23}x_2x_3 = 0 \quad  (1)\\
+    \ x_4 = 0 \\
+\end{cases}
+\] \((1)\) è una quadrica \(Q'\) tale che la sua intersezione con \(\alpha _\infty\) è proprio la conica impropria \(C_\infty\) di \(Q\). Quindi la matrice della quadrica \(Q'\) è \[
+A' = 
+\left( \; \begin{matrix}
+    a_{11} & a_{12} & a_{13} & 0 \\
+    a_{12} & a_{22} & a_{23} & 0 \\
+    a_{13} & a_{23} & a_{33} & 0 \\
+    0 & 0 & 0 & 0 \\
+\end{matrix} \; \right) 
+\] \(|A'| = 0\), quindi \(Q'\) non è generale perché \(\rho(A') \le 3\). Per ipotesi \(C_\infty\) è riducibile, ora partiamo con la dimostrazione vera e propria. \\ "\(\implies \)" Supponiamo, per assurdo, che \(|A^{*}| \neq 0 \implies \rho(A') = 3 \implies Q'\) è un cono o un cilindro. Determiniamo il vertice di \(Q': A'X=0\). Scrivendo un sistema principale equivalente \[
+s.p.e.:
+\begin{cases}
+    \ a_{11}x_1 + a_{12}x_2 + a_{13}x_3 = 0 \\
+    \ a_{12}x_1 + a_{22}x_2 + a_{23}x_3  = 0 \\
+    \ a_{13}x_1 + a_{23}x_2 + a_{33}x_3  = 0 \\
+\end{cases}
+\] troveremo facilmente il \(V=[(0,0,0,1)]\), che è il vertice ed è un punto proprio, quindi \(Q'\) è un cono. Quindi \(C_\infty = Q' \cap \alpha _\infty\) è la conica impropria di un cono, quindi \(C_\infty\) è irriducibile, che è un \textbf{assurdo!}. \\ "\(\impliedby \)" Abbiamo per ipotesi che \(|A^{*}| =0\), \(\rho(A') \le 2\), quindi \(Q'\) è riducibile, allora \(C_\infty= Q' \cap \alpha _\infty\) è sezione di una quadrica riducibile e quindi \(C_\infty\) è riducibile.}
+
+\paragraph{Osservazione:}
+\begin{enumerate}
+    \item Per distinguere un cono o un cilindro abbiamo ora un criterio analitico, cioè 
+        \begin{itemize}
+            \item \(|A^{*}| = 0 \iff C_\infty \text{ è riducibile } \iff Q \text{ è cilindro }\) 
+            \item \(|A^{*}| \neq 0 \iff Q \text{ è cono }\) 
+        \end{itemize}
+\item se \(Q\) invece è generale abbiamo che
+    \begin{itemize}
+        \item \(|A^{*}| = 0 \iff Q\) è paraboloide
+        \item \(|A^{*}| \neq 0 \iff Q\) è ellissoide o iperboloide
+    \end{itemize}
+\end{enumerate}
+
+\ex{}{\[
+Q : x^2 - 3y^2 - z^2 - y = 0
+\] \[ A = 
+\left( \; \begin{matrix}
+    1 & 0 & 0 & 0 \\
+    0 & -3 & 0 & -\frac{1}{2} \\
+    0 & 0 & -1 & 0 \\
+    0 & -\frac{1}{2} & 0 & 0 \\
+\end{matrix} \; \right) 
+\] Possiamo dire che \[
+|A| \neq 0 \implies Q \text{ generale } \quad |A^{*}| = 3 \neq 0 \implies Q \text{ o ellissoide o iperboloide }
+\] \[
+C_\infty :
+\begin{cases}
+    \ x_1^2 - 3x_2^2 - x_3^2 - x_2x_4 = 0 \\
+    \ x_4 = 0 \\
+\end{cases} \quad
+\begin{cases}
+    \ x_1^2-3x_2^2 - x_3^2 = 0 \\
+    \ x_4 = 0 \\
+\end{cases}\]
+\[ P_\infty = [(1,0,1,0)] \in C_\infty \text{ il quale è reale}\implies Q \text{ è un paraboloide }
+\] }
+
+\section{Punti semplici di una quadrica irriducibile}
+\dfn{Punto parabolico}{Sia \(Q\) una quadrica irriducibile, sia un punto \(P \in Q\) semplice. Chiamiamo \(\alpha \) il piano tangente a \(Q\) in \(P\) e la conica \(C = Q \cap \alpha \), la quale è riducibile.
+Se \(C\) si riduce in due rette coincidenti, \(P\) si dice punto \textbf{parabolico}.}
+
+\mprop{}{Se una quadrica irriducibile ha un punto semplice parabolico, allora tutti i punti semplici sono parabolici.}
+
+\thm{}{Una quadrica irriducibile è un cono o un cilindro se, e soltanto se, i suoi punti semplici sono parabolici.}
+\pf{Dimostrazione}{"\(\implies \)" Sappiamo per ipotesi che \(Q\) è un cono o un cilindro. Sia \(P \in Q\), un punto semplice, quindi \(P \neq V\), chiamiamo \(\alpha \) il piano tangente in \(P\). La conica \(C = Q \cap \alpha = r \cup s \subseteq Q\), di conseguenza \(r \subseteq Q \implies V \in r\) e \(s \subseteq Q \implies V \in s\). Inoltre \(P \in r\) e \(P \in s\). Ma quindi necessariamente \(r = \overline{PV} = s\). Quindi \(P\) è un punto parabolico. \\
+"\(\impliedby \)" Per ipotesi abbiamo i punti semplici parabolici. Chiamiamo \(P\) un punto semplice di \(Q\) e \(\alpha \) il piano tangente a \(Q\) in \(P\). Allora \[
+C = Q \cap \alpha =r \cup r
+\] se \(P' \in r\) e semplice, allora \(\alpha \) è un piano passante per \(P'\) tale che \(Q \cap \alpha \) è riducibile in due rette passanti per \(P'\). Questo ci dice che allora \(\alpha \) è il piano tangente a \(Q\) anche in \(P'\). Sia \(\beta \) un piano con \(\beta  \neq \alpha \) e tale che \(r \subseteq \beta \). Chiamiamo inoltre \(C' = Q \cap \beta \), sicuramente \(r \subseteq C'\), questo significa che \(C'\) è riducibile, cioè \(C = r \cup s\). Ma \(r \neq s\) perché se fosse, per assurdo \(r = s\), allora in \(P\) avrei due piani tangenti distinti \(\alpha \) e \(\beta \), \textbf{assurdo!} (contro l'unicità del piano tangente). Sia \(\{V\} =r \cap s\). Sicuramente \(V\) è un punto doppio, perché se fosse semplice per \(V\) avremmo due piani tangenti distinti (nuovamente contro l'unicità del piano tangente). Su \(Q\) non possono esserci altri punti doppi distinti da \(V\) (perché per ipotesi \(Q\) è irriducibile). Quindi \(Q\) ammette esattamente un punto doppio, cioè \(Q\) è un cono o un cilindro.}
+
+\paragraph{Osservazione:} Se \(Q\) è generale, sicuramente i suoi punti semplici non sono parabolici.
+
+\dfn{Punto parabolico, iperbolico ed ellittico}{Sia \(Q\) una quadrica irriducibile, \(P \in Q\) un punto semplice reale, \(\alpha \) il piano tangente in \(P\) a \(Q\) e \(C = Q \cap \alpha \) riducibile. Abbiamo che un punto \(P\) è
+\begin{enumerate}
+    \item \textbf{parabolico}, se, e soltanto se, \(C\) si riduce in due rette coincidenti
+    \item \textbf{iperbolico}, se, e soltanto se, \(C\) si riduce in due rette reali e distinte
+    \item \textbf{ellittico}, se, e soltanto se, \(C\) si riduce in due rette immaginarie e coniugate
+\end{enumerate}}
+
+\mprop{}{Se una quadrica irriducibile \(Q\) ha un punto semplice reale parabolico, iperbolico o ellittico, allora tutti i suoi punti semplici reali sono dello stesso tipo.}
+
+\dfn{}{La quadrica \(Q\) si dice 
+\begin{enumerate}
+    \item \textbf{parabolica} se i suoi punti semplici reali sono parabolici
+    \item \textbf{iperbolica} se i suoi punti semplici sono iperbolici
+    \item \textbf{ellittica} se i suoi punti semplici reali sono ellittici
+\end{enumerate}}
+
+\mprop{}{I punti semplici reali di un ellissoide sono necessariamente ellittici.}
+\pf{Dimostrazione}{Sia \(Q\) un ellissoide, \(P\) un punto semplice reale e supponiamo, per assurdo, che \(P\) sia iperbolico. Chiamiamo \(\alpha \) il piano tangente in \(P\) e \(C = Q \cap \alpha = r \cup s\) con \(r,s\) reali e distinte. Sappiamo che \(r \subseteq Q\) e \[\{P_\infty\} = r \cap \alpha \subseteq Q \cap \alpha _\infty = C_\infty\]sarebbe un punto reale sulla \(C_\infty\) di un ellissoide, \textbf{assurdo!} Quindi \(P\) è ellittico.}
+
+Ricapitolando abbiamo che, se \(Q\) è generale, allora può essere
+\begin{enumerate}
+    \item ellissoide (ellittico)
+    \item iperboloide
+        \begin{enumerate}
+            \item ellittico
+            \item iperbolico
+        \end{enumerate}
+    \item paraboloide
+        \begin{enumerate}
+            \item ellittico
+            \item iperbolico
+        \end{enumerate}
+\end{enumerate}
+
+\section{Sezioni piane di una quadrica irriducibile}
+Abbiamo visto precedentemente le sezioni riducibili di una quadrica generale. Ora ci occupiamo di determinare le \textbf{sezioni irriducibili}, che si ottengono con piani non tangenti e si può stabilire se si tratti di ellissi, parabole o iperboli determinandone i punti impropri \(P_1\) e \(P_2\), intersezioni fra la retta impropria del piano di sezione e la conica impropria della quadrica, determinando cioè \[
+\{P_1, P_2\} = r_\infty \cap C_\infty
+\] 
+\subsubsection{Sezioni irriducibili di un cilindro}
+Dato che \(C_\infty\) è riducibile in rette reali e distinte, reali e coincidenti o immaginarie e coniugate, i due punti dati da \(r_\infty \cap C_\infty\)sono reali e distinti se il cilindro è iperbolico, reali e coincidenti se è parabolico, oppure immaginari e coniugati se è ellittico. Quindi le sezioni irriducibili di un cilindro iperbolico sono tutte iperboli, quelle di un cilindro parabolico sono tutte parabole e quelle di un cilindro ellittico sono tutte ellissi.
+\vspace{10pt}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{400pt}
+    \incfig{sezioni-cilindro}
+    \caption{(1) \textbf{cilindro iperbolico}; (2) \textbf{cilindro ellittico}; (3) \textbf{cilindro parabolico}.}
+    \label{fig:sezioni-cilindro}
+\end{figure}
+\subsubsection{Sezioni irriducibili di un ellissoide}
+Dato che \(C_\infty\) è priva di punti reali, i due punti dati da \(r_\infty \cap C_\infty\) saranno a loro volta immaginari e coniugati. Quindi le sezioni irriducibili di un'ellissoide sono tutte ellissi, prive o dotate di parte reale.
+\vspace{10pt}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{180pt}
+    \incfig{sezione-ellissoide}
+    \label{fig:sezione-ellissoide}
+\end{figure}
+

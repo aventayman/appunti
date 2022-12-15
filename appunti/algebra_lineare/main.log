@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.29)  11 DEC 2022 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.29)  15 DEC 2022 09:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1371,7 +1371,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 14.
 [37
 
 ] [38] [39] [40] (./figures/due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf_tex
-<./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf, id=668, page=1, 322.74178pt x 228.5377pt>
+<./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf, id=677, page=1, 322.74178pt x 228.5377pt>
 File: ./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf Graphic file (type pdf)
 <use ./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf, page 1>
 Package pdftex.def Info: ./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf , page1 used on input line 56.
@@ -1390,29 +1390,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\RR' on input line 206.
 
 [41 <./figures//due-rette-complanari-con-3-vettori-linearmente-indipendenti.pdf>] (./figures/ascissa.pdf_tex
-<./figures//ascissa.pdf, id=687, page=1, 249.34656pt x 30.09775pt>
+<./figures//ascissa.pdf, id=696, page=1, 249.34656pt x 30.09775pt>
 File: ./figures//ascissa.pdf Graphic file (type pdf)
 <use ./figures//ascissa.pdf, page 1>
 Package pdftex.def Info: ./figures//ascissa.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 245.71756pt x 29.65953pt.
 ) (./figures/ascissa-e-ordinata.pdf_tex
-<./figures//ascissa-e-ordinata.pdf, id=688, page=1, 95.56403pt x 100.52168pt>
+<./figures//ascissa-e-ordinata.pdf, id=697, page=1, 95.56403pt x 100.52168pt>
 File: ./figures//ascissa-e-ordinata.pdf Graphic file (type pdf)
 <use ./figures//ascissa-e-ordinata.pdf, page 1>
 Package pdftex.def Info: ./figures//ascissa-e-ordinata.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 100.0pt x 105.18887pt.
-<./figures//ascissa-e-ordinata.pdf, id=689, page=2, 95.56403pt x 100.52168pt>
+<./figures//ascissa-e-ordinata.pdf, id=698, page=2, 95.56403pt x 100.52168pt>
 File: ./figures//ascissa-e-ordinata.pdf Graphic file (type pdf)
 <use ./figures//ascissa-e-ordinata.pdf, page 2>
 Package pdftex.def Info: ./figures//ascissa-e-ordinata.pdf , page2 used on input line 61.
 (pdftex.def)             Requested size: 100.0pt x 105.18887pt.
 ) (./figures/terne-di-coordinate.pdf_tex
-<./figures//terne-di-coordinate.pdf, id=690, page=1, 243.52034pt x 174.80777pt>
+<./figures//terne-di-coordinate.pdf, id=699, page=1, 243.52034pt x 174.80777pt>
 File: ./figures//terne-di-coordinate.pdf Graphic file (type pdf)
 <use ./figures//terne-di-coordinate.pdf, page 1>
 Package pdftex.def Info: ./figures//terne-di-coordinate.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 200.0pt x 143.56735pt.
-<./figures//terne-di-coordinate.pdf, id=691, page=2, 243.52034pt x 174.80777pt>
+<./figures//terne-di-coordinate.pdf, id=700, page=2, 243.52034pt x 174.80777pt>
 File: ./figures//terne-di-coordinate.pdf Graphic file (type pdf)
 <use ./figures//terne-di-coordinate.pdf, page 2>
 Package pdftex.def Info: ./figures//terne-di-coordinate.pdf , page2 used on input line 62.
@@ -1421,19 +1421,19 @@ Package pdftex.def Info: ./figures//terne-di-coordinate.pdf , page2 used on inpu
 Underfull \vbox (badness 2990) has occurred while \output is active []
 
  [43] [44] [45] (./figures/simmetria-punto-retta.pdf_tex
-<./figures//simmetria-punto-retta.pdf, id=737, page=1, 269.67336pt x 178.58733pt>
+<./figures//simmetria-punto-retta.pdf, id=746, page=1, 269.67336pt x 178.58733pt>
 File: ./figures//simmetria-punto-retta.pdf Graphic file (type pdf)
 <use ./figures//simmetria-punto-retta.pdf, page 1>
 Package pdftex.def Info: ./figures//simmetria-punto-retta.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 160.0pt x 105.95692pt.
 ) [46 <./figures//simmetria-punto-retta.pdf>] [47] [48] [49] [50] (./figures/simmetria-retta-giacitura.pdf_tex
-<./figures//simmetria-retta-giacitura.pdf, id=793, page=1, 173.83243pt x 159.15628pt>
+<./figures//simmetria-retta-giacitura.pdf, id=802, page=1, 173.83243pt x 159.15628pt>
 File: ./figures//simmetria-retta-giacitura.pdf Graphic file (type pdf)
 <use ./figures//simmetria-retta-giacitura.pdf, page 1>
 Package pdftex.def Info: ./figures//simmetria-retta-giacitura.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 150.0pt x 137.338pt.
 ) (./figures/simmetria-direzione-piano.pdf_tex
-<./figures//simmetria-direzione-piano.pdf, id=794, page=1, 217.6092pt x 210.8784pt>
+<./figures//simmetria-direzione-piano.pdf, id=803, page=1, 217.6092pt x 210.8784pt>
 File: ./figures//simmetria-direzione-piano.pdf Graphic file (type pdf)
 <use ./figures//simmetria-direzione-piano.pdf, page 1>
 Package pdftex.def Info: ./figures//simmetria-direzione-piano.pdf , page1 used on input line 56.
@@ -1475,7 +1475,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\RR' on input line 54.
 
 [54] [55] [56] [57] [58] [59] (./figures/circonferenza-tridimensionale.pdf_tex
-<./figures//circonferenza-tridimensionale.pdf, id=915, page=1, 308.48903pt x 218.45885pt>
+<./figures//circonferenza-tridimensionale.pdf, id=924, page=1, 308.48903pt x 218.45885pt>
 File: ./figures//circonferenza-tridimensionale.pdf Graphic file (type pdf)
 <use ./figures//circonferenza-tridimensionale.pdf, page 1>
 Package pdftex.def Info: ./figures//circonferenza-tridimensionale.pdf , page1 used on input line 56.
@@ -1610,7 +1610,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [71
 
 ] [72] [73] [74] [75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 295--295
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
 
  []
 
@@ -1628,12 +1628,69 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\CC' on input line 2.
 
-[80
+(./figures/quadrica-riducibile-piani.pdf_tex
+<./figures//quadrica-riducibile-piani.pdf, id=1176, page=1, 553.99802pt x 127.37784pt>
+File: ./figures//quadrica-riducibile-piani.pdf Graphic file (type pdf)
+<use ./figures//quadrica-riducibile-piani.pdf, page 1>
+Package pdftex.def Info: ./figures//quadrica-riducibile-piani.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 400.0pt x 91.97435pt.
+) [80
 
-] [81]
-Underfull \vbox (badness 5787) has occurred while \output is active []
-
- [82]) [83] (./main.aux)
+ <./figures//quadrica-riducibile-piani.pdf>] (./figures/quadrica-almeno-due-punti-doppi.pdf_tex
+<./figures//quadrica-almeno-due-punti-doppi.pdf, id=1185, page=1, 243.41628pt x 137.40039pt>
+File: ./figures//quadrica-almeno-due-punti-doppi.pdf Graphic file (type pdf)
+<use ./figures//quadrica-almeno-due-punti-doppi.pdf, page 1>
+Package pdftex.def Info: ./figures//quadrica-almeno-due-punti-doppi.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 150.0pt x 84.6716pt.
+) (./figures/punto-doppio-cilindro-quadrico.pdf_tex
+<./figures//punto-doppio-cilindro-quadrico.pdf, id=1186, page=1, 229.21297pt x 120.95982pt>
+File: ./figures//punto-doppio-cilindro-quadrico.pdf Graphic file (type pdf)
+<use ./figures//punto-doppio-cilindro-quadrico.pdf, page 1>
+Package pdftex.def Info: ./figures//punto-doppio-cilindro-quadrico.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 150.0pt x 79.16003pt.
+) [81 <./figures//quadrica-almeno-due-punti-doppi.pdf>] [82 <./figures//punto-doppio-cilindro-quadrico.pdf>] [83] [84] [85] [86] (./figures/sezioni-cilindro.pdf_tex
+<./figures//sezioni-cilindro.pdf, id=1273, page=1, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 1>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+<./figures//sezioni-cilindro.pdf, id=1274, page=2, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 2>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+<./figures//sezioni-cilindro.pdf, id=1275, page=3, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 3>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page3 used on input line 61.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+<./figures//sezioni-cilindro.pdf, id=1276, page=4, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 4>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page4 used on input line 64.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+<./figures//sezioni-cilindro.pdf, id=1277, page=5, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 5>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page5 used on input line 66.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+<./figures//sezioni-cilindro.pdf, id=1278, page=6, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 6>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page6 used on input line 69.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+<./figures//sezioni-cilindro.pdf, id=1279, page=7, 592.03809pt x 202.99246pt>
+File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cilindro.pdf, page 7>
+Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page7 used on input line 71.
+(pdftex.def)             Requested size: 400.0pt x 137.14717pt.
+) (./figures/sezione-ellissoide.pdf_tex
+<./figures//sezione-ellissoide.pdf, id=1280, page=1, 242.78093pt x 192.51949pt>
+File: ./figures//sezione-ellissoide.pdf Graphic file (type pdf)
+<use ./figures//sezione-ellissoide.pdf, page 1>
+Package pdftex.def Info: ./figures//sezione-ellissoide.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 180.0pt x 142.74419pt.
+)) [87 <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezione-ellissoide.pdf>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1643,18 +1700,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 49609 strings out of 474971
- 1119415 string characters out of 5778661
- 1650127 words of memory out of 5000000
- 69505 multiletter control sequences out of 15000+600000
+ 49761 strings out of 474971
+ 1124141 string characters out of 5778661
+ 1650506 words of memory out of 5000000
+ 69598 multiletter control sequences out of 15000+600000
  531389 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,16n,106p,1925b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
-Output written on main.pdf (83 pages, 630362 bytes).
+Output written on main.pdf (87 pages, 657683 bytes).
 PDF statistics:
- 1616 PDF objects out of 1728 (max. 8388607)
- 1364 compressed objects within 14 object streams
- 694 named destinations out of 1000 (max. 500000)
- 789 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1717 PDF objects out of 1728 (max. 8388607)
+ 1446 compressed objects within 15 object streams
+ 738 named destinations out of 1000 (max. 500000)
+ 868 words of extra memory for PDF output out of 10000 (max. 10000000)
 
