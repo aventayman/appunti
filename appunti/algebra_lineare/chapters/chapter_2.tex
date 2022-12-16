@@ -17,9 +17,6 @@ Gli elementi dell'insieme \textit{V} sono detti \textbf{vettori}, gli elementi d
 \thm{}{Sia \textit{V} uno spazio vettoriale sul campo \textit{K}, siano \(k \in K\)  e \(v \in V\). Allora \[
     kv = \ul{0} \iff k = 0 \text{ oppure } v = \ul{0}
 \]}
-\pf{Dimostrazione}{Se k = 0 \[
-    0v = (0+0)v = 0v + 0v
-\] e sommando \(-0v\) ad ambo i membri si ottiene appunto \(\ul{0} = 0v\). Se è \(v = \ul{0}\), si procede nel modo analogo. Viceversa, se \(kv = \ul{0}\)  e \(k \neq 0\) dimostriamo che \(v = \ul{0}\). Dato che \(k \neq 0\), esiste l'inverso \(k ^{-1} \in K\) e, moltiplicando ambo i membri della precedente uguaglianza per \(k ^{-1}\) si ottiene \(k ^{-1}(kv) = k ^{-1} \ul{0}\) che, per quanto dimostrato in precedenza dà il \(\ul{0}\). Dato che \(k^{-1}(kv) = (k^{-1}k)v = 1v = v\), per la proprietà 4, si ha \(v = \ul{0}\).  }
 
 \section{Sottospazi di uno spazio vettoriale}
 \dfn{Sottospazio vettoriale}{Sia \(\emptyset \neq U \subseteq V\), diremo che \(U\) è \textbf{sottospazio vettoriale} di \(V\) se è esso stesso uno spazio vettoriale rispetto alla restrizione delle stesse operazioni.}
@@ -205,7 +202,6 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
     \item \(0 < m \le n\) e quindi \(S=(v_1, v_2,...,v_m)\)
 \end{enumerate} \(\mcL(S)\) ha dimensione \(m\) perché \(S\) è libero \((S \subseteq B)\) e genera, per definizione \(\mcL(S)\).}
 
-\newpage
 \mprop{}{Siano \(U, W \le V_n(K)\) e sia \(U \le W\), allora: \begin{enumerate}
     \item \(\dim(U) \le \dim(W)\)
     \item \(U = W \iff \dim(U) = \dim(W)\)
@@ -237,6 +233,7 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
     \implies u_3 + w_3 \in U + W \implies \text{ per il 2° criterio } \ U + W \le V
 \]}
 
+\newpage
 \mprop{}{Siano \(U, W \le V_n(K)\) allora \(U + W\) è il più piccolo sottospazio di \(V\) che cotiene \(U \cup W\); equivalentemente \[\mcL(U \cup W) = U + W\]}
 \dfn{Somma diretta}{Dati \(U, W \le V_n(K)\) diremo che \(U + W\) è somma diretta se \(\forall v \in U + W\) può essere scritto come unico modo come \(u + w\). Equivalentemente \[
     \forall v \in U + W \quad \exists ! \ u \in U \ e \ w \in W : \quad v = u + w

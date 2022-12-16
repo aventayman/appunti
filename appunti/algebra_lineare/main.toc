@@ -144,7 +144,13 @@
 \contentsline {paragraph}{Osservazione:}{85}{section*.86}%
 \contentsline {section}{\numberline {10.5}Punti semplici di una quadrica irriducibile}{85}{section.10.5}%
 \contentsline {paragraph}{Osservazione:}{86}{section*.87}%
+\contentsline {paragraph}{Ricapitolando:}{86}{section*.88}%
 \contentsline {section}{\numberline {10.6}Sezioni piane di una quadrica irriducibile}{87}{section.10.6}%
-\contentsline {subsubsection}{Sezioni irriducibili di un cilindro}{87}{section*.88}%
-\contentsline {subsubsection}{Sezioni irriducibili di un ellissoide}{87}{section*.89}%
+\contentsline {subsubsection}{Sezioni irriducibili di un cilindro}{87}{section*.89}%
+\contentsline {subsubsection}{Sezioni irriducibili di un cono}{87}{section*.90}%
+\contentsline {subsubsection}{Sezioni irriducibili di un iperboloide}{88}{section*.91}%
+\contentsline {subsubsection}{Sezioni irriducibili di un ellissoide}{88}{section*.92}%
+\contentsline {subsubsection}{Sezioni irriducibili di un paraboloide}{88}{section*.93}%
+\contentsline {subsubsection}{Studio analitico}{88}{section*.94}%
+\contentsline {paragraph}{Osservazione:}{89}{section*.95}%
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.29)  15 DEC 2022 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.29)  16 DEC 2022 01:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1322,16 +1322,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [6]) (./chapters/chapter_2.tex [7]
 Capitolo 2.
-\g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box144
 [8
 
-] [9] [10] [11] [12] [13]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 206.
+]
+\g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box144
+ [9] [10] [11] [12] [13]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 203.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 203.
  [14] [15] [16]) (./chapters/chapter_3.tex [17]
 Capitolo 3.
 [18
@@ -1421,7 +1422,7 @@ Package pdftex.def Info: ./figures//terne-di-coordinate.pdf , page2 used on inpu
 Underfull \vbox (badness 2990) has occurred while \output is active []
 
  [43] [44] [45] (./figures/simmetria-punto-retta.pdf_tex
-<./figures//simmetria-punto-retta.pdf, id=746, page=1, 269.67336pt x 178.58733pt>
+<./figures//simmetria-punto-retta.pdf, id=745, page=1, 269.67336pt x 178.58733pt>
 File: ./figures//simmetria-punto-retta.pdf Graphic file (type pdf)
 <use ./figures//simmetria-punto-retta.pdf, page 1>
 Package pdftex.def Info: ./figures//simmetria-punto-retta.pdf , page1 used on input line 56.
@@ -1649,48 +1650,81 @@ File: ./figures//punto-doppio-cilindro-quadrico.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./figures//punto-doppio-cilindro-quadrico.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 150.0pt x 79.16003pt.
 ) [81 <./figures//quadrica-almeno-due-punti-doppi.pdf>] [82 <./figures//punto-doppio-cilindro-quadrico.pdf>] [83] [84] [85] [86] (./figures/sezioni-cilindro.pdf_tex
-<./figures//sezioni-cilindro.pdf, id=1273, page=1, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1274, page=1, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 1>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-<./figures//sezioni-cilindro.pdf, id=1274, page=2, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1275, page=2, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 2>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-<./figures//sezioni-cilindro.pdf, id=1275, page=3, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1276, page=3, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 3>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page3 used on input line 61.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-<./figures//sezioni-cilindro.pdf, id=1276, page=4, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1277, page=4, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 4>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page4 used on input line 64.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-<./figures//sezioni-cilindro.pdf, id=1277, page=5, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1278, page=5, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 5>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page5 used on input line 66.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-<./figures//sezioni-cilindro.pdf, id=1278, page=6, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1279, page=6, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 6>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page6 used on input line 69.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-<./figures//sezioni-cilindro.pdf, id=1279, page=7, 592.03809pt x 202.99246pt>
+<./figures//sezioni-cilindro.pdf, id=1280, page=7, 592.03809pt x 202.99246pt>
 File: ./figures//sezioni-cilindro.pdf Graphic file (type pdf)
 <use ./figures//sezioni-cilindro.pdf, page 7>
 Package pdftex.def Info: ./figures//sezioni-cilindro.pdf , page7 used on input line 71.
 (pdftex.def)             Requested size: 400.0pt x 137.14717pt.
-) (./figures/sezione-ellissoide.pdf_tex
-<./figures//sezione-ellissoide.pdf, id=1280, page=1, 242.78093pt x 192.51949pt>
+) (./figures/sezioni-cono.pdf_tex
+<./figures//sezioni-cono.pdf, id=1281, page=1, 231.41197pt x 201.69783pt>
+File: ./figures//sezioni-cono.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cono.pdf, page 1>
+Package pdftex.def Info: ./figures//sezioni-cono.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 180.0pt x 156.88971pt.
+<./figures//sezioni-cono.pdf, id=1282, page=2, 231.41197pt x 201.69783pt>
+File: ./figures//sezioni-cono.pdf Graphic file (type pdf)
+<use ./figures//sezioni-cono.pdf, page 2>
+Package pdftex.def Info: ./figures//sezioni-cono.pdf , page2 used on input line 61.
+(pdftex.def)             Requested size: 180.0pt x 156.88971pt.
+) [87 <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cono.pdf> <./figures//sezioni-cono.pdf>] (./figures/sezione-ellissoide.pdf_tex
+<./figures//sezione-ellissoide.pdf, id=1293, page=1, 242.78093pt x 192.51949pt>
 File: ./figures//sezione-ellissoide.pdf Graphic file (type pdf)
 <use ./figures//sezione-ellissoide.pdf, page 1>
 Package pdftex.def Info: ./figures//sezione-ellissoide.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 180.0pt x 142.74419pt.
-)) [87 <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezioni-cilindro.pdf> <./figures//sezione-ellissoide.pdf>] (./main.aux)
+) (./figures/sezioni-paraboloide.pdf_tex
+<./figures//sezioni-paraboloide.pdf, id=1294, page=1, 369.32343pt x 202.49094pt>
+File: ./figures//sezioni-paraboloide.pdf Graphic file (type pdf)
+<use ./figures//sezioni-paraboloide.pdf, page 1>
+Package pdftex.def Info: ./figures//sezioni-paraboloide.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 300.0pt x 164.48639pt.
+<./figures//sezioni-paraboloide.pdf, id=1295, page=2, 369.32343pt x 202.49094pt>
+File: ./figures//sezioni-paraboloide.pdf Graphic file (type pdf)
+<use ./figures//sezioni-paraboloide.pdf, page 2>
+Package pdftex.def Info: ./figures//sezioni-paraboloide.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 300.0pt x 164.48639pt.
+<./figures//sezioni-paraboloide.pdf, id=1296, page=3, 369.32343pt x 202.49094pt>
+File: ./figures//sezioni-paraboloide.pdf Graphic file (type pdf)
+<use ./figures//sezioni-paraboloide.pdf, page 3>
+Package pdftex.def Info: ./figures//sezioni-paraboloide.pdf , page3 used on input line 64.
+(pdftex.def)             Requested size: 300.0pt x 164.48639pt.
+) [88 <./figures//sezione-ellissoide.pdf> <./figures//sezioni-paraboloide.pdf> <./figures//sezioni-paraboloide.pdf> <./figures//sezioni-paraboloide.pdf>] (./figures/sezione-cono-cilindro-conica.pdf_tex
+<./figures//sezione-cono-cilindro-conica.pdf, id=1309, page=1, 132.25743pt x 255.30731pt>
+File: ./figures//sezione-cono-cilindro-conica.pdf Graphic file (type pdf)
+<use ./figures//sezione-cono-cilindro-conica.pdf, page 1>
+Package pdftex.def Info: ./figures//sezione-cono-cilindro-conica.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 120.0pt x 231.65605pt.
+)) [89 <./figures//sezione-cono-cilindro-conica.pdf>] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1700,18 +1734,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 49761 strings out of 474971
- 1124141 string characters out of 5778661
- 1650506 words of memory out of 5000000
- 69598 multiletter control sequences out of 15000+600000
+ 49823 strings out of 474971
+ 1126339 string characters out of 5778661
+ 1650695 words of memory out of 5000000
+ 69641 multiletter control sequences out of 15000+600000
  531389 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,16n,106p,1925b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb>
-Output written on main.pdf (87 pages, 657683 bytes).
+Output written on main.pdf (89 pages, 666391 bytes).
 PDF statistics:
- 1717 PDF objects out of 1728 (max. 8388607)
- 1446 compressed objects within 15 object streams
- 738 named destinations out of 1000 (max. 500000)
- 868 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1746 PDF objects out of 2073 (max. 8388607)
+ 1467 compressed objects within 15 object streams
+ 748 named destinations out of 1000 (max. 500000)
+ 898 words of extra memory for PDF output out of 10000 (max. 10000000)
 

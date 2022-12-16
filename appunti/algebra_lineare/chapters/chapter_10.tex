@@ -231,7 +231,7 @@ C = Q \cap \alpha =r \cup r
 \mprop{}{I punti semplici reali di un ellissoide sono necessariamente ellittici.}
 \pf{Dimostrazione}{Sia \(Q\) un ellissoide, \(P\) un punto semplice reale e supponiamo, per assurdo, che \(P\) sia iperbolico. Chiamiamo \(\alpha \) il piano tangente in \(P\) e \(C = Q \cap \alpha = r \cup s\) con \(r,s\) reali e distinte. Sappiamo che \(r \subseteq Q\) e \[\{P_\infty\} = r \cap \alpha \subseteq Q \cap \alpha _\infty = C_\infty\]sarebbe un punto reale sulla \(C_\infty\) di un ellissoide, \textbf{assurdo!} Quindi \(P\) è ellittico.}
 
-Ricapitolando abbiamo che, se \(Q\) è generale, allora può essere
+\paragraph{Ricapitolando:} abbiamo che, se \(Q\) è generale, allora può essere
 \begin{enumerate}
     \item ellissoide (ellittico)
     \item iperboloide
@@ -245,6 +245,7 @@ Ricapitolando abbiamo che, se \(Q\) è generale, allora può essere
             \item iperbolico
         \end{enumerate}
 \end{enumerate}
+Consiglio molto vivamente di utilizzare Geogebra 3D (o anche semplicemente cercare su Google) i grafici delle quadriche sopra elencate in modo da ottenerne un riscontro visivo che è particolarmente utile durante lo svolgimento di esercizi per verificare i propri risultati.
 
 \section{Sezioni piane di una quadrica irriducibile}
 Abbiamo visto precedentemente le sezioni riducibili di una quadrica generale. Ora ci occupiamo di determinare le \textbf{sezioni irriducibili}, che si ottengono con piani non tangenti e si può stabilire se si tratti di ellissi, parabole o iperboli determinandone i punti impropri \(P_1\) e \(P_2\), intersezioni fra la retta impropria del piano di sezione e la conica impropria della quadrica, determinando cioè \[
@@ -260,6 +261,19 @@ Dato che \(C_\infty\) è riducibile in rette reali e distinte, reali e coinciden
     \caption{(1) \textbf{cilindro iperbolico}; (2) \textbf{cilindro ellittico}; (3) \textbf{cilindro parabolico}.}
     \label{fig:sezioni-cilindro}
 \end{figure}
+\subsubsection{Sezioni irriducibili di un cono}
+Se \(C_\infty\) è irriducibile e dotata di punti reali, cioè, se si tratta di un cono dotato di falda reale, i due punti dati da \(r_\infty \cap C_\infty\) possono essere reali e distinti, reali e coincidenti (se \(r_\infty\) è tangente a \(C_\infty\)) o immaginari e coniugati. Le sezioni irriducibili di un cono sono coniche di tutti i tipi.
+\vspace{10pt}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{180pt}
+    \incfig{sezioni-cono}
+    \label{fig:sezioni-cono}
+\end{figure}
+
+\subsubsection{Sezioni irriducibili di un iperboloide}
+Dato che \(C_\infty\) è irriducibile e dotata di punti reali, i due punti dati da \(r_\infty \cap C_\infty\) possono essere reali e distinti, reali e coincidenti (se \(r_\infty\) è tangente a \(C_\infty\)) o immaginari e coniugati. Le sezioni irriducibili di un iperboloide sono coniche di tutti i tipi e sono analoghe a quelle della figura precedente.
+
 \subsubsection{Sezioni irriducibili di un ellissoide}
 Dato che \(C_\infty\) è priva di punti reali, i due punti dati da \(r_\infty \cap C_\infty\) saranno a loro volta immaginari e coniugati. Quindi le sezioni irriducibili di un'ellissoide sono tutte ellissi, prive o dotate di parte reale.
 \vspace{10pt}
@@ -270,3 +284,27 @@ Dato che \(C_\infty\) è priva di punti reali, i due punti dati da \(r_\infty \c
     \label{fig:sezione-ellissoide}
 \end{figure}
 
+\subsubsection{Sezioni irriducibili di un paraboloide}
+Dato che \(C_\infty\) è riducibile in due rette reali e distinte o in rette immaginarie e coniugate, i due punti dati da \(r_\infty \cap C_\infty\) sono reali e coincidenti, se \(r_\infty\) passa per il punto doppio di \(C_\infty\), diversamente sono punti distinti. In questo caso, se il paraboloide è iperbolico i punti sono reali, se il paraboloide è ellittico sono punti immaginari e coniugati. Pertanto, le sezioni irriducibili di un paraboloide iperbolico sono parabole e iperboli, quelle di un paraboloide ellittico sono parabole e ellissi.
+\vspace{10pt}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{300pt}
+    \incfig{sezioni-paraboloide}
+    \caption{(1) \textbf{paraboloide iperbolico}; (2) \textbf{paraboloide ellittico}.}
+    \label{fig:sezioni-paraboloide}
+\end{figure}
+
+\subsubsection{Studio analitico}
+Ci occupiamo ora di trovare un metodo per riconoscere la conica generata dall'intersezione di una quadrica con un piano. A questo fine enunciamo una proposizione molto utile per lo svolgimento degli esercizi sulle sezioni di coniche riducibili.
+\mprop{}{Se \(Q\) è una quadrica irriducibile, la cui equazione è priva di una delle variabili \(x_1, x_2\) o \(x_3\), allora \(Q\) è un cilindro, con vertice in \(X_\infty\) se manca \(x_1\), in \(Y_\infty\) se manca \(x_2\) o in \(Z_\infty\) se manca \(x_3\).}
+\paragraph{Osservazione:} In questo modo \[
+C = Q \cap \pi = Q' \cap \pi 
+\] ove \(Q'\) è un cilindro, perciò ci basta riconoscere il tipo di cilindro e potremo direttamente riconoscere la conica.
+\vspace{10pt}
+\begin{figure}[ht]
+    \centering
+    \def\svgwidth{120pt}
+    \incfig{sezione-cono-cilindro-conica}
+    \label{fig:sezione-cono-cilindro-conica}
+\end{figure}
