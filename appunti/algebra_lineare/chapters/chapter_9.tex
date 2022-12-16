@@ -298,38 +298,25 @@ C: \ 2kx^2 + 2 (k-2) xy - 4 y ^2 + 2x + 1 = 0
 \subsubsection{Condizioni analitiche}
 \mprop{}{Gli assi di una conica a centro (ellisse o iperbole) sono due e sono ortogonali tra loro, a meno che non si tratti di una circonferenza generalizzata, in tal caso tutti i diametri sono assi.}
 
-\pf{Dimostrazione}{Per definizione i diametri sono le polari dei punti impropri. Dato \(P_\infty : [(l,m,0)]\) \[
+\pf{Dimostrazione}{Sia \(a\) un asse della conica. Poniamo i suoi parametri direttori di \(a\) come \(p.d.a = [(l,m)]\). Ma allora \(D\) cioè il polo di \(a\) ha coordinate affini \([(-m,l,0)]\), poiché risiede sulla retta di direzione ortogonale all'asse. Quindi possiamo impostare il seguente prodotto fra matrici \[
+\left( \; \begin{matrix}
+    -m & l & 0 \\
+\end{matrix} \; \right) A
+\left( \; \begin{matrix}
+    l \\
+    m \\
+    0 \\
+\end{matrix} \; \right) = 0
+\] essendo \(A\) una matrice simmetrica se trasponiamo vale anche \[
 \left( \; \begin{matrix}
     l & m & 0 \\
-\end{matrix} \; \right)
+\end{matrix} \; \right) A
 \left( \; \begin{matrix}
-    a_{11} & a_{12} & a_{13} \\
-    a_{12} & a_{22} & a_{23} \\
-    a_{13} & a_{23} & a_{33} \\
-\end{matrix} \; \right)
-\left( \; \begin{matrix} x_1 \\ x_2\\ x_3 \end{matrix} \; \right) = 0
-\] Il generico diametro è: \[
-\left( \; \begin{matrix}
-    la_{11} + m a_{12} & l a_{12} + m a_{22} & l a_{13} + m a_{23} \\
-\end{matrix} \; \right)
-\left( \; \begin{matrix} x_1 \\ x_2\\ x_3 \end{matrix} \; \right) = 0
-\] \[
-(la_{11} + m a_{12}) x_1 + (la_{12} + ma_{22}) x_2 + (la_{13} + ma_{23}) x_3 = 0
-\] I parametri direttori del diametro \(d\) sono\[
-p.d.d : \ [(-la_{12} - m a_{22}, l a_{11} + ma_{12})]
-\] Il polo di \(d\) è \(P_\infty: [(l,m,0)]\). Inoltre \(d\) è un asse se è ortogonale a \(P_\infty\), ovvero se \[
-l ( -la_{12}-ma_{22} ) + m(la_{11} + ma_{12}) = 0
-\] \[
--l^2 a_{12} + ml (-a_{22}+a_{11}) + m^2 a_{12} = 0 \iff l^2a_{12} + ml(a_{22}- a_{11}) - m^2 a_{12} = 0 
-\] moltiplicando tutti i fattori per \(\left( \frac{1}{m^2} \right) \) otteniamo\[
-a_{12} \left( \frac{l}{m} \right) ^2 + \frac{l}{m} (a_{22} - a_{11}) - a_{12} = 0
-\] Sia \(a_{12}\neq 0\), abbiamo un'equazione di secondo grado che ammette due soluzioni \[
-[(l', m')] \quad e\quad [(l '', m '')]
-\]consideriamo \([(l', m')]\). La direzione ortogonale ad essa è \([(-m', l')]\). Sostituendo la direzione ortogonale nell'equazione e otteniamo \[
-a_{12}\left( \frac{m}{l} \right) ^2 - \frac{m}{l}(a_{22}-a_{11}) - a_{12} = 0
-\] moltiplico tutti i fattori per \(l^2\) e ottengo l'equazione  \[
-m^2a_{12} - ml (a_{22}-a_{11}) - l^2 a_{12} = 0 \iff m(ma_{12} + la_{11}) - l(ma_{22} - la_{12})
-\] che è nuovamente la direzione ortogonale. Quindi gli assi sono a due a due ortogonali fra di loro.}
+    -m \\
+    l \\
+    0 \\
+\end{matrix} \; \right) = 0
+\] perciò le coordinate di \(D_\infty\) sono il polo di un asse ortogonale a quello precedente. Abbiamo dimostrato che abbiamo due assi ortogonali tra loro, ora dobbiamo dimostrare che sono gli unici assi. Ma se sviluppiamo il prodotto fra matrici troveremo un'equazione di secondo grado, che quindi (a meno chè non si tratti dell'equazione di una circonferenza) avrà solamente due soluzioni.}
 
 \mprop{}{La parabola ha un unico asse e un solo vertice \(v\). Inoltre la tangente alla parabola in \(v\) è ortogonale all'asse.}
 \pf{Dimostrazione}{Il punto \(P_\infty\) di una parabola è \([(-a_{12}, a_{11}, 0)]\). I \(p.d.d = [(-a_{12}, a_{11})]\). La direzione ortogonale è data da \([(a_{11}, a_{12})]\), quindi il punto \(P_\infty\) è \([(a_{11}, a_{12}, 0)]\). Da cui segue che l'asse è unico ed è la polare di \((a_{11}, a_{12}, 0)\). Sostituendo nell'equazione del fascio improprio dei diametri abbiamo che l'asse ha equazione: \[
