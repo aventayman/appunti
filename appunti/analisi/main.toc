@@ -1,15 +1,4 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Derivate}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Classificazione dei punti di non derivabilità}{4}{section.1.1}%
-\contentsline {paragraph}{Osservazione:}{5}{section*.2}%
-\contentsline {paragraph}{Osservazione:}{5}{section*.3}%
-\contentsline {paragraph}{Osservazione:}{5}{section*.4}%
-\contentsline {section}{\numberline {1.2}Teorema di de l'Hopital}{6}{section.1.2}%
-\contentsline {paragraph}{Commentiamo l'ipotesi:}{6}{section*.5}%
-\contentsline {paragraph}{Osservazione:}{7}{section*.6}%
-\contentsline {paragraph}{Osservazione:}{9}{section*.7}%
-\contentsline {chapter}{\numberline {2}Proprietà globali delle funzioni derivabili}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Massimi e minimi relativi}{10}{section.2.1}%
-\contentsline {paragraph}{Osservazioni:}{10}{section*.8}%
+\contentsline {chapter}{\numberline {1}Ripasso}{4}{chapter.1}%
 \contentsfinish 

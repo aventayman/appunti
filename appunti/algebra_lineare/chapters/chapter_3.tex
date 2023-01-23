@@ -186,6 +186,11 @@ A
 Quindi la n-upla \((k_1, k_2, \ldots , k_n)\) è soluzione di \(AX = B\) e di conseguenza il sistema è compatibile.}
 
 \thm{Teorema di Cramer}{Sia \(AX = B\) un sistema lineare in \(n\) equazioni ed \(n\) incognite. Se \(\det(A) \neq 0\) allora \(AX = B\) ammette un'unica soluzione.}
+\pf{Dimostrazione}{Sia \(|A| \neq 0 \iff n = \rho(A) = \rho(A|B) \) perché \(A|B\) ha \(n\) righe, quindi per il teorema di Rouché-Capelli il sistema è compatibile e ammette almeno una soluzione. Supponiamo ora per assurdo che non ammetta soluzione unica, siano \(X_1\) e \(X_2\) due soluzioni distinte di \(AX=B\). Avremo che sia \(AX_1=B\) e sia \(AX_2 = B\), quindi \(AX_1= AX_2\). Ora ricordiamo che \(|A| \neq 0\), quindi \(A\) è invertibile, perciò \[
+\exists A^{-1} : \quad A^{-1}A = I
+\] Quindi possiamo giustificare la seguente equazione \[
+A^{-1} (AX_1) = A^{-1}(AX_2) \iff (A^{-1}A)X_1 = (A^{-1}A)X_2 \iff IX_1 = IX_2 \iff X_1=X_2
+\] ma questo è un \textbf{assurdo}! Poiché avevamo supposto che \(X_1\neq X_2\), quindi esiste un'unica soluzione.}
 Indichiamo con \(B_1\), la matrice ottenuta sostituendo a \(C_i\) la colonna dei termini noti (\(B\)).
 \[
 A = (C_1, C_2, \ldots , C_n) \quad B_1 = (C_1, C_2, \ldots , C_{i-1}, B, C_{i+1}, \ldots , C_n)
