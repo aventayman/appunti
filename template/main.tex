@@ -1,0 +1,33 @@
+\documentclass[twoside]{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\textbf{\Huge{Appunti di}\\Fisica Tecnica}}
+\author{\Large{Ayman Marpicati}}
+\date{\normalsize{Università degli Studi di Brescia}\\A.A. 2022/2023}
+\setlength\parindent{0pt}
+
+\begin{document}
+
+
+\maketitle
+\cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\null\newpage
+
+\setlength{\headheight}{15pt}
+
+\pagestyle{fancy}
+%... Then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[LO]{\rightmark}
+\fancyhead[RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LE]{\thepage}
+\fancyfoot{} % clear all footer fields
+
+\end{document}
