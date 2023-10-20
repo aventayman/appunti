@@ -66,7 +66,7 @@ Siano \(r_1, r_2\) due rette di \(E_2(\RR)\) e sia \(r_1 = [P, f(v)]\) con \(v =
     \] se \(r_1\) ha equazione \(ax + by + c = 0\) e \(r_2\) ha equazione \(a'x + b'y + c' = 0\) allora \(P.d.r_1 = [(-b,a)]\), e \(P.d.r_2 = [(-b', a')]\) quindi \[
     r_1 \perp r_2 \iff -b (-b') + aa' = bb' + aa' = 0
 \]
-Se abbiamo due rette \(r_1, r_2\) in \(E_3(\RR)\) con \(p.d.r_1 = [(l,m,n)]\), \(p.d.r_2 = [(l',m',n')]\) allor a \(r_1 \perp r_2 \iff v_1\), cioè il generatore della direzione della retta \(r_1\), è ortogonale a \(v_2\), che è generatore della direzione della retta \(r_2\). \[
+Se abbiamo due rette \(r_1, r_2\) in \(E_3(\RR)\) con \(p.d.r_1 = [(l,m,n)]\), \(p.d.r_2 = [(l',m',n')]\) allora \(r_1 \perp r_2 \iff v_1\), cioè il generatore della direzione della retta \(r_1\), è ortogonale a \(v_2\), che è generatore della direzione della retta \(r_2\). \[
     v_1 = li + mj + nk \qquad v_2 = l'i + m'j + n'k
 \] \[
     v_1 \perp v_2 \iff r_1 \perp r_2 \iff ll' + mm' + nn' = 0
@@ -78,7 +78,7 @@ r_1 \perp r_2 \iff x_1x_1' + x_2 x_2' + \ldots  + x_n x_n' = 0
 \mprop{}{Sia \(r: ax + by + c = 0\) una retta di \(E_2(\RR)\), allora \([(a, b)]\) è la classe dei parametri direttori della direzione ortogonale a \(r\).}
 \pf{Dimostrazione}{Per ipotesi \(p.d.r = [(-b,a)]\) e abbiamo che per essere ortogonale la direzione \((a, b)(-b, a)= 0\) oppure equivalentemente \((ai + bj)( -b i + aj ) = 0 \implies [(a, b)] \perp r\).  }
 \mprop{}{Sia \(\pi: ax + by + cz + d = 0\) un piano in \(E_3(\RR)\), allora \([(a, b, c)]\) è la classe dei parametri direttori della direzione ortogonale a \(\pi\).}
-\pf{Dimostrazione}{Sia \(v \in V_2\) tale che \(pi\) ha spazio di traslazione \(V_2\). Se \(v = (x, y, z) \implies ax + by + cz = 0 \iff (x, y, z)(a, b, c) = 0 \implies (a,b,c) \perp v \ \forall v \in V_2 \) }
+\pf{Dimostrazione}{Sia \(v \in V_2\) tale che \(\pi\) ha spazio di traslazione \(V_2\). Se \(v = (x, y, z) \implies ax + by + cz = 0 \iff (x, y, z)(a, b, c) = 0 \implies (a,b,c) \perp v \ \forall v \in V_2 \) }
 \mprop{}{Più in generale: sia \(S _{n-1}\) un iperpiano in \(E_n(\RR)\) di equazione cartesiana \(a_1 x_1 + a_2 x_2 + ... + a_n x_n + a_0 = 0 \implies [(a_1, a_2, ..., a_n)]\) è la classe dei parametri direttori della direzione ortogonale a \(S _{n-1}\).}
 
 \subsubsection{Ortogonalità fra piani in \(E_3(\RR )\)}
@@ -134,7 +134,7 @@ Siano \(P = (x_0, y_0)\) e \(r = [Q, V_1]\) rispettivamente un punto e una retta
     \end{tikzpicture}
 \end{center}
 Determiniamo \(||\vec{{PH}}||\). Se \(r\) ha equazione \(ax + by +c = 0\) allora \(V_1^{\perp} = \mcL(a i + b j)  \). Posta \[n = [P, V_1^{\perp}] \implies n = [P, \mcL(a i + bj) ]\]
-\(H = n \cap r \) è la proiezione di \(P\) su \(r\) (cioè l'intersezione tra \(r\) e la retta per \(P^{\perp} \)). Sia \(P' = (x', y')\) un generico punti su \(r\) di equazione \(ax + by + c = 0\). \(PH\) è la componente di \(PP'\) lungo \(v\). \[PP' = (x'-x_0) i + (y' - y_0)j\]\[
+\(H = n \cap r \) è la proiezione di \(P\) su \(r\) (cioè l'intersezione tra \(r\) e la retta per \(P^{\perp} \)). Sia \(P' = (x', y')\) un generico punto su \(r\) di equazione \(ax + by + c = 0\). \(PH\) è la componente di \(PP'\) lungo \(v\). \[PP' = (x'-x_0) i + (y' - y_0)j\]\[
     \vec{{PH}} = \frac{\vec{PP'} \cdot v}{ v \cdot v } v
 \] \[
 d(P,r) = d (P, H) = || \vec{{PH}} || = \left\| \left( \frac{\vec{{PP'}} \cdot v}{v \cdot v} v \right)  \right\| = \frac{|\vec{PP'} \cdot v| }{\|v\|} = \frac{|(x'-x_0) a + (y' - y_0) b| }{\sqrt{a^2 + b ^2} } = \frac{|x'a + y'b - x_0a - y_0b| }{\sqrt{a^2 + b ^2} }
@@ -228,7 +228,7 @@ d(P,C) = \sqrt{(x-x_0)^{2} + (y-y_0)^2} = \sqrt{x^{2} + y^{2} + 2ax + 2by + x_0^
 \mprop{Equazione cartesiana di una circonferenza}{Tutte e sole le circonferenze si rappresentano come \[x^{2} + y^{2} + 2ax + 2by + c = 0 \quad \text{con} \quad a^{2} + b^{2} - c > 0\] e avremo che \(C = (-a, -b)\) e \(r = \sqrt{a^{2} + b^{2} -c}\)  }
 
 \nt{Se \(r\) fosse 0 allora \(a^{2} + b^{2} - c = 0\) e quindi \(x^{2} + y^{2} + 2ax + 2by + c = 0\) rappresenta il solo punto \(C = (-a, -b)\).}
-\mprop{}{Per tre punti non allineati in \(E_{2}(\RR)\) passa un unica circonferenza.}
+\mprop{}{Per tre punti non allineati in \(E_{2}(\RR)\) passa un'unica circonferenza.}
 
 \subsubsection{Rappresentazione analitica di una sfera in \(E_3(\RR )\)}
 Sia il generico punto \(P = (x,y,z)\) appartenente alla sfera, allora \[
@@ -263,7 +263,7 @@ Il centro della circonferenza \(C\) si trova intersecando il piano \(\alpha \) c
     \incfig{circonferenza-tridimensionale}
     \label{fig:circonferenza-tridimensionale}
 \end{figure}
-\nt{Una circonferenza in \(E_3(\RR )\) si può ottenere anche intersecando anche altre superfici superfici con un piano, non solo una sfera.}
+\nt{Una circonferenza in \(E_3(\RR )\) si può ottenere anche intersecando anche altre superfici con un piano, non solo una sfera.}
 
 \ex{}{Determinare se la seguente è una circonferenza \[
 \begin{cases}

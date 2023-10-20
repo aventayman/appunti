@@ -8,7 +8,7 @@
         \begin{itemize}
             \item \( (h \cdot k) \cdot v = h \cdot (k \cdot v) \quad \forall h, k \in K \quad e \quad \forall v \in V \) 
             \item \( (h + k) \cdot v = h \cdot v + k \cdot v \quad \forall h, k \in K \quad e \quad \forall v \in V\)
-            \item \(h \cdot (v + w) = h \cdot v + h \cdot w \quad \forall h,k \in K \quad e \quad \forall v, w \in V\)
+            \item \(h \cdot (v + w) = h \cdot v + h \cdot w \quad \forall h \in K \quad e \quad \forall v, w \in V\)
             \item \(1 \cdot v = v \quad \forall v \in V\)
         \end{itemize}
 \end{itemize}}
@@ -86,7 +86,7 @@ e quindi \(v_1\) è combinazione lineare di \(v_1, ..., v_n\).\\
 \pf{Dimostrazione}{Sia, per assurdo, \(B\) legato, allora per la proposizione precedente anche \(A\) è legato. \textbf{Assurdo!} Quindi \(B\)  è libero.} 
 
 \section{Sistemi di generatori di uno spazio vettoriale}
-\dfn{Sistema di generatori}{Sia \(A\) sistema di vettori di \(V(K)\). \(A\) si dice sistema di generatori di \(V(K)\) se ogni \(v \in V(K)\) si può scrivener come combinazione lineare di un numero finito di vettori di A.}
+\dfn{Sistema di generatori}{Sia \(A\) sistema di vettori di \(V(K)\). \(A\) si dice sistema di generatori di \(V(K)\) se ogni \(v \in V(K)\) si può scrivere come combinazione lineare di un numero finito di vettori di A.}
 
 \dfn{Copertura lineare}{Sia \(A\) un sistema di vettori di \(V(K)\) si dice copertura (o chiusura) lineare di \(A\) l'insieme \(\mcL(A)\) di tutte le combinazioni lineari di sottoinsiemi finiti di A.}
 \nt{Dato \(A\) sistema di vettori di \(V(K)\) \begin{enumerate}
@@ -121,7 +121,7 @@ Osserviamo che \(A\) contiene almeno un \(v \in A: \ v \neq \ul{0}\), questo per
 
 \dfn{Base}{Sia \(S = (v_1, v_2, ..., v_n)\) sequenza libera di vettori di \(V(K)\). \(S\) è detta base se e solo se \(S\) è una sequenza libera di generatori.}
 
-\dfn{Base canonica di \(\RR^{n} \) }{\(((1,0,0,...,0)(0,1,0,...,0),...,(0,0,0,...,1))\) è una base canonica per \(\RR^{n} \).}
+\dfn{Base canonica di \(\RR^{n} \) }{\(((1,0,0,...,0),(0,1,0,...,0),...,(0,0,0,...,1))\) è una base canonica per \(\RR^{n} \).}
 
 \mlenma{Lemma di Steinitz}{Sia \(V(K)\) uno spazio vettoriale finitamente generato. Sia \(B = [v_1, v_2, ..., v_n]\) sistema di generatori e \(A = [u_1, u_2, ..., u_m]\) sistema libero. Allora la cardinalità di A sarà sempre minore o uguale a quella del sistema di generatori. \((m \le n)\)  }
 
@@ -143,7 +143,7 @@ Ora immaginiamoci di reiterare il procedimento \(n\) volte fino a trovare un sis
     u _{n+1} \in \mcL(B_n) \qquad u _{n+1} = \alpha_1 u_1 + \alpha_2 u_2 + ... + \alpha_n u_n
 \] questo comporta che \(A\) sia legato, ma questo è \textbf{assurdo!} \( \implies \ m \le n\).}
 
-\thm{}{Sia \(V(K)\) uno spazio vettoriale finitamente generato, e siano \(B_1\) e \(B_2\) due sue basi le loro cardinalità sono uguali: \[
+\thm{}{Sia \(V(K)\) uno spazio vettoriale finitamente generato e siano \(B_1\) e \(B_2\) due sue basi, le loro cardinalità sono uguali: \[
     B_1 = (v_1, v_2, ..., v_n) \qquad B_2 = (u_1, u_2, ..., u_n) \qquad m=n
 \]} 
 \pf{Dimostrazione}{Per dimostrarlo è sufficiente applicare il lemma di Steinitz \begin{itemize}
@@ -217,7 +217,7 @@ Ma avevamo supposto che \(k_i \neq h_i \implies\) \textbf{assurdo!} \( \implies 
 \thm{Teorema del completamento ad una base}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) e sia \(A=(v_1, v_2,...,v_p)\), ove \(p \le n\), una sequenza libera di vettori in \(V_n(K)\). Allora, in una qualunque base di \(B\) di \(V_n(K)\), esiste una sequenza \(B'\) di vettori, tale che \(A \cup B'\) è una base di \(V_n(K)\).}
 
 \section{Intersezione e somma di sottospazi}
-\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) sul campo \(K\) e siano \(U, V \le V \implies U\cap W\) è sottospazio di \(V\).}
+\mprop{}{Sia \(V_n(K)\) uno spazio vettoriale di dimensione \(n\) sul campo \(K\) e siano \(U, W \le V \implies U\cap W\) è sottospazio di \(V\).}
 \pf{Dimostrazione}{Richiamo il secondo criterio di riconoscimento dei sottospazi. \(U \cap W\) è un sottospazio di \(V\) \(\iff\) è sottoinsieme non vuoto di \(V\): \[
     \forall v_1, v_2 \in U \cap W, \ \forall k_1, k_2 \in K, \ k_1 v_1 + k_2v_2 \in U \cap W
 \] \(U \cap W\) è sottoinsieme non vuoto di \(V\), perché \(U \subseteq V\), \(W \subseteq V\) e \(\ul{0} \in U \cap W\). Siano ora \(v_1, v_2 \in U \cap W\) e \(k_1, k_2 \in K\), osserviamo per il secondo criterio di riconoscimento che \(k_1 v_1 + k_2 v_2 \in U\) e per lo stesso motivo \(k_1 v_1 + k_2 v_2 \in W\) \( \implies k_1 v_1 + k_2 v_2 \in U \cap W \implies U \cap W\) è un sottospazio vettoriale.}

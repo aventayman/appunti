@@ -34,7 +34,7 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 \end{cases}
 \]}
 
-\thm{Teorema di Bidet}{Date due matrici quadrate di ordine \(n\), \(A\) e \(B\), il determinante della matrice prodotto \(A \cdot B\) è uguale al prodotto dei determinanti di \(A\) e \(B\), cioè \[
+\thm{Teorema di Binet}{Date due matrici quadrate di ordine \(n\), \(A\) e \(B\), il determinante della matrice prodotto \(A \cdot B\) è uguale al prodotto dei determinanti di \(A\) e \(B\), cioè \[
     |A \cdot B| = |A| |B| 
 \] }
 
@@ -46,7 +46,7 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 \] dove \(A_a\) si chiama \textbf{matrice aggiunta} di \(A\) ed è la matrice ottenuta da \(A\) sostituendo ogni elemento con il suo complemento algebrico \(\Gamma\). }
 
 \section{Dipendenza lineare e determinanti}
-\dfn{Minore}{Sia \(A \in K^{m,n} \). Si chiama \textbf{minore di ordine \(p\)} estratto da \(A\), con \(p \in \mathbb{N}\), \(p \neq 0\), \(p \le \min \{m,n\} \), una matrice quadrata di ordine \(p\) ottenuta cancellando \(m-p\) righe e \(n-p\) colonna da \(A\). }
+\dfn{Minore}{Sia \(A \in K^{m,n} \). Si chiama \textbf{minore di ordine \(p\)} estratto da \(A\), con \(p \in \mathbb{N}\), \(p \neq 0\), \(p \le \min \{m,n\} \), una matrice quadrata di ordine \(p\) ottenuta cancellando \(m-p\) righe e \(n-p\) colonne da \(A\). }
 
 \thm{}{ Una sequenza \(S=(v_1,v_2, \ldots,v_n)\) di \(n\) vettori dello spazio vettoriale \(V_n(K)\) è libera se, e soltanto se, la matrice \(A\), che ha nelle proprie righe (o colonne) le componenti dei vettori di \(S\) in una base di \(V_n(K)\), ha determinante non nullo ed è legata se, e soltanto se, tale matrice \(A\) ha determinante nullo.}
 
@@ -71,7 +71,7 @@ Pertanto, la formula per il calcolo del determinante di \(A = (a_{ij} )\) rispet
 \rho (A) = r \le s = \dim \mcL(R) \implies r = s 
 .\]}
 
-\cor{}{Se \(A\) è una matrice quadrata di ordine \(n\), con elementi in un campo \(K\), le sequent condizioni sono equivalenti:
+\cor{}{Se \(A\) è una matrice quadrata di ordine \(n\), con elementi in un campo \(K\), le seguenti condizioni sono equivalenti:
 \begin{enumerate}
     \item \(|A| \neq 0\) ;
     \item \(A\) è invertibile;
@@ -155,7 +155,7 @@ AX = \ul{0}
 \left( \; \begin{matrix}
     C_1 & C_2 & \ldots & C_n \\
 \end{matrix} \; \right)
-\) ove le colonne \(C_j\) sono vettori di \(K^{m,1}\) e quindi utilizziamo utilizzando questa notazione il sistema si può scrivere come \[
+\) ove le colonne \(C_j\) sono vettori di \(K^{m,1}\) e quindi utilizzando questa notazione il sistema si può scrivere come \[
 x_1C_1 + x_2C_2+\ldots +x_nC_n = B
 \] 
 
@@ -210,7 +210,6 @@ X_1 = \frac{|B_1| }{|A| }=\frac{\det(B_1)}{\det(A)}
 \) è sempre soluzione di \(AX = \ul{0} \).
 
 \dfn{Autosoluzioni}{Le soluzioni di un sistema lineare omogeneo diverse dalla soluzione nulla si dicono  \textbf{autosoluzioni}.}
-\newpage
 \nt{Non è detto che un sistema lineare omogeneo ammetta autosoluzioni.}
 
 \mprop{}{Un sistema lineare omogeneo \(AX = B = \ul{0} \) ammette autosoluzioni se, e solo se, \(\rho (A) < n\) (con \(n\) numero di incognite).}
@@ -244,13 +243,12 @@ AZ = A(\overline{X}-X_0) = A\overline{X}- AX_0 = B- B = \ul{0}
 
 Dato \(AX=B\) sistema lineare in \(m\) equazioni ed \(n\) incognite compatibile, le sue soluzioni sono tante quante quelle del sistema lineare omogeneo associato che costituiscono uno spazio vettoriale di dimensione \(n- \rho (A)\). Se il campo è infinito, posto \(\rho (A) = p\), si dice che le soluzioni sono \(\infty^{n-p}\) (cioè che l'insieme delle soluzioni dipende da \(n-\rho(A)\) parametri).
 
-\newpage
 \thm{}{Sia \(AX = \ul{0} \) un sistema lineare omogeneo in \(n\) incognite e sia \(\rho(A) = n-1\). Se si indica con \(A'X = \ul{0} \) un sistema principale equivalente ad \(AX = \ul{0} \) e si indicano con \(\Gamma_1, \Gamma_2, \ldots , \Gamma_n\) i determinanti dei minori di ordine \(n-1\), ottenuti eliminando in \(A'\) successivamente la prima, la seconda, \ldots , la n-esima colonna, allora le soluzioni del sistema sono, al variare di \(\lambda \in K\), \[
 S = (\lambda \Gamma _1, -\lambda \Gamma _2, \ldots , (-1)^{n-1} \lambda \Gamma _n)
 \] }
 
 \section{Cambiamenti di base}
-in uno spazio vettoriale \(V_n(K)\), di dimensione \(n\), siano \(B = (e_1,e_2, \ldots ,e_n)\) e \(B' = (e'_1,e'_2, \ldots ,e'_n)\) due basi assegnate. Ogni vettore della base \(B'\) si può esprimere come combinazione lineare dei vettori della base \(B\), cioè \[
+In uno spazio vettoriale \(V_n(K)\), di dimensione \(n\), siano \(B = (e_1,e_2, \ldots ,e_n)\) e \(B' = (e'_1,e'_2, \ldots ,e'_n)\) due basi assegnate. Ogni vettore della base \(B'\) si può esprimere come combinazione lineare dei vettori della base \(B\), cioè \[
 \begin{cases}
     \ e_1' = a_{11}e_1+ a_{12}e_2+\ldots + a_{1n}e_n \\
     \ e_2' = a_{21}e_1+ a_{22}e_2+\ldots +a_{2n}e_n \\

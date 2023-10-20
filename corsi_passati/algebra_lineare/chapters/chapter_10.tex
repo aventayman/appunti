@@ -59,9 +59,9 @@ Q \cap \gamma = (\alpha \cup \beta ) \cap \gamma = (\alpha \cap \gamma) \cup (\b
     \incfig{punto-doppio-cilindro-quadrico}
     \label{fig:punto-doppio-cilindro-quadrico}
 \end{figure}
-\pf{Dimostrazione}{"\(\implies \)" Sia \(V\) l'unico punto doppio della quadrica \(Q\). Ora dimostriamo prima di tutto che tutte le rette \(r\) contenute in \(Q\) passano per \(V\). Sia, per assurdo, \(r\) contenuta in \(Q\) con \(v \notin r\). Siano \(A, B \in r\) due punti distinti. Osserviamo che la retta \(rt(V,A)\) ha molteplicità di intersezione con \(Q\) pari ad almeno 1 in \(A\) e esattamente 2 in \(V\), quindi ha molteplicità di intersezione almeno 3. Quindi per il primo teorema dell'ordine \(rt(V,A) \subseteq Q\). Analogamente \(rt(V,B)\) è contenuta in \(Q\). Chiamiamo \(\pi \) il piano contenente \(r\) e \(V\). \[
-Q \cap \pi \supseteq \underbrace{r \cup rt(V,A) \cup rt(V,B)}_{\text{curva \(C\) di ordine \(3\)}} 
-\] poiché \(\ord(C) >\ord(Q) \implies \pi \subseteq Q\). Quindi \(\pi \) è componente di \(Q\), di conseguenza \(Q\) è riducibile e ha almeno \(\infty^{1}\) punti doppi. \textbf{Assurdo!} Perciò tutte le rette di \(Q\) passano per \(V\). Sia \(\alpha \) piano non contenente \(V\). \(\alpha \) non è componente di \(Q\), poiché \(Q\) è irriducibile, perciò \(\alpha  \cap Q\) è una conica (per il secondo teorema dell'ordine). Poiché \(C\) non si riduce in due rette \(C\) è generale. Sia ora \(P \in C\) la retta \(rt(P,V)\) ha molteplicità di intersezione con \(Q\) di almeno \(1 + 2 = 3 > \ord(Q) = 2\), quindi per il primo teorema dell'ordine \(rt(P,V) \subseteq Q\) per ogni punto di \(C\). Di conseguenza \(Q\) è un cono o un cilindro quadrico.\\
+\pf{Dimostrazione}{"\(\implies \)" Sia \(V\) l'unico punto doppio della quadrica \(Q\). Ora dimostriamo prima di tutto che tutte le rette \(r\) contenute in \(Q\) passano per \(V\). Sia, per assurdo, \(r\) contenuta in \(Q\) con \(v \notin r\). Siano \(H, K \in r\) due punti distinti. Osserviamo che la retta \(rt(V,H)\) ha molteplicità di intersezione con \(Q\) pari ad almeno 1 in \(A\) e esattamente 2 in \(V\), quindi ha molteplicità di intersezione almeno 3. Quindi per il primo teorema dell'ordine \(rt(V,H) \subseteq Q\). Analogamente \(rt(V,K)\) è contenuta in \(Q\). Chiamiamo \(\pi \) il piano contenente \(r\) e \(V\). \[
+Q \cap \pi \supseteq \underbrace{r \cup rt(V,H) \cup rt(V,K)}_{\text{curva \(C\) di ordine \(3\)}} 
+\] poiché \(\ord(C) >\ord(Q) \implies \pi \subseteq Q\). Quindi \(\pi \) è componente di \(Q\), di conseguenza \(Q\) è riducibile e ha almeno \(\infty^{1}\) punti doppi. \textbf{Assurdo!} Perciò tutte le rette di \(Q\) passano per \(V\). Sia \(\alpha \) piano non contenente \(V\). \(\alpha \) non è componente di \(Q\), poiché \(Q\) è irriducibile, perciò \(\alpha  \cap Q\) è una conica \(C\) (per il secondo teorema dell'ordine). Poiché \(C\) non si riduce in due rette \(C\) è generale. Sia ora \(P \in C\) la retta \(rt(P,V)\) ha molteplicità di intersezione con \(Q\) di almeno \(1 + 2 = 3 > \ord(Q) = 2\), quindi per il primo teorema dell'ordine \(rt(P,V) \subseteq Q\) per ogni punto di \(C\). Di conseguenza \(Q\) è un cono o un cilindro quadrico.\\
 "\(\impliedby \)" Sia \(Q\) un cono o un cilindro quadrico con vertice \(V\). \(Q\) ha al più un punto doppio, altrimenti sarebbe riducibile. Sia \(r\) una retta non contenuta in \(Q\) e passante per \(V\), l'unico punto di intersezione è \(r \cap Q = V\). Poiché per il primo teorema dell'ordine la somma delle intersezioni (contate con la dovuta molteplicità) è 2, segue che \(v\) è doppio.}
 
 \subsubsection{Condizioni analitiche}
@@ -84,12 +84,12 @@ Inoltre le quadriche doppiamente e tre volte degeneri sono \textbf{riducibili}.}
 \end{itemize}}
 
 \section{Sezioni piane riducibili}
-Dati una quadrica \(Q\) e un piano \(\pi \) abbiamo \(C = Q \cap \pi \), se \(\pi \not\subseteq Q\), in questo caso \(C\) è una conica per il secondo teorema dell'ordine. 
+Dati una quadrica \(Q\) e un piano \(\alpha \) abbiamo \(C = Q \cap \alpha \), se \(\alpha \not\subseteq Q\), in questo caso \(C\) è una conica per il secondo teorema dell'ordine. 
 \paragraph{Osservazione:} Se \(Q\) è una quadrica riducibile, allora \(C\) è riducibile.
 
 \thm{}{Sia \(Q\) una quadrica irriducibile (cioè cono, cilindro o quadrica generale), sia \(P \in Q\) e sia \(\alpha \) un piano contenente \(P\). Possiamo dire che
 \begin{itemize}
-    \item se \(P\) è un punto doppio, allora \(P\) è doppio anche per \(C = Q \cap \pi \), quindi \(C\) è riducibile
+    \item se \(P\) è un punto doppio, allora \(P\) è doppio anche per \(C = Q \cap \alpha \), quindi \(C\) è riducibile
     \item se \(P\) è un punto semplice, allora \(P\) è doppio per \(C = Q \cap \alpha \) se, e soltanto se, \(\alpha \) è il piano tangente in \(P\) a \(Q\), quindi \(C\) è riducibile 
 \end{itemize}}
 \paragraph{Osservazione:} Se \(Q\) è generale, allora le sezioni piane di \(Q \cap \alpha \) sono riducibili se, e soltanto se, \(\alpha \) è un piano tangente a \(Q\).
@@ -195,7 +195,7 @@ C_\infty :
     \ x_1^2-3x_2^2 - x_3^2 = 0 \\
     \ x_4 = 0 \\
 \end{cases}\]
-\[ P_\infty = [(1,0,1,0)] \in C_\infty \text{ il quale è reale}\implies Q \text{ è un paraboloide }
+\[ P_\infty = [(1,0,1,0)] \in C_\infty \text{ il quale è reale}\implies Q \text{ è un iperboloide }
 \] }
 
 \section{Punti semplici di una quadrica irriducibile}
@@ -208,7 +208,7 @@ Se \(C\) si riduce in due rette coincidenti, \(P\) si dice punto \textbf{parabol
 \pf{Dimostrazione}{"\(\implies \)" Sappiamo per ipotesi che \(Q\) è un cono o un cilindro. Sia \(P \in Q\), un punto semplice, quindi \(P \neq V\), chiamiamo \(\alpha \) il piano tangente in \(P\). La conica \(C = Q \cap \alpha = r \cup s \subseteq Q\), di conseguenza \(r \subseteq Q \implies V \in r\) e \(s \subseteq Q \implies V \in s\). Inoltre \(P \in r\) e \(P \in s\). Ma quindi necessariamente \(r = \overline{PV} = s\). Quindi \(P\) è un punto parabolico. \\
 "\(\impliedby \)" Per ipotesi abbiamo i punti semplici parabolici. Chiamiamo \(P\) un punto semplice di \(Q\) e \(\alpha \) il piano tangente a \(Q\) in \(P\). Allora \[
 C = Q \cap \alpha =r \cup r
-\] se \(P' \in r\) e semplice, allora \(\alpha \) è un piano passante per \(P'\) tale che \(Q \cap \alpha \) è riducibile in due rette passanti per \(P'\). Questo ci dice che allora \(\alpha \) è il piano tangente a \(Q\) anche in \(P'\). Sia \(\beta \) un piano con \(\beta  \neq \alpha \) e tale che \(r \subseteq \beta \). Chiamiamo inoltre \(C' = Q \cap \beta \), sicuramente \(r \subseteq C'\), questo significa che \(C'\) è riducibile, cioè \(C = r \cup s\). Ma \(r \neq s\) perché se fosse, per assurdo \(r = s\), allora in \(P\) avrei due piani tangenti distinti \(\alpha \) e \(\beta \), \textbf{assurdo!} (contro l'unicità del piano tangente). Sia \(\{V\} =r \cap s\). Sicuramente \(V\) è un punto doppio, perché se fosse semplice per \(V\) avremmo due piani tangenti distinti (nuovamente contro l'unicità del piano tangente). Su \(Q\) non possono esserci altri punti doppi distinti da \(V\) (perché per ipotesi \(Q\) è irriducibile). Quindi \(Q\) ammette esattamente un punto doppio, cioè \(Q\) è un cono o un cilindro.}
+\] se \(P' \in r\) e' semplice, allora \(\alpha \) è un piano passante per \(P'\) tale che \(Q \cap \alpha \) è riducibile in due rette passanti per \(P'\). Questo ci dice che allora \(\alpha \) è il piano tangente a \(Q\) anche in \(P'\). Sia \(\beta \) un piano con \(\beta  \neq \alpha \) e tale che \(r \subseteq \beta \). Chiamiamo inoltre \(C' = Q \cap \beta \), sicuramente \(r \subseteq C'\), questo significa che \(C'\) è riducibile, cioè \(C = r \cup s\). Ma \(r \neq s\) perché se fosse, per assurdo \(r = s\), allora in \(P\) avrei due piani tangenti distinti \(\alpha \) e \(\beta \), \textbf{assurdo!} (contro l'unicità del piano tangente). Sia \(\{V\} =r \cap s\). Sicuramente \(V\) è un punto doppio, perché se fosse semplice per \(V\) avremmo due piani tangenti distinti (nuovamente contro l'unicità del piano tangente). Su \(Q\) non possono esserci altri punti doppi distinti da \(V\) (perché per ipotesi \(Q\) è irriducibile). Quindi \(Q\) ammette esattamente un punto doppio, cioè \(Q\) è un cono o un cilindro.}
 
 \paragraph{Osservazione:} Se \(Q\) è generale, sicuramente i suoi punti semplici non sono parabolici.
 
@@ -297,7 +297,7 @@ Dato che \(C_\infty\) è riducibile in due rette reali e distinte o in rette imm
 
 \subsubsection{Studio analitico}
 Ci occupiamo ora di trovare un metodo per riconoscere la conica generata dall'intersezione di una quadrica con un piano. A questo fine enunciamo una proposizione molto utile per lo svolgimento degli esercizi sulle sezioni di coniche riducibili.
-\mprop{}{Se \(Q\) è una quadrica irriducibile, la cui equazione è priva di una delle variabili \(x_1, x_2\) o \(x_3\), allora \(Q\) è un cilindro, con vertice in \(X_\infty\) se manca \(x_1\), in \(Y_\infty\) se manca \(x_2\) o in \(Z_\infty\) se manca \(x_3\).}
+\mprop{}{Se \(Q\) è una quadrica irriducibile, la cui equazione è priva di una delle variabili \(x_1, x_2\) o \(x_3\), allora \(Q'\) è un cilindro, con vertice in \(X_\infty\) se manca \(x_1\), in \(Y_\infty\) se manca \(x_2\) o in \(Z_\infty\) se manca \(x_3\).}
 \paragraph{Osservazione:} In questo modo \[
 C = Q \cap \pi = Q' \cap \pi 
 \] ove \(Q'\) è un cilindro, perciò ci basta riconoscere il tipo di cilindro e potremo direttamente riconoscere la conica.

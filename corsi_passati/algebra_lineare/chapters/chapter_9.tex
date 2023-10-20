@@ -14,7 +14,7 @@ C : \ {^tX}AX = \ul{0}
 \] \(A\) è una matrice reale e simmetrica ed è detta \textbf{matrice della conica}.} 
 
 \ex{}{Consideriamo la conica \[
--x_1^2+ax_1x_2+5x_2^2-3x_2x_3+6x_3^2=0
+-x_1^2+4x_1x_2+5x_2^2-3x_2x_3+6x_3^2=0
 \] \[
 A = 
 \left( \; \begin{matrix}
@@ -46,7 +46,7 @@ x_1(-x_1+2x_2) + x_2\left(2x_1+5x_2- \frac{3}{2}x_3\right) + x_3\left(-\frac{3}{
 
 \mprop{}{Sia \(C\) una conica di \(\tilde{A}_{2}(\CC)\) riducibile. Allora \(C\) è unione di 2 rette che possono essere reali e distinte, reali e coincidenti oppure immaginarie e coniugate.}
 
-\pf{Dimostrazione}{Sia \(C\) la conica associata al polinomio \(F=(x_1,x_2, x_3) = 0\). Se \(C\) è riducibile \(F=(x_1,x_2, x_3) = F_1=(x_1,x_2, x_3) \cdot F_2=(x_1,x_2, x_3)\) dove \(F_1\) e \(F_2\) hanno grado 1, quindi rappresentano delle rette e di conseguenza \(C\) è unione di due rette \(r_1\) e \(r_2\). Se \(r_1\) e \(r_2\) sono entrambe reali siamo nei casi \(1\) o \(2\). Se invece \(r_1\) è immaginaria allora \(\overline{r_1}\) è ancora componente di \(C\) (per ogni \(P \in r_1, \ \overline{P}\in C\)), ma \(r_1 \neq \overline{r_1} \implies \overline{r_1}=r_2\implies C\) si riduce in due rette immaginarie e coniugate.}
+\pf{Dimostrazione}{Sia \(C\) la conica associata al polinomio \(F(x_1,x_2, x_3) = 0\). Se \(C\) è riducibile \(F(x_1,x_2, x_3) = F_1(x_1,x_2, x_3) \cdot F_2(x_1,x_2, x_3)\) dove \(F_1\) e \(F_2\) hanno grado 1, quindi rappresentano delle rette e di conseguenza \(C\) è unione di due rette \(r_1\) e \(r_2\). Se \(r_1\) e \(r_2\) sono entrambe reali siamo nei casi \(1\) o \(2\). Se invece \(r_1\) è immaginaria allora \(\overline{r_1}\) è ancora componente di \(C\) (per ogni \(P \in r_1, \ \overline{P}\in C\)), ma \(r_1 \neq \overline{r_1} \implies \overline{r_1}=r_2\implies C\) si riduce in due rette immaginarie e coniugate.}
 
 \subsubsection{Punti multipli di una conica}
 \mprop{}{In \(\tilde{A}_{2}(\CC) \) una conica
@@ -152,9 +152,9 @@ a_{11} \left( \frac{x_1}{x_2} \right) ^2 + 2a_{12} \left( \frac{x_1}{x_2} \right
 \] 
 La risolviamo in \(\left( \frac{x_1}{x_2} \right) \). Se 
 \begin{enumerate}
-    \item \(\frac{\Delta}{4} > 0\) abbiamo due soluzioni reali e distinte \(\implies \) \textbf{iperbole};
-    \item \(\frac{\Delta}{4} = 0\) abbiamo due soluzioni coincidenti \(\implies \) \textbf{parabola};
-    \item \(\frac{\Delta}{4} < 0\) abbiamo due soluzioni immaginarie e coniugate \(\implies \) \textbf{ellisse}.
+    \item \(-\frac{\Delta}{4} > 0\) abbiamo due soluzioni immaginarie e coniugate \(\implies \) \textbf{ellisse};
+    \item \(-\frac{\Delta}{4} = 0\) abbiamo due soluzioni coincidenti \(\implies \) \textbf{parabola};
+    \item \(-\frac{\Delta}{4} < 0\) abbiamo due soluzioni reali e distinte \(\implies \) \textbf{iperbole}.
 \end{enumerate}
 
 \[

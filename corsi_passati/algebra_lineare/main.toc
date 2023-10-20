@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {3.4}Sistemi lineari}{20}{section.3.4}%
 \contentsline {paragraph}{Osservazione:}{21}{section*.3}%
 \contentsline {paragraph}{Osservazione:}{22}{section*.4}%
-\contentsline {paragraph}{Osservazione:}{22}{section*.5}%
+\contentsline {paragraph}{Osservazione:}{23}{section*.5}%
 \contentsline {paragraph}{Osservazioni:}{23}{section*.6}%
 \contentsline {section}{\numberline {3.5}Cambiamenti di base}{24}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Autovalori, autovettori e diagonalizzabilità}{26}{chapter.4}%
@@ -67,7 +67,7 @@
 \contentsline {subsubsection}{Mutua posizione di due rette in \(A_3(\RR )\)}{49}{section*.34}%
 \contentsline {paragraph}{Osservazione:}{50}{section*.35}%
 \contentsline {paragraph}{Osservazione:}{50}{section*.36}%
-\contentsline {subsubsection}{Mutua posizione di due piani in \(A_3(\RR )\)}{50}{section*.37}%
+\contentsline {subsubsection}{Mutua posizione di un piano e una retta in \(A_3(\RR )\)}{50}{section*.37}%
 \contentsline {paragraph}{Osservazione:}{50}{section*.38}%
 \contentsline {paragraph}{Osservazione:}{51}{section*.39}%
 \contentsline {paragraph}{Osservazione:}{51}{section*.40}%
